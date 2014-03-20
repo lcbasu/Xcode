@@ -9,21 +9,35 @@
 #import "CardGameViewController.h"
 
 @interface CardGameViewController ()
+@property (weak, nonatomic) IBOutlet UILabel *flipsLabel;
+@property (nonatomic) int flipCount;
 
 @end
 
 @implementation CardGameViewController
 
-- (void)viewDidLoad
+- (void)setFlipCount:(int)flipCount
 {
-    [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    _flipCount = flipCount;
+    self.flipsLabel.text = [NSString stringWithFormat:@"Flips: %d", self.flipCount];
+    NSLog(@"flipCount : %d", self.flipCount);
 }
 
-- (void)didReceiveMemoryWarning
+- (IBAction)touchCardButon:(UIButton *)sender
 {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+    if ([sender.currentTitle length])
+    {
+        UIImage *cardImage = [UIImage imageNamed:@"cardback"];
+        [sender setBackgroundImage:cardImage forState:UIControlStateNormal];
+        [sender setTitle:@"" forState:UIControlStateNormal];
+    }
+    else
+    {
+        UIImage *cardImage = [UIImage imageNamed:@"cardfront"];
+        [sender setBackgroundImage:cardImage forState:UIControlStateNormal];
+        [sender setTitle:@"A♣︎" forState:UIControlStateNormal];
+    }
+    self.flipCount++;   //it is calling both the setter and the getter
 }
 
 @end
