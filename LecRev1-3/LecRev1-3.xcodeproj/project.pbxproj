@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F843FBC18DDEB1F009B3A2D /* CardMatchingGame.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F843FBB18DDEB1F009B3A2D /* CardMatchingGame.m */; };
 		1FA8F28F18DD90AE00BBF313 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA8F28E18DD90AE00BBF313 /* Foundation.framework */; };
 		1FA8F29118DD90AE00BBF313 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA8F29018DD90AE00BBF313 /* CoreGraphics.framework */; };
 		1FA8F29318DD90AE00BBF313 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FA8F29218DD90AE00BBF313 /* UIKit.framework */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F843FBA18DDEB1F009B3A2D /* CardMatchingGame.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = CardMatchingGame.h; path = "LecRev1-3/Model/CardMatchingGame.h"; sourceTree = "<group>"; };
+		1F843FBB18DDEB1F009B3A2D /* CardMatchingGame.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = CardMatchingGame.m; path = "LecRev1-3/Model/CardMatchingGame.m"; sourceTree = "<group>"; };
 		1FA8F28B18DD90AE00BBF313 /* LecRev1-3.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "LecRev1-3.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FA8F28E18DD90AE00BBF313 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1FA8F29018DD90AE00BBF313 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -168,14 +171,16 @@
 		1FA8F2C618DD966400BBF313 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1F843FBA18DDEB1F009B3A2D /* CardMatchingGame.h */,
+				1F843FBB18DDEB1F009B3A2D /* CardMatchingGame.m */,
 				1FA8F2C318DD90E500BBF313 /* Card.h */,
 				1FA8F2C418DD90E500BBF313 /* Card.m */,
 				1FA8F2C718DD968B00BBF313 /* Deck.h */,
 				1FA8F2C818DD968B00BBF313 /* Deck.m */,
 				1FA8F2CA18DD98BD00BBF313 /* PlayingCard.h */,
+				1FA8F2CB18DD98BD00BBF313 /* PlayingCard.m */,
 				1FA8F2CD18DD9D4900BBF313 /* PlayingCardDeck.h */,
 				1FA8F2CE18DD9D4900BBF313 /* PlayingCardDeck.m */,
-				1FA8F2CB18DD98BD00BBF313 /* PlayingCard.m */,
 			);
 			name = Model;
 			path = ..;
@@ -283,6 +288,7 @@
 				1FA8F2C918DD968B00BBF313 /* Deck.m in Sources */,
 				1FA8F29F18DD90AE00BBF313 /* CardGameAppDelegate.m in Sources */,
 				1FA8F2A518DD90AE00BBF313 /* CardGameViewController.m in Sources */,
+				1F843FBC18DDEB1F009B3A2D /* CardMatchingGame.m in Sources */,
 				1FA8F2CF18DD9D4900BBF313 /* PlayingCardDeck.m in Sources */,
 				1FA8F29B18DD90AE00BBF313 /* main.m in Sources */,
 				1FA8F2C518DD90E500BBF313 /* Card.m in Sources */,
@@ -490,6 +496,7 @@
 				1FA8F2BF18DD90AE00BBF313 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1FA8F2C018DD90AE00BBF313 /* Build configuration list for PBXNativeTarget "LecRev1-3Tests" */ = {
 			isa = XCConfigurationList;
@@ -498,6 +505,7 @@
 				1FA8F2C218DD90AE00BBF313 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
