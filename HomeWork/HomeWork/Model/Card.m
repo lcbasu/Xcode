@@ -1,16 +1,12 @@
 //
 //  Card.m
-//  Matchismo
+//  HomeWork
 //
-//  Created by Lokesh Basu on 20/03/14.
+//  Created by Lokesh Basu on 23/03/14.
 //  Copyright (c) 2014 IIT Roorkee. All rights reserved.
 //
 
 #import "Card.h"
-
-@interface Card()
-
-@end
 
 @implementation Card
 
