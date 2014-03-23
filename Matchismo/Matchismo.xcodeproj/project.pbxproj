@@ -97,8 +97,6 @@
 		1F16FDF618DAF1F60050ED2F /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				1F24FBBE18DC9BBF00053A12 /* CardMatchingGame.h */,
-				1F24FBBF18DC9BBF00053A12 /* CardMatchingGame.m */,
 				1F16FDF318DAF1CF0050ED2F /* Card.h */,
 				1F16FDF418DAF1CF0050ED2F /* Card.m */,
 				1F89098918DB467600FD9421 /* Deck.h */,
@@ -107,6 +105,8 @@
 				1F16FDF818DAF61B0050ED2F /* PlayingCard.m */,
 				1F89098C18DB4C2900FD9421 /* PlayingCardDeck.h */,
 				1F89098D18DB4C2900FD9421 /* PlayingCardDeck.m */,
+				1F24FBBE18DC9BBF00053A12 /* CardMatchingGame.h */,
+				1F24FBBF18DC9BBF00053A12 /* CardMatchingGame.m */,
 			);
 			path = Model;
 			sourceTree = "<group>";

@@ -15,11 +15,23 @@
     int score = 0;
     
     if ([otherCards count] == 1) {
-        PlayingCard *otherCard = [otherCards firstObject];
-        if ([self.suit isEqualToString:otherCard.suit]) {
+        PlayingCard *firstCard = [otherCards firstObject];
+        if ([self.suit isEqualToString:firstCard.suit]) {
             score = 1;
-        } else if (self.rank == otherCard.rank) {
+        } else if (self.rank == firstCard.rank) {
             score = 4;
+        }
+    } else if ([otherCards count] == 2) {
+        PlayingCard *firstCard = [otherCards objectAtIndex:0];
+        PlayingCard *secondCard = [otherCards objectAtIndex:1];
+        if ([self.suit isEqualToString:firstCard.suit] || [self.suit isEqualToString:secondCard.suit]) {
+            score = 1;
+        } else if (self.rank == firstCard.rank || self.rank == secondCard.rank) {
+            score = 2;
+        } else if ([self.suit isEqualToString:firstCard.suit] && [self.suit isEqualToString:secondCard.suit]) {
+            score = 4;
+        } else if (self.rank == firstCard.rank && self.rank == secondCard.rank) {
+            score = 8;
         }
     }
     

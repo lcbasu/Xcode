@@ -15,15 +15,16 @@
 @property (nonatomic, strong) CardMatchingGame *game;
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
-
+@property (weak, nonatomic) IBOutlet UISegmentedControl *gameMode;
+@property (nonatomic) int currentMode;
 @end
 
 @implementation CardGameViewController
 
-
 - (CardMatchingGame *)game
 {
     if(!_game) _game = [[CardMatchingGame alloc] initWithCardCount:[self.cardButtons count] usingDeck:[self createDeck]];
+    self.currentMode = 0;
     return _game;
 }
 
@@ -63,6 +64,37 @@
 - (UIImage *)backgroundImageForCard:(Card *)card
 {
     return [UIImage imageNamed:card.isChosen ? @"cardfront" : @"cardback"];
+}
+
+- (IBAction)replay:(UIButton *)sender
+{
+    _game = nil;
+    [self updateUI];
+}
+
+- (IBAction)changeGameMode:(UISegmentedControl *)sender
+{
+    switch (sender.selectedSegmentIndex) {
+        case 0:
+            //two card matching game
+            NSLog(@"Two cards matching game");
+            self.currentMode = 0;
+            NSLog(@"Game mode : %d", self.currentMode);
+            _game = nil;
+            [self updateUI];
+            break;
+        case 1:
+            //three card matching game
+            NSLog(@"Three cards matching game");
+            self.currentMode = 1;
+            NSLog(@"Game mode : %d", self.currentMode);
+            _game = nil;
+            [self updateUI];
+        default:
+            _game = nil;
+            [self updateUI];
+            break;
+    }
 }
 
 @end
