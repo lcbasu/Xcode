@@ -74,5 +74,12 @@
     NSLog(@"random Card selected : %@", card.contents);
 }
 
+//button action to restart the game
+- (IBAction)restartGame:(UIButton *)sender
+{
+    _game = nil;
+    [self updateUI];
+}
+
 
 @end
