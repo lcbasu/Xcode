@@ -113,27 +113,25 @@ static const int COST_TO_CHOOSE = 1;
         if (!card.isMatched) {
             if (card.isChosen) {
                 card.chosen = NO;
+                [self.currentCards removeObject:card];  //removing the card from the current cards that are queued for matching
             } else {
-                //mathcing against another card
-                if ([self.currentCards count] >= 3) [self.currentCards removeObjectAtIndex:0];
-                if (!card.isMatched) [self.currentCards addObject:card];
-                if ([self.currentCards count] == 3) {
-                    for (Card *otherCard in self.cards) {
-                        if (otherCard.isChosen && !otherCard.isMatched && [self.currentCards count] < 2) {
-                            int matchScore = [card match:@[otherCard]];
-                            if (matchScore) {
-                                self.score += matchScore * MATCH_BONUS;
-                                card.matched = YES;
-                                otherCard.matched = YES;
-                            } else {
-                                self.score -= MISMATCH_PENALTY;
-                                otherCard.chosen = NO;
-                            }
-                            break;
+                if ([self.currentCards count] == 2) {
+                    int matchScore = [card match:self.currentCards];
+                    if (matchScore) {
+                        self.score += matchScore * MATCH_BONUS;
+                        card.matched = YES;
+                        for (Card *otherCards in self.currentCards) {
+                            otherCards.matched = YES;
                         }
+                        [self.currentCards removeAllObjects];
+                    } else {
+                        self.score -= MISMATCH_PENALTY;
+                        Card *otherCard =[self.currentCards objectAtIndex:0];
+                        otherCard.chosen = NO;
+                        [self.currentCards removeObjectAtIndex:0];
                     }
-
                 }
+                [self.currentCards addObject:card];
                 self.score -= COST_TO_CHOOSE;
                 card.chosen = YES;
             }

@@ -21,6 +21,12 @@
 
 @implementation CardGameViewController
 
+- (int)currentMode
+{
+    return _currentMode;
+}
+
+
 - (CardMatchingGame *)game
 {
     if(!_game) _game = [[CardMatchingGame alloc] initWithCardCount:[self.cardButtons count] usingDeck:[self createDeck]];
@@ -38,7 +44,8 @@
 - (IBAction)touchCardButon:(UIButton *)sender
 {
     int cardIndex = [self.cardButtons indexOfObject:sender];
-    [self.game choseCardAtIndex:cardIndex];
+    [self.game choseCardAtIndex:cardIndex withMode:self.currentMode];
+    //[self.game choseCardAtIndex:cardIndex];
     [self updateUI];
 }
 
@@ -78,7 +85,7 @@
         case 0:
             //two card matching game
             NSLog(@"Two cards matching game");
-            self.currentMode = 0;
+            [self updateMode:0];
             NSLog(@"Game mode : %d", self.currentMode);
             _game = nil;
             [self updateUI];
@@ -86,7 +93,7 @@
         case 1:
             //three card matching game
             NSLog(@"Three cards matching game");
-            self.currentMode = 1;
+            [self updateMode:1];
             NSLog(@"Game mode : %d", self.currentMode);
             _game = nil;
             [self updateUI];
@@ -95,6 +102,12 @@
             [self updateUI];
             break;
     }
+}
+
+
+- (void)updateMode:(int)mode
+{
+    self.currentMode = mode;
 }
 
 @end
