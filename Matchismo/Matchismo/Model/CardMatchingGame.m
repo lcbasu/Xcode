@@ -120,16 +120,16 @@ static const int COST_TO_CHOOSE = 1;
                     if (matchScore) {
                         self.score += matchScore * MATCH_BONUS;
                         card.matched = YES;
-                        for (Card *otherCards in self.currentCards) {
-                            otherCards.matched = YES;
+                        for (Card *otherCard in self.currentCards) {
+                            otherCard.matched = YES;
                         }
-                        [self.currentCards removeAllObjects];
                     } else {
                         self.score -= MISMATCH_PENALTY;
                         Card *otherCard =[self.currentCards objectAtIndex:0];
                         otherCard.chosen = NO;
                         [self.currentCards removeObjectAtIndex:0];
                     }
+                    [self.currentCards removeAllObjects];
                 }
                 [self.currentCards addObject:card];
                 self.score -= COST_TO_CHOOSE;
