@@ -7,7 +7,6 @@
 //
 
 #import "CardGameViewController.h"
-#import "PlayingCardDeck.h"
 #import "CardMatchingGame.h"
 
 @interface CardGameViewController ()
@@ -32,9 +31,9 @@
     return _deck;
 }
 
-- (Deck *)createDeck
+- (Deck *)createDeck    //abstarct method, so it has to be made public hecnce included in .h file
 {
-    return [[PlayingCardDeck alloc] init];
+    return nil;
 }
 
 
