@@ -21,6 +21,7 @@
 		1F5BE85C18E130CB006A1C95 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F5BE83E18E130CB006A1C95 /* UIKit.framework */; };
 		1F5BE86418E130CB006A1C95 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F5BE86218E130CB006A1C95 /* InfoPlist.strings */; };
 		1F5BE86618E130CB006A1C95 /* AttributorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F5BE86518E130CB006A1C95 /* AttributorTests.m */; };
+		1FBE852918E2CCDC009A6355 /* TextStatsViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FBE852818E2CCDC009A6355 /* TextStatsViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		1F5BE86118E130CB006A1C95 /* AttributorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "AttributorTests-Info.plist"; sourceTree = "<group>"; };
 		1F5BE86318E130CB006A1C95 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1F5BE86518E130CB006A1C95 /* AttributorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AttributorTests.m; sourceTree = "<group>"; };
+		1FBE852718E2CCDC009A6355 /* TextStatsViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TextStatsViewController.h; sourceTree = "<group>"; };
+		1FBE852818E2CCDC009A6355 /* TextStatsViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TextStatsViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				1F5BE84C18E130CB006A1C95 /* Main.storyboard */,
 				1F5BE84F18E130CB006A1C95 /* AttributorViewController.h */,
 				1F5BE85018E130CB006A1C95 /* AttributorViewController.m */,
+				1FBE852718E2CCDC009A6355 /* TextStatsViewController.h */,
+				1FBE852818E2CCDC009A6355 /* TextStatsViewController.m */,
 				1F5BE85218E130CB006A1C95 /* Images.xcassets */,
 				1F5BE84118E130CB006A1C95 /* Supporting Files */,
 			);
@@ -253,6 +258,7 @@
 				1F5BE84B18E130CB006A1C95 /* AttributorAppDelegate.m in Sources */,
 				1F5BE85118E130CB006A1C95 /* AttributorViewController.m in Sources */,
 				1F5BE84718E130CB006A1C95 /* main.m in Sources */,
+				1FBE852918E2CCDC009A6355 /* TextStatsViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -457,6 +463,7 @@
 				1F5BE86B18E130CB006A1C95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F5BE86C18E130CB006A1C95 /* Build configuration list for PBXNativeTarget "AttributorTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +472,7 @@
 				1F5BE86E18E130CB006A1C95 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
