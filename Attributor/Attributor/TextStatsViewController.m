@@ -10,6 +10,7 @@
 
 @interface TextStatsViewController ()
 @property (weak, nonatomic) IBOutlet UILabel *colorfulCharacterslabel;
+@property (weak, nonatomic) IBOutlet UILabel *outlinedCharactersLabel;
 
 @end
 
@@ -30,7 +31,9 @@
 
 - (void)updateUI
 {
-    
+    self.colorfulCharacterslabel.text = [NSString stringWithFormat:@" %d colorful characters", [[self charactersWithAttribute:NSForegroundColorAttributeName] length]];
+    self.outlinedCharactersLabel.text = [NSString stringWithFormat:@" %d outlined characters", [[self charactersWithAttribute:NSStrokeWidthAttributeName] length]];
+
 }
 
 - (NSAttributedString *)charactersWithAttribute:(NSString *)attributeName
@@ -39,7 +42,7 @@
     
     int index = 0;
     
-    while (index > [self.textToAnalyze length]) {
+    while (index < [self.textToAnalyze length]) {
         NSRange range;
         id value = [self.textToAnalyze attribute:attributeName atIndex:index effectiveRange:&range];
         if (value) {
