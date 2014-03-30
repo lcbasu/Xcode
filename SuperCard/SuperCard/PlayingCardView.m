@@ -52,6 +52,14 @@
     [self setNeedsDisplay];
 }
 
+- (void)pinch:(UIPinchGestureRecognizer *)gesture
+{
+    if ((gesture.state == UIGestureRecognizerStateChanged) || (gesture.state == UIGestureRecognizerStateEnded)) {
+        self.faceCardScaleFactor *= gesture.scale;
+        gesture.scale = 1.0;
+    }
+}
+
 #pragma mark - Drawing
 
 #define CORNER_FONT_STANDARD_HEIGHT 180.0
