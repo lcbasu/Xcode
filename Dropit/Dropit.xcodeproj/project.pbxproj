@@ -21,6 +21,7 @@
 		1FBF737F18E988E600BC7DFE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FBF736118E988E600BC7DFE /* UIKit.framework */; };
 		1FBF738718E988E600BC7DFE /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1FBF738518E988E600BC7DFE /* InfoPlist.strings */; };
 		1FBF738918E988E600BC7DFE /* DropitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FBF738818E988E600BC7DFE /* DropitTests.m */; };
+		1FBF739418E9936800BC7DFE /* DropitBehavior.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FBF739318E9936800BC7DFE /* DropitBehavior.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		1FBF738418E988E600BC7DFE /* DropitTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "DropitTests-Info.plist"; sourceTree = "<group>"; };
 		1FBF738618E988E600BC7DFE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1FBF738818E988E600BC7DFE /* DropitTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DropitTests.m; sourceTree = "<group>"; };
+		1FBF739218E9936800BC7DFE /* DropitBehavior.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DropitBehavior.h; sourceTree = "<group>"; };
+		1FBF739318E9936800BC7DFE /* DropitBehavior.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = DropitBehavior.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -113,6 +116,8 @@
 			isa = PBXGroup;
 			children = (
 				1FBF736F18E988E600BC7DFE /* Main.storyboard */,
+				1FBF739218E9936800BC7DFE /* DropitBehavior.h */,
+				1FBF739318E9936800BC7DFE /* DropitBehavior.m */,
 				1FBF737218E988E600BC7DFE /* DropitViewController.h */,
 				1FBF737318E988E600BC7DFE /* DropitViewController.m */,
 				1FBF737518E988E600BC7DFE /* Images.xcassets */,
@@ -251,6 +256,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FBF737418E988E600BC7DFE /* DropitViewController.m in Sources */,
+				1FBF739418E9936800BC7DFE /* DropitBehavior.m in Sources */,
 				1FBF736E18E988E600BC7DFE /* DropitAppDelegate.m in Sources */,
 				1FBF736A18E988E600BC7DFE /* main.m in Sources */,
 			);

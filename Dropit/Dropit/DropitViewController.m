@@ -7,12 +7,12 @@
 //
 
 #import "DropitViewController.h"
+#import "DropitBehavior.h"
 
 @interface DropitViewController ()
 @property (weak, nonatomic) IBOutlet UIView *gameView;
 @property (strong, nonatomic) UIDynamicAnimator *animator;
-@property (strong, nonatomic) UIGravityBehavior *gravity;
-@property (strong, nonatomic) UICollisionBehavior *collider;
+@property (strong, nonatomic) DropitBehavior *dropitBehaviour;
 @end
 
 @implementation DropitViewController
@@ -27,24 +27,13 @@ static const CGSize DROP_SIZE = { 40, 40 };
     return _animator;
 }
 
-- (UIGravityBehavior *)gravity
+- (DropitBehavior *)dropitBehaviour
 {
-    if (!_gravity) {
-        _gravity = [[UIGravityBehavior alloc] init];
-        _gravity.magnitude = 0.9;
-        [self.animator addBehavior:_gravity];
+    if (!_dropitBehaviour) {
+        _dropitBehaviour = [[DropitBehavior alloc] init];
+        [self.animator addBehavior:_dropitBehaviour];
     }
-    return _gravity;
-}
-
-- (UICollisionBehavior *)collider
-{
-    if (!_collider) {
-        _collider = [[UICollisionBehavior alloc] init];
-        _collider.translatesReferenceBoundsIntoBoundary = YES;
-        [self.animator addBehavior:_collider];
-    }
-    return _collider;
+    return _dropitBehaviour;
 }
 
 - (IBAction)tap:(UITapGestureRecognizer *)sender
@@ -64,8 +53,7 @@ static const CGSize DROP_SIZE = { 40, 40 };
     dropView.backgroundColor = [self randomColor];
     [self.gameView addSubview:dropView];
     
-    [self.gravity addItem:dropView];
-    [self.collider addItem:dropView];
+    [self.dropitBehaviour addItem:dropView];
 }
 
 - (UIColor *)randomColor
