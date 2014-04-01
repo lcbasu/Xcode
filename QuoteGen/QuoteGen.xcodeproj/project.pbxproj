@@ -1,0 +1,472 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1FC251EA18EB2EB400A48A5F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC251E918EB2EB400A48A5F /* Foundation.framework */; };
+		1FC251EC18EB2EB400A48A5F /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC251EB18EB2EB400A48A5F /* CoreGraphics.framework */; };
+		1FC251EE18EB2EB400A48A5F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC251ED18EB2EB400A48A5F /* UIKit.framework */; };
+		1FC251F418EB2EB400A48A5F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1FC251F218EB2EB400A48A5F /* InfoPlist.strings */; };
+		1FC251F618EB2EB400A48A5F /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC251F518EB2EB400A48A5F /* main.m */; };
+		1FC251FA18EB2EB400A48A5F /* RaywenderlichAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC251F918EB2EB400A48A5F /* RaywenderlichAppDelegate.m */; };
+		1FC251FD18EB2EB400A48A5F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FC251FB18EB2EB400A48A5F /* Main.storyboard */; };
+		1FC2520018EB2EB400A48A5F /* RaywenderlichViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC251FF18EB2EB400A48A5F /* RaywenderlichViewController.m */; };
+		1FC2520218EB2EB400A48A5F /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FC2520118EB2EB400A48A5F /* Images.xcassets */; };
+		1FC2520918EB2EB400A48A5F /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC2520818EB2EB400A48A5F /* XCTest.framework */; };
+		1FC2520A18EB2EB400A48A5F /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC251E918EB2EB400A48A5F /* Foundation.framework */; };
+		1FC2520B18EB2EB400A48A5F /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FC251ED18EB2EB400A48A5F /* UIKit.framework */; };
+		1FC2521318EB2EB400A48A5F /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1FC2521118EB2EB400A48A5F /* InfoPlist.strings */; };
+		1FC2521518EB2EB400A48A5F /* QuoteGenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC2521418EB2EB400A48A5F /* QuoteGenTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1FC2520C18EB2EB400A48A5F /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1FC251DE18EB2EB400A48A5F /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1FC251E518EB2EB400A48A5F;
+			remoteInfo = QuoteGen;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1FC251E618EB2EB400A48A5F /* QuoteGen.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = QuoteGen.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FC251E918EB2EB400A48A5F /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1FC251EB18EB2EB400A48A5F /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1FC251ED18EB2EB400A48A5F /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1FC251F118EB2EB400A48A5F /* QuoteGen-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QuoteGen-Info.plist"; sourceTree = "<group>"; };
+		1FC251F318EB2EB400A48A5F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1FC251F518EB2EB400A48A5F /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1FC251F718EB2EB400A48A5F /* QuoteGen-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "QuoteGen-Prefix.pch"; sourceTree = "<group>"; };
+		1FC251F818EB2EB400A48A5F /* RaywenderlichAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RaywenderlichAppDelegate.h; sourceTree = "<group>"; };
+		1FC251F918EB2EB400A48A5F /* RaywenderlichAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RaywenderlichAppDelegate.m; sourceTree = "<group>"; };
+		1FC251FC18EB2EB400A48A5F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1FC251FE18EB2EB400A48A5F /* RaywenderlichViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RaywenderlichViewController.h; sourceTree = "<group>"; };
+		1FC251FF18EB2EB400A48A5F /* RaywenderlichViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RaywenderlichViewController.m; sourceTree = "<group>"; };
+		1FC2520118EB2EB400A48A5F /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1FC2520718EB2EB400A48A5F /* QuoteGenTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = QuoteGenTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1FC2520818EB2EB400A48A5F /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1FC2521018EB2EB400A48A5F /* QuoteGenTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QuoteGenTests-Info.plist"; sourceTree = "<group>"; };
+		1FC2521218EB2EB400A48A5F /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1FC2521418EB2EB400A48A5F /* QuoteGenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuoteGenTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1FC251E318EB2EB400A48A5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FC251EC18EB2EB400A48A5F /* CoreGraphics.framework in Frameworks */,
+				1FC251EE18EB2EB400A48A5F /* UIKit.framework in Frameworks */,
+				1FC251EA18EB2EB400A48A5F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FC2520418EB2EB400A48A5F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FC2520918EB2EB400A48A5F /* XCTest.framework in Frameworks */,
+				1FC2520B18EB2EB400A48A5F /* UIKit.framework in Frameworks */,
+				1FC2520A18EB2EB400A48A5F /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1FC251DD18EB2EB400A48A5F = {
+			isa = PBXGroup;
+			children = (
+				1FC251EF18EB2EB400A48A5F /* QuoteGen */,
+				1FC2520E18EB2EB400A48A5F /* QuoteGenTests */,
+				1FC251E818EB2EB400A48A5F /* Frameworks */,
+				1FC251E718EB2EB400A48A5F /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1FC251E718EB2EB400A48A5F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1FC251E618EB2EB400A48A5F /* QuoteGen.app */,
+				1FC2520718EB2EB400A48A5F /* QuoteGenTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1FC251E818EB2EB400A48A5F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1FC251E918EB2EB400A48A5F /* Foundation.framework */,
+				1FC251EB18EB2EB400A48A5F /* CoreGraphics.framework */,
+				1FC251ED18EB2EB400A48A5F /* UIKit.framework */,
+				1FC2520818EB2EB400A48A5F /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1FC251EF18EB2EB400A48A5F /* QuoteGen */ = {
+			isa = PBXGroup;
+			children = (
+				1FC251F818EB2EB400A48A5F /* RaywenderlichAppDelegate.h */,
+				1FC251F918EB2EB400A48A5F /* RaywenderlichAppDelegate.m */,
+				1FC251FB18EB2EB400A48A5F /* Main.storyboard */,
+				1FC251FE18EB2EB400A48A5F /* RaywenderlichViewController.h */,
+				1FC251FF18EB2EB400A48A5F /* RaywenderlichViewController.m */,
+				1FC2520118EB2EB400A48A5F /* Images.xcassets */,
+				1FC251F018EB2EB400A48A5F /* Supporting Files */,
+			);
+			path = QuoteGen;
+			sourceTree = "<group>";
+		};
+		1FC251F018EB2EB400A48A5F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1FC251F118EB2EB400A48A5F /* QuoteGen-Info.plist */,
+				1FC251F218EB2EB400A48A5F /* InfoPlist.strings */,
+				1FC251F518EB2EB400A48A5F /* main.m */,
+				1FC251F718EB2EB400A48A5F /* QuoteGen-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1FC2520E18EB2EB400A48A5F /* QuoteGenTests */ = {
+			isa = PBXGroup;
+			children = (
+				1FC2521418EB2EB400A48A5F /* QuoteGenTests.m */,
+				1FC2520F18EB2EB400A48A5F /* Supporting Files */,
+			);
+			path = QuoteGenTests;
+			sourceTree = "<group>";
+		};
+		1FC2520F18EB2EB400A48A5F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1FC2521018EB2EB400A48A5F /* QuoteGenTests-Info.plist */,
+				1FC2521118EB2EB400A48A5F /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1FC251E518EB2EB400A48A5F /* QuoteGen */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FC2521818EB2EB400A48A5F /* Build configuration list for PBXNativeTarget "QuoteGen" */;
+			buildPhases = (
+				1FC251E218EB2EB400A48A5F /* Sources */,
+				1FC251E318EB2EB400A48A5F /* Frameworks */,
+				1FC251E418EB2EB400A48A5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = QuoteGen;
+			productName = QuoteGen;
+			productReference = 1FC251E618EB2EB400A48A5F /* QuoteGen.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1FC2520618EB2EB400A48A5F /* QuoteGenTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1FC2521B18EB2EB400A48A5F /* Build configuration list for PBXNativeTarget "QuoteGenTests" */;
+			buildPhases = (
+				1FC2520318EB2EB400A48A5F /* Sources */,
+				1FC2520418EB2EB400A48A5F /* Frameworks */,
+				1FC2520518EB2EB400A48A5F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1FC2520D18EB2EB400A48A5F /* PBXTargetDependency */,
+			);
+			name = QuoteGenTests;
+			productName = QuoteGenTests;
+			productReference = 1FC2520718EB2EB400A48A5F /* QuoteGenTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1FC251DE18EB2EB400A48A5F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = Raywenderlich;
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "IIT Roorkee";
+				TargetAttributes = {
+					1FC2520618EB2EB400A48A5F = {
+						TestTargetID = 1FC251E518EB2EB400A48A5F;
+					};
+				};
+			};
+			buildConfigurationList = 1FC251E118EB2EB400A48A5F /* Build configuration list for PBXProject "QuoteGen" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1FC251DD18EB2EB400A48A5F;
+			productRefGroup = 1FC251E718EB2EB400A48A5F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1FC251E518EB2EB400A48A5F /* QuoteGen */,
+				1FC2520618EB2EB400A48A5F /* QuoteGenTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1FC251E418EB2EB400A48A5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FC2520218EB2EB400A48A5F /* Images.xcassets in Resources */,
+				1FC251F418EB2EB400A48A5F /* InfoPlist.strings in Resources */,
+				1FC251FD18EB2EB400A48A5F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FC2520518EB2EB400A48A5F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FC2521318EB2EB400A48A5F /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1FC251E218EB2EB400A48A5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FC251FA18EB2EB400A48A5F /* RaywenderlichAppDelegate.m in Sources */,
+				1FC2520018EB2EB400A48A5F /* RaywenderlichViewController.m in Sources */,
+				1FC251F618EB2EB400A48A5F /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1FC2520318EB2EB400A48A5F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1FC2521518EB2EB400A48A5F /* QuoteGenTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1FC2520D18EB2EB400A48A5F /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1FC251E518EB2EB400A48A5F /* QuoteGen */;
+			targetProxy = 1FC2520C18EB2EB400A48A5F /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1FC251F218EB2EB400A48A5F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FC251F318EB2EB400A48A5F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1FC251FB18EB2EB400A48A5F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FC251FC18EB2EB400A48A5F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1FC2521118EB2EB400A48A5F /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1FC2521218EB2EB400A48A5F /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1FC2521618EB2EB400A48A5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1FC2521718EB2EB400A48A5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1FC2521918EB2EB400A48A5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuoteGen/QuoteGen-Prefix.pch";
+				INFOPLIST_FILE = "QuoteGen/QuoteGen-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1FC2521A18EB2EB400A48A5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuoteGen/QuoteGen-Prefix.pch";
+				INFOPLIST_FILE = "QuoteGen/QuoteGen-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1FC2521C18EB2EB400A48A5F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/QuoteGen.app/QuoteGen";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuoteGen/QuoteGen-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "QuoteGenTests/QuoteGenTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		1FC2521D18EB2EB400A48A5F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/QuoteGen.app/QuoteGen";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "QuoteGen/QuoteGen-Prefix.pch";
+				INFOPLIST_FILE = "QuoteGenTests/QuoteGenTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1FC251E118EB2EB400A48A5F /* Build configuration list for PBXProject "QuoteGen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FC2521618EB2EB400A48A5F /* Debug */,
+				1FC2521718EB2EB400A48A5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1FC2521818EB2EB400A48A5F /* Build configuration list for PBXNativeTarget "QuoteGen" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FC2521918EB2EB400A48A5F /* Debug */,
+				1FC2521A18EB2EB400A48A5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1FC2521B18EB2EB400A48A5F /* Build configuration list for PBXNativeTarget "QuoteGenTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1FC2521C18EB2EB400A48A5F /* Debug */,
+				1FC2521D18EB2EB400A48A5F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1FC251DE18EB2EB400A48A5F /* Project object */;
+}
