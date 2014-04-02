@@ -23,6 +23,8 @@
 		1F00714618EC661C00FE10C2 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F00714418EC661C00FE10C2 /* InfoPlist.strings */; };
 		1F00714818EC661C00FE10C2 /* CoreDataExampleTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F00714718EC661C00FE10C2 /* CoreDataExampleTests.m */; };
 		1F00715318EC663C00FE10C2 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1F00715118EC663C00FE10C2 /* Model.xcdatamodeld */; };
+		1F00715618EC768200FE10C2 /* Photographer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F00715518EC768200FE10C2 /* Photographer.m */; };
+		1F00715918EC768300FE10C2 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F00715818EC768300FE10C2 /* Photo.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,10 @@
 		1F00714518EC661C00FE10C2 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1F00714718EC661C00FE10C2 /* CoreDataExampleTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataExampleTests.m; sourceTree = "<group>"; };
 		1F00715218EC663C00FE10C2 /* Model.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Model.xcdatamodel; sourceTree = "<group>"; };
+		1F00715418EC768200FE10C2 /* Photographer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photographer.h; sourceTree = "<group>"; };
+		1F00715518EC768200FE10C2 /* Photographer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photographer.m; sourceTree = "<group>"; };
+		1F00715718EC768300FE10C2 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
+		1F00715818EC768300FE10C2 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -119,6 +125,10 @@
 				1F00712B18EC661C00FE10C2 /* Main_iPhone.storyboard */,
 				1F00712E18EC661C00FE10C2 /* Main_iPad.storyboard */,
 				1F00715118EC663C00FE10C2 /* Model.xcdatamodeld */,
+				1F00715718EC768300FE10C2 /* Photo.h */,
+				1F00715818EC768300FE10C2 /* Photo.m */,
+				1F00715418EC768200FE10C2 /* Photographer.h */,
+				1F00715518EC768200FE10C2 /* Photographer.m */,
 				1F00713118EC661C00FE10C2 /* ViewController.h */,
 				1F00713218EC661C00FE10C2 /* ViewController.m */,
 				1F00713418EC661C00FE10C2 /* Images.xcassets */,
@@ -256,10 +266,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F00715918EC768300FE10C2 /* Photo.m in Sources */,
 				1F00713318EC661C00FE10C2 /* ViewController.m in Sources */,
 				1F00712A18EC661C00FE10C2 /* AppDelegate.m in Sources */,
 				1F00712618EC661C00FE10C2 /* main.m in Sources */,
 				1F00715318EC663C00FE10C2 /* Model.xcdatamodeld in Sources */,
+				1F00715618EC768200FE10C2 /* Photographer.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
