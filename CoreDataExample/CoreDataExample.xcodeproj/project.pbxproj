@@ -25,6 +25,7 @@
 		1F00715318EC663C00FE10C2 /* Model.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1F00715118EC663C00FE10C2 /* Model.xcdatamodeld */; };
 		1F00715618EC768200FE10C2 /* Photographer.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F00715518EC768200FE10C2 /* Photographer.m */; };
 		1F00715918EC768300FE10C2 /* Photo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F00715818EC768300FE10C2 /* Photo.m */; };
+		1F00715C18EC7CB200FE10C2 /* Photo+Flickr.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F00715B18EC7CB200FE10C2 /* Photo+Flickr.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -63,6 +64,8 @@
 		1F00715518EC768200FE10C2 /* Photographer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photographer.m; sourceTree = "<group>"; };
 		1F00715718EC768300FE10C2 /* Photo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Photo.h; sourceTree = "<group>"; };
 		1F00715818EC768300FE10C2 /* Photo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Photo.m; sourceTree = "<group>"; };
+		1F00715A18EC7CB200FE10C2 /* Photo+Flickr.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "Photo+Flickr.h"; sourceTree = "<group>"; };
+		1F00715B18EC7CB200FE10C2 /* Photo+Flickr.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "Photo+Flickr.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -127,6 +130,8 @@
 				1F00715118EC663C00FE10C2 /* Model.xcdatamodeld */,
 				1F00715718EC768300FE10C2 /* Photo.h */,
 				1F00715818EC768300FE10C2 /* Photo.m */,
+				1F00715A18EC7CB200FE10C2 /* Photo+Flickr.h */,
+				1F00715B18EC7CB200FE10C2 /* Photo+Flickr.m */,
 				1F00715418EC768200FE10C2 /* Photographer.h */,
 				1F00715518EC768200FE10C2 /* Photographer.m */,
 				1F00713118EC661C00FE10C2 /* ViewController.h */,
@@ -267,6 +272,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F00715918EC768300FE10C2 /* Photo.m in Sources */,
+				1F00715C18EC7CB200FE10C2 /* Photo+Flickr.m in Sources */,
 				1F00713318EC661C00FE10C2 /* ViewController.m in Sources */,
 				1F00712A18EC661C00FE10C2 /* AppDelegate.m in Sources */,
 				1F00712618EC661C00FE10C2 /* main.m in Sources */,
