@@ -8,6 +8,7 @@
 
 #import "FlickrPhotosTVC.h"
 #import "FlickrFetcher.h"
+#import "ImageViewController.h"
 
 @interface FlickrPhotosTVC ()
 
@@ -51,11 +52,28 @@
 
 #pragma mark - Navigation
 
+- (void)prepareImageViewController:(ImageViewController *)ivc toDisplayPhoto:(NSDictionary *)photo
+{
+    ivc.imageURL = [FlickrFetcher URLforPhoto:photo format:FlickrPhotoFormatLarge];
+    ivc.title = [photo valueForKeyPath:FLICKR_PHOTO_TITLE];
+}
+
 // In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender
 {
     // Get the new view controller using [segue destinationViewController].
     // Pass the selected object to the new view controller.
+    if ([sender isKindOfClass:[UITableViewCell class]]) {
+        NSIndexPath *indexPath = [self.tableView indexPathForCell:sender];
+        if (indexPath) {
+            if ([segue.identifier isEqual:@"Display Photo"]) {
+                if ([segue.destinationViewController isKindOfClass:[ImageViewController class]]) {
+                    [self prepareImageViewController:segue.destinationViewController
+                                      toDisplayPhoto:self.photos[indexPath.row]];
+                }
+            }
+        }
+    }
 }
 
 
