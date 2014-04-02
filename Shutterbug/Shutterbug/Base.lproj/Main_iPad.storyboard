@@ -105,10 +105,10 @@
             </objects>
             <point key="canvasLocation" x="2173" y="944"/>
         </scene>
-        <!--Navigation Controller-->
+        <!--Navigation Controller - Shutterbug-->
         <scene sceneID="1jt-EB-zfA">
             <objects>
-                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="GBR-Vn-UqS" sceneMemberID="viewController">
+                <navigationController title="Shutterbug" automaticallyAdjustsScrollViewInsets="NO" id="GBR-Vn-UqS" sceneMemberID="viewController">
                     <toolbarItems/>
                     <navigationBar key="navigationBar" contentMode="scaleToFill" id="mvf-bC-URa">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
