@@ -8,6 +8,7 @@
 
 #import "Photo+Flickr.h"
 #import "FlickrFetcher.h"
+#import "Photographer+Create.h"
 
 @implementation Photo (Flickr)
 
@@ -34,8 +35,11 @@
         photo.unique = unique;
         photo.title = [photoDictionary valueForKeyPath:FLICKR_PHOTO_TITLE];
         photo.subtitle = [photoDictionary valueForKeyPath:FLICKR_PHOTO_DESCRIPTION];
-        photo.imageURL = [[FlickrFetcher URLforPhoto:photoDictionary format:FlickrPhotoFormatLarge] absoluteString];
+        photo.imageURL = [[FlickrFetcher URLforPhoto:photoDictionary
+                                              format:FlickrPhotoFormatLarge] absoluteString];
         NSString *photographerName = [photoDictionary valueForKeyPath:FLICKR_PHOTO_OWNER];
+        photo.whoTook = [Photographer photographerWithName:photographerName
+                                    inManagedObjectContext:context];
     }
     
     return photo;
