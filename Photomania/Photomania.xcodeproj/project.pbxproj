@@ -274,6 +274,13 @@
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "IIT Roorkee";
 				TargetAttributes = {
+					1FCA43E518ED09C600521381 = {
+						SystemCapabilities = {
+							com.apple.BackgroundModes = {
+								enabled = 1;
+							};
+						};
+					};
 					1FCA440918ED09C600521381 = {
 						TestTargetID = 1FCA43E518ED09C600521381;
 					};

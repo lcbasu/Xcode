@@ -55,7 +55,7 @@
 {
     NSPersistentStoreCoordinator *persistentStoreCoordinator = nil;
     NSManagedObjectModel *managedObjectModel = [self createManagedObjectModel];
-
+    
     NSURL *storeURL = [[self applicationDocumentsDirectory] URLByAppendingPathComponent:@"MOC.sqlite"];
     
     NSError *error = nil;

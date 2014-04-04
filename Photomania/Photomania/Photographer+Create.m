@@ -22,10 +22,11 @@
         NSError *error;
         NSArray *matches = [context executeFetchRequest:request error:&error];
         
-        if (!matches || error || ([matches count] > 1)) {
+        if (!matches || ([matches count] > 1)) {
             // handle error
         } else if (![matches count]) {
-            photographer = [NSEntityDescription insertNewObjectForEntityForName:@"Photographer" inManagedObjectContext:context];
+            photographer = [NSEntityDescription insertNewObjectForEntityForName:@"Photographer"
+                                                         inManagedObjectContext:context];
             photographer.name = name;
         } else {
             photographer = [matches lastObject];

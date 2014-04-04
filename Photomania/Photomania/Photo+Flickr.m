@@ -18,7 +18,6 @@
     Photo *photo = nil;
     
     NSString *unique = photoDictionary[FLICKR_PHOTO_ID];
-    
     NSFetchRequest *request = [NSFetchRequest fetchRequestWithEntityName:@"Photo"];
     request.predicate = [NSPredicate predicateWithFormat:@"unique = %@", unique];
     
@@ -26,7 +25,7 @@
     NSArray *matches = [context executeFetchRequest:request error:&error];
     
     if (!matches || error || ([matches count] > 1)) {
-        //handle error because photo has to be unique
+        // handle error
     } else if ([matches count]) {
         photo = [matches firstObject];
     } else {
@@ -49,7 +48,7 @@
          intoManagedObjectContext:(NSManagedObjectContext *)context
 {
     for (NSDictionary *photo in photos) {
-        [self photoWithFlickrInfo:photos inManagedObjectContext:context];
+        [self photoWithFlickrInfo:photo inManagedObjectContext:context];
     }
 }
 
