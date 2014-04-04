@@ -44,6 +44,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1FA2F8F518EF2062001CE8EE /* PhotoDatabaseAvailability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoDatabaseAvailability.h; sourceTree = "<group>"; };
 		1FCA43E618ED09C600521381 /* Photomania.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Photomania.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FCA43E918ED09C600521381 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1FCA43EB18ED09C600521381 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -155,6 +156,7 @@
 				1FCA444018ED1B7200521381 /* CoreDataTableViewController */,
 				1FCA43F818ED09C600521381 /* PhotomaniaAppDelegate.h */,
 				1FCA43F918ED09C600521381 /* PhotomaniaAppDelegate.m */,
+				1FA2F8F518EF2062001CE8EE /* PhotoDatabaseAvailability.h */,
 				1FCA43FB18ED09C600521381 /* Main_iPhone.storyboard */,
 				1FCA43FE18ED09C600521381 /* Main_iPad.storyboard */,
 				1FCA440118ED09C600521381 /* PhotomaniaViewController.h */,
@@ -549,6 +551,7 @@
 				1FCA441D18ED09C600521381 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1FCA441E18ED09C600521381 /* Build configuration list for PBXNativeTarget "PhotomaniaTests" */ = {
 			isa = XCConfigurationList;
@@ -557,6 +560,7 @@
 				1FCA442018ED09C600521381 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
