@@ -30,6 +30,7 @@
 		1FCA443F18ED16A300521381 /* Photographer+Create.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA443E18ED16A300521381 /* Photographer+Create.m */; };
 		1FCA444318ED1B7200521381 /* CoreDataTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA444218ED1B7200521381 /* CoreDataTableViewController.m */; };
 		1FCA444618ED1C3000521381 /* PhotographersCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA444518ED1C3000521381 /* PhotographersCDTVC.m */; };
+		1FCA444A18ED250600521381 /* PhotomaniaAppDelegate+MOC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA444918ED250600521381 /* PhotomaniaAppDelegate+MOC.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -79,6 +80,8 @@
 		1FCA444218ED1B7200521381 /* CoreDataTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CoreDataTableViewController.m; sourceTree = "<group>"; };
 		1FCA444418ED1C3000521381 /* PhotographersCDTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotographersCDTVC.h; sourceTree = "<group>"; };
 		1FCA444518ED1C3000521381 /* PhotographersCDTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotographersCDTVC.m; sourceTree = "<group>"; };
+		1FCA444818ED250600521381 /* PhotomaniaAppDelegate+MOC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "PhotomaniaAppDelegate+MOC.h"; sourceTree = "<group>"; };
+		1FCA444918ED250600521381 /* PhotomaniaAppDelegate+MOC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "PhotomaniaAppDelegate+MOC.m"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -205,10 +208,20 @@
 		1FCA444018ED1B7200521381 /* CoreDataTableViewController */ = {
 			isa = PBXGroup;
 			children = (
+				1FCA444718ED250600521381 /* MOC */,
 				1FCA444118ED1B7200521381 /* CoreDataTableViewController.h */,
 				1FCA444218ED1B7200521381 /* CoreDataTableViewController.m */,
 			);
 			path = CoreDataTableViewController;
+			sourceTree = "<group>";
+		};
+		1FCA444718ED250600521381 /* MOC */ = {
+			isa = PBXGroup;
+			children = (
+				1FCA444818ED250600521381 /* PhotomaniaAppDelegate+MOC.h */,
+				1FCA444918ED250600521381 /* PhotomaniaAppDelegate+MOC.m */,
+			);
+			path = MOC;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -310,6 +323,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FCA444A18ED250600521381 /* PhotomaniaAppDelegate+MOC.m in Sources */,
 				1FCA442F18ED0C4C00521381 /* Photo.m in Sources */,
 				1FCA444618ED1C3000521381 /* PhotographersCDTVC.m in Sources */,
 				1FCA443218ED0EA600521381 /* Photo+Flickr.m in Sources */,
