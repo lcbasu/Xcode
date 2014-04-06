@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F84514218F1466600302965 /* ImageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F84514118F1466600302965 /* ImageViewController.m */; };
+		1F84514518F147E600302965 /* PhotosByPhotographerCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F84514418F147E600302965 /* PhotosByPhotographerCDTVC.m */; };
+		1F84514818F14C2800302965 /* PhotosCDTVC.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F84514718F14C2800302965 /* PhotosCDTVC.m */; };
 		1FCA43EA18ED09C600521381 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCA43E918ED09C600521381 /* Foundation.framework */; };
 		1FCA43EC18ED09C600521381 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCA43EB18ED09C600521381 /* CoreGraphics.framework */; };
 		1FCA43EE18ED09C600521381 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCA43ED18ED09C600521381 /* UIKit.framework */; };
@@ -44,6 +47,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F84514018F1466600302965 /* ImageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ImageViewController.h; sourceTree = "<group>"; };
+		1F84514118F1466600302965 /* ImageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ImageViewController.m; sourceTree = "<group>"; };
+		1F84514318F147E600302965 /* PhotosByPhotographerCDTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosByPhotographerCDTVC.h; sourceTree = "<group>"; };
+		1F84514418F147E600302965 /* PhotosByPhotographerCDTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosByPhotographerCDTVC.m; sourceTree = "<group>"; };
+		1F84514618F14C2800302965 /* PhotosCDTVC.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PhotosCDTVC.h; sourceTree = "<group>"; };
+		1F84514718F14C2800302965 /* PhotosCDTVC.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PhotosCDTVC.m; sourceTree = "<group>"; };
 		1FA2F8F518EF2062001CE8EE /* PhotoDatabaseAvailability.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PhotoDatabaseAvailability.h; sourceTree = "<group>"; };
 		1FCA43E618ED09C600521381 /* Photomania.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Photomania.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FCA43E918ED09C600521381 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -159,6 +168,12 @@
 				1FA2F8F518EF2062001CE8EE /* PhotoDatabaseAvailability.h */,
 				1FCA43FB18ED09C600521381 /* Main_iPhone.storyboard */,
 				1FCA43FE18ED09C600521381 /* Main_iPad.storyboard */,
+				1F84514318F147E600302965 /* PhotosByPhotographerCDTVC.h */,
+				1F84514418F147E600302965 /* PhotosByPhotographerCDTVC.m */,
+				1F84514618F14C2800302965 /* PhotosCDTVC.h */,
+				1F84514718F14C2800302965 /* PhotosCDTVC.m */,
+				1F84514018F1466600302965 /* ImageViewController.h */,
+				1F84514118F1466600302965 /* ImageViewController.m */,
 				1FCA440118ED09C600521381 /* PhotomaniaViewController.h */,
 				1FCA440218ED09C600521381 /* PhotomaniaViewController.m */,
 				1FCA443818ED135F00521381 /* Flickr Fetcher */,
@@ -337,6 +352,9 @@
 				1FCA444618ED1C3000521381 /* PhotographersCDTVC.m in Sources */,
 				1FCA443218ED0EA600521381 /* Photo+Flickr.m in Sources */,
 				1FCA43FA18ED09C600521381 /* PhotomaniaAppDelegate.m in Sources */,
+				1F84514518F147E600302965 /* PhotosByPhotographerCDTVC.m in Sources */,
+				1F84514818F14C2800302965 /* PhotosCDTVC.m in Sources */,
+				1F84514218F1466600302965 /* ImageViewController.m in Sources */,
 				1FCA443F18ED16A300521381 /* Photographer+Create.m in Sources */,
 				1FCA444318ED1B7200521381 /* CoreDataTableViewController.m in Sources */,
 				1FCA43F618ED09C600521381 /* main.m in Sources */,
