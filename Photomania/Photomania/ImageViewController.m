@@ -15,6 +15,7 @@
 @property (strong, nonatomic) UIImage *image;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UIActivityIndicatorView *spinner;
+@property (weak, nonatomic) UIPopoverController *urlPopoverController;
 
 @end
 
@@ -41,23 +42,23 @@
 {
     if ([segue.destinationViewController isKindOfClass:[URLViewController class]]) {
         URLViewController *urlvc = (URLViewController *)segue.destinationViewController;
-//        if ([segue isKindOfClass:[UIStoryboardPopoverSegue class]]) {
-//            UIStoryboardPopoverSegue *popoverSegue = (UIStoryboardPopoverSegue *)segue;
-//            self.urlPopoverController = popoverSegue.popoverController;
-//        }
+        if ([segue isKindOfClass:[UIStoryboardPopoverSegue class]]) {
+            UIStoryboardPopoverSegue *popoverSegue = (UIStoryboardPopoverSegue *)segue;
+            self.urlPopoverController = popoverSegue.popoverController;
+        }
         urlvc.url = self.imageURL;
     }
 }
 
-//- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier
-//                                  sender:(id)sender
-//{
-//    if ([identifier isEqualToString:@"Show URL"]) {
-//        return self.urlPopoverController ? NO : (self.imageURL ? YES : NO);
-//    } else {
-//        return [super shouldPerformSegueWithIdentifier:identifier sender:sender];
-//    }
-//}
+- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier
+                                  sender:(id)sender
+{
+    if ([identifier isEqualToString:@"Show URL"]) {
+        return self.urlPopoverController ? NO : (self.imageURL ? YES : NO);
+    } else {
+        return [super shouldPerformSegueWithIdentifier:identifier sender:sender];
+    }
+}
 
 - (void)setImageURL:(NSURL *)imageURL
 {
