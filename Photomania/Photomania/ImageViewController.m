@@ -7,6 +7,7 @@
 //
 
 #import "ImageViewController.h"
+#import "URLViewController.h"
 
 @interface ImageViewController () <UIScrollViewDelegate, UISplitViewControllerDelegate>
 
@@ -32,6 +33,31 @@
 {
     return self.imageView;
 }
+
+#pragma mark - Navigation
+
+- (void)prepareForSegue:(UIStoryboardSegue *)segue
+                 sender:(id)sender
+{
+    if ([segue.destinationViewController isKindOfClass:[URLViewController class]]) {
+        URLViewController *urlvc = (URLViewController *)segue.destinationViewController;
+//        if ([segue isKindOfClass:[UIStoryboardPopoverSegue class]]) {
+//            UIStoryboardPopoverSegue *popoverSegue = (UIStoryboardPopoverSegue *)segue;
+//            self.urlPopoverController = popoverSegue.popoverController;
+//        }
+        urlvc.url = self.imageURL;
+    }
+}
+
+//- (BOOL)shouldPerformSegueWithIdentifier:(NSString *)identifier
+//                                  sender:(id)sender
+//{
+//    if ([identifier isEqualToString:@"Show URL"]) {
+//        return self.urlPopoverController ? NO : (self.imageURL ? YES : NO);
+//    } else {
+//        return [super shouldPerformSegueWithIdentifier:identifier sender:sender];
+//    }
+//}
 
 - (void)setImageURL:(NSURL *)imageURL
 {

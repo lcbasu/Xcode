@@ -101,7 +101,15 @@
                             <constraint firstItem="Egi-7q-A7r" firstAttribute="leading" secondItem="YQJ-R7-7X6" secondAttribute="leading" id="eXu-SB-10o"/>
                         </constraints>
                     </view>
-                    <navigationItem key="navigationItem" id="scP-4W-pxd"/>
+                    <navigationItem key="navigationItem" id="scP-4W-pxd">
+                        <barButtonItem key="rightBarButtonItem" title="URL" id="DUN-9x-pWH">
+                            <connections>
+                                <segue destination="T2I-In-sHA" kind="popover" identifier="Show URL" popoverAnchorBarButtonItem="DUN-9x-pWH" id="kCU-FA-T5b">
+                                    <popoverArrowDirection key="popoverArrowDirection" up="YES" down="YES" left="YES" right="YES"/>
+                                </segue>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                     <connections>
                         <outlet property="scrollView" destination="Egi-7q-A7r" id="jqt-Xp-4m8"/>
                         <outlet property="spinner" destination="3L9-Vn-cg8" id="ytM-x9-wtI"/>
@@ -110,6 +118,42 @@
                 <placeholder placeholderIdentifier="IBFirstResponder" id="aqg-FO-L3s" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2173" y="944"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="iV5-gw-4ve">
+            <objects>
+                <viewController id="T2I-In-sHA" customClass="URLViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="NfJ-fA-ZF3"/>
+                        <viewControllerLayoutGuide type="bottom" id="Otc-RR-9wA"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="yeu-g6-HJk">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="40"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" showsHorizontalScrollIndicator="NO" editable="NO" text="http://www.flickr.com" textAlignment="center" translatesAutoresizingMaskIntoConstraints="NO" id="m86-by-0Jp">
+                                <rect key="frame" x="0.0" y="0.0" width="600" height="40"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="18"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                            </textView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="m86-by-0Jp" secondAttribute="trailing" id="4IP-to-pEX"/>
+                            <constraint firstItem="m86-by-0Jp" firstAttribute="leading" secondItem="yeu-g6-HJk" secondAttribute="leading" id="7J0-I2-oQ0"/>
+                            <constraint firstAttribute="bottom" secondItem="m86-by-0Jp" secondAttribute="bottom" id="Roa-dI-94R"/>
+                            <constraint firstItem="m86-by-0Jp" firstAttribute="top" secondItem="yeu-g6-HJk" secondAttribute="top" id="xyA-Gt-E1L"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="urlTextView" destination="m86-by-0Jp" id="R00-ga-ePy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="aLA-2H-Eaf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="3144" y="957"/>
         </scene>
         <!--Navigation Controller - Photographers-->
         <scene sceneID="nBJ-Dt-YDx">
