@@ -2,7 +2,7 @@
 //  Photo.h
 //  Photomania
 //
-//  Created by Lokesh Basu on 03/04/14.
+//  Created by Lokesh Basu on 12/04/14.
 //  Copyright (c) 2014 IIT Roorkee. All rights reserved.
 //
 
@@ -13,10 +13,13 @@
 
 @interface Photo : NSManagedObject
 
-@property (nonatomic, retain) NSString * title;
-@property (nonatomic, retain) NSString * subtitle;
 @property (nonatomic, retain) NSString * imageURL;
+@property (nonatomic, retain) NSString * subtitle;
+@property (nonatomic, retain) NSString * title;
 @property (nonatomic, retain) NSString * unique;
+@property (nonatomic, retain) NSNumber * longitude;
+@property (nonatomic, retain) NSNumber * latitude;
+@property (nonatomic, retain) NSString * thumbnailURL;
 @property (nonatomic, retain) Photographer *whoTook;
 
 @end
