@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5053" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="uj7-qQ-3uc">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="5056" systemVersion="13C64" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" initialViewController="uj7-qQ-3uc">
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
@@ -58,10 +58,10 @@
             </objects>
             <point key="canvasLocation" x="2651" y="-168"/>
         </scene>
-        <!--View Controller-->
+        <!--Photos By Photographer Map View Controller-->
         <scene sceneID="POX-eg-qDm">
             <objects>
-                <viewController id="bn5-93-aez" sceneMemberID="viewController">
+                <viewController id="bn5-93-aez" customClass="PhotosByPhotographerMapViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aRy-bZ-jJ0"/>
                         <viewControllerLayoutGuide type="bottom" id="mjx-xW-8YH"/>
@@ -69,8 +69,23 @@
                     <view key="view" contentMode="scaleToFill" id="7cq-q7-0qX">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="MEs-5M-qH9">
+                                <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                            </mapView>
+                        </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="MEs-5M-qH9" firstAttribute="leading" secondItem="7cq-q7-0qX" secondAttribute="leading" id="bnc-Xw-0NQ"/>
+                            <constraint firstAttribute="bottom" secondItem="MEs-5M-qH9" secondAttribute="bottom" id="jvz-8b-7VY"/>
+                            <constraint firstItem="MEs-5M-qH9" firstAttribute="top" secondItem="7cq-q7-0qX" secondAttribute="top" id="nxv-VP-2ie"/>
+                            <constraint firstAttribute="trailing" secondItem="MEs-5M-qH9" secondAttribute="trailing" id="oeZ-EZ-hdR"/>
+                        </constraints>
                     </view>
+                    <connections>
+                        <outlet property="mapView" destination="MEs-5M-qH9" id="ekJ-NJ-Ns6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="1H9-bR-XjR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
