@@ -14,7 +14,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <prototypes>
                             <tableViewCell contentMode="scaleToFill" selectionStyle="blue" accessoryType="disclosureIndicator" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="Photo Cell" textLabel="Azs-en-6tr" detailTextLabel="Cdw-XZ-UB4" style="IBUITableViewCellStyleSubtitle" id="18W-Sj-vUK">
-                                <rect key="frame" x="0.0" y="86" width="320" height="44"/>
+                                <rect key="frame" x="0.0" y="22" width="320" height="44"/>
                                 <autoresizingMask key="autoresizingMask"/>
                                 <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="18W-Sj-vUK" id="4O1-RI-Wgc">
                                     <rect key="frame" x="0.0" y="0.0" width="287" height="43"/>
@@ -83,6 +83,7 @@
                             <constraint firstAttribute="trailing" secondItem="MEs-5M-qH9" secondAttribute="trailing" id="oeZ-EZ-hdR"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="opv-4i-9hU"/>
                     <connections>
                         <outlet property="mapView" destination="MEs-5M-qH9" id="ekJ-NJ-Ns6"/>
                     </connections>
@@ -142,7 +143,7 @@
                                     </subviews>
                                 </tableViewCellContentView>
                                 <connections>
-                                    <segue destination="1Ah-Cm-awE" kind="push" identifier="Show Photos by Photographer" id="1WQ-R6-bfC"/>
+                                    <segue destination="bn5-93-aez" kind="push" id="220-g8-nXW"/>
                                 </connections>
                             </tableViewCell>
                         </prototypes>
