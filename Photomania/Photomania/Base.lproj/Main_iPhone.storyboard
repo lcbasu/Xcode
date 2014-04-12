@@ -58,10 +58,11 @@
             </objects>
             <point key="canvasLocation" x="2651" y="-168"/>
         </scene>
-        <!--Photos By Photographer Map View Controller-->
+        <!--Photos By Photographer Map View Controller - MapView-->
         <scene sceneID="POX-eg-qDm">
             <objects>
-                <viewController id="bn5-93-aez" customClass="PhotosByPhotographerMapViewController" sceneMemberID="viewController">
+                <placeholder placeholderIdentifier="IBFirstResponder" id="1H9-bR-XjR" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <viewController storyboardIdentifier="MapView" title="MapView" useStoryboardIdentifierAsRestorationIdentifier="YES" id="bn5-93-aez" customClass="PhotosByPhotographerMapViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="aRy-bZ-jJ0"/>
                         <viewControllerLayoutGuide type="bottom" id="mjx-xW-8YH"/>
@@ -88,7 +89,6 @@
                         <outlet property="mapView" destination="MEs-5M-qH9" id="ekJ-NJ-Ns6"/>
                     </connections>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="1H9-bR-XjR" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="2651" y="427"/>
         </scene>
