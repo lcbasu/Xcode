@@ -13,8 +13,13 @@ int main(int argc, const char * argv[])
 
     @autoreleasepool {
         
-        // insert code here...
-        NSLog(@"Hello, World!");
+        //  using NSString
+        
+        
+        NSString *name = [NSString stringWithFormat:@"\nLokesh Chandra Basu, DOB : %i.", 8];
+        
+        
+        NSLog(@"%@", name);
         
     }
     return 0;
