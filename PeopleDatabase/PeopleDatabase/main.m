@@ -14,10 +14,17 @@ int main(int argc, const char * argv[])
 
     @autoreleasepool {
         
-        Person *newPerson = [[Person alloc] init];
+        char response;
         
-        [newPerson enterInfo];
-        [newPerson printInfo];
+        do {
+            Person *newPerson = [[Person alloc] init];
+            
+            [newPerson enterInfo];
+            [newPerson printInfo];
+            
+            NSLog(@"Do you want to enter another name? (y/n)");
+            scanf("\n%c", &response);
+        } while(response == 'y');
     }
     return 0;
 }
