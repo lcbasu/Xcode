@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F000B9118FBDC82001EF569 /* Person.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F000B9018FBDC82001EF569 /* Person.m */; };
 		1F6DDCF318FB99570051061B /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F6DDCF218FB99570051061B /* Foundation.framework */; };
 		1F6DDCF618FB99570051061B /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6DDCF518FB99570051061B /* main.m */; };
 		1F6DDCFA18FB99570051061B /* PeopleDatabase.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1F6DDCF918FB99570051061B /* PeopleDatabase.1 */; };
@@ -26,6 +27,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1F000B8F18FBDC82001EF569 /* Person.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Person.h; sourceTree = "<group>"; };
+		1F000B9018FBDC82001EF569 /* Person.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Person.m; sourceTree = "<group>"; };
 		1F6DDCEF18FB99570051061B /* PeopleDatabase */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = PeopleDatabase; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F6DDCF218FB99570051061B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1F6DDCF518FB99570051061B /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -74,6 +77,8 @@
 			isa = PBXGroup;
 			children = (
 				1F6DDCF518FB99570051061B /* main.m */,
+				1F000B8F18FBDC82001EF569 /* Person.h */,
+				1F000B9018FBDC82001EF569 /* Person.m */,
 				1F6DDCF918FB99570051061B /* PeopleDatabase.1 */,
 				1F6DDCF718FB99570051061B /* Supporting Files */,
 			);
@@ -139,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F000B9118FBDC82001EF569 /* Person.m in Sources */,
 				1F6DDCF618FB99570051061B /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -253,6 +259,7 @@
 				1F6DDCFF18FB99570051061B /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

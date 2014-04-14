@@ -7,30 +7,17 @@
 //
 
 #import <Foundation/Foundation.h>
+#import "Person.h"
 
 int main(int argc, const char * argv[])
 {
 
     @autoreleasepool {
         
-        //  using NSString
+        Person *newPerson = [[Person alloc] init];
         
-        
-        NSString *name = [NSString stringWithFormat:@"\nLokesh Chandra Basu, DOB : %i.", 8];
-        
-        
-        NSLog(@"%@", name);
-        
-        
-        NSLog(@"Name : ");
-        char cStr[40];
-        
-        scanf("%s", cStr);
-        
-        NSString *inputStr = [NSString stringWithCString:cStr encoding:1];
-        
-        NSLog(@"%@ %li", inputStr, [inputStr length]);
-        
+        [newPerson enterInfo];
+        [newPerson printInfo];
     }
     return 0;
 }
