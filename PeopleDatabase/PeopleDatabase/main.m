@@ -29,7 +29,7 @@ int main(int argc, const char * argv[])
         
         NSString *inputStr = [NSString stringWithCString:cStr encoding:1];
         
-        NSLog(@"%@", inputStr);
+        NSLog(@"%@ %li", inputStr, [inputStr length]);
         
     }
     return 0;
