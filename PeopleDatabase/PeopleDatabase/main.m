@@ -16,15 +16,20 @@ int main(int argc, const char * argv[])
         
         char response;
         
+        NSMutableArray *contactList = [[NSMutableArray alloc] init];
+        
         do {
             Person *newPerson = [[Person alloc] init];
-            
             [newPerson enterInfo];
-            [newPerson printInfo];
-            
+            [contactList addObject:newPerson];
             NSLog(@"Do you want to enter another name? (y/n)");
             scanf("\n%c", &response);
         } while(response == 'y');
+        NSLog(@"Total people in the contact list is %lu.", (unsigned long)[contactList count]);
+        NSLog(@"People in the contact list :\n");
+        for (Person *singlePerson in contactList) {
+            [singlePerson printInfo];
+        }
     }
     return 0;
 }
