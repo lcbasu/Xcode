@@ -21,6 +21,16 @@ int main(int argc, const char * argv[])
         
         NSLog(@"%@", name);
         
+        
+        NSLog(@"Name : ");
+        char cStr[40];
+        
+        scanf("%s", cStr);
+        
+        NSString *inputStr = [NSString stringWithCString:cStr encoding:1];
+        
+        NSLog(@"%@", inputStr);
+        
     }
     return 0;
 }
