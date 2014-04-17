@@ -14,11 +14,6 @@
 
 @implementation ViewController
 
-- (IBAction)buttonPressed
-{
-    NSLog(@"Pressed!");
-}
-
 - (void)viewDidLoad
 {
     [super viewDidLoad];
@@ -31,4 +26,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)buttonPressed
+{
+    NSLog(@"Pressed!");
+
+}
 @end
