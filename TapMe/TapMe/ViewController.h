@@ -14,7 +14,7 @@
     
     NSInteger count;
     NSInteger seconds;
-    NSTimer *time;
+    NSTimer *timer;
 }
 
 - (IBAction)buttonPressed;

@@ -18,6 +18,8 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    
+    //  setup and strt the game
 }
 
 - (void)didReceiveMemoryWarning
@@ -30,5 +32,34 @@
 {
     count++;
     scoreLabel.text = [NSString stringWithFormat:@"Score\n%i", count];
+    
+    timer = [NSTimer scheduledTimerWithTimeInterval:1.0f
+                                             target:self
+                                           selector:@selector(subtractTime)
+                                           userInfo:nil
+                                            repeats:YES];
 }
+
+//  game setup
+- (void)setupGame
+{
+    seconds = 30;
+    count = 0;
+    
+    timerLabel.text = [NSString stringWithFormat:@"Time : %i", seconds];
+    scoreLabel.text = [NSString stringWithFormat:@"Score\n%i", count];
+}
+
+- (void)subtractTime
+{
+    seconds--;
+    timerLabel.text = [NSString stringWithFormat:@"Time : %i", seconds];
+    
+    if (seconds <= 0) {
+        [timer invalidate];
+    }
+}
+
+
+
 @end
