@@ -14,6 +14,11 @@
 
 @implementation ViewController
 
+- (IBAction)buttonPressed
+{
+    NSLog(@"Pressed!");
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
