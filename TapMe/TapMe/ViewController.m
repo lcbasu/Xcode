@@ -28,7 +28,7 @@
 
 - (IBAction)buttonPressed
 {
-    NSLog(@"Pressed!");
-
+    count++;
+    scoreLabel.text = [NSString stringWithFormat:@"Score\n%i", count];
 }
 @end
