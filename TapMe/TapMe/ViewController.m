@@ -38,7 +38,7 @@
 //  game setup
 - (void)setupGame
 {
-    seconds = 30;
+    seconds = 5;
     count = 0;
     
     timerLabel.text = [NSString stringWithFormat:@"Time : %i", seconds];
@@ -58,6 +58,15 @@
     
     if (seconds == 0) {
         [timer invalidate];
+        
+        //  alert view
+        
+        UIAlertView *stopGame = [[UIAlertView alloc] initWithTitle:@"Time is up!"
+                                                           message:[NSString stringWithFormat:@"Your score was %i.", count]
+                                                          delegate:self
+                                                 cancelButtonTitle:@"Play again."
+                                                 otherButtonTitles:@"Fun!", nil];
+        [stopGame show];
     }
 }
 
