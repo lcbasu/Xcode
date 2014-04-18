@@ -14,14 +14,40 @@
 
 @implementation ViewController
 
+
+- (AVAudioPlayer *)setupAudioPlayerWithFile:(NSString *)file type:(NSString *)type
+{
+    NSString *path = [[NSBundle mainBundle] pathForResource:file ofType:type];
+    NSURL *url = [NSURL fileURLWithPath:path];
+    
+    NSError *error;
+    
+    AVAudioPlayer *audioPlayer = [[AVAudioPlayer alloc]
+                                  initWithContentsOfURL:url
+                                  error:&error];
+    
+    if (!audioPlayer) {
+        NSLog(@"%@", [error description]);
+    }
+    
+    return audioPlayer;
+}
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     
+    
+    //  setup background
     self.view.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"bg_tile.png"]];
     scoreLabel.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"field_score.png"]];
     timerLabel.backgroundColor = [UIColor colorWithPatternImage:[UIImage imageNamed:@"field_time.png"]];
+    
+    //  setup sound
+    buttonBeep = [self setupAudioPlayerWithFile:@"ButtonTap" type:@"wav"];
+    secondbeep = [self setupAudioPlayerWithFile:@"SecondBeep" type:@"wav"];
+    backgroundMusic = [self setupAudioPlayerWithFile:@"HallOfTheMountainKing" type:@"mp3"];
     
     //  setup and start the game
     [self setupGame];
@@ -37,6 +63,9 @@
 {
     count++;
     scoreLabel.text = [NSString stringWithFormat:@"Score\n%i", count];
+    
+    //  play sound on tap
+    [buttonBeep play];
 }
 
 //  game setup
@@ -59,6 +88,9 @@
 {
     seconds--;
     timerLabel.text = [NSString stringWithFormat:@"Time : %i", seconds];
+    
+    //  play second beep
+    [secondbeep play];
     
     if (seconds == 0) {
         [timer invalidate];

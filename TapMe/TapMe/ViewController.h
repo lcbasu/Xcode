@@ -7,6 +7,7 @@
 //
 
 #import <UIKit/UIKit.h>
+#import <AVFoundation/AVFoundation.h>
 
 @interface ViewController : UIViewController<UIAlertViewDelegate> {
     IBOutlet UILabel *scoreLabel;
@@ -15,6 +16,12 @@
     NSInteger count;
     NSInteger seconds;
     NSTimer *timer;
+    
+    
+    //  sound
+    AVAudioPlayer *buttonBeep;
+    AVAudioPlayer *secondbeep;
+    AVAudioPlayer *backgroundMusic;
 }
 
 - (IBAction)buttonPressed;
