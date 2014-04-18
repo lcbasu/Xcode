@@ -82,6 +82,10 @@
                                            selector:@selector(subtractTime)
                                            userInfo:nil
                                             repeats:YES];
+    
+    //  play background music
+    [backgroundMusic setVolume:0.3];
+    [backgroundMusic play];
 }
 
 - (void)subtractTime
@@ -103,6 +107,9 @@
                                                  cancelButtonTitle:@"Play again."
                                                  otherButtonTitles:@"Fun!", nil];
         [stopGame show];
+        
+        //  stopping abckground music
+        [backgroundMusic stop];
     }
 }
 
