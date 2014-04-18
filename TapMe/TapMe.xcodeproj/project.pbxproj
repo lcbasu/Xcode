@@ -38,6 +38,7 @@
 		1F24A3F21900F36100E25659 /* field_time@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1F24A3E11900F36100E25659 /* field_time@2x.png */; };
 		1F24A3F31900F36100E25659 /* HallOfTheMountainKing.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = 1F24A3E21900F36100E25659 /* HallOfTheMountainKing.mp3 */; };
 		1F24A3F41900F36100E25659 /* SecondBeep.wav in Resources */ = {isa = PBXBuildFile; fileRef = 1F24A3E31900F36100E25659 /* SecondBeep.wav */; };
+		1F24A3F61900F8BA00E25659 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F24A3F51900F8BA00E25659 /* AVFoundation.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -87,6 +88,7 @@
 		1F24A3E11900F36100E25659 /* field_time@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "field_time@2x.png"; sourceTree = "<group>"; };
 		1F24A3E21900F36100E25659 /* HallOfTheMountainKing.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = HallOfTheMountainKing.mp3; sourceTree = "<group>"; };
 		1F24A3E31900F36100E25659 /* SecondBeep.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = SecondBeep.wav; sourceTree = "<group>"; };
+		1F24A3F51900F8BA00E25659 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F24A3F61900F8BA00E25659 /* AVFoundation.framework in Frameworks */,
 				1F00DAF018FD24200065AC7E /* CoreGraphics.framework in Frameworks */,
 				1F00DAF218FD24200065AC7E /* UIKit.framework in Frameworks */,
 				1F00DAEE18FD24200065AC7E /* Foundation.framework in Frameworks */,
@@ -135,6 +138,7 @@
 		1F00DAEC18FD24200065AC7E /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1F24A3F51900F8BA00E25659 /* AVFoundation.framework */,
 				1F00DAED18FD24200065AC7E /* Foundation.framework */,
 				1F00DAEF18FD24200065AC7E /* CoreGraphics.framework */,
 				1F00DAF118FD24200065AC7E /* UIKit.framework */,
