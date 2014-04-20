@@ -21,6 +21,7 @@
 		1F10A77519024ACA004B675E /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F10A75719024ACA004B675E /* UIKit.framework */; };
 		1F10A77D19024ACA004B675E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F10A77B19024ACA004B675E /* InfoPlist.strings */; };
 		1F10A77F19024ACA004B675E /* VehiclesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F10A77E19024ACA004B675E /* VehiclesTests.m */; };
+		1F1E31081903B1FB0041CD63 /* Vehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1E31071903B1FB0041CD63 /* Vehicle.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		1F10A77A19024ACA004B675E /* VehiclesTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "VehiclesTests-Info.plist"; sourceTree = "<group>"; };
 		1F10A77C19024ACA004B675E /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1F10A77E19024ACA004B675E /* VehiclesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VehiclesTests.m; sourceTree = "<group>"; };
+		1F1E31061903B1FB0041CD63 /* Vehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vehicle.h; sourceTree = "<group>"; };
+		1F1E31071903B1FB0041CD63 /* Vehicle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vehicle.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				1F10A76219024ACA004B675E /* AppDelegate.h */,
 				1F10A76319024ACA004B675E /* AppDelegate.m */,
 				1F10A76519024ACA004B675E /* Main.storyboard */,
+				1F1E31061903B1FB0041CD63 /* Vehicle.h */,
+				1F1E31071903B1FB0041CD63 /* Vehicle.m */,
 				1F10A76819024ACA004B675E /* ViewController.h */,
 				1F10A76919024ACA004B675E /* ViewController.m */,
 				1F10A76B19024ACA004B675E /* Images.xcassets */,
@@ -249,6 +254,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F1E31081903B1FB0041CD63 /* Vehicle.m in Sources */,
 				1F10A76A19024ACA004B675E /* ViewController.m in Sources */,
 				1F10A76419024ACA004B675E /* AppDelegate.m in Sources */,
 				1F10A76019024ACA004B675E /* main.m in Sources */,
@@ -456,6 +462,7 @@
 				1F10A78419024ACA004B675E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F10A78519024ACA004B675E /* Build configuration list for PBXNativeTarget "VehiclesTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +471,7 @@
 				1F10A78719024ACA004B675E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

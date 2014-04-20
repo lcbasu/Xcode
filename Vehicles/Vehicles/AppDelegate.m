@@ -7,12 +7,23 @@
 //
 
 #import "AppDelegate.h"
+#import "Vehicle.h"
 
 @implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-    // Override point for customization after application launch.
+    Vehicle *vehicle = [[Vehicle alloc] init];
+    //Test methods with implementations
+    NSLog(@"Vehicle turn: %@", [vehicle turn:700]);
+    NSLog(@"Vehicle change gears: %@", [vehicle changeGears:@"Test"]);
+    
+    //Test methods without implementations
+    NSLog(@"Vehicle make noise: %@", [vehicle makeNoise]);
+    NSLog(@"Vehicle go forward: %@", [vehicle goForward]);
+    NSLog(@"Vehicle go backward: %@", [vehicle goBackward]);
+    NSLog(@"Vehicle stop moving: %@", [vehicle stopMoving]);
+    
     return YES;
 }
 							
