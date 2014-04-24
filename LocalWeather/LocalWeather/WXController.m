@@ -33,24 +33,24 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    // 1
+
     self.screenHeight = [UIScreen mainScreen].bounds.size.height;
     
     UIImage *background = [UIImage imageNamed:@"bg"];
     
-    // 2
+
     self.backgroundImageView = [[UIImageView alloc] initWithImage:background];
     self.backgroundImageView.contentMode = UIViewContentModeScaleAspectFill;
     [self.view addSubview:self.backgroundImageView];
     
-    // 3
+
     self.blurredImageView = [[UIImageView alloc] init];
     self.blurredImageView.contentMode = UIViewContentModeScaleAspectFill;
     self.blurredImageView.alpha = 0;
     [self.blurredImageView setImageToBlur:background blurRadius:10 completionBlock:nil];
     [self.view addSubview:self.blurredImageView];
     
-    // 4
+
     self.tableView = [[UITableView alloc] init];
     self.tableView.backgroundColor = [UIColor clearColor];
     self.tableView.delegate = self;
@@ -58,6 +58,35 @@
     self.tableView.separatorColor = [UIColor colorWithWhite:1 alpha:0.2];
     self.tableView.pagingEnabled = YES;
     [self.view addSubview:self.tableView];
+    
+    
+
+    CGRect headerFrame = [UIScreen mainScreen].bounds;
+
+    CGFloat inset = 20;
+
+    CGFloat temperatureHeight = 110;
+    CGFloat hiloHeight = 40;
+    CGFloat iconHeight = 30;
+
+    CGRect hiloFrame = CGRectMake(inset,
+                                  headerFrame.size.height - hiloHeight,
+                                  headerFrame.size.width - (2 * inset),
+                                  hiloHeight);
+    
+    CGRect temperatureFrame = CGRectMake(inset,
+                                         headerFrame.size.height - (temperatureHeight + hiloHeight),
+                                         headerFrame.size.width - (2 * inset),
+                                         temperatureHeight);
+    
+    CGRect iconFrame = CGRectMake(inset,
+                                  temperatureFrame.origin.y - iconHeight,
+                                  iconHeight,
+                                  iconHeight);
+    
+    CGRect conditionsFrame = iconFrame;
+    conditionsFrame.size.width = self.view.bounds.size.width - (((2 * inset) + iconHeight) + 10);
+    conditionsFrame.origin.x = iconFrame.origin.x + (iconHeight + 10);
 }
 
 - (UIStatusBarStyle)preferredStatusBarStyle {
