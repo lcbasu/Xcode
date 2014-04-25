@@ -30,6 +30,15 @@
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
+    
+    //  some static data
+    _objects = [NSMutableArray array];
+    
+    NSInteger numberOfItems = 30;
+    for (NSInteger i = 1; i <= numberOfItems; i++) {
+        NSString *item = [NSString stringWithFormat:@"Item #%d", i];
+        [_objects addObject:item];
+    }
 }
 
 - (void)didReceiveMemoryWarning
