@@ -21,7 +21,25 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="739" y="81"/>
+            <point key="canvasLocation" x="751" y="-287"/>
+        </scene>
+        <!--Tab2 View Controller-->
+        <scene sceneID="rt1-Wn-RdS">
+            <objects>
+                <viewController id="jg2-fa-3LO" customClass="Tab2ViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="vXy-B3-rqr"/>
+                        <viewControllerLayoutGuide type="bottom" id="4gc-e5-OjR"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="48z-Yr-43l">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bRI-T5-J7w" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="751" y="403"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="nPJ-jJ-gMj">
