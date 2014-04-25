@@ -80,6 +80,12 @@
     cell.backgroundColor = [UIColor purpleColor];
     cell.contentView.backgroundColor = [UIColor blueColor];
     
+    //  debugging views
+#ifdef DEBUG
+    
+    NSLog(@"Cell recursive description:\n\n%@\n\n", [cell performSelector:@selector(recursiveDescription)]);
+#endif
+    
     return cell;
 }
 
