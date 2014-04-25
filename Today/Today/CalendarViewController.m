@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 IIT Roorkee. All rights reserved.
 //
 
-#import "TodaySecondViewController.h"
+#import "CalendarViewController.h"
 
-@interface TodaySecondViewController ()
+@interface CalendarViewController ()
 
 @end
 
-@implementation TodaySecondViewController
+@implementation CalendarViewController
 
 - (void)viewDidLoad
 {

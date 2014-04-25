@@ -14,8 +14,8 @@
 		1F27E473190039E5007E1A1A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F27E472190039E5007E1A1A /* main.m */; };
 		1F27E477190039E5007E1A1A /* TodayAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F27E476190039E5007E1A1A /* TodayAppDelegate.m */; };
 		1F27E47A190039E5007E1A1A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F27E478190039E5007E1A1A /* Main.storyboard */; };
-		1F27E47D190039E5007E1A1A /* TodayFirstViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F27E47C190039E5007E1A1A /* TodayFirstViewController.m */; };
-		1F27E480190039E5007E1A1A /* TodaySecondViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F27E47F190039E5007E1A1A /* TodaySecondViewController.m */; };
+		1F27E47D190039E5007E1A1A /* ReminderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F27E47C190039E5007E1A1A /* ReminderViewController.m */; };
+		1F27E480190039E5007E1A1A /* CalendarViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F27E47F190039E5007E1A1A /* CalendarViewController.m */; };
 		1F27E482190039E5007E1A1A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F27E481190039E5007E1A1A /* Images.xcassets */; };
 		1F27E489190039E5007E1A1A /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F27E488190039E5007E1A1A /* XCTest.framework */; };
 		1F27E48A190039E5007E1A1A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F27E466190039E5007E1A1A /* Foundation.framework */; };
@@ -47,10 +47,10 @@
 		1F27E475190039E5007E1A1A /* TodayAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayAppDelegate.h; sourceTree = "<group>"; };
 		1F27E476190039E5007E1A1A /* TodayAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayAppDelegate.m; sourceTree = "<group>"; };
 		1F27E479190039E5007E1A1A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1F27E47B190039E5007E1A1A /* TodayFirstViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodayFirstViewController.h; sourceTree = "<group>"; };
-		1F27E47C190039E5007E1A1A /* TodayFirstViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayFirstViewController.m; sourceTree = "<group>"; };
-		1F27E47E190039E5007E1A1A /* TodaySecondViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TodaySecondViewController.h; sourceTree = "<group>"; };
-		1F27E47F190039E5007E1A1A /* TodaySecondViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodaySecondViewController.m; sourceTree = "<group>"; };
+		1F27E47B190039E5007E1A1A /* ReminderViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ReminderViewController.h; sourceTree = "<group>"; };
+		1F27E47C190039E5007E1A1A /* ReminderViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ReminderViewController.m; sourceTree = "<group>"; };
+		1F27E47E190039E5007E1A1A /* CalendarViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CalendarViewController.h; sourceTree = "<group>"; };
+		1F27E47F190039E5007E1A1A /* CalendarViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalendarViewController.m; sourceTree = "<group>"; };
 		1F27E481190039E5007E1A1A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1F27E487190039E5007E1A1A /* TodayTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TodayTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F27E488190039E5007E1A1A /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -122,10 +122,10 @@
 				1F27E475190039E5007E1A1A /* TodayAppDelegate.h */,
 				1F27E476190039E5007E1A1A /* TodayAppDelegate.m */,
 				1F27E478190039E5007E1A1A /* Main.storyboard */,
-				1F27E47B190039E5007E1A1A /* TodayFirstViewController.h */,
-				1F27E47C190039E5007E1A1A /* TodayFirstViewController.m */,
-				1F27E47E190039E5007E1A1A /* TodaySecondViewController.h */,
-				1F27E47F190039E5007E1A1A /* TodaySecondViewController.m */,
+				1F27E47B190039E5007E1A1A /* ReminderViewController.h */,
+				1F27E47C190039E5007E1A1A /* ReminderViewController.m */,
+				1F27E47E190039E5007E1A1A /* CalendarViewController.h */,
+				1F27E47F190039E5007E1A1A /* CalendarViewController.m */,
 				1F27E481190039E5007E1A1A /* Images.xcassets */,
 				1F27E46D190039E5007E1A1A /* Supporting Files */,
 			);
@@ -261,8 +261,8 @@
 			files = (
 				1F27E477190039E5007E1A1A /* TodayAppDelegate.m in Sources */,
 				1F27E473190039E5007E1A1A /* main.m in Sources */,
-				1F27E480190039E5007E1A1A /* TodaySecondViewController.m in Sources */,
-				1F27E47D190039E5007E1A1A /* TodayFirstViewController.m in Sources */,
+				1F27E480190039E5007E1A1A /* CalendarViewController.m in Sources */,
+				1F27E47D190039E5007E1A1A /* ReminderViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

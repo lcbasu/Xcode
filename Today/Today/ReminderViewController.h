@@ -1,5 +1,5 @@
 //
-//  TodaySecondViewController.h
+//  TodayFirstViewController.h
 //  Today
 //
 //  Created by Lokesh Basu on 17/04/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TodaySecondViewController : UIViewController
+@interface ReminderViewController : UIViewController
 
 @end

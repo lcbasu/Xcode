@@ -1,5 +1,5 @@
 //
-//  TodayFirstViewController.h
+//  TodaySecondViewController.h
 //  Today
 //
 //  Created by Lokesh Basu on 17/04/14.
@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface TodayFirstViewController : UIViewController
+@interface CalendarViewController : UIViewController
 
 @end

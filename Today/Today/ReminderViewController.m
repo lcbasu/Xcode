@@ -6,13 +6,13 @@
 //  Copyright (c) 2014 IIT Roorkee. All rights reserved.
 //
 
-#import "TodayFirstViewController.h"
+#import "ReminderViewController.h"
 
-@interface TodayFirstViewController ()
+@interface ReminderViewController ()
 
 @end
 
-@implementation TodayFirstViewController
+@implementation ReminderViewController
 
 - (void)viewDidLoad
 {
