@@ -14,7 +14,7 @@
 		1F036717190A21CD002E1D75 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F036716190A21CD002E1D75 /* main.m */; };
 		1F03671B190A21CD002E1D75 /* TBTAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F03671A190A21CD002E1D75 /* TBTAppDelegate.m */; };
 		1F03671E190A21CD002E1D75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F03671C190A21CD002E1D75 /* Main.storyboard */; };
-		1F036721190A21CD002E1D75 /* TBTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F036720190A21CD002E1D75 /* TBTViewController.m */; };
+		1F036721190A21CD002E1D75 /* Tab1ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F036720190A21CD002E1D75 /* Tab1ViewController.m */; };
 		1F036723190A21CD002E1D75 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F036722190A21CD002E1D75 /* Images.xcassets */; };
 		1F03672A190A21CD002E1D75 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F036729190A21CD002E1D75 /* XCTest.framework */; };
 		1F03672B190A21CD002E1D75 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F03670A190A21CD002E1D75 /* Foundation.framework */; };
@@ -45,8 +45,8 @@
 		1F036719190A21CD002E1D75 /* TBTAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBTAppDelegate.h; sourceTree = "<group>"; };
 		1F03671A190A21CD002E1D75 /* TBTAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBTAppDelegate.m; sourceTree = "<group>"; };
 		1F03671D190A21CD002E1D75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1F03671F190A21CD002E1D75 /* TBTViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TBTViewController.h; sourceTree = "<group>"; };
-		1F036720190A21CD002E1D75 /* TBTViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TBTViewController.m; sourceTree = "<group>"; };
+		1F03671F190A21CD002E1D75 /* Tab1ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Tab1ViewController.h; sourceTree = "<group>"; };
+		1F036720190A21CD002E1D75 /* Tab1ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = Tab1ViewController.m; sourceTree = "<group>"; };
 		1F036722190A21CD002E1D75 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1F036728190A21CD002E1D75 /* TabBarTutorialTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TabBarTutorialTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F036729190A21CD002E1D75 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -115,8 +115,8 @@
 				1F036719190A21CD002E1D75 /* TBTAppDelegate.h */,
 				1F03671A190A21CD002E1D75 /* TBTAppDelegate.m */,
 				1F03671C190A21CD002E1D75 /* Main.storyboard */,
-				1F03671F190A21CD002E1D75 /* TBTViewController.h */,
-				1F036720190A21CD002E1D75 /* TBTViewController.m */,
+				1F03671F190A21CD002E1D75 /* Tab1ViewController.h */,
+				1F036720190A21CD002E1D75 /* Tab1ViewController.m */,
 				1F036722190A21CD002E1D75 /* Images.xcassets */,
 				1F036711190A21CD002E1D75 /* Supporting Files */,
 			);
@@ -252,7 +252,7 @@
 			files = (
 				1F036717190A21CD002E1D75 /* main.m in Sources */,
 				1F03671B190A21CD002E1D75 /* TBTAppDelegate.m in Sources */,
-				1F036721190A21CD002E1D75 /* TBTViewController.m in Sources */,
+				1F036721190A21CD002E1D75 /* Tab1ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
