@@ -23,7 +23,7 @@
             </objects>
             <point key="canvasLocation" x="751" y="-287"/>
         </scene>
-        <!--Tab2 View Controller-->
+        <!--Tab2 View Controller - Item-->
         <scene sceneID="rt1-Wn-RdS">
             <objects>
                 <viewController id="jg2-fa-3LO" customClass="Tab2ViewController" sceneMemberID="viewController">
@@ -36,6 +36,7 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Item" id="VF2-Y3-s7z"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bRI-T5-J7w" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -53,6 +54,7 @@
                     </tabBar>
                     <connections>
                         <segue destination="vXZ-lx-hvc" kind="relationship" relationship="viewControllers" id="K5p-vC-hkI"/>
+                        <segue destination="jg2-fa-3LO" kind="relationship" relationship="viewControllers" id="eCH-Ag-YZg"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ij7-am-A2V" userLabel="First Responder" sceneMemberID="firstResponder"/>
