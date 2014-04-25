@@ -92,10 +92,10 @@
             </objects>
             <point key="canvasLocation" x="653" y="648"/>
         </scene>
-        <!--View Controller - Item-->
+        <!--Social View Controller - Item-->
         <scene sceneID="swU-Fe-nFu">
             <objects>
-                <viewController id="A2X-6Q-sWW" sceneMemberID="viewController">
+                <viewController id="A2X-6Q-sWW" customClass="SocialViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="yF0-hn-fyb"/>
                         <viewControllerLayoutGuide type="bottom" id="5yK-en-LgY"/>

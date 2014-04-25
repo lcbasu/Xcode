@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F036753190A29BD002E1D75 /* SocialViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F036752190A29BD002E1D75 /* SocialViewController.m */; };
 		1F27E467190039E5007E1A1A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F27E466190039E5007E1A1A /* Foundation.framework */; };
 		1F27E469190039E5007E1A1A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F27E468190039E5007E1A1A /* CoreGraphics.framework */; };
 		1F27E46B190039E5007E1A1A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F27E46A190039E5007E1A1A /* UIKit.framework */; };
@@ -36,6 +37,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F036751190A29BD002E1D75 /* SocialViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SocialViewController.h; sourceTree = "<group>"; };
+		1F036752190A29BD002E1D75 /* SocialViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SocialViewController.m; sourceTree = "<group>"; };
 		1F27E463190039E5007E1A1A /* Today.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Today.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F27E466190039E5007E1A1A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1F27E468190039E5007E1A1A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -125,6 +128,8 @@
 				1F27E47B190039E5007E1A1A /* ReminderViewController.h */,
 				1F27E47C190039E5007E1A1A /* ReminderViewController.m */,
 				1F27E47E190039E5007E1A1A /* CalendarViewController.h */,
+				1F036751190A29BD002E1D75 /* SocialViewController.h */,
+				1F036752190A29BD002E1D75 /* SocialViewController.m */,
 				1F27E47F190039E5007E1A1A /* CalendarViewController.m */,
 				1F27E481190039E5007E1A1A /* Images.xcassets */,
 				1F27E46D190039E5007E1A1A /* Supporting Files */,
@@ -261,6 +266,7 @@
 			files = (
 				1F27E477190039E5007E1A1A /* TodayAppDelegate.m in Sources */,
 				1F27E473190039E5007E1A1A /* main.m in Sources */,
+				1F036753190A29BD002E1D75 /* SocialViewController.m in Sources */,
 				1F27E480190039E5007E1A1A /* CalendarViewController.m in Sources */,
 				1F27E47D190039E5007E1A1A /* ReminderViewController.m in Sources */,
 			);
