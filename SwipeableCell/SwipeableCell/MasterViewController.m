@@ -75,6 +75,11 @@
 
     NSDate *object = _objects[indexPath.row];
     cell.textLabel.text = [object description];
+    
+    //  color separate pieces of view to explore view hierarchy
+    cell.backgroundColor = [UIColor purpleColor];
+    cell.contentView.backgroundColor = [UIColor blueColor];
+    
     return cell;
 }
 
