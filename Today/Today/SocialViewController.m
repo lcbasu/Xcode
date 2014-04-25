@@ -27,6 +27,7 @@
 {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    self.mainArray = [[NSMutableArray alloc] initWithObjects:@"A", @"B", @"C", @"D", @"E", nil];
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,5 +46,30 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+
+//  table view code
+
+#pragma mark - Table view data source
+
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
+{
+    return 0;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
+{
+    return [self.mainArray count];
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    static NSString *CellIdentifier = @"Cell";
+    UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier forIndexPath:indexPath];
+    
+    cell.textLabel.text = [self.mainArray objectAtIndex:indexPath.row];
+    
+    return cell;
+}
 
 @end

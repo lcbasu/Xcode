@@ -8,6 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface SocialViewController : UIViewController
+@interface SocialViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
+@property (weak, nonatomic) NSMutableArray *mainArray;
 
 @end
