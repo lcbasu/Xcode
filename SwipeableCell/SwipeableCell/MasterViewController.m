@@ -25,11 +25,14 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
-    self.navigationItem.leftBarButtonItem = self.editButtonItem;
-
-    UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
-    self.navigationItem.rightBarButtonItem = addButton;
+    
+    _objects = [NSMutableArray array];
+    
+    NSInteger numberOfItems = 15;
+    for (NSInteger i = 1; i <= numberOfItems; i++) {
+        NSString *item = [NSString stringWithFormat:@"Data #%d", i];
+        [_objects addObject:item];
+    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -63,9 +66,9 @@
 - (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath
 {
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell" forIndexPath:indexPath];
-
-    NSDate *object = _objects[indexPath.row];
-    cell.textLabel.text = [object description];
+    
+    NSString *item = _objects[indexPath.row];
+    cell.textLabel.text = item;
     return cell;
 }
 
