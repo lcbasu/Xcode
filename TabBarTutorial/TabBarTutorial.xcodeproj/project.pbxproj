@@ -21,6 +21,7 @@
 		1F03672C190A21CD002E1D75 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F03670E190A21CD002E1D75 /* UIKit.framework */; };
 		1F036734190A21CD002E1D75 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F036732190A21CD002E1D75 /* InfoPlist.strings */; };
 		1F036736190A21CD002E1D75 /* TabBarTutorialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F036735190A21CD002E1D75 /* TabBarTutorialTests.m */; };
+		1F036741190A2383002E1D75 /* Tab2ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F036740190A2383002E1D75 /* Tab2ViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		1F036731190A21CD002E1D75 /* TabBarTutorialTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TabBarTutorialTests-Info.plist"; sourceTree = "<group>"; };
 		1F036733190A21CD002E1D75 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1F036735190A21CD002E1D75 /* TabBarTutorialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TabBarTutorialTests.m; sourceTree = "<group>"; };
+		1F03673F190A2383002E1D75 /* Tab2ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Tab2ViewController.h; sourceTree = "<group>"; };
+		1F036740190A2383002E1D75 /* Tab2ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Tab2ViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +119,8 @@
 				1F03671A190A21CD002E1D75 /* TBTAppDelegate.m */,
 				1F03671C190A21CD002E1D75 /* Main.storyboard */,
 				1F03671F190A21CD002E1D75 /* Tab1ViewController.h */,
+				1F03673F190A2383002E1D75 /* Tab2ViewController.h */,
+				1F036740190A2383002E1D75 /* Tab2ViewController.m */,
 				1F036720190A21CD002E1D75 /* Tab1ViewController.m */,
 				1F036722190A21CD002E1D75 /* Images.xcassets */,
 				1F036711190A21CD002E1D75 /* Supporting Files */,
@@ -253,6 +258,7 @@
 				1F036717190A21CD002E1D75 /* main.m in Sources */,
 				1F03671B190A21CD002E1D75 /* TBTAppDelegate.m in Sources */,
 				1F036721190A21CD002E1D75 /* Tab1ViewController.m in Sources */,
+				1F036741190A2383002E1D75 /* Tab2ViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
