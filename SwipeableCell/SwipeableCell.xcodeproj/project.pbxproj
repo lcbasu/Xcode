@@ -7,152 +7,152 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1FECEB58190A3C6100CC3CC5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FECEB57190A3C6100CC3CC5 /* Foundation.framework */; };
-		1FECEB5A190A3C6100CC3CC5 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FECEB59190A3C6100CC3CC5 /* CoreGraphics.framework */; };
-		1FECEB5C190A3C6100CC3CC5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FECEB5B190A3C6100CC3CC5 /* UIKit.framework */; };
-		1FECEB62190A3C6100CC3CC5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1FECEB60190A3C6100CC3CC5 /* InfoPlist.strings */; };
-		1FECEB64190A3C6100CC3CC5 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FECEB63190A3C6100CC3CC5 /* main.m */; };
-		1FECEB68190A3C6100CC3CC5 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FECEB67190A3C6100CC3CC5 /* AppDelegate.m */; };
-		1FECEB6B190A3C6100CC3CC5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FECEB69190A3C6100CC3CC5 /* Main.storyboard */; };
-		1FECEB6E190A3C6100CC3CC5 /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FECEB6D190A3C6100CC3CC5 /* MasterViewController.m */; };
-		1FECEB71190A3C6100CC3CC5 /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FECEB70190A3C6100CC3CC5 /* DetailViewController.m */; };
-		1FECEB73190A3C6100CC3CC5 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FECEB72190A3C6100CC3CC5 /* Images.xcassets */; };
-		1FECEB7A190A3C6200CC3CC5 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FECEB79190A3C6200CC3CC5 /* XCTest.framework */; };
-		1FECEB7B190A3C6200CC3CC5 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FECEB57190A3C6100CC3CC5 /* Foundation.framework */; };
-		1FECEB7C190A3C6200CC3CC5 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FECEB5B190A3C6100CC3CC5 /* UIKit.framework */; };
-		1FECEB84190A3C6200CC3CC5 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1FECEB82190A3C6200CC3CC5 /* InfoPlist.strings */; };
-		1FECEB86190A3C6200CC3CC5 /* SwipeableCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FECEB85190A3C6200CC3CC5 /* SwipeableCellTests.m */; };
+		1F133A99190AA814006693DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F133A98190AA814006693DD /* Foundation.framework */; };
+		1F133A9B190AA814006693DD /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F133A9A190AA814006693DD /* CoreGraphics.framework */; };
+		1F133A9D190AA814006693DD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F133A9C190AA814006693DD /* UIKit.framework */; };
+		1F133AA3190AA814006693DD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F133AA1190AA814006693DD /* InfoPlist.strings */; };
+		1F133AA5190AA814006693DD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F133AA4190AA814006693DD /* main.m */; };
+		1F133AA9190AA814006693DD /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F133AA8190AA814006693DD /* AppDelegate.m */; };
+		1F133AAC190AA814006693DD /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F133AAA190AA814006693DD /* Main.storyboard */; };
+		1F133AAF190AA814006693DD /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F133AAE190AA814006693DD /* MasterViewController.m */; };
+		1F133AB2190AA814006693DD /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F133AB1190AA814006693DD /* DetailViewController.m */; };
+		1F133AB4190AA814006693DD /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F133AB3190AA814006693DD /* Images.xcassets */; };
+		1F133ABB190AA814006693DD /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F133ABA190AA814006693DD /* XCTest.framework */; };
+		1F133ABC190AA814006693DD /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F133A98190AA814006693DD /* Foundation.framework */; };
+		1F133ABD190AA814006693DD /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F133A9C190AA814006693DD /* UIKit.framework */; };
+		1F133AC5190AA814006693DD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F133AC3190AA814006693DD /* InfoPlist.strings */; };
+		1F133AC7190AA814006693DD /* SwipeableCellTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F133AC6190AA814006693DD /* SwipeableCellTests.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		1FECEB7D190A3C6200CC3CC5 /* PBXContainerItemProxy */ = {
+		1F133ABE190AA814006693DD /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = 1FECEB4C190A3C6100CC3CC5 /* Project object */;
+			containerPortal = 1F133A8D190AA814006693DD /* Project object */;
 			proxyType = 1;
-			remoteGlobalIDString = 1FECEB53190A3C6100CC3CC5;
+			remoteGlobalIDString = 1F133A94190AA814006693DD;
 			remoteInfo = SwipeableCell;
 		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1FECEB54190A3C6100CC3CC5 /* SwipeableCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipeableCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
-		1FECEB57190A3C6100CC3CC5 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
-		1FECEB59190A3C6100CC3CC5 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
-		1FECEB5B190A3C6100CC3CC5 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		1FECEB5F190A3C6100CC3CC5 /* SwipeableCell-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SwipeableCell-Info.plist"; sourceTree = "<group>"; };
-		1FECEB61190A3C6100CC3CC5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1FECEB63190A3C6100CC3CC5 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1FECEB65190A3C6100CC3CC5 /* SwipeableCell-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwipeableCell-Prefix.pch"; sourceTree = "<group>"; };
-		1FECEB66190A3C6100CC3CC5 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
-		1FECEB67190A3C6100CC3CC5 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		1FECEB6A190A3C6100CC3CC5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		1FECEB6C190A3C6100CC3CC5 /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
-		1FECEB6D190A3C6100CC3CC5 /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		1FECEB6F190A3C6100CC3CC5 /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		1FECEB70190A3C6100CC3CC5 /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
-		1FECEB72190A3C6100CC3CC5 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		1FECEB78190A3C6200CC3CC5 /* SwipeableCellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwipeableCellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		1FECEB79190A3C6200CC3CC5 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
-		1FECEB81190A3C6200CC3CC5 /* SwipeableCellTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SwipeableCellTests-Info.plist"; sourceTree = "<group>"; };
-		1FECEB83190A3C6200CC3CC5 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1FECEB85190A3C6200CC3CC5 /* SwipeableCellTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwipeableCellTests.m; sourceTree = "<group>"; };
+		1F133A95190AA814006693DD /* SwipeableCell.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SwipeableCell.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F133A98190AA814006693DD /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1F133A9A190AA814006693DD /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1F133A9C190AA814006693DD /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1F133AA0190AA814006693DD /* SwipeableCell-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SwipeableCell-Info.plist"; sourceTree = "<group>"; };
+		1F133AA2190AA814006693DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1F133AA4190AA814006693DD /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1F133AA6190AA814006693DD /* SwipeableCell-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SwipeableCell-Prefix.pch"; sourceTree = "<group>"; };
+		1F133AA7190AA814006693DD /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1F133AA8190AA814006693DD /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1F133AAB190AA814006693DD /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F133AAD190AA814006693DD /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
+		1F133AAE190AA814006693DD /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
+		1F133AB0190AA814006693DD /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
+		1F133AB1190AA814006693DD /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
+		1F133AB3190AA814006693DD /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1F133AB9190AA814006693DD /* SwipeableCellTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SwipeableCellTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F133ABA190AA814006693DD /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1F133AC2190AA814006693DD /* SwipeableCellTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SwipeableCellTests-Info.plist"; sourceTree = "<group>"; };
+		1F133AC4190AA814006693DD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1F133AC6190AA814006693DD /* SwipeableCellTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SwipeableCellTests.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
-		1FECEB51190A3C6100CC3CC5 /* Frameworks */ = {
+		1F133A92190AA814006693DD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FECEB5A190A3C6100CC3CC5 /* CoreGraphics.framework in Frameworks */,
-				1FECEB5C190A3C6100CC3CC5 /* UIKit.framework in Frameworks */,
-				1FECEB58190A3C6100CC3CC5 /* Foundation.framework in Frameworks */,
+				1F133A9B190AA814006693DD /* CoreGraphics.framework in Frameworks */,
+				1F133A9D190AA814006693DD /* UIKit.framework in Frameworks */,
+				1F133A99190AA814006693DD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1FECEB75190A3C6200CC3CC5 /* Frameworks */ = {
+		1F133AB6190AA814006693DD /* Frameworks */ = {
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FECEB7A190A3C6200CC3CC5 /* XCTest.framework in Frameworks */,
-				1FECEB7C190A3C6200CC3CC5 /* UIKit.framework in Frameworks */,
-				1FECEB7B190A3C6200CC3CC5 /* Foundation.framework in Frameworks */,
+				1F133ABB190AA814006693DD /* XCTest.framework in Frameworks */,
+				1F133ABD190AA814006693DD /* UIKit.framework in Frameworks */,
+				1F133ABC190AA814006693DD /* Foundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		1FECEB4B190A3C6100CC3CC5 = {
+		1F133A8C190AA814006693DD = {
 			isa = PBXGroup;
 			children = (
-				1FECEB5D190A3C6100CC3CC5 /* SwipeableCell */,
-				1FECEB7F190A3C6200CC3CC5 /* SwipeableCellTests */,
-				1FECEB56190A3C6100CC3CC5 /* Frameworks */,
-				1FECEB55190A3C6100CC3CC5 /* Products */,
+				1F133A9E190AA814006693DD /* SwipeableCell */,
+				1F133AC0190AA814006693DD /* SwipeableCellTests */,
+				1F133A97190AA814006693DD /* Frameworks */,
+				1F133A96190AA814006693DD /* Products */,
 			);
 			sourceTree = "<group>";
 		};
-		1FECEB55190A3C6100CC3CC5 /* Products */ = {
+		1F133A96190AA814006693DD /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				1FECEB54190A3C6100CC3CC5 /* SwipeableCell.app */,
-				1FECEB78190A3C6200CC3CC5 /* SwipeableCellTests.xctest */,
+				1F133A95190AA814006693DD /* SwipeableCell.app */,
+				1F133AB9190AA814006693DD /* SwipeableCellTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
 		};
-		1FECEB56190A3C6100CC3CC5 /* Frameworks */ = {
+		1F133A97190AA814006693DD /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
-				1FECEB57190A3C6100CC3CC5 /* Foundation.framework */,
-				1FECEB59190A3C6100CC3CC5 /* CoreGraphics.framework */,
-				1FECEB5B190A3C6100CC3CC5 /* UIKit.framework */,
-				1FECEB79190A3C6200CC3CC5 /* XCTest.framework */,
+				1F133A98190AA814006693DD /* Foundation.framework */,
+				1F133A9A190AA814006693DD /* CoreGraphics.framework */,
+				1F133A9C190AA814006693DD /* UIKit.framework */,
+				1F133ABA190AA814006693DD /* XCTest.framework */,
 			);
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		1FECEB5D190A3C6100CC3CC5 /* SwipeableCell */ = {
+		1F133A9E190AA814006693DD /* SwipeableCell */ = {
 			isa = PBXGroup;
 			children = (
-				1FECEB66190A3C6100CC3CC5 /* AppDelegate.h */,
-				1FECEB67190A3C6100CC3CC5 /* AppDelegate.m */,
-				1FECEB69190A3C6100CC3CC5 /* Main.storyboard */,
-				1FECEB6C190A3C6100CC3CC5 /* MasterViewController.h */,
-				1FECEB6D190A3C6100CC3CC5 /* MasterViewController.m */,
-				1FECEB6F190A3C6100CC3CC5 /* DetailViewController.h */,
-				1FECEB70190A3C6100CC3CC5 /* DetailViewController.m */,
-				1FECEB72190A3C6100CC3CC5 /* Images.xcassets */,
-				1FECEB5E190A3C6100CC3CC5 /* Supporting Files */,
+				1F133AA7190AA814006693DD /* AppDelegate.h */,
+				1F133AA8190AA814006693DD /* AppDelegate.m */,
+				1F133AAA190AA814006693DD /* Main.storyboard */,
+				1F133AAD190AA814006693DD /* MasterViewController.h */,
+				1F133AAE190AA814006693DD /* MasterViewController.m */,
+				1F133AB0190AA814006693DD /* DetailViewController.h */,
+				1F133AB1190AA814006693DD /* DetailViewController.m */,
+				1F133AB3190AA814006693DD /* Images.xcassets */,
+				1F133A9F190AA814006693DD /* Supporting Files */,
 			);
 			path = SwipeableCell;
 			sourceTree = "<group>";
 		};
-		1FECEB5E190A3C6100CC3CC5 /* Supporting Files */ = {
+		1F133A9F190AA814006693DD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1FECEB5F190A3C6100CC3CC5 /* SwipeableCell-Info.plist */,
-				1FECEB60190A3C6100CC3CC5 /* InfoPlist.strings */,
-				1FECEB63190A3C6100CC3CC5 /* main.m */,
-				1FECEB65190A3C6100CC3CC5 /* SwipeableCell-Prefix.pch */,
+				1F133AA0190AA814006693DD /* SwipeableCell-Info.plist */,
+				1F133AA1190AA814006693DD /* InfoPlist.strings */,
+				1F133AA4190AA814006693DD /* main.m */,
+				1F133AA6190AA814006693DD /* SwipeableCell-Prefix.pch */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		1FECEB7F190A3C6200CC3CC5 /* SwipeableCellTests */ = {
+		1F133AC0190AA814006693DD /* SwipeableCellTests */ = {
 			isa = PBXGroup;
 			children = (
-				1FECEB85190A3C6200CC3CC5 /* SwipeableCellTests.m */,
-				1FECEB80190A3C6200CC3CC5 /* Supporting Files */,
+				1F133AC6190AA814006693DD /* SwipeableCellTests.m */,
+				1F133AC1190AA814006693DD /* Supporting Files */,
 			);
 			path = SwipeableCellTests;
 			sourceTree = "<group>";
 		};
-		1FECEB80190A3C6200CC3CC5 /* Supporting Files */ = {
+		1F133AC1190AA814006693DD /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				1FECEB81190A3C6200CC3CC5 /* SwipeableCellTests-Info.plist */,
-				1FECEB82190A3C6200CC3CC5 /* InfoPlist.strings */,
+				1F133AC2190AA814006693DD /* SwipeableCellTests-Info.plist */,
+				1F133AC3190AA814006693DD /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -160,13 +160,13 @@
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
-		1FECEB53190A3C6100CC3CC5 /* SwipeableCell */ = {
+		1F133A94190AA814006693DD /* SwipeableCell */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1FECEB89190A3C6200CC3CC5 /* Build configuration list for PBXNativeTarget "SwipeableCell" */;
+			buildConfigurationList = 1F133ACA190AA814006693DD /* Build configuration list for PBXNativeTarget "SwipeableCell" */;
 			buildPhases = (
-				1FECEB50190A3C6100CC3CC5 /* Sources */,
-				1FECEB51190A3C6100CC3CC5 /* Frameworks */,
-				1FECEB52190A3C6100CC3CC5 /* Resources */,
+				1F133A91190AA814006693DD /* Sources */,
+				1F133A92190AA814006693DD /* Frameworks */,
+				1F133A93190AA814006693DD /* Resources */,
 			);
 			buildRules = (
 			);
@@ -174,42 +174,42 @@
 			);
 			name = SwipeableCell;
 			productName = SwipeableCell;
-			productReference = 1FECEB54190A3C6100CC3CC5 /* SwipeableCell.app */;
+			productReference = 1F133A95190AA814006693DD /* SwipeableCell.app */;
 			productType = "com.apple.product-type.application";
 		};
-		1FECEB77190A3C6200CC3CC5 /* SwipeableCellTests */ = {
+		1F133AB8190AA814006693DD /* SwipeableCellTests */ = {
 			isa = PBXNativeTarget;
-			buildConfigurationList = 1FECEB8C190A3C6200CC3CC5 /* Build configuration list for PBXNativeTarget "SwipeableCellTests" */;
+			buildConfigurationList = 1F133ACD190AA814006693DD /* Build configuration list for PBXNativeTarget "SwipeableCellTests" */;
 			buildPhases = (
-				1FECEB74190A3C6200CC3CC5 /* Sources */,
-				1FECEB75190A3C6200CC3CC5 /* Frameworks */,
-				1FECEB76190A3C6200CC3CC5 /* Resources */,
+				1F133AB5190AA814006693DD /* Sources */,
+				1F133AB6190AA814006693DD /* Frameworks */,
+				1F133AB7190AA814006693DD /* Resources */,
 			);
 			buildRules = (
 			);
 			dependencies = (
-				1FECEB7E190A3C6200CC3CC5 /* PBXTargetDependency */,
+				1F133ABF190AA814006693DD /* PBXTargetDependency */,
 			);
 			name = SwipeableCellTests;
 			productName = SwipeableCellTests;
-			productReference = 1FECEB78190A3C6200CC3CC5 /* SwipeableCellTests.xctest */;
+			productReference = 1F133AB9190AA814006693DD /* SwipeableCellTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
 		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
-		1FECEB4C190A3C6100CC3CC5 /* Project object */ = {
+		1F133A8D190AA814006693DD /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
 				LastUpgradeCheck = 0510;
 				ORGANIZATIONNAME = "IIT Roorkee";
 				TargetAttributes = {
-					1FECEB77190A3C6200CC3CC5 = {
-						TestTargetID = 1FECEB53190A3C6100CC3CC5;
+					1F133AB8190AA814006693DD = {
+						TestTargetID = 1F133A94190AA814006693DD;
 					};
 				};
 			};
-			buildConfigurationList = 1FECEB4F190A3C6100CC3CC5 /* Build configuration list for PBXProject "SwipeableCell" */;
+			buildConfigurationList = 1F133A90190AA814006693DD /* Build configuration list for PBXProject "SwipeableCell" */;
 			compatibilityVersion = "Xcode 3.2";
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
@@ -217,89 +217,89 @@
 				en,
 				Base,
 			);
-			mainGroup = 1FECEB4B190A3C6100CC3CC5;
-			productRefGroup = 1FECEB55190A3C6100CC3CC5 /* Products */;
+			mainGroup = 1F133A8C190AA814006693DD;
+			productRefGroup = 1F133A96190AA814006693DD /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				1FECEB53190A3C6100CC3CC5 /* SwipeableCell */,
-				1FECEB77190A3C6200CC3CC5 /* SwipeableCellTests */,
+				1F133A94190AA814006693DD /* SwipeableCell */,
+				1F133AB8190AA814006693DD /* SwipeableCellTests */,
 			);
 		};
 /* End PBXProject section */
 
 /* Begin PBXResourcesBuildPhase section */
-		1FECEB52190A3C6100CC3CC5 /* Resources */ = {
+		1F133A93190AA814006693DD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FECEB73190A3C6100CC3CC5 /* Images.xcassets in Resources */,
-				1FECEB62190A3C6100CC3CC5 /* InfoPlist.strings in Resources */,
-				1FECEB6B190A3C6100CC3CC5 /* Main.storyboard in Resources */,
+				1F133AB4190AA814006693DD /* Images.xcassets in Resources */,
+				1F133AA3190AA814006693DD /* InfoPlist.strings in Resources */,
+				1F133AAC190AA814006693DD /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1FECEB76190A3C6200CC3CC5 /* Resources */ = {
+		1F133AB7190AA814006693DD /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FECEB84190A3C6200CC3CC5 /* InfoPlist.strings in Resources */,
+				1F133AC5190AA814006693DD /* InfoPlist.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
-		1FECEB50190A3C6100CC3CC5 /* Sources */ = {
+		1F133A91190AA814006693DD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FECEB68190A3C6100CC3CC5 /* AppDelegate.m in Sources */,
-				1FECEB6E190A3C6100CC3CC5 /* MasterViewController.m in Sources */,
-				1FECEB64190A3C6100CC3CC5 /* main.m in Sources */,
-				1FECEB71190A3C6100CC3CC5 /* DetailViewController.m in Sources */,
+				1F133AA9190AA814006693DD /* AppDelegate.m in Sources */,
+				1F133AAF190AA814006693DD /* MasterViewController.m in Sources */,
+				1F133AA5190AA814006693DD /* main.m in Sources */,
+				1F133AB2190AA814006693DD /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		1FECEB74190A3C6200CC3CC5 /* Sources */ = {
+		1F133AB5190AA814006693DD /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1FECEB86190A3C6200CC3CC5 /* SwipeableCellTests.m in Sources */,
+				1F133AC7190AA814006693DD /* SwipeableCellTests.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		1FECEB7E190A3C6200CC3CC5 /* PBXTargetDependency */ = {
+		1F133ABF190AA814006693DD /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
-			target = 1FECEB53190A3C6100CC3CC5 /* SwipeableCell */;
-			targetProxy = 1FECEB7D190A3C6200CC3CC5 /* PBXContainerItemProxy */;
+			target = 1F133A94190AA814006693DD /* SwipeableCell */;
+			targetProxy = 1F133ABE190AA814006693DD /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1FECEB60190A3C6100CC3CC5 /* InfoPlist.strings */ = {
+		1F133AA1190AA814006693DD /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1FECEB61190A3C6100CC3CC5 /* en */,
+				1F133AA2190AA814006693DD /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		1FECEB69190A3C6100CC3CC5 /* Main.storyboard */ = {
+		1F133AAA190AA814006693DD /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1FECEB6A190A3C6100CC3CC5 /* Base */,
+				1F133AAB190AA814006693DD /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
 		};
-		1FECEB82190A3C6200CC3CC5 /* InfoPlist.strings */ = {
+		1F133AC3190AA814006693DD /* InfoPlist.strings */ = {
 			isa = PBXVariantGroup;
 			children = (
-				1FECEB83190A3C6200CC3CC5 /* en */,
+				1F133AC4190AA814006693DD /* en */,
 			);
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
@@ -307,7 +307,7 @@
 /* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
-		1FECEB87190A3C6200CC3CC5 /* Debug */ = {
+		1F133AC8190AA814006693DD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -345,7 +345,7 @@
 			};
 			name = Debug;
 		};
-		1FECEB88190A3C6200CC3CC5 /* Release */ = {
+		1F133AC9190AA814006693DD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
@@ -377,7 +377,7 @@
 			};
 			name = Release;
 		};
-		1FECEB8A190A3C6200CC3CC5 /* Debug */ = {
+		1F133ACB190AA814006693DD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -390,7 +390,7 @@
 			};
 			name = Debug;
 		};
-		1FECEB8B190A3C6200CC3CC5 /* Release */ = {
+		1F133ACC190AA814006693DD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
@@ -403,7 +403,7 @@
 			};
 			name = Release;
 		};
-		1FECEB8D190A3C6200CC3CC5 /* Debug */ = {
+		1F133ACE190AA814006693DD /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SwipeableCell.app/SwipeableCell";
@@ -425,7 +425,7 @@
 			};
 			name = Debug;
 		};
-		1FECEB8E190A3C6200CC3CC5 /* Release */ = {
+		1F133ACF190AA814006693DD /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SwipeableCell.app/SwipeableCell";
@@ -446,32 +446,32 @@
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
-		1FECEB4F190A3C6100CC3CC5 /* Build configuration list for PBXProject "SwipeableCell" */ = {
+		1F133A90190AA814006693DD /* Build configuration list for PBXProject "SwipeableCell" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1FECEB87190A3C6200CC3CC5 /* Debug */,
-				1FECEB88190A3C6200CC3CC5 /* Release */,
+				1F133AC8190AA814006693DD /* Debug */,
+				1F133AC9190AA814006693DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
 		};
-		1FECEB89190A3C6200CC3CC5 /* Build configuration list for PBXNativeTarget "SwipeableCell" */ = {
+		1F133ACA190AA814006693DD /* Build configuration list for PBXNativeTarget "SwipeableCell" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1FECEB8A190A3C6200CC3CC5 /* Debug */,
-				1FECEB8B190A3C6200CC3CC5 /* Release */,
+				1F133ACB190AA814006693DD /* Debug */,
+				1F133ACC190AA814006693DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
-		1FECEB8C190A3C6200CC3CC5 /* Build configuration list for PBXNativeTarget "SwipeableCellTests" */ = {
+		1F133ACD190AA814006693DD /* Build configuration list for PBXNativeTarget "SwipeableCellTests" */ = {
 			isa = XCConfigurationList;
 			buildConfigurations = (
-				1FECEB8D190A3C6200CC3CC5 /* Debug */,
-				1FECEB8E190A3C6200CC3CC5 /* Release */,
+				1F133ACE190AA814006693DD /* Debug */,
+				1F133ACF190AA814006693DD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 		};
 /* End XCConfigurationList section */
 	};
-	rootObject = 1FECEB4C190A3C6100CC3CC5 /* Project object */;
+	rootObject = 1F133A8D190AA814006693DD /* Project object */;
 }

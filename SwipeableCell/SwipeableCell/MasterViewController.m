@@ -30,15 +30,6 @@
 
     UIBarButtonItem *addButton = [[UIBarButtonItem alloc] initWithBarButtonSystemItem:UIBarButtonSystemItemAdd target:self action:@selector(insertNewObject:)];
     self.navigationItem.rightBarButtonItem = addButton;
-    
-    //  some static data
-    _objects = [NSMutableArray array];
-    
-    NSInteger numberOfItems = 30;
-    for (NSInteger i = 1; i <= numberOfItems; i++) {
-        NSString *item = [NSString stringWithFormat:@"Item #%d", i];
-        [_objects addObject:item];
-    }
 }
 
 - (void)didReceiveMemoryWarning
@@ -75,17 +66,6 @@
 
     NSDate *object = _objects[indexPath.row];
     cell.textLabel.text = [object description];
-    
-    //  color separate pieces of view to explore view hierarchy
-    cell.backgroundColor = [UIColor purpleColor];
-    cell.contentView.backgroundColor = [UIColor blueColor];
-    
-    //  debugging views
-#ifdef DEBUG
-    
-    NSLog(@"Cell recursive description:\n\n%@\n\n", [cell performSelector:@selector(recursiveDescription)]);
-#endif
-    
     return cell;
 }
 
@@ -102,8 +82,6 @@
         [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
     } else if (editingStyle == UITableViewCellEditingStyleInsert) {
         // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view.
-    } else {
-        NSLog(@"Unhandled editing style! %d", editingStyle);
     }
 }
 

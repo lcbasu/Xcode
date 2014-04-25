@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1FECEB53190A3C6100CC3CC5"
+               BlueprintIdentifier = "1F133A94190AA814006693DD"
                BuildableName = "SwipeableCell.app"
                BlueprintName = "SwipeableCell"
                ReferencedContainer = "container:SwipeableCell.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1FECEB77190A3C6200CC3CC5"
+               BlueprintIdentifier = "1F133AB8190AA814006693DD"
                BuildableName = "SwipeableCellTests.xctest"
                BlueprintName = "SwipeableCellTests"
                ReferencedContainer = "container:SwipeableCell.xcodeproj">
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1FECEB53190A3C6100CC3CC5"
+            BlueprintIdentifier = "1F133A94190AA814006693DD"
             BuildableName = "SwipeableCell.app"
             BlueprintName = "SwipeableCell"
             ReferencedContainer = "container:SwipeableCell.xcodeproj">
@@ -61,7 +61,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1FECEB53190A3C6100CC3CC5"
+            BlueprintIdentifier = "1F133A94190AA814006693DD"
             BuildableName = "SwipeableCell.app"
             BlueprintName = "SwipeableCell"
             ReferencedContainer = "container:SwipeableCell.xcodeproj">
@@ -79,7 +79,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1FECEB53190A3C6100CC3CC5"
+            BlueprintIdentifier = "1F133A94190AA814006693DD"
             BuildableName = "SwipeableCell.app"
             BlueprintName = "SwipeableCell"
             ReferencedContainer = "container:SwipeableCell.xcodeproj">
