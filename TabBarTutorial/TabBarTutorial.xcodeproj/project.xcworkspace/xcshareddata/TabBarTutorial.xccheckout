@@ -5,22 +5,18 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>A84DF2B6-3F1A-4CC5-8F72-43DA8CF34C7C</string>
+	<string>87A28D84-6C41-40A6-AD30-08703C73D049</string>
 	<key>IDESourceControlProjectName</key>
-	<string>Today</string>
+	<string>TabBarTutorial</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>5D9C02F8-7147-4061-AFA5-24F4F4E5D2F9</key>
-		<string>https://github.com/lokeshguddu/FacebookSDK.git</string>
 		<key>A4E178EC-F45C-445F-A33F-A91138835285</key>
 		<string>https://github.com/lokeshguddu/Xcode.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>Today/Today.xcodeproj/project.xcworkspace</string>
+	<string>TabBarTutorial/TabBarTutorial.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>5D9C02F8-7147-4061-AFA5-24F4F4E5D2F9</key>
-		<string>../../../../FacebookSDK</string>
 		<key>A4E178EC-F45C-445F-A33F-A91138835285</key>
 		<string>../../..</string>
 	</dict>
@@ -32,14 +28,6 @@
 	<string>A4E178EC-F45C-445F-A33F-A91138835285</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
-		<dict>
-			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
-			<string>public.vcs.git</string>
-			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>5D9C02F8-7147-4061-AFA5-24F4F4E5D2F9</string>
-			<key>IDESourceControlWCCName</key>
-			<string>FacebookSDK</string>
-		</dict>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
