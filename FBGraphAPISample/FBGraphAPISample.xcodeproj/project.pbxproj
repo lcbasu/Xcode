@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F96C601190BC2F50020F29F /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F96C600190BC2F50020F29F /* FacebookSDK.framework */; };
 		ED122BD3181057BD00A70384 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED122BD2181057BD00A70384 /* Foundation.framework */; };
 		ED122BD5181057BD00A70384 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED122BD4181057BD00A70384 /* CoreGraphics.framework */; };
 		ED122BD7181057BD00A70384 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = ED122BD6181057BD00A70384 /* UIKit.framework */; };
@@ -34,6 +35,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F96C600190BC2F50020F29F /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		ED122BCF181057BC00A70384 /* FBGraphAPISample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBGraphAPISample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ED122BD2181057BD00A70384 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		ED122BD4181057BD00A70384 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -61,6 +63,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				ED122BD5181057BD00A70384 /* CoreGraphics.framework in Frameworks */,
+				1F96C601190BC2F50020F29F /* FacebookSDK.framework in Frameworks */,
 				ED122BD7181057BD00A70384 /* UIKit.framework in Frameworks */,
 				ED122BD3181057BD00A70384 /* Foundation.framework in Frameworks */,
 			);
@@ -101,6 +104,7 @@
 		ED122BD1181057BC00A70384 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1F96C600190BC2F50020F29F /* FacebookSDK.framework */,
 				ED122BD2181057BD00A70384 /* Foundation.framework */,
 				ED122BD4181057BD00A70384 /* CoreGraphics.framework */,
 				ED122BD6181057BD00A70384 /* UIKit.framework */,
@@ -368,6 +372,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/..",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FBGraphAPISample/FBGraphAPISample-Prefix.pch";
@@ -385,6 +390,7 @@
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"$(SRCROOT)/..",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FBGraphAPISample/FBGraphAPISample-Prefix.pch";

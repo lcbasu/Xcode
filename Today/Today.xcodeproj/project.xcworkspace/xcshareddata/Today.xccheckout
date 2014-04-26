@@ -5,31 +5,31 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>8D523D52-DB5D-4A5E-A369-E535F61C14B9</string>
+	<string>FF4110BF-58ED-4ADF-85C4-4AA4955F7D4D</string>
 	<key>IDESourceControlProjectName</key>
 	<string>Today</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>5658BB12-4CA2-4F7F-B3DE-CA42AD62832E</key>
-		<string>https://github.com/lokeshguddu/Xcode.git</string>
 		<key>5D9C02F8-7147-4061-AFA5-24F4F4E5D2F9</key>
 		<string>https://github.com/lokeshguddu/FacebookSDK.git</string>
+		<key>A8B6AC79-F5E7-498A-8BDE-0556367C5804</key>
+		<string>https://github.com/lokeshguddu/Xcode.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>Today/Today.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>5658BB12-4CA2-4F7F-B3DE-CA42AD62832E</key>
-		<string>../../..</string>
 		<key>5D9C02F8-7147-4061-AFA5-24F4F4E5D2F9</key>
 		<string>../../../../FacebookSDK</string>
+		<key>A8B6AC79-F5E7-498A-8BDE-0556367C5804</key>
+		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/lokeshguddu/Xcode.git</string>
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>5658BB12-4CA2-4F7F-B3DE-CA42AD62832E</string>
+	<string>A8B6AC79-F5E7-498A-8BDE-0556367C5804</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
@@ -44,7 +44,7 @@
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>5658BB12-4CA2-4F7F-B3DE-CA42AD62832E</string>
+			<string>A8B6AC79-F5E7-498A-8BDE-0556367C5804</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Xcode</string>
 		</dict>
