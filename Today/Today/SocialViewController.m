@@ -52,18 +52,6 @@
 
 #pragma mark - Table View
 
-- (NSMutableArray *)mainArray {
-    if (!_mainArray) {
-        _mainArray = [@[@"Get Milk!", @"Go to gym", @"Breakfast with Rita!", @"Call Bob", @"Pick up newspaper", @"Send an email to Joe", @"Read this tutorial!", @"Pick up flowers"] mutableCopy];
-    }
-    return _mainArray;
-}
-
-- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView
-{
-    return 0;
-}
-
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section
 {
     return [self.mainArray count];

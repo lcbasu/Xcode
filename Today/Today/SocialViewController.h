@@ -11,6 +11,6 @@
 @interface SocialViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITableView *tableView;
-@property (strong, nonatomic) NSMutableArray *mainArray;
+@property (copy, nonatomic) NSMutableArray *mainArray;
 
 @end
