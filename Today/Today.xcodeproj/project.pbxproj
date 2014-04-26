@@ -24,6 +24,8 @@
 		1F27E493190039E5007E1A1A /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F27E491190039E5007E1A1A /* InfoPlist.strings */; };
 		1F27E495190039E5007E1A1A /* TodayTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F27E494190039E5007E1A1A /* TodayTests.m */; };
 		1F9A1FED1902575B00473456 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F9A1FEC1902575B00473456 /* FacebookSDK.framework */; };
+		1FD816CC190B9F1000DC7D1E /* EventKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FD816CA190B9F1000DC7D1E /* EventKit.framework */; };
+		1FD816CD190B9F1000DC7D1E /* EventKitUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FD816CB190B9F1000DC7D1E /* EventKitUI.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,8 @@
 		1F27E492190039E5007E1A1A /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1F27E494190039E5007E1A1A /* TodayTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TodayTests.m; sourceTree = "<group>"; };
 		1F9A1FEC1902575B00473456 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = FacebookSDK.framework; path = ../../FacebookSDK/FacebookSDK.framework; sourceTree = "<group>"; };
+		1FD816CA190B9F1000DC7D1E /* EventKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKit.framework; path = System/Library/Frameworks/EventKit.framework; sourceTree = SDKROOT; };
+		1FD816CB190B9F1000DC7D1E /* EventKitUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = EventKitUI.framework; path = System/Library/Frameworks/EventKitUI.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -68,6 +72,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FD816CC190B9F1000DC7D1E /* EventKit.framework in Frameworks */,
+				1FD816CD190B9F1000DC7D1E /* EventKitUI.framework in Frameworks */,
 				1F27E469190039E5007E1A1A /* CoreGraphics.framework in Frameworks */,
 				1F9A1FED1902575B00473456 /* FacebookSDK.framework in Frameworks */,
 				1F27E46B190039E5007E1A1A /* UIKit.framework in Frameworks */,
@@ -110,6 +116,8 @@
 		1F27E465190039E5007E1A1A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1FD816CA190B9F1000DC7D1E /* EventKit.framework */,
+				1FD816CB190B9F1000DC7D1E /* EventKitUI.framework */,
 				1F9A1FEC1902575B00473456 /* FacebookSDK.framework */,
 				1F27E466190039E5007E1A1A /* Foundation.framework */,
 				1F27E468190039E5007E1A1A /* CoreGraphics.framework */,
