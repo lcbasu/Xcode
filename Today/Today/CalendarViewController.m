@@ -169,4 +169,33 @@
 	return events;
 }
 
+#pragma mark - EKEventEditViewDelegate
+
+// Overriding EKEventEditViewDelegate method to update event store according to user actions.
+- (void)eventEditViewController:(EKEventEditViewController *)controller
+		  didCompleteWithAction:(EKEventEditViewAction)action
+{
+    CalendarViewController * __weak weakSelf = self;
+	// Dismiss the modal view controller
+    [self dismissViewControllerAnimated:YES completion:^
+     {
+         if (action != EKEventEditViewActionCanceled)
+         {
+             dispatch_async(dispatch_get_main_queue(), ^{
+                 // Re-fetch all events happening in the next 24 hours
+                 weakSelf.eventsList = [self fetchEvents];
+                 // Update the UI with the above events
+                 [weakSelf.tableView reloadData];
+             });
+         }
+     }];
+}
+
+
+// Set the calendar edited by EKEventEditViewController to our chosen calendar - the default calendar.
+- (EKCalendar *)eventEditViewControllerDefaultCalendarForNewEvents:(EKEventEditViewController *)controller
+{
+	return self.defaultCalendar;
+}
+
 @end
