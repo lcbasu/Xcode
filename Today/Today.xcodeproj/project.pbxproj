@@ -128,9 +128,9 @@
 				1F27E47B190039E5007E1A1A /* ReminderViewController.h */,
 				1F27E47C190039E5007E1A1A /* ReminderViewController.m */,
 				1F27E47E190039E5007E1A1A /* CalendarViewController.h */,
+				1F27E47F190039E5007E1A1A /* CalendarViewController.m */,
 				1F036751190A29BD002E1D75 /* SocialViewController.h */,
 				1F036752190A29BD002E1D75 /* SocialViewController.m */,
-				1F27E47F190039E5007E1A1A /* CalendarViewController.m */,
 				1F27E481190039E5007E1A1A /* Images.xcassets */,
 				1F27E46D190039E5007E1A1A /* Supporting Files */,
 			);
