@@ -23,6 +23,7 @@
 		1FFFCBFD190E28F700485773 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFFCBD8190E28F600485773 /* CoreData.framework */; };
 		1FFFCC05190E28F700485773 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1FFFCC03190E28F700485773 /* InfoPlist.strings */; };
 		1FFFCC07190E28F700485773 /* FailedBankCDTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFFCC06190E28F700485773 /* FailedBankCDTests.m */; };
+		1FFFCC12190E299C00485773 /* FBCDMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFFCC11190E299C00485773 /* FBCDMasterViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +56,8 @@
 		1FFFCC02190E28F700485773 /* FailedBankCDTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "FailedBankCDTests-Info.plist"; sourceTree = "<group>"; };
 		1FFFCC04190E28F700485773 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1FFFCC06190E28F700485773 /* FailedBankCDTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FailedBankCDTests.m; sourceTree = "<group>"; };
+		1FFFCC10190E299C00485773 /* FBCDMasterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = FBCDMasterViewController.h; path = ../FBCDMasterViewController.h; sourceTree = "<group>"; };
+		1FFFCC11190E299C00485773 /* FBCDMasterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = FBCDMasterViewController.m; path = ../FBCDMasterViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +123,8 @@
 				1FFFCBE3190E28F700485773 /* FBCDAppDelegate.h */,
 				1FFFCBE4190E28F700485773 /* FBCDAppDelegate.m */,
 				1FFFCBE6190E28F700485773 /* Main.storyboard */,
+				1FFFCC10190E299C00485773 /* FBCDMasterViewController.h */,
+				1FFFCC11190E299C00485773 /* FBCDMasterViewController.m */,
 				1FFFCBF2190E28F700485773 /* Images.xcassets */,
 				1FFFCBE9190E28F700485773 /* FailedBankCD.xcdatamodeld */,
 				1FFFCBDB190E28F600485773 /* Supporting Files */,
@@ -257,6 +262,7 @@
 				1FFFCBEB190E28F700485773 /* FailedBankCD.xcdatamodeld in Sources */,
 				1FFFCBE1190E28F700485773 /* main.m in Sources */,
 				1FFFCBE5190E28F700485773 /* FBCDAppDelegate.m in Sources */,
+				1FFFCC12190E299C00485773 /* FBCDMasterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
