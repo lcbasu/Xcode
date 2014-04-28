@@ -16,8 +16,6 @@
 		1FFFCBE5190E28F700485773 /* FBCDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFFCBE4190E28F700485773 /* FBCDAppDelegate.m */; };
 		1FFFCBE8190E28F700485773 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FFFCBE6190E28F700485773 /* Main.storyboard */; };
 		1FFFCBEB190E28F700485773 /* FailedBankCD.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 1FFFCBE9190E28F700485773 /* FailedBankCD.xcdatamodeld */; };
-		1FFFCBEE190E28F700485773 /* FBCDMasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFFCBED190E28F700485773 /* FBCDMasterViewController.m */; };
-		1FFFCBF1190E28F700485773 /* FBCDDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FFFCBF0190E28F700485773 /* FBCDDetailViewController.m */; };
 		1FFFCBF3190E28F700485773 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FFFCBF2190E28F700485773 /* Images.xcassets */; };
 		1FFFCBFA190E28F700485773 /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFFCBF9190E28F700485773 /* XCTest.framework */; };
 		1FFFCBFB190E28F700485773 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FFFCBD2190E28F600485773 /* Foundation.framework */; };
@@ -51,10 +49,6 @@
 		1FFFCBE4190E28F700485773 /* FBCDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBCDAppDelegate.m; sourceTree = "<group>"; };
 		1FFFCBE7190E28F700485773 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		1FFFCBEA190E28F700485773 /* FailedBankCD.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = FailedBankCD.xcdatamodel; sourceTree = "<group>"; };
-		1FFFCBEC190E28F700485773 /* FBCDMasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBCDMasterViewController.h; sourceTree = "<group>"; };
-		1FFFCBED190E28F700485773 /* FBCDMasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBCDMasterViewController.m; sourceTree = "<group>"; };
-		1FFFCBEF190E28F700485773 /* FBCDDetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FBCDDetailViewController.h; sourceTree = "<group>"; };
-		1FFFCBF0190E28F700485773 /* FBCDDetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FBCDDetailViewController.m; sourceTree = "<group>"; };
 		1FFFCBF2190E28F700485773 /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		1FFFCBF8190E28F700485773 /* FailedBankCDTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = FailedBankCDTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FFFCBF9190E28F700485773 /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
@@ -126,10 +120,6 @@
 				1FFFCBE3190E28F700485773 /* FBCDAppDelegate.h */,
 				1FFFCBE4190E28F700485773 /* FBCDAppDelegate.m */,
 				1FFFCBE6190E28F700485773 /* Main.storyboard */,
-				1FFFCBEC190E28F700485773 /* FBCDMasterViewController.h */,
-				1FFFCBED190E28F700485773 /* FBCDMasterViewController.m */,
-				1FFFCBEF190E28F700485773 /* FBCDDetailViewController.h */,
-				1FFFCBF0190E28F700485773 /* FBCDDetailViewController.m */,
 				1FFFCBF2190E28F700485773 /* Images.xcassets */,
 				1FFFCBE9190E28F700485773 /* FailedBankCD.xcdatamodeld */,
 				1FFFCBDB190E28F600485773 /* Supporting Files */,
@@ -265,10 +255,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FFFCBEB190E28F700485773 /* FailedBankCD.xcdatamodeld in Sources */,
-				1FFFCBF1190E28F700485773 /* FBCDDetailViewController.m in Sources */,
 				1FFFCBE1190E28F700485773 /* main.m in Sources */,
 				1FFFCBE5190E28F700485773 /* FBCDAppDelegate.m in Sources */,
-				1FFFCBEE190E28F700485773 /* FBCDMasterViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
