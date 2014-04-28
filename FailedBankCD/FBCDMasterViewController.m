@@ -14,6 +14,8 @@
 
 @implementation FBCDMasterViewController
 
+@synthesize managedObjectContext;
+
 - (id)initWithStyle:(UITableViewStyle)style
 {
     self = [super initWithStyle:style];
