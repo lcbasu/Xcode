@@ -22,6 +22,7 @@
 		1F10A77D19024ACA004B675E /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F10A77B19024ACA004B675E /* InfoPlist.strings */; };
 		1F10A77F19024ACA004B675E /* VehiclesTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F10A77E19024ACA004B675E /* VehiclesTests.m */; };
 		1F1E31081903B1FB0041CD63 /* Vehicle.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F1E31071903B1FB0041CD63 /* Vehicle.m */; };
+		1F8EB20A19110FA300E8F5EA /* Car.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8EB20919110FA300E8F5EA /* Car.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,8 @@
 		1F10A77E19024ACA004B675E /* VehiclesTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = VehiclesTests.m; sourceTree = "<group>"; };
 		1F1E31061903B1FB0041CD63 /* Vehicle.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Vehicle.h; sourceTree = "<group>"; };
 		1F1E31071903B1FB0041CD63 /* Vehicle.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Vehicle.m; sourceTree = "<group>"; };
+		1F8EB20819110FA300E8F5EA /* Car.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Car.h; sourceTree = "<group>"; };
+		1F8EB20919110FA300E8F5EA /* Car.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Car.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -117,6 +120,8 @@
 			children = (
 				1F10A76219024ACA004B675E /* AppDelegate.h */,
 				1F10A76319024ACA004B675E /* AppDelegate.m */,
+				1F8EB20819110FA300E8F5EA /* Car.h */,
+				1F8EB20919110FA300E8F5EA /* Car.m */,
 				1F10A76519024ACA004B675E /* Main.storyboard */,
 				1F1E31061903B1FB0041CD63 /* Vehicle.h */,
 				1F1E31071903B1FB0041CD63 /* Vehicle.m */,
@@ -254,6 +259,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F8EB20A19110FA300E8F5EA /* Car.m in Sources */,
 				1F1E31081903B1FB0041CD63 /* Vehicle.m in Sources */,
 				1F10A76A19024ACA004B675E /* ViewController.m in Sources */,
 				1F10A76419024ACA004B675E /* AppDelegate.m in Sources */,
