@@ -20,4 +20,10 @@
     return self;
 }
 
+#pragma mark - Private method to start the Car
+- (NSString *)start
+{
+    return [NSString stringWithFormat:@"Start power source %@.", self.powerSource];
+}
+
 @end
