@@ -10,4 +10,9 @@
 
 @interface Car : Vehicle
 
+@property (nonatomic, assign) BOOL isConvertible;
+@property (nonatomic, assign) BOOL isHatchback;
+@property (nonatomic, assign) BOOL hasSunroof;
+@property (nonatomic, assign) NSInteger numberOfDoors;
+
 @end
