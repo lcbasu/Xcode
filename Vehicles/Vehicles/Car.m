@@ -10,4 +10,14 @@
 
 @implementation Car
 
+- (id)init
+{
+    if (self = [super init]) {
+        // Since all cars have four wheels, we can safely set this for every initialized instance
+        // of a car.
+        self.numberOfWheels = 4;
+    }
+    return self;
+}
+
 @end
