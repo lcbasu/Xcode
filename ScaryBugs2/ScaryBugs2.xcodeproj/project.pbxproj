@@ -25,6 +25,8 @@
 		1FCA94EB1915077E00BB8E16 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FCA94C61915077E00BB8E16 /* CoreData.framework */; };
 		1FCA94F31915077E00BB8E16 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1FCA94F11915077E00BB8E16 /* InfoPlist.strings */; };
 		1FCA94F51915077E00BB8E16 /* ScaryBugs2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA94F41915077E00BB8E16 /* ScaryBugs2Tests.m */; };
+		1FCA950219150A6200BB8E16 /* RWTScaryBugData.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA950119150A6200BB8E16 /* RWTScaryBugData.m */; };
+		1FCA950519150B1700BB8E16 /* RWTScaryBugDoc.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA950419150B1700BB8E16 /* RWTScaryBugDoc.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -61,6 +63,10 @@
 		1FCA94F01915077E00BB8E16 /* ScaryBugs2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ScaryBugs2Tests-Info.plist"; sourceTree = "<group>"; };
 		1FCA94F21915077E00BB8E16 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1FCA94F41915077E00BB8E16 /* ScaryBugs2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ScaryBugs2Tests.m; sourceTree = "<group>"; };
+		1FCA950019150A6200BB8E16 /* RWTScaryBugData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTScaryBugData.h; sourceTree = "<group>"; };
+		1FCA950119150A6200BB8E16 /* RWTScaryBugData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTScaryBugData.m; sourceTree = "<group>"; };
+		1FCA950319150B1700BB8E16 /* RWTScaryBugDoc.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTScaryBugDoc.h; sourceTree = "<group>"; };
+		1FCA950419150B1700BB8E16 /* RWTScaryBugDoc.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTScaryBugDoc.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -178,6 +184,10 @@
 		1FCA94FF191509AC00BB8E16 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				1FCA950019150A6200BB8E16 /* RWTScaryBugData.h */,
+				1FCA950119150A6200BB8E16 /* RWTScaryBugData.m */,
+				1FCA950319150B1700BB8E16 /* RWTScaryBugDoc.h */,
+				1FCA950419150B1700BB8E16 /* RWTScaryBugDoc.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
@@ -280,9 +290,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FCA950519150B1700BB8E16 /* RWTScaryBugDoc.m in Sources */,
 				1FCA94DF1915077E00BB8E16 /* RWTDetailViewController.m in Sources */,
 				1FCA94DC1915077E00BB8E16 /* RWTMasterViewController.m in Sources */,
 				1FCA94D31915077E00BB8E16 /* RWTAppDelegate.m in Sources */,
+				1FCA950219150A6200BB8E16 /* RWTScaryBugData.m in Sources */,
 				1FCA94D91915077E00BB8E16 /* ScaryBugs2.xcdatamodeld in Sources */,
 				1FCA94CF1915077E00BB8E16 /* main.m in Sources */,
 			);
