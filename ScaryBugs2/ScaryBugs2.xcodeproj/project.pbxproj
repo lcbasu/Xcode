@@ -36,6 +36,12 @@
 		1FCA95161915104400BB8E16 /* potatoBugThumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1FCA950D1915104400BB8E16 /* potatoBugThumb.jpg */; };
 		1FCA95171915104400BB8E16 /* wolfSpider.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1FCA950E1915104400BB8E16 /* wolfSpider.jpg */; };
 		1FCA95181915104400BB8E16 /* wolfSpiderThumb.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 1FCA950F1915104400BB8E16 /* wolfSpiderThumb.jpg */; };
+		1FCA951C1915133000BB8E16 /* RWTRateView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA951B1915133000BB8E16 /* RWTRateView.m */; };
+		1FCA95201915135E00BB8E16 /* RWTUIImageExtras.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCA951F1915135E00BB8E16 /* RWTUIImageExtras.m */; };
+		1FCA95251915138500BB8E16 /* shockedface2_empty.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FCA95221915138500BB8E16 /* shockedface2_empty.png */; };
+		1FCA95261915138500BB8E16 /* shockedface2_full.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FCA95231915138500BB8E16 /* shockedface2_full.png */; };
+		1FCA95271915138500BB8E16 /* shockedface2_half.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FCA95241915138500BB8E16 /* shockedface2_half.png */; };
+		1FCA95291915139D00BB8E16 /* logo1.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FCA95281915139D00BB8E16 /* logo1.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -85,6 +91,14 @@
 		1FCA950D1915104400BB8E16 /* potatoBugThumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = potatoBugThumb.jpg; sourceTree = "<group>"; };
 		1FCA950E1915104400BB8E16 /* wolfSpider.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wolfSpider.jpg; sourceTree = "<group>"; };
 		1FCA950F1915104400BB8E16 /* wolfSpiderThumb.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = wolfSpiderThumb.jpg; sourceTree = "<group>"; };
+		1FCA951A1915133000BB8E16 /* RWTRateView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTRateView.h; sourceTree = "<group>"; };
+		1FCA951B1915133000BB8E16 /* RWTRateView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTRateView.m; sourceTree = "<group>"; };
+		1FCA951E1915135E00BB8E16 /* RWTUIImageExtras.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RWTUIImageExtras.h; sourceTree = "<group>"; };
+		1FCA951F1915135E00BB8E16 /* RWTUIImageExtras.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RWTUIImageExtras.m; sourceTree = "<group>"; };
+		1FCA95221915138500BB8E16 /* shockedface2_empty.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shockedface2_empty.png; sourceTree = "<group>"; };
+		1FCA95231915138500BB8E16 /* shockedface2_full.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shockedface2_full.png; sourceTree = "<group>"; };
+		1FCA95241915138500BB8E16 /* shockedface2_half.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = shockedface2_half.png; sourceTree = "<group>"; };
+		1FCA95281915139D00BB8E16 /* logo1.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = logo1.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -147,6 +161,9 @@
 		1FCA94C81915077E00BB8E16 /* ScaryBugs2 */ = {
 			isa = PBXGroup;
 			children = (
+				1FCA95211915137400BB8E16 /* Art */,
+				1FCA951D1915134B00BB8E16 /* Helpers */,
+				1FCA95191915131700BB8E16 /* Views */,
 				1FCA95061915104400BB8E16 /* ScaryBugs */,
 				1FCA94FF191509AC00BB8E16 /* Model */,
 				1FCA94FE1915094B00BB8E16 /* GUI */,
@@ -225,6 +242,35 @@
 				1FCA950F1915104400BB8E16 /* wolfSpiderThumb.jpg */,
 			);
 			path = ScaryBugs;
+			sourceTree = "<group>";
+		};
+		1FCA95191915131700BB8E16 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				1FCA951A1915133000BB8E16 /* RWTRateView.h */,
+				1FCA951B1915133000BB8E16 /* RWTRateView.m */,
+			);
+			name = Views;
+			sourceTree = "<group>";
+		};
+		1FCA951D1915134B00BB8E16 /* Helpers */ = {
+			isa = PBXGroup;
+			children = (
+				1FCA951E1915135E00BB8E16 /* RWTUIImageExtras.h */,
+				1FCA951F1915135E00BB8E16 /* RWTUIImageExtras.m */,
+			);
+			name = Helpers;
+			sourceTree = "<group>";
+		};
+		1FCA95211915137400BB8E16 /* Art */ = {
+			isa = PBXGroup;
+			children = (
+				1FCA95281915139D00BB8E16 /* logo1.png */,
+				1FCA95221915138500BB8E16 /* shockedface2_empty.png */,
+				1FCA95231915138500BB8E16 /* shockedface2_full.png */,
+				1FCA95241915138500BB8E16 /* shockedface2_half.png */,
+			);
+			name = Art;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -316,6 +362,10 @@
 				1FCA95141915104400BB8E16 /* ladybugThumb.jpg in Resources */,
 				1FCA95161915104400BB8E16 /* potatoBugThumb.jpg in Resources */,
 				1FCA95151915104400BB8E16 /* potatoBug.jpg in Resources */,
+				1FCA95261915138500BB8E16 /* shockedface2_full.png in Resources */,
+				1FCA95251915138500BB8E16 /* shockedface2_empty.png in Resources */,
+				1FCA95291915139D00BB8E16 /* logo1.png in Resources */,
+				1FCA95271915138500BB8E16 /* shockedface2_half.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -336,8 +386,10 @@
 			files = (
 				1FCA950519150B1700BB8E16 /* RWTScaryBugDoc.m in Sources */,
 				1FCA94DF1915077E00BB8E16 /* RWTDetailViewController.m in Sources */,
+				1FCA95201915135E00BB8E16 /* RWTUIImageExtras.m in Sources */,
 				1FCA94DC1915077E00BB8E16 /* RWTMasterViewController.m in Sources */,
 				1FCA94D31915077E00BB8E16 /* RWTAppDelegate.m in Sources */,
+				1FCA951C1915133000BB8E16 /* RWTRateView.m in Sources */,
 				1FCA950219150A6200BB8E16 /* RWTScaryBugData.m in Sources */,
 				1FCA94D91915077E00BB8E16 /* ScaryBugs2.xcdatamodeld in Sources */,
 				1FCA94CF1915077E00BB8E16 /* main.m in Sources */,
