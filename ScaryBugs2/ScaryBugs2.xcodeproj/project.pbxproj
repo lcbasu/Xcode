@@ -123,13 +123,8 @@
 		1FCA94C81915077E00BB8E16 /* ScaryBugs2 */ = {
 			isa = PBXGroup;
 			children = (
-				1FCA94D11915077E00BB8E16 /* RWTAppDelegate.h */,
-				1FCA94D21915077E00BB8E16 /* RWTAppDelegate.m */,
-				1FCA94D41915077E00BB8E16 /* Main.storyboard */,
-				1FCA94DA1915077E00BB8E16 /* RWTMasterViewController.h */,
-				1FCA94DB1915077E00BB8E16 /* RWTMasterViewController.m */,
-				1FCA94DD1915077E00BB8E16 /* RWTDetailViewController.h */,
-				1FCA94DE1915077E00BB8E16 /* RWTDetailViewController.m */,
+				1FCA94FF191509AC00BB8E16 /* Model */,
+				1FCA94FE1915094B00BB8E16 /* GUI */,
 				1FCA94E01915077E00BB8E16 /* Images.xcassets */,
 				1FCA94D71915077E00BB8E16 /* ScaryBugs2.xcdatamodeld */,
 				1FCA94C91915077E00BB8E16 /* Supporting Files */,
@@ -164,6 +159,27 @@
 				1FCA94F11915077E00BB8E16 /* InfoPlist.strings */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1FCA94FE1915094B00BB8E16 /* GUI */ = {
+			isa = PBXGroup;
+			children = (
+				1FCA94D11915077E00BB8E16 /* RWTAppDelegate.h */,
+				1FCA94D21915077E00BB8E16 /* RWTAppDelegate.m */,
+				1FCA94D41915077E00BB8E16 /* Main.storyboard */,
+				1FCA94DA1915077E00BB8E16 /* RWTMasterViewController.h */,
+				1FCA94DB1915077E00BB8E16 /* RWTMasterViewController.m */,
+				1FCA94DD1915077E00BB8E16 /* RWTDetailViewController.h */,
+				1FCA94DE1915077E00BB8E16 /* RWTDetailViewController.m */,
+			);
+			name = GUI;
+			sourceTree = "<group>";
+		};
+		1FCA94FF191509AC00BB8E16 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
