@@ -37,7 +37,28 @@
 
 - (double)performCalculation:(NSString *)operation
 {
+    double result = 0;
     
+    if ([operation isEqualToString:@"+"]) {
+        result = [self setOperand] + [self setOperand];
+    }
+    
+    else if ([operation isEqualToString:@"-"]) {
+        double subtracthend = [self setOperand];
+        result = [self setOperand] - subtracthend;
+    }
+    
+    else if ([operation isEqualToString:@"*"]) {
+        result = [self setOperand] * [self setOperand];
+    }
+    
+    else if ([operation isEqualToString:@"/"]) {
+        double divisor = [self setOperand];
+        result = [self setOperand] / divisor;
+    }
+    [self getOperand:result];
+    
+    return result;
 }
 
 @end
