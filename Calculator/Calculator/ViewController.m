@@ -52,8 +52,6 @@
         _display.text = digit;
         _userIsInTheMiddleOfEnteringANumber = YES;
     }
-    
-    _display.text = [_display.text stringByAppendingString:digit];
 }
 
 - (IBAction)equalPressed
