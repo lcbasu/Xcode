@@ -21,6 +21,8 @@
 		1F82599F19166A2600DB5763 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F82598119166A2600DB5763 /* UIKit.framework */; };
 		1F8259A719166A2600DB5763 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F8259A519166A2600DB5763 /* InfoPlist.strings */; };
 		1F8259A919166A2600DB5763 /* TwitterTimelineTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F8259A819166A2600DB5763 /* TwitterTimelineTests.m */; };
+		1F8259B319166A7F00DB5763 /* Accounts.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F8259B219166A7F00DB5763 /* Accounts.framework */; };
+		1F8259B519166A9000DB5763 /* Social.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F8259B419166A9000DB5763 /* Social.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,8 @@
 		1F8259A419166A2600DB5763 /* TwitterTimelineTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TwitterTimelineTests-Info.plist"; sourceTree = "<group>"; };
 		1F8259A619166A2600DB5763 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1F8259A819166A2600DB5763 /* TwitterTimelineTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TwitterTimelineTests.m; sourceTree = "<group>"; };
+		1F8259B219166A7F00DB5763 /* Accounts.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Accounts.framework; path = System/Library/Frameworks/Accounts.framework; sourceTree = SDKROOT; };
+		1F8259B419166A9000DB5763 /* Social.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Social.framework; path = System/Library/Frameworks/Social.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F8259B519166A9000DB5763 /* Social.framework in Frameworks */,
+				1F8259B319166A7F00DB5763 /* Accounts.framework in Frameworks */,
 				1F82598019166A2600DB5763 /* CoreGraphics.framework in Frameworks */,
 				1F82598219166A2600DB5763 /* UIKit.framework in Frameworks */,
 				1F82597E19166A2600DB5763 /* Foundation.framework in Frameworks */,
@@ -101,6 +107,8 @@
 		1F82597C19166A2600DB5763 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1F8259B419166A9000DB5763 /* Social.framework */,
+				1F8259B219166A7F00DB5763 /* Accounts.framework */,
 				1F82597D19166A2600DB5763 /* Foundation.framework */,
 				1F82597F19166A2600DB5763 /* CoreGraphics.framework */,
 				1F82598119166A2600DB5763 /* UIKit.framework */,
