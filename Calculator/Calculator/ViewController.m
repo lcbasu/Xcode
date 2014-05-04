@@ -14,10 +14,18 @@
 
 @implementation ViewController
 
+@synthesize display = _display;
+
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    _display.text = @"0";
+}
+- (IBAction)digitPressed:(id)sender
+{
+    NSString *digit = [sender currentTitle];
+    _display.text = [_display.text stringByAppendingString:digit];
 }
 
 - (void)didReceiveMemoryWarning
