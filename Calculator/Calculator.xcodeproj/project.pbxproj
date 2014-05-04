@@ -21,6 +21,7 @@
 		1F0F38A91915DF4D00DF27E8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F0F388B1915DF4C00DF27E8 /* UIKit.framework */; };
 		1F0F38B11915DF4D00DF27E8 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F0F38AF1915DF4D00DF27E8 /* InfoPlist.strings */; };
 		1F0F38B31915DF4D00DF27E8 /* CalculatorTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F38B21915DF4D00DF27E8 /* CalculatorTests.m */; };
+		1F0F38BE1915EA6B00DF27E8 /* Brain.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0F38BD1915EA6B00DF27E8 /* Brain.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,8 @@
 		1F0F38AE1915DF4D00DF27E8 /* CalculatorTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "CalculatorTests-Info.plist"; sourceTree = "<group>"; };
 		1F0F38B01915DF4D00DF27E8 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1F0F38B21915DF4D00DF27E8 /* CalculatorTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CalculatorTests.m; sourceTree = "<group>"; };
+		1F0F38BC1915EA6B00DF27E8 /* Brain.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = Brain.h; sourceTree = "<group>"; };
+		1F0F38BD1915EA6B00DF27E8 /* Brain.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Brain.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +118,8 @@
 				1F0F38961915DF4C00DF27E8 /* AppDelegate.h */,
 				1F0F38971915DF4C00DF27E8 /* AppDelegate.m */,
 				1F0F38991915DF4C00DF27E8 /* Main.storyboard */,
+				1F0F38BC1915EA6B00DF27E8 /* Brain.h */,
+				1F0F38BD1915EA6B00DF27E8 /* Brain.m */,
 				1F0F389C1915DF4C00DF27E8 /* ViewController.h */,
 				1F0F389D1915DF4C00DF27E8 /* ViewController.m */,
 				1F0F389F1915DF4C00DF27E8 /* Images.xcassets */,
@@ -251,6 +256,7 @@
 			files = (
 				1F0F389E1915DF4C00DF27E8 /* ViewController.m in Sources */,
 				1F0F38981915DF4C00DF27E8 /* AppDelegate.m in Sources */,
+				1F0F38BE1915EA6B00DF27E8 /* Brain.m in Sources */,
 				1F0F38941915DF4C00DF27E8 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
