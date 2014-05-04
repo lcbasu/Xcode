@@ -65,6 +65,7 @@
                                 </state>
                                 <connections>
                                     <action selector="digitPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="eMe-RQ-94U"/>
+                                    <action selector="operationPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="seH-6c-3oE"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1f3-pr-gSq">
@@ -76,6 +77,7 @@
                                 </state>
                                 <connections>
                                     <action selector="digitPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hhI-Z9-Sqj"/>
+                                    <action selector="operationPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="IDm-Yt-hkz"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="E1q-sw-NU7">
@@ -164,6 +166,7 @@
                                 </state>
                                 <connections>
                                     <action selector="digitPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="hH6-sH-294"/>
+                                    <action selector="operationPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="mDM-7c-sWM"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fMt-on-qev">
@@ -175,6 +178,7 @@
                                 </state>
                                 <connections>
                                     <action selector="digitPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="iQI-ce-5nn"/>
+                                    <action selector="operationPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="2hP-4S-Gig"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pdY-5P-2WH">
@@ -186,6 +190,7 @@
                                 </state>
                                 <connections>
                                     <action selector="digitPressed:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="DzA-eK-TNM"/>
+                                    <action selector="equalPressed" destination="vXZ-lx-hvc" eventType="touchUpInside" id="H7d-CL-hXy"/>
                                 </connections>
                             </button>
                         </subviews>

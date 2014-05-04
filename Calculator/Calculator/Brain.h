@@ -10,4 +10,9 @@
 
 @interface Brain : NSObject
 
+- (void)getOperand:(double)operand;
+- (double)performCalculation:(NSString *)operation;
+
+@property (nonatomic, strong) NSMutableArray *operand;
+
 @end
