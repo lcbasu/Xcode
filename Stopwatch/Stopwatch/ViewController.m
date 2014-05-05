@@ -57,6 +57,20 @@
 
 - (IBAction)buttonPressed:(id)sender
 {
-
+    if (start == false) {
+        
+        start = true;
+        
+        time = [NSDate timeIntervalSinceReferenceDate];
+        
+        [sender setTitle:@"Stop" forState:UIControlStateNormal];
+        
+    } else {
+        
+        start = false;
+        
+        [sender setTitle:@"Start" forState:UIControlStateNormal];
+        
+    }
 }
 @end
