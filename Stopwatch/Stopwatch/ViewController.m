@@ -16,12 +16,17 @@
 
 @end
 
-@implementation ViewController
+@implementation ViewController {
+    
+    bool start;
+    NSTimeInterval time;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-	// Do any additional setup after loading the view, typically from a nib.
+    
+    self.display.text = @"00:00";
 }
 
 - (void)didReceiveMemoryWarning
