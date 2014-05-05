@@ -65,6 +65,8 @@
         
         [sender setTitle:@"Stop" forState:UIControlStateNormal];
         
+        [self update];
+        
     } else {
         
         start = false;
