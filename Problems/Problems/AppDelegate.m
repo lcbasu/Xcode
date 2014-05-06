@@ -16,7 +16,7 @@
 {
     UINavigationController *navController = (UINavigationController *)self.window.rootViewController;
 	MainViewController *viewController = (MainViewController *)navController.topViewController;
-	viewController.list = [NSArray arrayWithObjects:@"One", @"Two"];
+	viewController.list = [NSArray arrayWithObjects:@"One", @"Two", nil];
 	return YES;
 }
 
