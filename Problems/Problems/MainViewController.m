@@ -4,6 +4,7 @@
 @implementation MainViewController
 
 @synthesize list = _list;
+@synthesize button = _button;
 
 - (void)viewDidLoad
 {
