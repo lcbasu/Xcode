@@ -20,12 +20,11 @@
 {
 	return (interfaceOrientation != UIInterfaceOrientationPortraitUpsideDown);
 }
-- (IBAction)butonTapped:(id)sender
+- (IBAction)buttonTapped:(id)sender
 {
     NSLog("You tapped on: %s", sender);
     
 	[self performSegueWithIdentifier:@"ModalSegue" sender:sender];
 }
-
 
 @end
