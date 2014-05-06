@@ -29,7 +29,7 @@
                     <navigationItem key="navigationItem" id="SPg-Pk-FM7"/>
                     <connections>
                         <outlet property="button" destination="9bg-KP-2SM" id="j6m-JW-usG"/>
-                        <segue destination="DLU-Wv-Pet" kind="modal" identifier="" id="zMa-p0-spD"/>
+                        <segue destination="DLU-Wv-Pet" kind="modal" identifier="ModalSegue" id="zMa-p0-spD"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
