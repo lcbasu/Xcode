@@ -20,7 +20,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
-                                    <action selector="buttonTapped" destination="2" eventType="touchUpInside" id="fb1-rd-nZW"/>
+                                    <action selector="butonTapped:" destination="2" eventType="touchUpInside" id="wIx-c7-1fj"/>
                                 </connections>
                             </button>
                         </subviews>
