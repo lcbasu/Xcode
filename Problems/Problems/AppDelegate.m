@@ -14,7 +14,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
-	MainViewController *viewController = (MainViewController *)self.window.rootViewController;
+    UINavigationController *navController = (UINavigationController *)self.window.rootViewController;
+	MainViewController *viewController = (MainViewController *)navController.topViewController;
 	viewController.list = [NSArray arrayWithObjects:@"One", @"Two"];
 	return YES;
 }
