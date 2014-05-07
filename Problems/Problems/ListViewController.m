@@ -46,11 +46,11 @@
 {
 	static NSString *CellIdentifier = @"Cell";
 	UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:CellIdentifier];
-    
-    NSLog(@"the cell is %@", cell);
 
 	cell.textLabel.text = [list objectAtIndex:indexPath.row];
 
+    NSLog(@"array contents: %@", list);
+    
 	return cell;
 }
 
