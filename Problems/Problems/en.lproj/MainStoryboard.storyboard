@@ -36,10 +36,10 @@
             </objects>
             <point key="canvasLocation" x="619" y="145"/>
         </scene>
-        <!--Table View Controller-->
+        <!--List View Controller-->
         <scene sceneID="3hg-rT-Hzx">
             <objects>
-                <tableViewController id="DLU-Wv-Pet" sceneMemberID="viewController">
+                <tableViewController id="DLU-Wv-Pet" customClass="ListViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="yJN-U7-Nef">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="480"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>

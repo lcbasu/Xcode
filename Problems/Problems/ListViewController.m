@@ -22,6 +22,7 @@
 - (void)viewDidLoad
 {
 	[super viewDidLoad];
+    NSLog(@"viewDidLoad is called");
 }
 
 - (void)viewDidUnload
