@@ -14,4 +14,8 @@
 
 @property (nonatomic, strong) NSMutableArray *movieQuotes;
 
+@property (nonatomic, strong) IBOutlet UITextView *quoteText;
+
+- (IBAction)quoteButtonTapped:(id)sender;
+
 @end

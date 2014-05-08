@@ -36,4 +36,13 @@
     // Dispose of any resources that can be recreated.
 }
 
+
+- (IBAction)quoteButtonTapped:(id)sender
+{
+    int totalQuotes = [self.myQuotes count];
+    int index = (arc4random() % totalQuotes);
+    NSString *my_quote = self.myQuotes[index];
+    self.quoteText.text = [NSString stringWithFormat:@"Quote:\n\n%@",  my_quote];
+}
+
 @end
