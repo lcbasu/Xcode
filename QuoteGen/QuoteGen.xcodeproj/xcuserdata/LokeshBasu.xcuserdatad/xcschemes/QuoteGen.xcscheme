@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1FC251E518EB2EB400A48A5F"
+               BlueprintIdentifier = "1F0310BC191A99A900339A6D"
                BuildableName = "QuoteGen.app"
                BlueprintName = "QuoteGen"
                ReferencedContainer = "container:QuoteGen.xcodeproj">
@@ -32,7 +32,7 @@
             skipped = "NO">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "1FC2520618EB2EB400A48A5F"
+               BlueprintIdentifier = "1F0310DD191A99A900339A6D"
                BuildableName = "QuoteGenTests.xctest"
                BlueprintName = "QuoteGenTests"
                ReferencedContainer = "container:QuoteGen.xcodeproj">
@@ -42,7 +42,7 @@
       <MacroExpansion>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1FC251E518EB2EB400A48A5F"
+            BlueprintIdentifier = "1F0310BC191A99A900339A6D"
             BuildableName = "QuoteGen.app"
             BlueprintName = "QuoteGen"
             ReferencedContainer = "container:QuoteGen.xcodeproj">
@@ -61,7 +61,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1FC251E518EB2EB400A48A5F"
+            BlueprintIdentifier = "1F0310BC191A99A900339A6D"
             BuildableName = "QuoteGen.app"
             BlueprintName = "QuoteGen"
             ReferencedContainer = "container:QuoteGen.xcodeproj">
@@ -79,7 +79,7 @@
       <BuildableProductRunnable>
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "1FC251E518EB2EB400A48A5F"
+            BlueprintIdentifier = "1F0310BC191A99A900339A6D"
             BuildableName = "QuoteGen.app"
             BlueprintName = "QuoteGen"
             ReferencedContainer = "container:QuoteGen.xcodeproj">

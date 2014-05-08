@@ -1,14 +1,14 @@
 //
-//  RaywenderlichAppDelegate.m
+//  AppDelegate.m
 //  QuoteGen
 //
-//  Created by Lokesh Basu on 01/04/14.
+//  Created by Lokesh Basu on 07/05/14.
 //  Copyright (c) 2014 IIT Roorkee. All rights reserved.
 //
 
-#import "RaywenderlichAppDelegate.h"
+#import "AppDelegate.h"
 
-@implementation RaywenderlichAppDelegate
+@implementation AppDelegate
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions
 {
