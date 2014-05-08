@@ -18,6 +18,9 @@
 {
     [super viewDidLoad];
     
+    NSString *plistCatPath = [[NSBundle mainBundle] pathForResource:@"quotes" ofType:@"plist"];
+    self.movieQuotes= [NSMutableArray arrayWithContentsOfFile:plistCatPath];
+    
     self.myQuotes = @[
                       @"Live and let live",
                       @"Don't cry over spilt milk",
@@ -39,9 +42,9 @@
 
 - (IBAction)quoteButtonTapped:(id)sender
 {
-    int totalQuotes = [self.myQuotes count];
+    int totalQuotes = [self.movieQuotes count];
     int index = (arc4random() % totalQuotes);
-    NSString *my_quote = self.myQuotes[index];
+    NSString *my_quote = self.movieQuotes[index][@"quote"];
     self.quoteText.text = [NSString stringWithFormat:@"Quote:\n\n%@",  my_quote];
 }
 
