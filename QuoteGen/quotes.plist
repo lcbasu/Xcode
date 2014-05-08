@@ -1,0 +1,202 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+    <array>
+        
+        
+        <dict>
+            <key>category</key>  <string>classic</string>
+            <key>quote</key>  <string>Frankly my dear, I don't give a dam.</string>
+            <key>source</key>  <string>Gone with the wind</string>
+        </dict>
+        
+        <dict>
+            <key>category</key>  <string>classic</string>
+            <key>quote</key>  <string>Here's looking at you kid.</string>
+            <key>source</key>  <string>Casablanca</string>
+        </dict>
+        
+        <dict>
+            <key>category</key>  <string>classic</string>
+            <key>quote</key>  <string>There's no place like home.</string>
+            <key>source</key>  <string>Wizard of Oz</string>
+        </dict>
+        <dict>
+            <key>category</key>  <string>classic</string>
+            <key>quote</key>  <string>Play it again sam.</string>
+            <key>source</key>  <string></string>
+        </dict>
+        <dict>
+            <key>category</key>  <string>classic</string>
+            <key>quote</key>  <string>Elementary my dear Watson.</string>
+            <key>source</key>  <string>Sherlock Holmes</string>
+        </dict>
+        
+        <dict>
+            <key>category</key>  <string>classic</string>
+            <key>quote</key>  <string>Fasten your seatbelts. It's going to be a bumpy night.</string>
+            <key>source</key>  <string>All about Eve</string>
+        </dict>
+        
+        <dict>
+            <key>category</key>  <string>classic</string>
+            <key>quote</key>  <string>I have not the pleasure of understanding you.</string>
+            <key>source</key>  <string>Pride and Predice</string>
+        </dict>
+        
+        <dict>
+            <key>category</key>  <string>classic</string>
+            <key>quote</key>  <string>O Romeo, Romeo! wherefore art thou Romeo?</string>
+            <key>source</key>  <string>Romeo and Juliet</string>
+        </dict>
+        
+        <dict>
+            <key>category</key>  <string>classic</string>
+            <key>quote</key>  <string>To be or not to be</string>
+            <key>source</key>  <string>Hamlet</string>
+        </dict>
+        
+        <dict>
+            <key>category</key>  <string>classic</string>
+            <key>quote</key>  <string>...Crime is only a left-handed form of human endeavor.</string>
+            <key>source</key>  <string>The Asphalt Jungle</string>
+        </dict>
+        
+        <dict>
+            <key>category</key>  <string>classic</string>
+            <key>quote</key>  <string>That's, uh, quite a dress you almost have on...What holds it up?</string>
+            <key>source</key>  <string>An American in Paris</string>
+        </dict>
+        
+        <dict>
+            <key>category</key>  <string>classic</string>
+            <key>quote</key>  <string>Love, desire, ambition, faith - without them life is so simple, believe me</string>
+            <key>source</key>  <string>Invasion of the Body Snatchers</string>
+        </dict>
+        
+        <dict>
+            <key>category</key>  <string>modern</string>
+            <key>quote</key>  <string>Go ahead make my day.</string>
+            <key>source</key>  <string>Dirty Harry</string>
+        </dict>
+        
+        <dict>
+            <key>category</key>  <string>modern</string>
+            <key>quote</key>  <string>May the Force be with you.</string>
+            <key>source</key>  <string>Star wars</string>
+        </dict>
+        <dict>
+            <key>category</key>  <string>modern</string>
+            <key>quote</key>  <string>Hasta la vista, baby</string>
+            <key>source</key>  <string>Terminator</string>
+        </dict>
+        <dict>
+            <key>category</key>  <string>modern</string>
+            <key>quote</key>  <string>I feel the need for speed.</string>
+            <key>source</key>  <string>Top Gun</string>
+        </dict>
+        <dict>
+            <key>category</key>  <string>modern</string>
+            <key>quote</key>  <string>She doesn't even go here.</string>
+            <key>source</key>  <string>Mean Girls</string>
+        </dict>
+        <dict>
+            <key>category</key>  <string>modern</string>
+            <key>quote</key>  <string>It takes a great deal of bravery to stand up to your enemies, but a great deal more to stand up to your friends.</string>
+            <key>source</key>  <string>Harry Potter</string>
+        </dict>
+        <dict>
+            <key>category</key>  <string>modern</string>
+            <key>quote</key>  <string>I solemnly swear that I am up to no good.</string>
+            <key>source</key>  <string>Harry Potter</string>
+        </dict>
+        
+        <dict>
+            <key>category</key>  <string>modern</string>
+            <key>quote</key>  <string>You like pain? Try wearing a corset.</string>
+            <key>source</key>  <string>Pirates of the Carribean</string>
+        </dict>
+        
+        <dict>
+            <key>category</key>  <string>modern</string>
+            <key>quote</key>  <string>Houston, we have a problem.</string>
+            <key>source</key>  <string>Apollo 13</string>
+        </dict>
+        
+        <dict>
+            <key>category</key>  <string>modern</string>
+            <key>quote</key>  <string>I'll be back.</string>
+            <key>source</key>  <string>The Terminator</string>
+        </dict>
+        <dict>
+            <key>category</key>  <string>modern</string>
+            <key>quote</key>  <string>E.T. phone home.</string>
+            <key>source</key>  <string>E.T.</string>
+        </dict>
+        <dict>
+            <key>category</key>  <string>modern</string>
+            <key>quote</key>  <string>Why are you trying so hard to fit in when you were born to stand out?</string>
+            <key>source</key>  <string>What a girl wants</string>
+        </dict>
+        
+        <dict>
+            <key>category</key>  <string>modern</string>
+            <key>quote</key>  <string>Watch you talkin about Willis?</string>
+            <key>source</key>  <string>Different Strokes</string>
+        </dict>
+        
+        <dict>
+            <key>category</key>  <string>modern</string>
+            <key>quote</key>  <string>The plane, the plane</string>
+            <key>source</key>  <string>Fantasy Island</string>
+        </dict>
+        <dict>
+            <key>category</key>  <string>modern</string>
+            <key>quote</key>  <string>D'oh</string>
+            <key>source</key>  <string>The Simpsons</string>
+        </dict>
+        <dict>
+            <key>category</key>  <string>modern</string>
+            <key>quote</key>  <string>Kids, you tried your best and you failed miserably. The lesson is, never try.</string>
+            <key>source</key>  <string>The Simpsons</string>
+        </dict>
+        
+        <dict>
+            <key>category</key>  <string>modern</string>
+            <key>quote</key>  <string>You don’t win friends with salad.</string>
+            <key>source</key>  <string>The Simpsons</string>
+        </dict>
+        
+        <dict>
+            <key>category</key>  <string>modern</string>
+            <key>quote</key>  <string>Whoever said that money doesn't buy happiness didn't know where to shop.</string>
+            <key>source</key>  <string>Gossip Girl</string>
+        </dict>
+        
+        <dict>
+            <key>category</key>  <string>modern</string>
+            <key>quote</key>  <string>If I were you, I'd accessorize with some gloves. Even a manicure can't mask those peasant hands.</string>
+            <key>source</key>  <string>Gossip Girl</string>
+        </dict>
+        
+        <dict>
+            <key>category</key>  <string>modern</string>
+            <key>quote</key>  <string>I tried to be diplomatic, but mostly I just lied a lot.</string>
+            <key>source</key>  <string>Twilight</string>
+        </dict>
+        
+        
+        <dict>
+            <key>category</key>  <string>modern</string>
+            <key>quote</key>  <string>Once people start throwing wet stuff, I go inside.</string>
+            <key>source</key>  <string>Twilight</string>
+        </dict>
+        
+        <dict>
+            <key>category</key>  <string>modern</string>
+            <key>quote</key>  <string>I don’t like to lie – so there’d better be a good reason why I’m doing it..</string>
+            <key>source</key>  <string>Twilight</string>
+        </dict>
+        
+    </array>
+</plist>

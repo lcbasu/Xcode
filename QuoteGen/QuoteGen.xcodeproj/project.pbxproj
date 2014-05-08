@@ -21,6 +21,7 @@
 		1F0310E2191A99A900339A6D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F0310C4191A99A900339A6D /* UIKit.framework */; };
 		1F0310EA191A99A900339A6D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F0310E8191A99A900339A6D /* InfoPlist.strings */; };
 		1F0310EC191A99A900339A6D /* QuoteGenTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0310EB191A99A900339A6D /* QuoteGenTests.m */; };
+		1F19C50F191B466B002ACA27 /* quotes.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F19C50E191B466B002ACA27 /* quotes.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		1F0310E7191A99A900339A6D /* QuoteGenTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "QuoteGenTests-Info.plist"; sourceTree = "<group>"; };
 		1F0310E9191A99A900339A6D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1F0310EB191A99A900339A6D /* QuoteGenTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = QuoteGenTests.m; sourceTree = "<group>"; };
+		1F19C50E191B466B002ACA27 /* quotes.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = quotes.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +84,7 @@
 		1F0310B4191A99A900339A6D = {
 			isa = PBXGroup;
 			children = (
+				1F19C50E191B466B002ACA27 /* quotes.plist */,
 				1F0310C6191A99A900339A6D /* QuoteGen */,
 				1F0310E5191A99A900339A6D /* QuoteGenTests */,
 				1F0310BF191A99A900339A6D /* Frameworks */,
@@ -231,6 +234,7 @@
 				1F0310D9191A99A900339A6D /* Images.xcassets in Resources */,
 				1F0310CB191A99A900339A6D /* InfoPlist.strings in Resources */,
 				1F0310D4191A99A900339A6D /* Main.storyboard in Resources */,
+				1F19C50F191B466B002ACA27 /* quotes.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -456,6 +460,7 @@
 				1F0310F1191A99A900339A6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F0310F2191A99A900339A6D /* Build configuration list for PBXNativeTarget "QuoteGenTests" */ = {
 			isa = XCConfigurationList;
@@ -464,6 +469,7 @@
 				1F0310F4191A99A900339A6D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
