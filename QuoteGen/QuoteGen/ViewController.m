@@ -44,6 +44,7 @@
 {
     int totalQuotes = [self.movieQuotes count];
     int index = (arc4random() % totalQuotes);
+    //NSString *my_quote = [self.myQuotes objectAtIndex:index];
     NSString *my_quote = self.movieQuotes[index][@"quote"];
     self.quoteText.text = [NSString stringWithFormat:@"Quote:\n\n%@",  my_quote];
 }
