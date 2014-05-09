@@ -40,13 +40,15 @@
 }
 
 
-- (IBAction)quoteButtonTapped:(id)sender
+-(IBAction)quoteButtonTapped:(id)sender
 {
-    int totalQuotes = [self.movieQuotes count];
-    int index = (arc4random() % totalQuotes);
-    //NSString *my_quote = [self.myQuotes objectAtIndex:index];
-    NSString *my_quote = self.movieQuotes[index][@"quote"];
-    self.quoteText.text = [NSString stringWithFormat:@"Quote:\n\n%@",  my_quote];
+    if (self.quoteOpt.selectedSegmentIndex == 2)
+    {
+        int array_tot = [self.myQuotes count];
+        int index = (arc4random() % array_tot);
+        NSString *my_quote = self.myQuotes[index];
+        self.quoteText.text = [NSString stringWithFormat:@"Quote:\n\n%@",  my_quote];
+    }
 }
 
 @end
