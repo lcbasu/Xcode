@@ -47,6 +47,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <connections>
+                        <outlet property="quoteOpt" destination="yGD-Ps-CIO" id="0WM-Mb-bU4"/>
                         <outlet property="quoteText" destination="TBv-Ql-IkJ" id="FPQ-oL-oIo"/>
                     </connections>
                 </viewController>

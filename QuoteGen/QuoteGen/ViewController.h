@@ -16,7 +16,8 @@
 
 @property (nonatomic, strong) IBOutlet UITextView *quoteText;
 
-@property (nonatomic, strong) IBOutlet UISegmentedControl *quoteOpt;
+//@property (nonatomic, strong) IBOutlet UISegmentedControl *quoteOpt;
+@property (strong, nonatomic) IBOutlet UISegmentedControl *quoteOpt;
 
 - (IBAction)quoteButtonTapped:(id)sender;
 
