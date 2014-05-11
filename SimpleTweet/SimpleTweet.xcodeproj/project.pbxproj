@@ -21,6 +21,14 @@
 		1FEDD86E191F4F0600DA4BA0 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FEDD850191F4F0500DA4BA0 /* UIKit.framework */; };
 		1FEDD876191F4F0600DA4BA0 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1FEDD874191F4F0600DA4BA0 /* InfoPlist.strings */; };
 		1FEDD878191F4F0600DA4BA0 /* SimpleTweetTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FEDD877191F4F0600DA4BA0 /* SimpleTweetTests.m */; };
+		1FEDD889191F506A00DA4BA0 /* UIKitButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FEDD881191F506A00DA4BA0 /* UIKitButton@2x.png */; };
+		1FEDD88A191F506A00DA4BA0 /* UIKitButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FEDD882191F506A00DA4BA0 /* UIKitButton.png */; };
+		1FEDD88B191F506A00DA4BA0 /* CheatSheetButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FEDD883191F506A00DA4BA0 /* CheatSheetButton.png */; };
+		1FEDD88C191F506A00DA4BA0 /* CheatSheetButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FEDD884191F506A00DA4BA0 /* CheatSheetButton@2x.png */; };
+		1FEDD88D191F506A00DA4BA0 /* HorizontalTablesButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FEDD885191F506A00DA4BA0 /* HorizontalTablesButton@2x.png */; };
+		1FEDD88E191F506A00DA4BA0 /* PathfindingButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FEDD886191F506A00DA4BA0 /* PathfindingButton.png */; };
+		1FEDD88F191F506A00DA4BA0 /* PathfindingButton@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FEDD887191F506A00DA4BA0 /* PathfindingButton@2x.png */; };
+		1FEDD890191F506A00DA4BA0 /* HorizontalTablesButton.png in Resources */ = {isa = PBXBuildFile; fileRef = 1FEDD888191F506A00DA4BA0 /* HorizontalTablesButton.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +61,14 @@
 		1FEDD873191F4F0600DA4BA0 /* SimpleTweetTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SimpleTweetTests-Info.plist"; sourceTree = "<group>"; };
 		1FEDD875191F4F0600DA4BA0 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1FEDD877191F4F0600DA4BA0 /* SimpleTweetTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SimpleTweetTests.m; sourceTree = "<group>"; };
+		1FEDD881191F506A00DA4BA0 /* UIKitButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "UIKitButton@2x.png"; sourceTree = "<group>"; };
+		1FEDD882191F506A00DA4BA0 /* UIKitButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = UIKitButton.png; sourceTree = "<group>"; };
+		1FEDD883191F506A00DA4BA0 /* CheatSheetButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = CheatSheetButton.png; sourceTree = "<group>"; };
+		1FEDD884191F506A00DA4BA0 /* CheatSheetButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "CheatSheetButton@2x.png"; sourceTree = "<group>"; };
+		1FEDD885191F506A00DA4BA0 /* HorizontalTablesButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "HorizontalTablesButton@2x.png"; sourceTree = "<group>"; };
+		1FEDD886191F506A00DA4BA0 /* PathfindingButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PathfindingButton.png; sourceTree = "<group>"; };
+		1FEDD887191F506A00DA4BA0 /* PathfindingButton@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "PathfindingButton@2x.png"; sourceTree = "<group>"; };
+		1FEDD888191F506A00DA4BA0 /* HorizontalTablesButton.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = HorizontalTablesButton.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,6 +98,14 @@
 		1FEDD840191F4F0500DA4BA0 = {
 			isa = PBXGroup;
 			children = (
+				1FEDD881191F506A00DA4BA0 /* UIKitButton@2x.png */,
+				1FEDD882191F506A00DA4BA0 /* UIKitButton.png */,
+				1FEDD883191F506A00DA4BA0 /* CheatSheetButton.png */,
+				1FEDD884191F506A00DA4BA0 /* CheatSheetButton@2x.png */,
+				1FEDD885191F506A00DA4BA0 /* HorizontalTablesButton@2x.png */,
+				1FEDD886191F506A00DA4BA0 /* PathfindingButton.png */,
+				1FEDD887191F506A00DA4BA0 /* PathfindingButton@2x.png */,
+				1FEDD888191F506A00DA4BA0 /* HorizontalTablesButton.png */,
 				1FEDD852191F4F0500DA4BA0 /* SimpleTweet */,
 				1FEDD871191F4F0600DA4BA0 /* SimpleTweetTests */,
 				1FEDD84B191F4F0500DA4BA0 /* Frameworks */,
@@ -228,9 +252,17 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FEDD88A191F506A00DA4BA0 /* UIKitButton.png in Resources */,
+				1FEDD88C191F506A00DA4BA0 /* CheatSheetButton@2x.png in Resources */,
 				1FEDD865191F4F0600DA4BA0 /* Images.xcassets in Resources */,
+				1FEDD890191F506A00DA4BA0 /* HorizontalTablesButton.png in Resources */,
+				1FEDD88E191F506A00DA4BA0 /* PathfindingButton.png in Resources */,
+				1FEDD88D191F506A00DA4BA0 /* HorizontalTablesButton@2x.png in Resources */,
+				1FEDD889191F506A00DA4BA0 /* UIKitButton@2x.png in Resources */,
 				1FEDD857191F4F0500DA4BA0 /* InfoPlist.strings in Resources */,
+				1FEDD88F191F506A00DA4BA0 /* PathfindingButton@2x.png in Resources */,
 				1FEDD860191F4F0600DA4BA0 /* Main.storyboard in Resources */,
+				1FEDD88B191F506A00DA4BA0 /* CheatSheetButton.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
