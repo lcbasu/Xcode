@@ -22,6 +22,9 @@
                                 <state key="normal" title="Hit Me!">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="showAlert" destination="vXZ-lx-hvc" eventType="touchUpInside" id="r7b-As-Xe6"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
