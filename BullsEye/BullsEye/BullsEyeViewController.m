@@ -28,8 +28,11 @@
 
 - (IBAction)showAlert
 {
-    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Hello, World!" message:@"Bullys Eye test app" delegate:nil cancelButtonTitle:@"Cancel" otherButtonTitles:nil];
-    
+    UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Hello, World!"
+                                                        message:@"Bullys Eye test app"
+                                                       delegate:nil
+                                              cancelButtonTitle:@"Cancel"
+                                              otherButtonTitles:nil];    
     [alertView show];
 }
 
