@@ -21,7 +21,7 @@
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-    _currentValue = 50;
+    _currentValue = self.slider.value;
 }
 
 - (void)didReceiveMemoryWarning
