@@ -36,4 +36,7 @@
     [alertView show];
 }
 
+- (IBAction)slider:(id)sender {
+}
+
 @end
