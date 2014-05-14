@@ -13,11 +13,15 @@
 @end
 
 @implementation BullsEyeViewController
+{
+    int _currentValue;
+}
 
 - (void)viewDidLoad
 {
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
+    _currentValue = 50;
 }
 
 - (void)didReceiveMemoryWarning
@@ -28,8 +32,9 @@
 
 - (IBAction)showAlert
 {
+    NSString *message = [NSString stringWithFormat:@"The value of the slider is: %d", _currentValue];
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Hello, World!"
-                                                        message:@"Bullys Eye test app"
+                                                        message:message
                                                        delegate:nil
                                               cancelButtonTitle:@"Cancel"
                                               otherButtonTitles:nil];    
@@ -38,7 +43,7 @@
 
 - (IBAction)sliderMoved:(UISlider *)slider
 {
-    NSLog(@"The value of the slider is now: %f", slider.value);
+    _currentValue = lround(slider.value);
 }
 
 @end
