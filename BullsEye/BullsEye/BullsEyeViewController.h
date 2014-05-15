@@ -8,7 +8,7 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BullsEyeViewController : UIViewController
+@interface BullsEyeViewController : UIViewController <UIAlertViewDelegate>
 
 @property (strong, nonatomic) IBOutlet UISlider *slider;
 @property (strong, nonatomic) IBOutlet UILabel *targetLabel;
