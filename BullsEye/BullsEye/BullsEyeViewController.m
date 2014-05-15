@@ -16,6 +16,7 @@
 {
     int _currentValue;
     int _targetValue;
+    int _score;
 }
 
 - (void)viewDidLoad
@@ -35,6 +36,7 @@
 - (void)updateLabels
 {
     self.targetLabel.text = [NSString stringWithFormat:@"%d", _targetValue];
+    self.scoreLabel.text = [NSString stringWithFormat:@"%d", _score];
 }
 
 - (void)didReceiveMemoryWarning
@@ -45,7 +47,11 @@
 
 - (IBAction)showAlert
 {
-    NSString *message = [NSString stringWithFormat:@"The value of the slider is: %d\nThe target value is: %d", _currentValue, _targetValue];
+    int difference = abs(_targetValue - _currentValue);
+    int points = 100 - difference;
+    _score += points;
+    
+    NSString *message = [NSString stringWithFormat:@"You scored %d", _score];
     UIAlertView *alertView = [[UIAlertView alloc] initWithTitle:@"Hello, World!"
                                                         message:message
                                                        delegate:nil
