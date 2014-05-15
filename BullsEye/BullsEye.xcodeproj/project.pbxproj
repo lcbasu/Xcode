@@ -22,6 +22,7 @@
 		1F50268E19207E5900D25431 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F50268C19207E5900D25431 /* InfoPlist.strings */; };
 		1F50269019207E5900D25431 /* BullsEyeTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F50268F19207E5900D25431 /* BullsEyeTests.m */; };
 		1FB07951192452C6001781C2 /* AboutViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB07950192452C6001781C2 /* AboutViewController.m */; };
+		1FB07955192463A8001781C2 /* BullsEye.html in Resources */ = {isa = PBXBuildFile; fileRef = 1FB07954192463A8001781C2 /* BullsEye.html */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -56,6 +57,7 @@
 		1F50268F19207E5900D25431 /* BullsEyeTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BullsEyeTests.m; sourceTree = "<group>"; };
 		1FB0794F192452C6001781C2 /* AboutViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AboutViewController.h; sourceTree = "<group>"; };
 		1FB07950192452C6001781C2 /* AboutViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AboutViewController.m; sourceTree = "<group>"; };
+		1FB07954192463A8001781C2 /* BullsEye.html */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.html; path = BullsEye.html; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +117,7 @@
 		1F50266A19207E5900D25431 /* BullsEye */ = {
 			isa = PBXGroup;
 			children = (
+				1FB07954192463A8001781C2 /* BullsEye.html */,
 				1F50267319207E5900D25431 /* BullsEyeAppDelegate.h */,
 				1F50267419207E5900D25431 /* BullsEyeAppDelegate.m */,
 				1F50267619207E5900D25431 /* Main.storyboard */,
@@ -235,6 +238,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F50267D19207E5900D25431 /* Images.xcassets in Resources */,
+				1FB07955192463A8001781C2 /* BullsEye.html in Resources */,
 				1F50266F19207E5900D25431 /* InfoPlist.strings in Resources */,
 				1F50267819207E5900D25431 /* Main.storyboard in Resources */,
 			);
