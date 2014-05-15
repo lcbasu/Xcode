@@ -16,7 +16,8 @@
 @property (strong, nonatomic) IBOutlet UILabel *roundLabel;
 
 - (IBAction)showAlert;
-
 - (IBAction)sliderMoved:(UISlider *)slider;
+- (IBAction)startOver;
+- (IBAction)startOver2;
 
 @end

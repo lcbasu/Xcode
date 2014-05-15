@@ -23,7 +23,7 @@
 - (void)viewDidLoad
 {
     [super viewDidLoad];
-    [self startNewRound];
+    [self startNewGame];
     [self updateLabels];
 }
 
@@ -89,4 +89,20 @@
     [self updateLabels];
 }
 
+- (void)startNewGame
+{
+    _score = 0;
+    _round = 0;
+    [self startNewRound];
+}
+
+- (IBAction)startOver
+{
+}
+
+- (IBAction)startOver2
+{
+    [self startNewGame];
+    [self updateLabels];
+}
 @end
