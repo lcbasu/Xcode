@@ -15,6 +15,7 @@
 @implementation BullsEyeViewController
 {
     int _currentValue;
+    int _targetValue;
 }
 
 - (void)viewDidLoad
@@ -22,6 +23,7 @@
     [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
     _currentValue = self.slider.value;
+    _targetValue = 1 + arc4random_uniform(100);
 }
 
 - (void)didReceiveMemoryWarning
