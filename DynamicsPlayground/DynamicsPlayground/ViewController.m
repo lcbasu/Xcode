@@ -8,10 +8,12 @@
 
 #import "ViewController.h"
 
-@interface ViewController () {
+@interface ViewController ()
+{
     
     UIDynamicAnimator* _animator;
     UIGravityBehavior* _gravity;
+    UICollisionBehavior* _collision;
 }
 
 @end
@@ -33,6 +35,12 @@
     _animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
     _gravity = [[UIGravityBehavior alloc] initWithItems:@[square]];
     [_animator addBehavior:_gravity];
+    
+    // setting boundaries
+    
+    _collision = [[UICollisionBehavior alloc] initWithItems:@[square]];
+    _collision.translatesReferenceBoundsIntoBoundary = YES;
+    [_animator addBehavior:_collision];
 }
 
 - (void)didReceiveMemoryWarning
