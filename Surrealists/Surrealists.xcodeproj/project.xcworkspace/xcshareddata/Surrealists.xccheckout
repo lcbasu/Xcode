@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
+	<false/>
+	<key>IDESourceControlProjectIdentifier</key>
+	<string>60C0DD92-3421-4EDD-B003-FC2FF8ACB14F</string>
+	<key>IDESourceControlProjectName</key>
+	<string>Surrealists</string>
+	<key>IDESourceControlProjectOriginsDictionary</key>
+	<dict>
+		<key>A21DCF1B-37B7-4ABC-9853-4678D8A63152</key>
+		<string>https://github.com/lokeshguddu/Xcode.git</string>
+	</dict>
+	<key>IDESourceControlProjectPath</key>
+	<string>Surrealists/Surrealists.xcodeproj/project.xcworkspace</string>
+	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
+	<dict>
+		<key>A21DCF1B-37B7-4ABC-9853-4678D8A63152</key>
+		<string>../../..</string>
+	</dict>
+	<key>IDESourceControlProjectURL</key>
+	<string>https://github.com/lokeshguddu/Xcode.git</string>
+	<key>IDESourceControlProjectVersion</key>
+	<integer>110</integer>
+	<key>IDESourceControlProjectWCCIdentifier</key>
+	<string>A21DCF1B-37B7-4ABC-9853-4678D8A63152</string>
+	<key>IDESourceControlProjectWCConfigurations</key>
+	<array>
+		<dict>
+			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
+			<string>public.vcs.git</string>
+			<key>IDESourceControlWCCIdentifierKey</key>
+			<string>A21DCF1B-37B7-4ABC-9853-4678D8A63152</string>
+			<key>IDESourceControlWCCName</key>
+			<string>Xcode</string>
+		</dict>
+	</array>
+</dict>
+</plist>
