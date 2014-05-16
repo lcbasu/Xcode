@@ -8,7 +8,11 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController () {
+    
+    UIDynamicAnimator* _animator;
+    UIGravityBehavior* _gravity;
+}
 
 @end
 
@@ -23,6 +27,12 @@
     UIView *square = [[UIView alloc] initWithFrame:CGRectMake(100, 100, 100, 100)];
     square.backgroundColor = [UIColor redColor];
     [self.view addSubview:square];
+    
+    // gravity and animation
+    
+    _animator = [[UIDynamicAnimator alloc] initWithReferenceView:self.view];
+    _gravity = [[UIGravityBehavior alloc] initWithItems:@[square]];
+    [_animator addBehavior:_gravity];
 }
 
 - (void)didReceiveMemoryWarning
