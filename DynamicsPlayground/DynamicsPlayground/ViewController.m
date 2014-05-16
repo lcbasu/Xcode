@@ -36,9 +36,15 @@
     _gravity = [[UIGravityBehavior alloc] initWithItems:@[square]];
     [_animator addBehavior:_gravity];
     
-    // setting boundaries
+    // barrier for the square box
     
-    _collision = [[UICollisionBehavior alloc] initWithItems:@[square]];
+    UIView *barrier = [[UIView alloc] initWithFrame:CGRectMake(0, 300, 130, 20)];
+    barrier.backgroundColor = [UIColor greenColor];
+    [self.view addSubview:barrier];
+    
+    // setting boundaries for collision
+    
+    _collision = [[UICollisionBehavior alloc] initWithItems:@[square, barrier]];
     _collision.translatesReferenceBoundsIntoBoundary = YES;
     [_animator addBehavior:_collision];
 }
