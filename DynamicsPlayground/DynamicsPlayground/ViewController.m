@@ -14,6 +14,7 @@
     UIDynamicAnimator* _animator;
     UIGravityBehavior* _gravity;
     UICollisionBehavior* _collision;
+    BOOL _firstContact;
 }
 
 @end
@@ -85,6 +86,20 @@
     [UIView animateWithDuration:0.3 animations:^{
         view.backgroundColor = [UIColor redColor];
     }];
+    
+    if (!_firstContact) {
+        _firstContact = YES;
+        
+        UIView *square = [[UIView alloc] initWithFrame:CGRectMake(30, 0, 100, 100)];
+        square.backgroundColor = [UIColor redColor];
+        [self.view addSubview:square];
+        
+        [_collision addItem:square];
+        [_gravity addItem:square];
+        
+        UIAttachmentBehavior *attach = [[UIAttachmentBehavior alloc] initWithItem:view attachedToItem:square];
+        [_animator addBehavior:attach];
+    }
 }
 
 @end
