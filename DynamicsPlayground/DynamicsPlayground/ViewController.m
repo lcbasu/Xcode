@@ -44,9 +44,14 @@
     
     // setting boundaries for collision
     
-    _collision = [[UICollisionBehavior alloc] initWithItems:@[square, barrier]];
+    _collision = [[UICollisionBehavior alloc] initWithItems:@[square]];
     _collision.translatesReferenceBoundsIntoBoundary = YES;
     [_animator addBehavior:_collision];
+    
+    // adding invisible boundary
+    
+    CGPoint rightEdge = CGPointMake(barrier.frame.origin.x + barrier.frame.size.width, barrier.frame.origin.y);
+    [_collision addBoundaryWithIdentifier:@"barrier" fromPoint:barrier.frame.origin toPoint:rightEdge];
 }
 
 - (void)didReceiveMemoryWarning
