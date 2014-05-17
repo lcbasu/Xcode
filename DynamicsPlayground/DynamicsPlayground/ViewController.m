@@ -52,6 +52,14 @@
     
     CGPoint rightEdge = CGPointMake(barrier.frame.origin.x + barrier.frame.size.width, barrier.frame.origin.y);
     [_collision addBoundaryWithIdentifier:@"barrier" fromPoint:barrier.frame.origin toPoint:rightEdge];
+    
+    // behind the scene of collision
+    
+    _collision.action = ^{
+        NSLog(@"%@, %@",
+              NSStringFromCGAffineTransform(square.transform),
+              NSStringFromCGPoint(square.center));
+    };
 }
 
 - (void)didReceiveMemoryWarning
