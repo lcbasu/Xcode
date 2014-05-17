@@ -8,7 +8,7 @@
 
 #import "ViewController.h"
 
-@interface ViewController ()
+@interface ViewController () <UICollectionViewDelegate>
 {
     
     UIDynamicAnimator* _animator;
@@ -45,6 +45,7 @@
     // setting boundaries for collision
     
     _collision = [[UICollisionBehavior alloc] initWithItems:@[square]];
+    _collision.collisionDelegate = self;
     _collision.translatesReferenceBoundsIntoBoundary = YES;
     [_animator addBehavior:_collision];
     
@@ -55,17 +56,22 @@
     
     // behind the scene of collision
     
-    _collision.action = ^{
-        NSLog(@"%@, %@",
-              NSStringFromCGAffineTransform(square.transform),
-              NSStringFromCGPoint(square.center));
-    };
+//    _collision.action = ^{
+//        NSLog(@"%@, %@",
+//              NSStringFromCGAffineTransform(square.transform),
+//              NSStringFromCGPoint(square.center));
+//    };
 }
 
 - (void)didReceiveMemoryWarning
 {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
+}
+
+- (void)collisionBehavior:(UICollisionBehavior *)behavior beganContactForItem:(id<UIDynamicItem>)item
+   withBoundaryIdentifier:(id<NSCopying>)identifier atPoint:(CGPoint)p {
+    NSLog(@"Boundary contact occurred - %@", identifier);
 }
 
 @end
