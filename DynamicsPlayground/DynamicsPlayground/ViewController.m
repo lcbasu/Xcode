@@ -61,6 +61,13 @@
 //              NSStringFromCGAffineTransform(square.transform),
 //              NSStringFromCGPoint(square.center));
 //    };
+    
+    
+    // configuring item properties
+    
+    UIDynamicItemBehavior *itemBehaviour = [[UIDynamicItemBehavior alloc] initWithItems:@[square]];
+    itemBehaviour.elasticity = 0.6;
+    [_animator addBehavior:itemBehaviour];
 }
 
 - (void)didReceiveMemoryWarning
