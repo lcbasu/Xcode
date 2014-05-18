@@ -10,6 +10,7 @@
 		1FD31B451928F1C5005E789D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FD31B441928F1C5005E789D /* Foundation.framework */; };
 		1FD31B481928F1C5005E789D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD31B471928F1C5005E789D /* main.m */; };
 		1FD31B4C1928F1C5005E789D /* DefiningClasses.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1FD31B4B1928F1C5005E789D /* DefiningClasses.1 */; };
+		1FD31B541928F252005E789D /* XYZPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD31B531928F252005E789D /* XYZPerson.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -31,6 +32,8 @@
 		1FD31B471928F1C5005E789D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		1FD31B4A1928F1C5005E789D /* DefiningClasses-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "DefiningClasses-Prefix.pch"; sourceTree = "<group>"; };
 		1FD31B4B1928F1C5005E789D /* DefiningClasses.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = DefiningClasses.1; sourceTree = "<group>"; };
+		1FD31B521928F252005E789D /* XYZPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = XYZPerson.h; path = ../XYZPerson.h; sourceTree = "<group>"; };
+		1FD31B531928F252005E789D /* XYZPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = XYZPerson.m; path = ../XYZPerson.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,6 +76,8 @@
 		1FD31B461928F1C5005E789D /* DefiningClasses */ = {
 			isa = PBXGroup;
 			children = (
+				1FD31B521928F252005E789D /* XYZPerson.h */,
+				1FD31B531928F252005E789D /* XYZPerson.m */,
 				1FD31B471928F1C5005E789D /* main.m */,
 				1FD31B4B1928F1C5005E789D /* DefiningClasses.1 */,
 				1FD31B491928F1C5005E789D /* Supporting Files */,
@@ -139,6 +144,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FD31B541928F252005E789D /* XYZPerson.m in Sources */,
 				1FD31B481928F1C5005E789D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
