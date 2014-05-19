@@ -17,9 +17,9 @@ int main(int argc, const char * argv[])
     {
 //        NSLog(@"Hello, World!");
         
-        XYZPerson *personObj = [[XYZPerson alloc] init];
+        XYZPerson *normalPerson = [[XYZPerson alloc] init];
         
-        [personObj sayHello];
+        [normalPerson sayHello];
         
         // super demo
         XYZShoutingPerson *shoutingperson = [[XYZShoutingPerson alloc] init];
