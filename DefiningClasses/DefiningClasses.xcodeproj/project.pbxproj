@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F2F4BEF1929FBBC0079A410 /* XYZShoutingPerson.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F2F4BEE1929FBBC0079A410 /* XYZShoutingPerson.m */; };
 		1FD31B451928F1C5005E789D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FD31B441928F1C5005E789D /* Foundation.framework */; };
 		1FD31B481928F1C5005E789D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD31B471928F1C5005E789D /* main.m */; };
 		1FD31B4C1928F1C5005E789D /* DefiningClasses.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1FD31B4B1928F1C5005E789D /* DefiningClasses.1 */; };
@@ -27,6 +28,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1F2F4BED1929FBBC0079A410 /* XYZShoutingPerson.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = XYZShoutingPerson.h; sourceTree = "<group>"; };
+		1F2F4BEE1929FBBC0079A410 /* XYZShoutingPerson.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = XYZShoutingPerson.m; sourceTree = "<group>"; };
 		1FD31B411928F1C5005E789D /* DefiningClasses */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = DefiningClasses; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FD31B441928F1C5005E789D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1FD31B471928F1C5005E789D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -78,6 +81,8 @@
 			children = (
 				1FD31B521928F252005E789D /* XYZPerson.h */,
 				1FD31B531928F252005E789D /* XYZPerson.m */,
+				1F2F4BED1929FBBC0079A410 /* XYZShoutingPerson.h */,
+				1F2F4BEE1929FBBC0079A410 /* XYZShoutingPerson.m */,
 				1FD31B471928F1C5005E789D /* main.m */,
 				1FD31B4B1928F1C5005E789D /* DefiningClasses.1 */,
 				1FD31B491928F1C5005E789D /* Supporting Files */,
@@ -145,6 +150,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FD31B541928F252005E789D /* XYZPerson.m in Sources */,
+				1F2F4BEF1929FBBC0079A410 /* XYZShoutingPerson.m in Sources */,
 				1FD31B481928F1C5005E789D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -259,6 +265,7 @@
 				1FD31B511928F1C5005E789D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

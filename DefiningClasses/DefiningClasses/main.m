@@ -8,6 +8,7 @@
 
 #import <Foundation/Foundation.h>
 #import "XYZPerson.h"
+#import "XYZShoutingPerson.h"
 
 int main(int argc, const char * argv[])
 {
@@ -19,6 +20,10 @@ int main(int argc, const char * argv[])
         XYZPerson *personObj = [[XYZPerson alloc] init];
         
         [personObj sayHello];
+        
+        // super demo
+        XYZShoutingPerson *shoutingperson = [[XYZShoutingPerson alloc] init];
+        [shoutingperson sayHello];
         
     }
     return 0;

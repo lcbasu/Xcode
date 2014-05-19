@@ -12,7 +12,12 @@
 
 - (void)sayHello
 {
-    NSLog(@"accessed method of an object");
+    [self saySomething:@"Hello, World!"];
+}
+
+- (void)saySomething:(NSString *)greeting
+{
+    NSLog(@"%@", greeting);
 }
 
 @end

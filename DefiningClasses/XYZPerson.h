@@ -15,5 +15,6 @@
 @property NSDate *dob;
 
 - (void)sayHello;
+- (void)saySomething:(NSString *)greeting;
 
 @end
