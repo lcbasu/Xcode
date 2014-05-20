@@ -10,4 +10,8 @@
 
 @interface CDTViewController : UIViewController
 
+@property (strong, nonatomic) IBOutlet UITextField *textFieldMake;
+@property (strong, nonatomic) IBOutlet UITextField *textFieldModel;
+@property (strong, nonatomic) IBOutlet UITextField *textFieldColor;
+
 @end

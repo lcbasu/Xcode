@@ -73,9 +73,22 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="sfG-b1-o66">
-                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Sk8-xx-k0q"/>
-                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Wix-cX-LnR"/>
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Sk8-xx-k0q">
+                            <connections>
+                                <action selector="cancelPressed:" destination="3t8-ZA-hUp" id="IZw-hf-S7b"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Wix-cX-LnR">
+                            <connections>
+                                <action selector="savePressed:" destination="3t8-ZA-hUp" id="wbD-MN-Ygp"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
+                    <connections>
+                        <outlet property="textFieldColor" destination="TMU-6S-eo2" id="tWU-2n-g8q"/>
+                        <outlet property="textFieldMake" destination="Hsf-th-PC6" id="jrw-3H-vKY"/>
+                        <outlet property="textFieldModel" destination="gWf-Hy-1Oc" id="DXO-lI-fwD"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="bRU-d9-9ZS" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
