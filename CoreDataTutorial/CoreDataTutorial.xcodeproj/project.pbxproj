@@ -23,6 +23,8 @@
 		1FC64C15192B26B500A6DDFB /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1FC64C13192B26B500A6DDFB /* InfoPlist.strings */; };
 		1FC64C17192B26B500A6DDFB /* CoreDataTutorialTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC64C16192B26B500A6DDFB /* CoreDataTutorialTests.m */; };
 		1FC64C21192B28A200A6DDFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FC64C20192B28A200A6DDFB /* Main.storyboard */; };
+		1FC64C24192B2B0900A6DDFB /* CDTTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC64C23192B2B0900A6DDFB /* CDTTableViewController.m */; };
+		1FC64C27192B2B2500A6DDFB /* CDTViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FC64C26192B2B2500A6DDFB /* CDTViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -55,6 +57,10 @@
 		1FC64C14192B26B500A6DDFB /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1FC64C16192B26B500A6DDFB /* CoreDataTutorialTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CoreDataTutorialTests.m; sourceTree = "<group>"; };
 		1FC64C20192B28A200A6DDFB /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		1FC64C22192B2B0900A6DDFB /* CDTTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDTTableViewController.h; sourceTree = "<group>"; };
+		1FC64C23192B2B0900A6DDFB /* CDTTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDTTableViewController.m; sourceTree = "<group>"; };
+		1FC64C25192B2B2500A6DDFB /* CDTViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CDTViewController.h; sourceTree = "<group>"; };
+		1FC64C26192B2B2500A6DDFB /* CDTViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CDTViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -120,6 +126,10 @@
 				1FC64BFC192B26B500A6DDFB /* CDTAppDelegate.h */,
 				1FC64BFD192B26B500A6DDFB /* CDTAppDelegate.m */,
 				1FC64C20192B28A200A6DDFB /* Main.storyboard */,
+				1FC64C25192B2B2500A6DDFB /* CDTViewController.h */,
+				1FC64C26192B2B2500A6DDFB /* CDTViewController.m */,
+				1FC64C22192B2B0900A6DDFB /* CDTTableViewController.h */,
+				1FC64C23192B2B0900A6DDFB /* CDTTableViewController.m */,
 				1FC64C02192B26B500A6DDFB /* Images.xcassets */,
 				1FC64BFF192B26B500A6DDFB /* CoreDataTutorial.xcdatamodeld */,
 				1FC64BF4192B26B500A6DDFB /* Supporting Files */,
@@ -253,7 +263,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FC64C27192B2B2500A6DDFB /* CDTViewController.m in Sources */,
 				1FC64BFE192B26B500A6DDFB /* CDTAppDelegate.m in Sources */,
+				1FC64C24192B2B0900A6DDFB /* CDTTableViewController.m in Sources */,
 				1FC64BFA192B26B500A6DDFB /* main.m in Sources */,
 				1FC64C01192B26B500A6DDFB /* CoreDataTutorial.xcdatamodeld in Sources */,
 			);
