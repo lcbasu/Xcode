@@ -27,11 +27,59 @@
                             <outlet property="delegate" destination="kfW-DF-0ZP" id="d9u-lw-PM1"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="H52-xZ-6vB"/>
+                    <navigationItem key="navigationItem" id="H52-xZ-6vB">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="5rr-nI-b2m">
+                            <connections>
+                                <segue destination="3t8-ZA-hUp" kind="push" id="pCM-Zk-M5S"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="p0p-hX-ENL" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="687" y="12"/>
+        </scene>
+        <!--View Controller-->
+        <scene sceneID="pG7-ad-dC1">
+            <objects>
+                <viewController id="3t8-ZA-hUp" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="8EM-gm-1z6"/>
+                        <viewControllerLayoutGuide type="bottom" id="Q4j-EB-PXQ"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="jM2-k8-5uz">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gWf-Hy-1Oc">
+                                <rect key="frame" x="20" y="147" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="TMU-6S-eo2">
+                                <rect key="frame" x="20" y="201" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Hsf-th-PC6">
+                                <rect key="frame" x="20" y="93" width="280" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="sfG-b1-o66">
+                        <barButtonItem key="leftBarButtonItem" systemItem="cancel" id="Sk8-xx-k0q"/>
+                        <barButtonItem key="rightBarButtonItem" systemItem="save" id="Wix-cX-LnR"/>
+                    </navigationItem>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="bRU-d9-9ZS" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1139" y="12"/>
         </scene>
         <!--Navigation Controller-->
         <scene sceneID="4A8-0K-rZl">
