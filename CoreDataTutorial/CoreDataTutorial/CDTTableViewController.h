@@ -10,4 +10,6 @@
 
 @interface CDTTableViewController : UITableViewController
 
+@property (strong) NSMutableArray *cars;
+
 @end
