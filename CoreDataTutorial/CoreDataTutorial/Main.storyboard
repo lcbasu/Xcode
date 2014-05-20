@@ -7,7 +7,7 @@
         <!--Table View Controller-->
         <scene sceneID="9Tl-fE-TL4">
             <objects>
-                <tableViewController id="kfW-DF-0ZP" sceneMemberID="viewController">
+                <tableViewController id="kfW-DF-0ZP" customClass="CDTTableViewController" sceneMemberID="viewController">
                     <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ZOz-Vt-59m">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -42,7 +42,7 @@
         <!--View Controller-->
         <scene sceneID="pG7-ad-dC1">
             <objects>
-                <viewController id="3t8-ZA-hUp" sceneMemberID="viewController">
+                <viewController id="3t8-ZA-hUp" customClass="CDTViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="8EM-gm-1z6"/>
                         <viewControllerLayoutGuide type="bottom" id="Q4j-EB-PXQ"/>
