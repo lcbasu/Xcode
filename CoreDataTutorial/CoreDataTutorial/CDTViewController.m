@@ -14,6 +14,11 @@
 
 @implementation CDTViewController
 
+// synthesize all the outlet properties
+@synthesize textFieldMake;
+@synthesize textFieldModel;
+@synthesize textFieldColor;
+
 - (NSManagedObjectContext *)managedObjectContext
 {
     NSManagedObjectContext *context = nil;
