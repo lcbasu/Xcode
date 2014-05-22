@@ -1,0 +1,471 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		1F27D95D192DBC13006141AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F27D95C192DBC13006141AA /* Foundation.framework */; };
+		1F27D95F192DBC13006141AA /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F27D95E192DBC13006141AA /* CoreGraphics.framework */; };
+		1F27D961192DBC13006141AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F27D960192DBC13006141AA /* UIKit.framework */; };
+		1F27D967192DBC13006141AA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F27D965192DBC13006141AA /* InfoPlist.strings */; };
+		1F27D969192DBC13006141AA /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F27D968192DBC13006141AA /* main.m */; };
+		1F27D96D192DBC13006141AA /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F27D96C192DBC13006141AA /* AppDelegate.m */; };
+		1F27D970192DBC13006141AA /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1F27D96E192DBC13006141AA /* Main.storyboard */; };
+		1F27D973192DBC13006141AA /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F27D972192DBC13006141AA /* ViewController.m */; };
+		1F27D975192DBC13006141AA /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1F27D974192DBC13006141AA /* Images.xcassets */; };
+		1F27D97C192DBC13006141AA /* XCTest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F27D97B192DBC13006141AA /* XCTest.framework */; };
+		1F27D97D192DBC13006141AA /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F27D95C192DBC13006141AA /* Foundation.framework */; };
+		1F27D97E192DBC13006141AA /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F27D960192DBC13006141AA /* UIKit.framework */; };
+		1F27D986192DBC13006141AA /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F27D984192DBC13006141AA /* InfoPlist.strings */; };
+		1F27D988192DBC13006141AA /* SlowWorkerTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F27D987192DBC13006141AA /* SlowWorkerTests.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		1F27D97F192DBC13006141AA /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 1F27D951192DBC13006141AA /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 1F27D958192DBC13006141AA;
+			remoteInfo = SlowWorker;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		1F27D959192DBC13006141AA /* SlowWorker.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SlowWorker.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F27D95C192DBC13006141AA /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		1F27D95E192DBC13006141AA /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		1F27D960192DBC13006141AA /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		1F27D964192DBC13006141AA /* SlowWorker-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SlowWorker-Info.plist"; sourceTree = "<group>"; };
+		1F27D966192DBC13006141AA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1F27D968192DBC13006141AA /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		1F27D96A192DBC13006141AA /* SlowWorker-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "SlowWorker-Prefix.pch"; sourceTree = "<group>"; };
+		1F27D96B192DBC13006141AA /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		1F27D96C192DBC13006141AA /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		1F27D96F192DBC13006141AA /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		1F27D971192DBC13006141AA /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		1F27D972192DBC13006141AA /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		1F27D974192DBC13006141AA /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		1F27D97A192DBC13006141AA /* SlowWorkerTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SlowWorkerTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		1F27D97B192DBC13006141AA /* XCTest.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = XCTest.framework; path = Library/Frameworks/XCTest.framework; sourceTree = DEVELOPER_DIR; };
+		1F27D983192DBC13006141AA /* SlowWorkerTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "SlowWorkerTests-Info.plist"; sourceTree = "<group>"; };
+		1F27D985192DBC13006141AA /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		1F27D987192DBC13006141AA /* SlowWorkerTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlowWorkerTests.m; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		1F27D956192DBC13006141AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F27D95F192DBC13006141AA /* CoreGraphics.framework in Frameworks */,
+				1F27D961192DBC13006141AA /* UIKit.framework in Frameworks */,
+				1F27D95D192DBC13006141AA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F27D977192DBC13006141AA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F27D97C192DBC13006141AA /* XCTest.framework in Frameworks */,
+				1F27D97E192DBC13006141AA /* UIKit.framework in Frameworks */,
+				1F27D97D192DBC13006141AA /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1F27D950192DBC13006141AA = {
+			isa = PBXGroup;
+			children = (
+				1F27D962192DBC13006141AA /* SlowWorker */,
+				1F27D981192DBC13006141AA /* SlowWorkerTests */,
+				1F27D95B192DBC13006141AA /* Frameworks */,
+				1F27D95A192DBC13006141AA /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		1F27D95A192DBC13006141AA /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				1F27D959192DBC13006141AA /* SlowWorker.app */,
+				1F27D97A192DBC13006141AA /* SlowWorkerTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		1F27D95B192DBC13006141AA /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1F27D95C192DBC13006141AA /* Foundation.framework */,
+				1F27D95E192DBC13006141AA /* CoreGraphics.framework */,
+				1F27D960192DBC13006141AA /* UIKit.framework */,
+				1F27D97B192DBC13006141AA /* XCTest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1F27D962192DBC13006141AA /* SlowWorker */ = {
+			isa = PBXGroup;
+			children = (
+				1F27D96B192DBC13006141AA /* AppDelegate.h */,
+				1F27D96C192DBC13006141AA /* AppDelegate.m */,
+				1F27D96E192DBC13006141AA /* Main.storyboard */,
+				1F27D971192DBC13006141AA /* ViewController.h */,
+				1F27D972192DBC13006141AA /* ViewController.m */,
+				1F27D974192DBC13006141AA /* Images.xcassets */,
+				1F27D963192DBC13006141AA /* Supporting Files */,
+			);
+			path = SlowWorker;
+			sourceTree = "<group>";
+		};
+		1F27D963192DBC13006141AA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F27D964192DBC13006141AA /* SlowWorker-Info.plist */,
+				1F27D965192DBC13006141AA /* InfoPlist.strings */,
+				1F27D968192DBC13006141AA /* main.m */,
+				1F27D96A192DBC13006141AA /* SlowWorker-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		1F27D981192DBC13006141AA /* SlowWorkerTests */ = {
+			isa = PBXGroup;
+			children = (
+				1F27D987192DBC13006141AA /* SlowWorkerTests.m */,
+				1F27D982192DBC13006141AA /* Supporting Files */,
+			);
+			path = SlowWorkerTests;
+			sourceTree = "<group>";
+		};
+		1F27D982192DBC13006141AA /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				1F27D983192DBC13006141AA /* SlowWorkerTests-Info.plist */,
+				1F27D984192DBC13006141AA /* InfoPlist.strings */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		1F27D958192DBC13006141AA /* SlowWorker */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F27D98B192DBC13006141AA /* Build configuration list for PBXNativeTarget "SlowWorker" */;
+			buildPhases = (
+				1F27D955192DBC13006141AA /* Sources */,
+				1F27D956192DBC13006141AA /* Frameworks */,
+				1F27D957192DBC13006141AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SlowWorker;
+			productName = SlowWorker;
+			productReference = 1F27D959192DBC13006141AA /* SlowWorker.app */;
+			productType = "com.apple.product-type.application";
+		};
+		1F27D979192DBC13006141AA /* SlowWorkerTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 1F27D98E192DBC13006141AA /* Build configuration list for PBXNativeTarget "SlowWorkerTests" */;
+			buildPhases = (
+				1F27D976192DBC13006141AA /* Sources */,
+				1F27D977192DBC13006141AA /* Frameworks */,
+				1F27D978192DBC13006141AA /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				1F27D980192DBC13006141AA /* PBXTargetDependency */,
+			);
+			name = SlowWorkerTests;
+			productName = SlowWorkerTests;
+			productReference = 1F27D97A192DBC13006141AA /* SlowWorkerTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		1F27D951192DBC13006141AA /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0510;
+				ORGANIZATIONNAME = "IIT Roorkee";
+				TargetAttributes = {
+					1F27D979192DBC13006141AA = {
+						TestTargetID = 1F27D958192DBC13006141AA;
+					};
+				};
+			};
+			buildConfigurationList = 1F27D954192DBC13006141AA /* Build configuration list for PBXProject "SlowWorker" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 1F27D950192DBC13006141AA;
+			productRefGroup = 1F27D95A192DBC13006141AA /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				1F27D958192DBC13006141AA /* SlowWorker */,
+				1F27D979192DBC13006141AA /* SlowWorkerTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		1F27D957192DBC13006141AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F27D975192DBC13006141AA /* Images.xcassets in Resources */,
+				1F27D967192DBC13006141AA /* InfoPlist.strings in Resources */,
+				1F27D970192DBC13006141AA /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F27D978192DBC13006141AA /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F27D986192DBC13006141AA /* InfoPlist.strings in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		1F27D955192DBC13006141AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F27D973192DBC13006141AA /* ViewController.m in Sources */,
+				1F27D96D192DBC13006141AA /* AppDelegate.m in Sources */,
+				1F27D969192DBC13006141AA /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		1F27D976192DBC13006141AA /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				1F27D988192DBC13006141AA /* SlowWorkerTests.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		1F27D980192DBC13006141AA /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 1F27D958192DBC13006141AA /* SlowWorker */;
+			targetProxy = 1F27D97F192DBC13006141AA /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		1F27D965192DBC13006141AA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F27D966192DBC13006141AA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		1F27D96E192DBC13006141AA /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F27D96F192DBC13006141AA /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		1F27D984192DBC13006141AA /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				1F27D985192DBC13006141AA /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		1F27D989192DBC13006141AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		1F27D98A192DBC13006141AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 7.1;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		1F27D98C192DBC13006141AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SlowWorker/SlowWorker-Prefix.pch";
+				INFOPLIST_FILE = "SlowWorker/SlowWorker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		1F27D98D192DBC13006141AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SlowWorker/SlowWorker-Prefix.pch";
+				INFOPLIST_FILE = "SlowWorker/SlowWorker-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+		1F27D98F192DBC13006141AA /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SlowWorker.app/SlowWorker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SlowWorker/SlowWorker-Prefix.pch";
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = "SlowWorkerTests/SlowWorkerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Debug;
+		};
+		1F27D990192DBC13006141AA /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/SlowWorker.app/SlowWorker";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(SDKROOT)/Developer/Library/Frameworks",
+					"$(inherited)",
+					"$(DEVELOPER_FRAMEWORKS_DIR)",
+				);
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "SlowWorker/SlowWorker-Prefix.pch";
+				INFOPLIST_FILE = "SlowWorkerTests/SlowWorkerTests-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				TEST_HOST = "$(BUNDLE_LOADER)";
+				WRAPPER_EXTENSION = xctest;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		1F27D954192DBC13006141AA /* Build configuration list for PBXProject "SlowWorker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F27D989192DBC13006141AA /* Debug */,
+				1F27D98A192DBC13006141AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		1F27D98B192DBC13006141AA /* Build configuration list for PBXNativeTarget "SlowWorker" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F27D98C192DBC13006141AA /* Debug */,
+				1F27D98D192DBC13006141AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+		1F27D98E192DBC13006141AA /* Build configuration list for PBXNativeTarget "SlowWorkerTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				1F27D98F192DBC13006141AA /* Debug */,
+				1F27D990192DBC13006141AA /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 1F27D951192DBC13006141AA /* Project object */;
+}
