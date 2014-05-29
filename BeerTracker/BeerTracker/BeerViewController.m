@@ -6,6 +6,8 @@
 #import "AMRating/AMRatingControl.h"
 #import "PhotoViewController.h"
 #import "ImageSaver.h"
+#import "Beer.h"
+#import "BeerDetails.h"
 
 @interface BeerViewController ()<UIGestureRecognizerDelegate, UIImagePickerControllerDelegate, UINavigationControllerDelegate, UIActionSheetDelegate>
 @end
@@ -14,8 +16,27 @@
 @implementation BeerViewController
 
 - (void)viewDidLoad {
-	self.beerNotesView.layer.borderColor = [UIColor colorWithWhite:0.667 alpha:0.500].CGColor;
-	self.beerNotesView.layer.borderWidth = 1.0f;
+    if (!self.beer) {
+        self.beer = [Beer createEntity];
+    }
+    // 2. If there are no beer details, create new BeerDetails
+    if (!self.beer.beerDetails) {
+        self.beer.beerDetails = [BeerDetails createEntity];
+    }
+    // View setup
+    // 3. Set the title, name, note field and rating of the beer
+    self.title = self.beer.name ? self.beer.name : @"New Beer";
+    self.beerNameField.text = self.beer.name;
+    self.beerNotesView.text = self.beer.beerDetails.note;
+    self.ratingControl.rating = [self.beer.beerDetails.rating integerValue];
+    [self.cellOne addSubview:self.ratingControl];
+    
+    // 4. If there is an image path in the details, show it.
+    if ([self.beer.beerDetails.image length] > 0) {
+        // Image setup
+        NSData *imgData = [NSData dataWithContentsOfFile:[NSHomeDirectory() stringByAppendingPathComponent:self.beer.beerDetails.image]];
+        [self setImageForBeer:[UIImage imageWithData:imgData]];
+    }
 }
 
 - (void)setImageForBeer:(UIImage*)img {
@@ -41,7 +62,7 @@
 }
 
 - (void)saveContext {
-
+    
 }
 
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {

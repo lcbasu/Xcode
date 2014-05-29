@@ -4,6 +4,7 @@
 
 #import <UIKit/UIKit.h>
 @class AMRatingControl;
+@class Beer;
 
 @interface BeerViewController : UITableViewController
 @property (weak, nonatomic) IBOutlet UIImageView *beerImage;
@@ -13,6 +14,9 @@
 @property (strong, nonatomic) IBOutlet UITapGestureRecognizer *tapGesture;
 @property (weak, nonatomic) IBOutlet UITableViewCell *cellOne;
 @property (weak, nonatomic) IBOutlet UILabel *tapToAddLabel;
+
+// beer property
+@property (nonatomic, strong) Beer *beer;
 
 - (IBAction)takePicture:(id)sender;
 - (IBAction)didFinishEditingBeer:(id)sender;
