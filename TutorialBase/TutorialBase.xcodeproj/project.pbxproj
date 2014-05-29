@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F2C98B919375E81009E47F8 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F2C98B819375E81009E47F8 /* Parse.framework */; };
 		B8811D9315B049AE00F6F58A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8811D9215B049AE00F6F58A /* UIKit.framework */; };
 		B8811D9515B049AE00F6F58A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8811D9415B049AE00F6F58A /* Foundation.framework */; };
 		B8811D9715B049AE00F6F58A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = B8811D9615B049AE00F6F58A /* CoreGraphics.framework */; };
@@ -21,6 +22,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F2C98B819375E81009E47F8 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
 		B8811D8E15B049AE00F6F58A /* TutorialBase.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TutorialBase.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B8811D9215B049AE00F6F58A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		B8811D9415B049AE00F6F58A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -49,6 +51,7 @@
 			files = (
 				B8811D9315B049AE00F6F58A /* UIKit.framework in Frameworks */,
 				B8811D9515B049AE00F6F58A /* Foundation.framework in Frameworks */,
+				1F2C98B919375E81009E47F8 /* Parse.framework in Frameworks */,
 				B8811D9715B049AE00F6F58A /* CoreGraphics.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -76,6 +79,7 @@
 		B8811D9115B049AE00F6F58A /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1F2C98B819375E81009E47F8 /* Parse.framework */,
 				B8811D9215B049AE00F6F58A /* UIKit.framework */,
 				B8811D9415B049AE00F6F58A /* Foundation.framework */,
 				B8811D9615B049AE00F6F58A /* CoreGraphics.framework */,
@@ -278,6 +282,10 @@
 		B8811DB015B049AE00F6F58A /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TutorialBase/TutorialBase-Prefix.pch";
 				INFOPLIST_FILE = "TutorialBase/TutorialBase-Info.plist";
@@ -290,6 +298,10 @@
 		B8811DB115B049AE00F6F58A /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(PROJECT_DIR)",
+				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "TutorialBase/TutorialBase-Prefix.pch";
 				INFOPLIST_FILE = "TutorialBase/TutorialBase-Info.plist";
