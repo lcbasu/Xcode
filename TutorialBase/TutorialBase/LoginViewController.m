@@ -8,6 +8,7 @@
 
 #import "LoginViewController.h"
 #import "RegisterViewController.h"
+#import <Parse/Parse.h>
 
 @implementation LoginViewController
 
@@ -54,9 +55,17 @@
 //Login button pressed
 -(IBAction)logInPressed:(id)sender
 {
-    
-    [self performSegueWithIdentifier:@"LoginSuccesful" sender:self];
-
+    [PFUser logInWithUsernameInBackground:self.userTextField.text password:self.passwordTextField.text block:^(PFUser *user, NSError *error) {
+        if (user) {
+            //Open the wall
+            [self performSegueWithIdentifier:@"LoginSuccesful" sender:self];
+        } else {
+            //Something bad has ocurred
+            NSString *errorString = [[error userInfo] objectForKey:@"error"];
+            UIAlertView *errorAlertView = [[UIAlertView alloc] initWithTitle:@"Error" message:errorString delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+            [errorAlertView show];
+        }
+    }];
 }
 
 @end
