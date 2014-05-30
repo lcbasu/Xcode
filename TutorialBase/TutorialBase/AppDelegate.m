@@ -17,6 +17,10 @@
 {
     [Parse setApplicationId:@"JBwWcL56y8D1Z91dtExHWEIIe1TATErLalzIZ77J"
                   clientKey:@"9UIvBdajqaIibxptHCPKTyUHk9ac1WETOx5LCo7a"];
+    PFObject *player = [PFObject objectWithClassName:@"Player"];
+    [player setObject:@"Lokesh" forKey:@"Name"];
+    [player setObject:[NSNumber numberWithInt:1230] forKey:@"Score"];
+    [player save];
     return YES;
 }
 							
