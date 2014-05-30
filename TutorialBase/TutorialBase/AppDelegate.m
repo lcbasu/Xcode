@@ -17,24 +17,42 @@
 {
     [Parse setApplicationId:@"JBwWcL56y8D1Z91dtExHWEIIe1TATErLalzIZ77J"
                   clientKey:@"9UIvBdajqaIibxptHCPKTyUHk9ac1WETOx5LCo7a"];
+    
+    // synchronous code
+    
 //    PFObject *player = [PFObject objectWithClassName:@"Player"];
 //    [player setObject:@"Lokesh" forKey:@"Name"];
 //    [player setObject:[NSNumber numberWithInt:1230] forKey:@"Score"];
 //    [player save];
     
-    PFObject *anotherPlayer = [PFObject objectWithClassName:@"Player"];
-    [anotherPlayer setObject:@"Guddu" forKey:@"Name"];
-    [anotherPlayer setObject:[NSNumber numberWithInt:840] forKey:@"Score"];
-    [anotherPlayer saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
-        
-        if (succeeded){
-            NSLog(@"Object Uploaded!");
-        }
-        else {
+    // asynchronous code
+    
+//    PFObject *anotherPlayer = [PFObject objectWithClassName:@"Player"];
+//    [anotherPlayer setObject:@"Guddu" forKey:@"Name"];
+//    [anotherPlayer setObject:[NSNumber numberWithInt:840] forKey:@"Score"];
+//    [anotherPlayer saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+//        
+//        if (succeeded){
+//            NSLog(@"Object Uploaded!");
+//        }
+//        else {
+//            NSString *errorString = [[error userInfo] objectForKey:@"error"];
+//            NSLog(@"Error: %@", errorString);
+//        }
+//        
+//    }];
+    
+    // retreive players
+    
+    PFQuery *query = [PFQuery queryWithClassName:@"Player"];
+    [query whereKey:@"Score" greaterThan:[NSNumber numberWithInt:500]];
+    [query findObjectsInBackgroundWithBlock:^(NSArray *objects, NSError *error) {
+        if (!error) {
+            NSLog(@"Successfully retrieved: %@", objects);
+        } else {
             NSString *errorString = [[error userInfo] objectForKey:@"error"];
             NSLog(@"Error: %@", errorString);
         }
-        
     }];
     
     return YES;
