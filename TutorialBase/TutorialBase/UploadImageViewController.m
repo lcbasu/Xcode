@@ -7,6 +7,7 @@
 //
 
 #import "UploadImageViewController.h"
+#import <Parse/Parse.h>
 
 @interface UploadImageViewController ()
 
@@ -86,6 +87,35 @@
     //TODO: Upload a new picture
     NSData *pictureData = UIImagePNGRepresentation(self.imgToUpload.image);
     
+    PFFile *file = [PFFile fileWithName:@"img" data:pictureData];
+    [file saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+        
+        if (succeeded) {
+            //Add the image to the object, and add the comment and the user
+            PFObject *imageObject = [PFObject objectWithClassName:@"WallImageObject"];
+            [imageObject setObject:file forKey:@"image"];
+            [imageObject setObject:[PFUser currentUser].username forKey:@"user"];
+            [imageObject setObject:self.commentTextField.text forKey:@"comment"];
+            [imageObject saveInBackgroundWithBlock:^(BOOL succeeded, NSError *error) {
+                    if (succeeded) {
+                    //Go back to the wall
+                    [self.navigationController popViewControllerAnimated:YES];
+                }
+                else {
+                    NSString *errorString = [[error userInfo] objectForKey:@"error"];
+                    UIAlertView *errorAlertView = [[UIAlertView alloc] initWithTitle:@"Error" message:errorString delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+                    [errorAlertView show];
+                }
+            }];
+        }
+        else {
+            NSString *errorString = [[error userInfo] objectForKey:@"error"];
+            UIAlertView *errorAlertView = [[UIAlertView alloc] initWithTitle:@"Error" message:errorString delegate:nil cancelButtonTitle:@"Ok" otherButtonTitles:nil, nil];
+            [errorAlertView show];
+        }
+    } progressBlock:^(int percentDone) {
+        NSLog(@"Uploaded: %d %%", percentDone);
+    }];
 }
 
 #pragma mark UIImagePicker delegate
