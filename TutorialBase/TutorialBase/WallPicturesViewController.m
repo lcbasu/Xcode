@@ -172,10 +172,8 @@
 
 -(IBAction)logoutPressed:(id)sender
 {
-    //TODO
-    //If logout succesful:
-//    [self.navigationController popViewControllerAnimated:YES];
-    [self.navigationController popToRootViewControllerAnimated:YES];
+    [PFUser logOut];
+    [self.navigationController popViewControllerAnimated:YES];
 }
 
 
