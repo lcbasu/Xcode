@@ -18,16 +18,24 @@
 {
     static NSUInteger requestCount = 0;
     NSLog(@"Request #%u: URL = %@", requestCount++, request.URL.absoluteString);
+    
+    // tag the request
+    if ([NSURLProtocol propertyForKey:@"MyURLProtocolHandledKey" inRequest:request]) {
+        return NO;
+    }
+    
     return YES;
 }
 
 #pragma mark - connection delegate methods
 
-- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response {
+- (void)connection:(NSURLConnection *)connection didReceiveResponse:(NSURLResponse *)response
+{
     [self.client URLProtocol:self didReceiveResponse:response cacheStoragePolicy:NSURLCacheStorageNotAllowed];
 }
 
-- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data {
+- (void)connection:(NSURLConnection *)connection didReceiveData:(NSData *)data
+{
     [self.client URLProtocol:self didLoadData:data];
 }
 
@@ -35,25 +43,33 @@
     [self.client URLProtocolDidFinishLoading:self];
 }
 
-- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error {
+- (void)connection:(NSURLConnection *)connection didFailWithError:(NSError *)error
+{
     [self.client URLProtocol:self didFailWithError:error];
 }
 
 #pragma mark - request methods
 
-+ (NSURLRequest *)canonicalRequestForRequest:(NSURLRequest *)request {
++ (NSURLRequest *)canonicalRequestForRequest:(NSURLRequest *)request
+{
     return request;
 }
 
-+ (BOOL)requestIsCacheEquivalent:(NSURLRequest *)a toRequest:(NSURLRequest *)b {
++ (BOOL)requestIsCacheEquivalent:(NSURLRequest *)a toRequest:(NSURLRequest *)b
+{
     return [super requestIsCacheEquivalent:a toRequest:b];
 }
 
-- (void)startLoading {
-    self.connection = [NSURLConnection connectionWithRequest:self.request delegate:self];
+- (void)startLoading
+{
+    NSMutableURLRequest *newRequest = [self.request mutableCopy];
+    [NSURLProtocol setProperty:@YES forKey:@"MyURLProtocolHandledKey" inRequest:newRequest];
+    
+    self.connection = [NSURLConnection connectionWithRequest:newRequest delegate:self];
 }
 
-- (void)stopLoading {
+- (void)stopLoading
+{
     [self.connection cancel];
     self.connection = nil;
 }
