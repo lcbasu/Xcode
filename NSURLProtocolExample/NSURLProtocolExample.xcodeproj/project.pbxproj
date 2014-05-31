@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F0BE3FA1939ED3300EE3301 /* MyURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0BE3F91939ED3300EE3301 /* MyURLProtocol.m */; };
 		708DB45A185EA9CA00129526 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 708DB459185EA9CA00129526 /* Foundation.framework */; };
 		708DB45C185EA9CA00129526 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 708DB45B185EA9CA00129526 /* CoreGraphics.framework */; };
 		708DB45E185EA9CA00129526 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 708DB45D185EA9CA00129526 /* UIKit.framework */; };
@@ -37,6 +38,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F0BE3F81939ED3300EE3301 /* MyURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyURLProtocol.h; sourceTree = "<group>"; };
+		1F0BE3F91939ED3300EE3301 /* MyURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyURLProtocol.m; sourceTree = "<group>"; };
 		708DB456185EA9CA00129526 /* NSURLProtocolExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSURLProtocolExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		708DB459185EA9CA00129526 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		708DB45B185EA9CA00129526 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -125,6 +128,8 @@
 				708DB46A185EA9CA00129526 /* AppDelegate.h */,
 				708DB46B185EA9CA00129526 /* AppDelegate.m */,
 				708DB46D185EA9CA00129526 /* Main.storyboard */,
+				1F0BE3F81939ED3300EE3301 /* MyURLProtocol.h */,
+				1F0BE3F91939ED3300EE3301 /* MyURLProtocol.m */,
 				708DB479185EA9CA00129526 /* Images.xcassets */,
 				708DB470185EA9CA00129526 /* NSURLProtocolExample.xcdatamodeld */,
 				708DB462185EA9CA00129526 /* Supporting Files */,
@@ -258,6 +263,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F0BE3FA1939ED3300EE3301 /* MyURLProtocol.m in Sources */,
 				708DB46C185EA9CA00129526 /* AppDelegate.m in Sources */,
 				708DB499185EA9FE00129526 /* BrowserViewController.m in Sources */,
 				708DB468185EA9CA00129526 /* main.m in Sources */,
@@ -470,6 +476,7 @@
 				708DB493185EA9CA00129526 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		708DB494185EA9CA00129526 /* Build configuration list for PBXNativeTarget "NSURLProtocolExampleTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +485,7 @@
 				708DB496185EA9CA00129526 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
