@@ -8,6 +8,9 @@
 
 #import <Foundation/Foundation.h>
 
+@class IODItem;
 @interface IODOrder : NSObject
+
+@property (nonatomic,strong) NSMutableDictionary* orderItems;
 
 @end

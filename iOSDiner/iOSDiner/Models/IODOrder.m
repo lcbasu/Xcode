@@ -10,4 +10,6 @@
 
 @implementation IODOrder
 
+@synthesize orderItems;
+
 @end
