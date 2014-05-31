@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		1F0BE3FA1939ED3300EE3301 /* MyURLProtocol.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0BE3F91939ED3300EE3301 /* MyURLProtocol.m */; };
+		1F0BE3FD1939F44000EE3301 /* CachedURLResponse.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F0BE3FC1939F44000EE3301 /* CachedURLResponse.m */; };
 		708DB45A185EA9CA00129526 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 708DB459185EA9CA00129526 /* Foundation.framework */; };
 		708DB45C185EA9CA00129526 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 708DB45B185EA9CA00129526 /* CoreGraphics.framework */; };
 		708DB45E185EA9CA00129526 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 708DB45D185EA9CA00129526 /* UIKit.framework */; };
@@ -40,6 +41,8 @@
 /* Begin PBXFileReference section */
 		1F0BE3F81939ED3300EE3301 /* MyURLProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MyURLProtocol.h; sourceTree = "<group>"; };
 		1F0BE3F91939ED3300EE3301 /* MyURLProtocol.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MyURLProtocol.m; sourceTree = "<group>"; };
+		1F0BE3FB1939F44000EE3301 /* CachedURLResponse.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CachedURLResponse.h; sourceTree = "<group>"; };
+		1F0BE3FC1939F44000EE3301 /* CachedURLResponse.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CachedURLResponse.m; sourceTree = "<group>"; };
 		708DB456185EA9CA00129526 /* NSURLProtocolExample.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = NSURLProtocolExample.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		708DB459185EA9CA00129526 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		708DB45B185EA9CA00129526 /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -132,6 +135,8 @@
 				1F0BE3F91939ED3300EE3301 /* MyURLProtocol.m */,
 				708DB479185EA9CA00129526 /* Images.xcassets */,
 				708DB470185EA9CA00129526 /* NSURLProtocolExample.xcdatamodeld */,
+				1F0BE3FB1939F44000EE3301 /* CachedURLResponse.h */,
+				1F0BE3FC1939F44000EE3301 /* CachedURLResponse.m */,
 				708DB462185EA9CA00129526 /* Supporting Files */,
 			);
 			path = NSURLProtocolExample;
@@ -265,6 +270,7 @@
 			files = (
 				1F0BE3FA1939ED3300EE3301 /* MyURLProtocol.m in Sources */,
 				708DB46C185EA9CA00129526 /* AppDelegate.m in Sources */,
+				1F0BE3FD1939F44000EE3301 /* CachedURLResponse.m in Sources */,
 				708DB499185EA9FE00129526 /* BrowserViewController.m in Sources */,
 				708DB468185EA9CA00129526 /* main.m in Sources */,
 				708DB472185EA9CA00129526 /* NSURLProtocolExample.xcdatamodeld in Sources */,
