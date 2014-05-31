@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="1.0" toolsVersion="1938" systemVersion="11C74" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="2">
+    <dependencies>
+        <development defaultVersion="4200" identifier="xcode"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="933"/>
+    </dependencies>
+    <scenes>
+        <scene sceneID="5">
+            <objects>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4" sceneMemberID="firstResponder"/>
+                <viewController id="2" customClass="IODViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="3">
+                        <rect key="frame" x="0.0" y="20" width="480" height="300"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="bg_wall.png" id="bfv-aS-TL5">
+                                <rect key="frame" x="0.0" y="0.0" width="480" height="320"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="person.png" id="qxp-0d-BZ0">
+                                <rect key="frame" x="326" y="36" width="162" height="268"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="sign_theiOSdiner.png" id="wCT-2F-Gdb">
+                                <rect key="frame" x="169" y="17" width="165" height="76"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="chalkboard.png" id="3TZ-YO-9Hw">
+                                <rect key="frame" x="-2" y="2" width="172" height="212"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="bg_counter.png" id="7UW-DD-0nd">
+                                <rect key="frame" x="1" y="234" width="480" height="66"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="total_field.png" id="9ae-rq-P6L">
+                                <rect key="frame" x="340" y="218" width="134" height="51"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="food_box.png" id="1DL-2p-fN5">
+                                <rect key="frame" x="191" y="128" width="143" height="123"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zxG-qh-5uR">
+                                <rect key="frame" x="202" y="92" width="61" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="-1" backgroundImage="button_silver.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ibaRemoveItem:" destination="2" eventType="touchUpInside" id="yBd-k5-M3K"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="1SP-fe-mWZ">
+                                <rect key="frame" x="271" y="92" width="63" height="38"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="+1" backgroundImage="button_silver.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ibaAddItem:" destination="2" eventType="touchUpInside" id="7W2-Bk-Rft"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="qAB-jc-DVW">
+                                <rect key="frame" x="169" y="162" width="19" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="button_arrow_left.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ibaLoadPreviousItem:" destination="2" eventType="touchUpInside" id="HHS-cr-g1l"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="PdS-Lz-WEZ">
+                                <rect key="frame" x="332" y="162" width="19" height="33"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" backgroundImage="button_arrow.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ibaLoadNextItem:" destination="2" eventType="touchUpInside" id="Zrw-Rd-Qig"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="YqL-75-xFc">
+                                <rect key="frame" x="17" y="218" width="134" height="51"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Total" backgroundImage="total_field.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="ibaCalculateTotal:" destination="2" eventType="touchUpInside" id="M85-cM-945"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" lineBreakMode="tailTruncation" numberOfLines="0" minimumFontSize="10" id="TEk-bs-kKN">
+                                <rect key="frame" x="20" y="20" width="131" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="17"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="Bd9-rE-Vvz">
+                                <rect key="frame" x="209" y="146" width="109" height="80"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Label" textAlignment="center" lineBreakMode="tailTruncation" minimumFontSize="10" id="Zz8-Kd-rZr">
+                                <rect key="frame" x="362" y="230" width="90" height="26"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    </view>
+                    <connections>
+                        <outlet property="ibAddItemButton" destination="1SP-fe-mWZ" id="pMB-ha-MAv"/>
+                        <outlet property="ibChalkboardLabel" destination="TEk-bs-kKN" id="w1n-wp-L2q"/>
+                        <outlet property="ibCurrentItemImageView" destination="Bd9-rE-Vvz" id="Vqz-Od-RbA"/>
+                        <outlet property="ibCurrentItemLabel" destination="Zz8-Kd-rZr" id="Tul-XK-gEF"/>
+                        <outlet property="ibNextItemButton" destination="PdS-Lz-WEZ" id="0ZI-4T-hlj"/>
+                        <outlet property="ibPreviousItemButton" destination="qAB-jc-DVW" id="I2B-ig-gtY"/>
+                        <outlet property="ibRemoveItemButton" destination="zxG-qh-5uR" id="A4q-93-2VL"/>
+                        <outlet property="ibTotalOrderButton" destination="YqL-75-xFc" id="y0n-ST-f5z"/>
+                    </connections>
+                </viewController>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="bg_counter.png" width="480" height="66"/>
+        <image name="bg_wall.png" width="480" height="320"/>
+        <image name="button_arrow.png" width="19" height="33"/>
+        <image name="button_arrow_left.png" width="19" height="33"/>
+        <image name="button_silver.png" width="45" height="27"/>
+        <image name="chalkboard.png" width="172" height="212"/>
+        <image name="food_box.png" width="143" height="123"/>
+        <image name="person.png" width="162" height="268"/>
+        <image name="sign_theiOSdiner.png" width="165" height="76"/>
+        <image name="total_field.png" width="134" height="51"/>
+    </resources>
+    <classes>
+        <class className="IODViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/IODViewController.h"/>
+            <relationships>
+                <relationship kind="action" name="ibaAddItem:"/>
+                <relationship kind="action" name="ibaCalculateTotal:"/>
+                <relationship kind="action" name="ibaLoadNextItem:"/>
+                <relationship kind="action" name="ibaLoadPreviousItem:"/>
+                <relationship kind="action" name="ibaRemoveItem:"/>
+                <relationship kind="outlet" name="ibAddItemButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="ibChalkboardLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ibCurrentItemImageView" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="ibCurrentItemLabel" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="ibNextItemButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="ibPreviousItemButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="ibRemoveItemButton" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="ibTotalOrderButton" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation" orientation="landscapeRight"/>
+        <simulatedScreenMetrics key="destination"/>
+    </simulatedMetricsContainer>
+</document>
