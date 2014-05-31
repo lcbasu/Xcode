@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F6878181939CCB000DC4C58 /* IODItem.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F6878171939CCB000DC4C58 /* IODItem.m */; };
+		1F68781B1939CCD300DC4C58 /* IODOrder.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F68781A1939CCD300DC4C58 /* IODOrder.m */; };
 		4BB66C8C14D5448300E7733D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB66C8B14D5448300E7733D /* UIKit.framework */; };
 		4BB66C8E14D5448300E7733D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB66C8D14D5448300E7733D /* Foundation.framework */; };
 		4BB66C9014D5448300E7733D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4BB66C8F14D5448300E7733D /* CoreGraphics.framework */; };
@@ -60,6 +62,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1F6878161939CCB000DC4C58 /* IODItem.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IODItem.h; path = iOSDiner/Models/IODItem.h; sourceTree = "<group>"; };
+		1F6878171939CCB000DC4C58 /* IODItem.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IODItem.m; path = iOSDiner/Models/IODItem.m; sourceTree = "<group>"; };
+		1F6878191939CCD300DC4C58 /* IODOrder.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = IODOrder.h; path = iOSDiner/Models/IODOrder.h; sourceTree = "<group>"; };
+		1F68781A1939CCD300DC4C58 /* IODOrder.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = IODOrder.m; path = iOSDiner/Models/IODOrder.m; sourceTree = "<group>"; };
 		4BB66C8714D5448300E7733D /* iOSDiner.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOSDiner.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4BB66C8B14D5448300E7733D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		4BB66C8D14D5448300E7733D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -131,9 +137,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F6878121939CBE900DC4C58 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				1F6878161939CCB000DC4C58 /* IODItem.h */,
+				1F6878171939CCB000DC4C58 /* IODItem.m */,
+				1F6878191939CCD300DC4C58 /* IODOrder.h */,
+				1F68781A1939CCD300DC4C58 /* IODOrder.m */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		4BB66C7C14D5448200E7733D = {
 			isa = PBXGroup;
 			children = (
+				1F6878121939CBE900DC4C58 /* Models */,
 				4BB66C9114D5448300E7733D /* iOSDiner */,
 				4BB66C8A14D5448300E7733D /* Frameworks */,
 				4BB66C8814D5448300E7733D /* Products */,
@@ -348,6 +366,8 @@
 				4BB66C9814D5448300E7733D /* main.m in Sources */,
 				4BB66C9C14D5448300E7733D /* IODAppDelegate.m in Sources */,
 				4BB66CA214D5448300E7733D /* IODViewController.m in Sources */,
+				1F68781B1939CCD300DC4C58 /* IODOrder.m in Sources */,
+				1F6878181939CCB000DC4C58 /* IODItem.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
