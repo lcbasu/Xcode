@@ -459,6 +459,7 @@
 				4BB66CA714D5448300E7733D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

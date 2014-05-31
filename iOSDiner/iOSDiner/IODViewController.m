@@ -87,4 +87,9 @@
 
 - (IBAction)ibaCalculateTotal:(id)sender {
 }
+
+- (BOOL)prefersStatusBarHidden
+{
+    return YES;
+}
 @end

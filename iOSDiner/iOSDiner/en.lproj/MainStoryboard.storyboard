@@ -128,6 +128,7 @@
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     </view>
+                    <nil key="simulatedStatusBarMetrics"/>
                     <connections>
                         <outlet property="ibAddItemButton" destination="1SP-fe-mWZ" id="pMB-ha-MAv"/>
                         <outlet property="ibChalkboardLabel" destination="TEk-bs-kKN" id="w1n-wp-L2q"/>
