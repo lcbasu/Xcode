@@ -23,6 +23,7 @@
 		1FD39035193AE7EF0098BA47 /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FD39034193AE7EF0098BA47 /* StoreKit.framework */; };
 		1FD39037193AE7FA0098BA47 /* SystemConfiguration.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FD39036193AE7FA0098BA47 /* SystemConfiguration.framework */; };
 		1FD39039193AE8330098BA47 /* Parse.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FD39038193AE8330098BA47 /* Parse.framework */; };
+		1FD3903C193AEC160098BA47 /* Comms.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD3903B193AEC160098BA47 /* Comms.m */; };
 		DA23763C1750A5200075EBEB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA23763B1750A5200075EBEB /* UIKit.framework */; };
 		DA23763E1750A5200075EBEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA23763D1750A5200075EBEB /* Foundation.framework */; };
 		DA2376401750A5200075EBEB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA23763F1750A5200075EBEB /* CoreGraphics.framework */; };
@@ -62,6 +63,8 @@
 		1FD39034193AE7EF0098BA47 /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
 		1FD39036193AE7FA0098BA47 /* SystemConfiguration.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SystemConfiguration.framework; path = System/Library/Frameworks/SystemConfiguration.framework; sourceTree = SDKROOT; };
 		1FD39038193AE8330098BA47 /* Parse.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = Parse.framework; sourceTree = "<group>"; };
+		1FD3903A193AEC160098BA47 /* Comms.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = Comms.h; path = FBParse/Comms.h; sourceTree = "<group>"; };
+		1FD3903B193AEC160098BA47 /* Comms.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = Comms.m; path = FBParse/Comms.m; sourceTree = "<group>"; };
 		DA2376381750A5200075EBEB /* FBParse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBParse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA23763B1750A5200075EBEB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DA23763D1750A5200075EBEB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -124,6 +127,8 @@
 		DA23762F1750A5200075EBEB = {
 			isa = PBXGroup;
 			children = (
+				1FD3903A193AEC160098BA47 /* Comms.h */,
+				1FD3903B193AEC160098BA47 /* Comms.m */,
 				DA2376411750A5200075EBEB /* FBParse */,
 				DA23763A1750A5200075EBEB /* Frameworks */,
 				DA2376391750A5200075EBEB /* Products */,
@@ -288,6 +293,7 @@
 				DA23764C1750A5200075EBEB /* AppDelegate.m in Sources */,
 				DAE66B621753C40300BE15F2 /* FBLoginViewController.m in Sources */,
 				DA927E4D17561060003D8EB3 /* ImageWallViewController.m in Sources */,
+				1FD3903C193AEC160098BA47 /* Comms.m in Sources */,
 				DA927E5317562B6D003D8EB3 /* UploadImageViewController.m in Sources */,
 				DAE5025F1775F50F00BA5D2D /* UIImage+Scaling.m in Sources */,
 			);
