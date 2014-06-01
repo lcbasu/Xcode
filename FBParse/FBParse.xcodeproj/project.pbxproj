@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1FD3901B193AE56A0098BA47 /* FacebookSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FD3901A193AE56A0098BA47 /* FacebookSDK.framework */; };
 		DA23763C1750A5200075EBEB /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA23763B1750A5200075EBEB /* UIKit.framework */; };
 		DA23763E1750A5200075EBEB /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA23763D1750A5200075EBEB /* Foundation.framework */; };
 		DA2376401750A5200075EBEB /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DA23763F1750A5200075EBEB /* CoreGraphics.framework */; };
@@ -30,6 +31,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		1FD3901A193AE56A0098BA47 /* FacebookSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = FacebookSDK.framework; sourceTree = "<group>"; };
 		DA2376381750A5200075EBEB /* FBParse.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FBParse.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA23763B1750A5200075EBEB /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		DA23763D1750A5200075EBEB /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -66,6 +68,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DA2376401750A5200075EBEB /* CoreGraphics.framework in Frameworks */,
+				1FD3901B193AE56A0098BA47 /* FacebookSDK.framework in Frameworks */,
 				DA23763C1750A5200075EBEB /* UIKit.framework in Frameworks */,
 				DA23763E1750A5200075EBEB /* Foundation.framework in Frameworks */,
 			);
@@ -94,6 +97,7 @@
 		DA23763A1750A5200075EBEB /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				1FD3901A193AE56A0098BA47 /* FacebookSDK.framework */,
 				DA23763B1750A5200075EBEB /* UIKit.framework */,
 				DA23763D1750A5200075EBEB /* Foundation.framework */,
 				DA23763F1750A5200075EBEB /* CoreGraphics.framework */,
@@ -312,7 +316,8 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FBParse/FBParse-Prefix.pch";
@@ -328,7 +333,8 @@
 			buildSettings = {
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
-					"\"$(SRCROOT)\"",
+					"$(SRCROOT)",
+					"$(PROJECT_DIR)",
 				);
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "FBParse/FBParse-Prefix.pch";
