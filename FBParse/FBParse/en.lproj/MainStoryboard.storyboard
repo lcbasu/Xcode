@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="2.0" toolsVersion="3084" systemVersion="12E55" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" initialViewController="G85-Wb-3Q4">
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="2083"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller - Login-->
+        <scene sceneID="4Sh-h3-aWD">
+            <objects>
+                <viewController id="rUk-pP-Pdn" customClass="FBLoginViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="PZK-wn-yli">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Z00-vT-z8N">
+                                <rect key="frame" x="59" y="372" width="202" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMinX="YES" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" image="FBLogin.png">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="loginPressed:" destination="rUk-pP-Pdn" eventType="touchUpInside" id="TL1-cN-UpP"/>
+                                </connections>
+                            </button>
+                            <activityIndicatorView hidden="YES" opaque="NO" contentMode="scaleToFill" hidesWhenStopped="YES" style="whiteLarge" id="tHe-TA-Es5">
+                                <rect key="frame" x="142" y="233" width="37" height="37"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </activityIndicatorView>
+                        </subviews>
+                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Login" id="YO6-jG-ZP1"/>
+                    <connections>
+                        <outlet property="activityLogin" destination="tHe-TA-Es5" id="Ma4-PL-75d"/>
+                        <outlet property="btnLogin" destination="Z00-vT-z8N" id="f6f-4q-v1l"/>
+                        <segue destination="srz-p1-7gw" kind="push" identifier="LoginSuccessful" id="tGW-41-iWc"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="V8H-LT-GCf" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="86" y="64"/>
+        </scene>
+        <!--Image Wall View Controller - Image Wall-->
+        <scene sceneID="X8W-uB-80N">
+            <objects>
+                <tableViewController id="srz-p1-7gw" customClass="ImageWallViewController" sceneMemberID="viewController">
+                    <tableView key="view" opaque="NO" clipsSubviews="YES" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" allowsSelection="NO" rowHeight="44" sectionHeaderHeight="22" sectionFooterHeight="22" id="ROq-0t-vRJ">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                        <prototypes>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="ImageCell" rowHeight="100" id="xgW-TQ-C4g" customClass="ImageWallTableImageCell">
+                                <rect key="frame" x="0.0" y="22" width="320" height="100"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="99"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <view contentMode="scaleToFill" id="nOa-uo-L97">
+                                            <rect key="frame" x="2" y="2" width="316" height="96"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <subviews>
+                                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" id="ium-4I-FgP">
+                                                    <rect key="frame" x="0.0" y="0.0" width="96" height="96"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EoW-VD-sk8">
+                                                    <rect key="frame" x="110" y="10" width="154" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" textAlignment="right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RSM-ng-63U">
+                                                    <rect key="frame" x="110" y="26" width="154" height="21"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="11"/>
+                                                    <color key="textColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="Wz2-kM-ALB">
+                                                    <rect key="frame" x="244" y="67" width="60" height="22"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                    <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                                    <state key="normal" image="FBShare.png">
+                                                        <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                                        <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <state key="highlighted">
+                                                        <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                                    </state>
+                                                    <connections>
+                                                        <action selector="shareImage:" destination="xgW-TQ-C4g" eventType="touchUpInside" id="bYa-1T-1IQ"/>
+                                                    </connections>
+                                                </button>
+                                                <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="Uvs-RJ-HMn">
+                                                    <rect key="frame" x="272" y="12" width="32" height="32"/>
+                                                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                </imageView>
+                                            </subviews>
+                                            <color key="backgroundColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
+                                        </view>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                <connections>
+                                    <outlet property="image" destination="ium-4I-FgP" id="id1-LS-yVc"/>
+                                    <outlet property="lblUploadedBy" destination="EoW-VD-sk8" id="VCb-3Z-5Un"/>
+                                    <outlet property="lblUploadedDate" destination="RSM-ng-63U" id="wEr-ar-OXy"/>
+                                    <outlet property="profilePicture" destination="Uvs-RJ-HMn" id="iga-hj-4Rw"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="CommentCell" rowHeight="44" id="xnW-7a-Kc5" customClass="ImageWallTableCommentCell">
+                                <rect key="frame" x="0.0" y="122" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" id="CTw-8B-Q9D">
+                                            <rect key="frame" x="0.0" y="0.0" width="44" height="44"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        </imageView>
+                                        <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="wordWrap" numberOfLines="0" baselineAdjustment="alignBaselines" minimumFontSize="6" id="9j0-1P-c2M">
+                                            <rect key="frame" x="55" y="0.0" width="260" height="44"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="16"/>
+                                            <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                            <color key="highlightedColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                        </label>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <outlet property="comment" destination="9j0-1P-c2M" id="Las-U6-KkN"/>
+                                    <outlet property="profilePicture" destination="CTw-8B-Q9D" id="33h-33-kEo"/>
+                                </connections>
+                            </tableViewCell>
+                            <tableViewCell contentMode="scaleToFill" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="NewCommentCell" rowHeight="44" id="N6I-fW-xpT" customClass="ImageWallTableNewCommentCell">
+                                <rect key="frame" x="0.0" y="166" width="320" height="44"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center">
+                                    <rect key="frame" x="0.0" y="0.0" width="320" height="43"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                    <subviews>
+                                        <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="add a comment" minimumFontSize="17" id="PB7-x9-kKE">
+                                            <rect key="frame" x="55" y="7" width="260" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                            <connections>
+                                                <outlet property="delegate" destination="N6I-fW-xpT" id="f1x-Sw-U92"/>
+                                            </connections>
+                                        </textField>
+                                    </subviews>
+                                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                                </view>
+                                <connections>
+                                    <outlet property="txtComment" destination="PB7-x9-kKE" id="HgG-Ce-WWx"/>
+                                </connections>
+                            </tableViewCell>
+                        </prototypes>
+                        <connections>
+                            <outlet property="dataSource" destination="srz-p1-7gw" id="Nbf-50-Bau"/>
+                            <outlet property="delegate" destination="srz-p1-7gw" id="HeX-qe-6iy"/>
+                        </connections>
+                    </tableView>
+                    <navigationItem key="navigationItem" title="Image Wall" id="0s3-fC-B3e">
+                        <barButtonItem key="leftBarButtonItem" title="Logout" id="vIc-Dr-6ix">
+                            <connections>
+                                <action selector="logoutPressed:" destination="srz-p1-7gw" id="JPS-1x-TrX"/>
+                            </connections>
+                        </barButtonItem>
+                        <barButtonItem key="rightBarButtonItem" title="Upload" id="KT7-hB-WKL">
+                            <connections>
+                                <action selector="uploadPressed:" destination="srz-p1-7gw" id="FC4-5H-A2Q"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <connections>
+                        <segue destination="pvN-gN-LtZ" kind="push" identifier="UploadImage" id="hB0-aM-hu8"/>
+                    </connections>
+                </tableViewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Ior-RS-liT" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="504" y="64"/>
+        </scene>
+        <!--Upload Image View Controller - Upload Image-->
+        <scene sceneID="1Va-38-U7g">
+            <objects>
+                <viewController id="pvN-gN-LtZ" customClass="UploadImageViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="37T-P3-V9U">
+                        <rect key="frame" x="0.0" y="64" width="320" height="504"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" id="pPS-j4-UKD">
+                                <rect key="frame" x="34" y="12" width="252" height="144"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" white="0.66666666666666663" alpha="1" colorSpace="calibratedWhite"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="UY4-PG-bc1">
+                                <rect key="frame" x="34" y="320" width="252" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Select Image from Photo Album">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="chooseImageFromPhotoAlbum" destination="pvN-gN-LtZ" eventType="touchUpInside" id="Vux-Rw-SMv"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mw7-zL-By2">
+                                <rect key="frame" x="34" y="371" width="252" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Take new picture with camera">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="createImageWithCamera" destination="pvN-gN-LtZ" eventType="touchUpInside" id="Occ-tl-hGf"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="HlG-Gg-QSb">
+                                <rect key="frame" x="71" y="441" width="179" height="44"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMinY="YES"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                <state key="normal" title="Send To Image Wall">
+                                    <color key="titleColor" red="0.19607843459999999" green="0.30980393290000002" blue="0.52156865600000002" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <state key="highlighted">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="uploadImage" destination="pvN-gN-LtZ" eventType="touchUpInside" id="ONb-4h-r6u"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="line" placeholder="Add Comment" minimumFontSize="17" id="Cp3-vs-AZA">
+                                <rect key="frame" x="34" y="164" width="252" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits" autocapitalizationType="sentences" returnKeyType="done"/>
+                                <connections>
+                                    <outlet property="delegate" destination="pvN-gN-LtZ" id="ycz-Yk-NKg"/>
+                                </connections>
+                            </textField>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Choose an image to upload" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="smb-O8-n1C">
+                                <rect key="frame" x="97" y="12" width="126" height="144"/>
+                                <autoresizingMask key="autoresizingMask" widthSizable="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" id="bbi-qB-oFq">
+                                <rect key="frame" x="34" y="222" width="252" height="203"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" heightSizable="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="Uploading ..." lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="EPb-3B-Msw">
+                                        <rect key="frame" x="0.0" y="8" width="252" height="21"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                        <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <progressView opaque="NO" contentMode="scaleToFill" progressViewStyle="bar" id="9GU-RE-XBh">
+                                        <rect key="frame" x="0.0" y="31" width="252" height="11"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </progressView>
+                                </subviews>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" title="Upload Image" id="ABZ-OG-Tp4">
+                        <barButtonItem key="backBarButtonItem" title="Back" id="nnh-XO-2fP"/>
+                    </navigationItem>
+                    <connections>
+                        <outlet property="btnCamera" destination="mw7-zL-By2" id="kRE-dM-8rc"/>
+                        <outlet property="btnPhotoAlbum" destination="UY4-PG-bc1" id="3iJ-4t-jdI"/>
+                        <outlet property="btnUpload" destination="HlG-Gg-QSb" id="giI-Kc-UDD"/>
+                        <outlet property="imgToUpload" destination="pPS-j4-UKD" id="xj9-xc-UHW"/>
+                        <outlet property="lblChooseAnImage" destination="smb-O8-n1C" id="RB4-Md-8nn"/>
+                        <outlet property="progressUpload" destination="9GU-RE-XBh" id="goQ-o5-ueO"/>
+                        <outlet property="txtComment" destination="Cp3-vs-AZA" id="DfP-Al-EGI"/>
+                        <outlet property="vProgressUpload" destination="bbi-qB-oFq" id="X6Y-Uz-Xwb"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="pga-mh-JRP" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="915" y="64"/>
+        </scene>
+        <!--Navigation Controller-->
+        <scene sceneID="mpg-1e-SDI">
+            <objects>
+                <navigationController id="G85-Wb-3Q4" sceneMemberID="viewController">
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" id="ece-9a-hkK">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="rUk-pP-Pdn" kind="relationship" relationship="rootViewController" id="BNb-C3-LtC"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="hOS-cS-PEA" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-364" y="64"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="FBLogin.png" width="202" height="44"/>
+        <image name="FBShare.png" width="60" height="22"/>
+    </resources>
+    <classes>
+        <class className="FBLoginViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/FBLoginViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="activityLogin" candidateClass="UIActivityIndicatorView"/>
+                <relationship kind="outlet" name="btnLogin" candidateClass="UIButton"/>
+            </relationships>
+        </class>
+        <class className="ImageWallTableCommentCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ImageWallTableCommentCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="comment" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="profilePicture" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="ImageWallTableImageCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ImageWallTableImageCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="image" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="lblUploadedBy" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="lblUploadedDate" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="profilePicture" candidateClass="UIImageView"/>
+            </relationships>
+        </class>
+        <class className="ImageWallTableNewCommentCell" superclassName="UITableViewCell">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ImageWallTableNewCommentCell.h"/>
+            <relationships>
+                <relationship kind="outlet" name="txtComment" candidateClass="UITextField"/>
+            </relationships>
+        </class>
+        <class className="ImageWallViewController" superclassName="UITableViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/ImageWallViewController.h"/>
+        </class>
+        <class className="UploadImageViewController" superclassName="UIViewController">
+            <source key="sourceIdentifier" type="project" relativePath="./Classes/UploadImageViewController.h"/>
+            <relationships>
+                <relationship kind="outlet" name="btnCamera" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="btnPhotoAlbum" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="btnUpload" candidateClass="UIButton"/>
+                <relationship kind="outlet" name="imgToUpload" candidateClass="UIImageView"/>
+                <relationship kind="outlet" name="lblChooseAnImage" candidateClass="UILabel"/>
+                <relationship kind="outlet" name="progressUpload" candidateClass="UIProgressView"/>
+                <relationship kind="outlet" name="txtComment" candidateClass="UITextField"/>
+                <relationship kind="outlet" name="vProgressUpload" candidateClass="UIView"/>
+            </relationships>
+        </class>
+    </classes>
+    <simulatedMetricsContainer key="defaultSimulatedMetrics">
+        <simulatedStatusBarMetrics key="statusBar"/>
+        <simulatedOrientationMetrics key="orientation"/>
+        <simulatedScreenMetrics key="destination" type="retina4"/>
+    </simulatedMetricsContainer>
+</document>
