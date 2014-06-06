@@ -518,6 +518,7 @@
 				612662B11871675A00119B9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		612662B21871675A00119B9E /* Build configuration list for PBXNativeTarget "CatRaceStarterTests" */ = {
 			isa = XCConfigurationList;
@@ -526,6 +527,7 @@
 				612662B41871675A00119B9E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
