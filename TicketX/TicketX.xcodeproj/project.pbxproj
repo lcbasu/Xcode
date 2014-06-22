@@ -21,6 +21,8 @@
 		1F38DFD21956ED1A001325D3 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F38DFB41956ED1A001325D3 /* UIKit.framework */; };
 		1F38DFDA1956ED1A001325D3 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1F38DFD81956ED1A001325D3 /* InfoPlist.strings */; };
 		1F38DFDC1956ED1A001325D3 /* TicketXTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F38DFDB1956ED1A001325D3 /* TicketXTests.m */; };
+		1F38DFE71956F3E9001325D3 /* TXWantTicketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F38DFE61956F3E9001325D3 /* TXWantTicketViewController.m */; };
+		1F38DFEA1956F402001325D3 /* TXHasTicketViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F38DFE91956F402001325D3 /* TXHasTicketViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +55,10 @@
 		1F38DFD71956ED1A001325D3 /* TicketXTests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "TicketXTests-Info.plist"; sourceTree = "<group>"; };
 		1F38DFD91956ED1A001325D3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1F38DFDB1956ED1A001325D3 /* TicketXTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TicketXTests.m; sourceTree = "<group>"; };
+		1F38DFE51956F3E9001325D3 /* TXWantTicketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXWantTicketViewController.h; sourceTree = "<group>"; };
+		1F38DFE61956F3E9001325D3 /* TXWantTicketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXWantTicketViewController.m; sourceTree = "<group>"; };
+		1F38DFE81956F402001325D3 /* TXHasTicketViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = TXHasTicketViewController.h; sourceTree = "<group>"; };
+		1F38DFE91956F402001325D3 /* TXHasTicketViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = TXHasTicketViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,6 +121,10 @@
 				1F38DFBF1956ED1A001325D3 /* TXAppDelegate.h */,
 				1F38DFC01956ED1A001325D3 /* TXAppDelegate.m */,
 				1F38DFC21956ED1A001325D3 /* Main.storyboard */,
+				1F38DFE51956F3E9001325D3 /* TXWantTicketViewController.h */,
+				1F38DFE61956F3E9001325D3 /* TXWantTicketViewController.m */,
+				1F38DFE81956F402001325D3 /* TXHasTicketViewController.h */,
+				1F38DFE91956F402001325D3 /* TXHasTicketViewController.m */,
 				1F38DFC51956ED1A001325D3 /* TXViewController.h */,
 				1F38DFC61956ED1A001325D3 /* TXViewController.m */,
 				1F38DFC81956ED1A001325D3 /* Images.xcassets */,
@@ -250,7 +260,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F38DFE71956F3E9001325D3 /* TXWantTicketViewController.m in Sources */,
 				1F38DFC11956ED1A001325D3 /* TXAppDelegate.m in Sources */,
+				1F38DFEA1956F402001325D3 /* TXHasTicketViewController.m in Sources */,
 				1F38DFBD1956ED1A001325D3 /* main.m in Sources */,
 				1F38DFC71956ED1A001325D3 /* TXViewController.m in Sources */,
 			);
