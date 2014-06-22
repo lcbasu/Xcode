@@ -29,6 +29,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="hasTicket:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="Nm5-ra-iwZ"/>
                                     <segue destination="dAK-Lm-QlQ" kind="push" id="9Yo-S0-N55"/>
                                 </connections>
                             </button>
@@ -41,6 +42,7 @@
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
                                 <connections>
+                                    <action selector="wantTicket:" destination="vXZ-lx-hvc" eventType="touchUpInside" id="KDa-rN-Ubf"/>
                                     <segue destination="3hT-k4-e1O" kind="push" id="SCT-td-49B"/>
                                 </connections>
                             </button>
@@ -88,6 +90,9 @@
                                 <state key="normal" title="Movie Ticket">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="ticketType:" destination="3hT-k4-e1O" eventType="touchUpInside" id="Avq-mg-Fiw"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="mlY-LY-pDf">
                                 <rect key="frame" x="20" y="240" width="280" height="102"/>
@@ -95,6 +100,9 @@
                                 <state key="normal" title="Bus Ticket">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="ticketType:" destination="3hT-k4-e1O" eventType="touchUpInside" id="GqR-g5-TRY"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Gr-yJ-9Y1">
                                 <rect key="frame" x="20" y="130" width="280" height="102"/>
@@ -102,6 +110,9 @@
                                 <state key="normal" title="Train Ticket">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="ticketType:" destination="3hT-k4-e1O" eventType="touchUpInside" id="8IT-4N-agg"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Abg-SO-lQl">
                                 <rect key="frame" x="20" y="20" width="280" height="102"/>
@@ -109,6 +120,9 @@
                                 <state key="normal" title="Plane Ticket">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="ticketType:" destination="3hT-k4-e1O" eventType="touchUpInside" id="cPD-lk-EZa"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>

@@ -25,5 +25,14 @@
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
+- (IBAction)hasTicket:(UIButton *)sender
+{
+    
+}
+
+- (IBAction)wantTicket:(UIButton *)sender
+{
+    
+}
 
 @end
