@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>200C08DB-4C88-4F79-856A-EFBAA4B554D0</string>
+	<string>E49C3B75-630E-4426-BBC4-B0FD77D401DE</string>
 	<key>IDESourceControlProjectName</key>
 	<string>FailedBanks</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>B66A1366-1D5A-4B94-9DC7-CDD31248A129</key>
+		<key>42E36F50-4A34-4ED4-81E5-444FE0926F0F</key>
 		<string>https://github.com/lokeshguddu/Xcode.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>FailedBanks/FailedBanks.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>B66A1366-1D5A-4B94-9DC7-CDD31248A129</key>
+		<key>42E36F50-4A34-4ED4-81E5-444FE0926F0F</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>B66A1366-1D5A-4B94-9DC7-CDD31248A129</string>
+	<string>42E36F50-4A34-4ED4-81E5-444FE0926F0F</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>B66A1366-1D5A-4B94-9DC7-CDD31248A129</string>
+			<string>42E36F50-4A34-4ED4-81E5-444FE0926F0F</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Xcode</string>
 		</dict>
