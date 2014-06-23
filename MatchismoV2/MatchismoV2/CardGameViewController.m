@@ -21,6 +21,7 @@
 {
     _flipCount = flipCount;
     self.flipsLabel.text = [NSString stringWithFormat:@"Flips: %d", self.flipCount];
+    NSLog(@"flipCount: %d", self.flipCount);
 }
 
 - (IBAction)touchCardButton:(UIButton *)sender
