@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>0E18B274-F87F-49CD-B5A0-BEFFE0C69348</string>
+	<string>4E4F4AAB-8B35-46D5-B172-315093B27578</string>
 	<key>IDESourceControlProjectName</key>
 	<string>BullsEye</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>42E36F50-4A34-4ED4-81E5-444FE0926F0F</key>
+		<key>B863F245-83FD-41C6-826D-0E34FC7E370D</key>
 		<string>https://github.com/lokeshguddu/Xcode.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>BullsEye/BullsEye.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>42E36F50-4A34-4ED4-81E5-444FE0926F0F</key>
+		<key>B863F245-83FD-41C6-826D-0E34FC7E370D</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>42E36F50-4A34-4ED4-81E5-444FE0926F0F</string>
+	<string>B863F245-83FD-41C6-826D-0E34FC7E370D</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>42E36F50-4A34-4ED4-81E5-444FE0926F0F</string>
+			<string>B863F245-83FD-41C6-826D-0E34FC7E370D</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Xcode</string>
 		</dict>
