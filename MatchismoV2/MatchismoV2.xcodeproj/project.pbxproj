@@ -99,9 +99,9 @@
 				1F26F918195867420019F4B7 /* Deck.h */,
 				1F26F919195867420019F4B7 /* Deck.m */,
 				1F26F91B195869780019F4B7 /* PlayingCard.h */,
+				1F26F91C195869780019F4B7 /* PlayingCard.m */,
 				1F66F28119587CA00077C9A9 /* PlayingCardDeck.h */,
 				1F66F28219587CA00077C9A9 /* PlayingCardDeck.m */,
-				1F26F91C195869780019F4B7 /* PlayingCard.m */,
 			);
 			name = Model;
 			sourceTree = "<group>";
