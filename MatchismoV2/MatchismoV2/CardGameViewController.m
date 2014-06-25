@@ -15,8 +15,13 @@
 
 @property (strong, nonatomic) Deck *deckOfCards;
 @property (nonatomic, strong) CardMatchingGame *game;
+
+
 @property (strong, nonatomic) IBOutletCollection(UIButton) NSArray *cardButtons;
+
+
 @property (weak, nonatomic) IBOutlet UILabel *scoreLabel;
+@property (weak, nonatomic) IBOutlet UISegmentedControl *gameModeSwitchOutlet;
 
 @end
 
@@ -37,6 +42,7 @@
 
 - (IBAction)touchCardButton:(UIButton *)sender
 {
+    self.gameModeSwitchOutlet.enabled = NO;
     int cardIndex = [self.cardButtons indexOfObject:sender];
     [self.game chooseCardAtIndex:cardIndex];
     [self updateUI];
@@ -63,6 +69,33 @@
 - (UIImage *)backgroundImageForCard:(Card *)card
 {
     return [UIImage imageNamed:card.isChosen ? @"cardfront" : @"cardback"];
+}
+
+- (IBAction)resetGame
+{
+    _game = nil;
+    [self resetUI];
+}
+
+- (void)resetUI
+{
+    for (UIButton *cardButton in self.cardButtons) {
+        int cardIndex = [self.cardButtons indexOfObject:cardButton];
+        Card *card = [self.game cardAtIndex:cardIndex];
+        card.chosen = NO;
+        card.matched = NO;
+        [cardButton setTitle:[self titleForCard:card] forState:UIControlStateNormal];
+        [cardButton setBackgroundImage:[self backgroundImageForCard:card] forState:UIControlStateNormal];
+        cardButton.enabled = YES;
+    }
+    self.scoreLabel.text = @"Score: 0";
+    
+    // enable the game switch at the begining
+    self.gameModeSwitchOutlet.enabled = YES;
+}
+- (IBAction)gameModeSwitch:(UISegmentedControl *)sender
+{
+    self.game.gameMode = sender.selectedSegmentIndex;
 }
 
 @end
