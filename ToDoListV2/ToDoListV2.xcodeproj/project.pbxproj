@@ -22,6 +22,7 @@
 		1FB952FE195BE4A500A50D58 /* CoreData.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FB952E2195BE4A500A50D58 /* CoreData.framework */; };
 		1FB95306195BE4A500A50D58 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1FB95304195BE4A500A50D58 /* InfoPlist.strings */; };
 		1FB95308195BE4A500A50D58 /* ToDoListV2Tests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FB95307195BE4A500A50D58 /* ToDoListV2Tests.m */; };
+		1FB95312195BE9C600A50D58 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FB95311195BE9C600A50D58 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +54,7 @@
 		1FB95303195BE4A500A50D58 /* ToDoListV2Tests-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "ToDoListV2Tests-Info.plist"; sourceTree = "<group>"; };
 		1FB95305195BE4A500A50D58 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		1FB95307195BE4A500A50D58 /* ToDoListV2Tests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ToDoListV2Tests.m; sourceTree = "<group>"; };
+		1FB95311195BE9C600A50D58 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -115,8 +117,7 @@
 		1FB952E4195BE4A500A50D58 /* ToDoListV2 */ = {
 			isa = PBXGroup;
 			children = (
-				1FB952ED195BE4A500A50D58 /* TDLAppDelegate.h */,
-				1FB952EE195BE4A500A50D58 /* TDLAppDelegate.m */,
+				1FB95311195BE9C600A50D58 /* Main.storyboard */,
 				1FB952F3195BE4A500A50D58 /* Images.xcassets */,
 				1FB952F0195BE4A500A50D58 /* ToDoListV2.xcdatamodeld */,
 				1FB952E5195BE4A500A50D58 /* Supporting Files */,
@@ -127,6 +128,8 @@
 		1FB952E5195BE4A500A50D58 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				1FB952ED195BE4A500A50D58 /* TDLAppDelegate.h */,
+				1FB952EE195BE4A500A50D58 /* TDLAppDelegate.m */,
 				1FB952E6195BE4A500A50D58 /* ToDoListV2-Info.plist */,
 				1FB952E7195BE4A500A50D58 /* InfoPlist.strings */,
 				1FB952EA195BE4A500A50D58 /* main.m */,
@@ -229,6 +232,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FB95312195BE9C600A50D58 /* Main.storyboard in Resources */,
 				1FB952E9195BE4A500A50D58 /* InfoPlist.strings in Resources */,
 				1FB952F4195BE4A500A50D58 /* Images.xcassets in Resources */,
 			);
