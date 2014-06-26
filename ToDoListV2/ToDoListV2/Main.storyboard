@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--Table View Controller-->
+        <!--Table View Controller - My To-Do List-->
         <scene sceneID="e5x-c5-sIQ">
             <objects>
                 <tableViewController id="kRj-Q7-zft" sceneMemberID="viewController">
@@ -74,7 +74,13 @@
                             <outlet property="delegate" destination="kRj-Q7-zft" id="anx-9n-Q12"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="hea-BM-qV0"/>
+                    <navigationItem key="navigationItem" title="My To-Do List" id="hea-BM-qV0">
+                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="qCK-tC-yJg">
+                            <connections>
+                                <segue destination="Ihv-lg-l6M" kind="push" id="02m-os-J7H"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="cGS-eB-Ros" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
@@ -104,9 +110,10 @@
                         <constraints>
                             <constraint firstItem="Wfj-AJ-1LO" firstAttribute="leading" secondItem="IAP-cT-wnF" secondAttribute="leading" constant="20" id="MhU-Ly-Dpx"/>
                             <constraint firstAttribute="trailing" secondItem="Wfj-AJ-1LO" secondAttribute="trailing" constant="20" id="gwR-hg-sdz"/>
-                            <constraint firstItem="Wfj-AJ-1LO" firstAttribute="top" secondItem="sKe-gw-KkW" secondAttribute="bottom" constant="71" id="ocB-bU-6R8"/>
+                            <constraint firstItem="Wfj-AJ-1LO" firstAttribute="top" secondItem="sKe-gw-KkW" secondAttribute="bottom" constant="27" id="ocB-bU-6R8"/>
                         </constraints>
                     </view>
+                    <navigationItem key="navigationItem" id="jKP-kB-lyy"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C0o-Kd-7I9" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
