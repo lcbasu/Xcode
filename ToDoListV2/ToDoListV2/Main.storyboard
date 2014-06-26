@@ -16,7 +16,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <subviews>
-                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tap to add New to-do item" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Wfj-AJ-1LO">
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" placeholder="Tap to add New to-do item" textAlignment="center" minimumFontSize="17" clearButtonMode="always" translatesAutoresizingMaskIntoConstraints="NO" id="Wfj-AJ-1LO">
                                 <rect key="frame" x="20" y="91" width="280" height="30"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <color key="textColor" red="0.0" green="0.50196081399917603" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -25,6 +25,11 @@
                             </textField>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="Wfj-AJ-1LO" firstAttribute="leading" secondItem="IAP-cT-wnF" secondAttribute="leading" constant="20" id="MhU-Ly-Dpx"/>
+                            <constraint firstAttribute="trailing" secondItem="Wfj-AJ-1LO" secondAttribute="trailing" constant="20" id="gwR-hg-sdz"/>
+                            <constraint firstItem="Wfj-AJ-1LO" firstAttribute="top" secondItem="sKe-gw-KkW" secondAttribute="bottom" constant="71" id="ocB-bU-6R8"/>
+                        </constraints>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="C0o-Kd-7I9" userLabel="First Responder" sceneMemberID="firstResponder"/>
