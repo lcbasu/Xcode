@@ -77,7 +77,7 @@
                     <navigationItem key="navigationItem" title="My To-Do List" id="hea-BM-qV0">
                         <barButtonItem key="rightBarButtonItem" systemItem="add" id="qCK-tC-yJg">
                             <connections>
-                                <segue destination="Ihv-lg-l6M" kind="push" id="02m-os-J7H"/>
+                                <segue destination="Ihv-lg-l6M" kind="modal" id="02m-os-J7H"/>
                             </connections>
                         </barButtonItem>
                     </navigationItem>
