@@ -10,4 +10,7 @@
 
 @implementation BIDViewController
 
+- (IBAction)buttonPressed:(UIButton *)sender
+{
+}
 @end

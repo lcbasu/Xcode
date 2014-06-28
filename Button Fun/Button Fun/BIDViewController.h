@@ -10,4 +10,6 @@
 
 @interface BIDViewController : UIViewController
 
+- (IBAction)buttonPressed:(UIButton *)sender;
+
 @end
