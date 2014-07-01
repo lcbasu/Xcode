@@ -10,4 +10,6 @@
 
 @interface BIDViewController : UIViewController
 
+- (IBAction)textFieldDoneEditing:(id)sender;
+
 @end

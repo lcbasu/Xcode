@@ -29,4 +29,9 @@
     // Dispose of any resources that can be recreated.
 }
 
+- (IBAction)textFieldDoneEditing:(id)sender
+{
+    [sender resignFirstResponder];
+}
+
 @end
