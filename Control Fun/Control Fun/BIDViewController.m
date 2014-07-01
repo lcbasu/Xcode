@@ -10,6 +10,9 @@
 
 @interface BIDViewController ()
 
+@property (weak, nonatomic) IBOutlet UITextField *nameField;
+@property (weak, nonatomic) IBOutlet UITextField *numberField;
+
 @end
 
 @implementation BIDViewController
