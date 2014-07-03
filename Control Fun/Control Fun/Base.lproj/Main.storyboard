@@ -52,11 +52,11 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <slider opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="1" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="UqP-TK-Onm">
+                            <slider opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="50" minValue="1" maxValue="100" translatesAutoresizingMaskIntoConstraints="NO" id="UqP-TK-Onm">
                                 <rect key="frame" x="72" y="237" width="230" height="31"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </slider>
-                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="100" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iuU-gz-RIm">
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="100" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iuU-gz-RIm">
                                 <rect key="frame" x="20" y="241" width="29" height="21"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
@@ -68,15 +68,20 @@
                         <constraints>
                             <constraint firstAttribute="trailing" secondItem="qbj-dw-s9b" secondAttribute="trailing" constant="20" symbolic="YES" id="2uG-vG-vJb"/>
                             <constraint firstItem="0Sh-QU-yS3" firstAttribute="width" secondItem="jaC-aU-tkg" secondAttribute="width" id="3Oe-cn-Sy4"/>
+                            <constraint firstItem="iuU-gz-RIm" firstAttribute="leading" secondItem="0Sh-QU-yS3" secondAttribute="leading" id="5Cy-Nr-cz7"/>
                             <constraint firstItem="qbj-dw-s9b" firstAttribute="top" secondItem="Q4g-r2-zom" secondAttribute="bottom" constant="8" symbolic="YES" id="Ers-1n-ZWS"/>
                             <constraint firstItem="qbj-dw-s9b" firstAttribute="leading" secondItem="Q4g-r2-zom" secondAttribute="leading" id="HSo-nE-Ral"/>
                             <constraint firstItem="0Sh-QU-yS3" firstAttribute="top" secondItem="jaC-aU-tkg" secondAttribute="bottom" constant="18" id="Vfm-8K-jLm"/>
                             <constraint firstItem="0Sh-QU-yS3" firstAttribute="leading" secondItem="jaC-aU-tkg" secondAttribute="leading" id="WTQ-jE-fvG"/>
+                            <constraint firstItem="UqP-TK-Onm" firstAttribute="trailing" secondItem="qbj-dw-s9b" secondAttribute="trailing" id="WXB-ig-Cbl"/>
                             <constraint firstItem="qbj-dw-s9b" firstAttribute="trailing" secondItem="Q4g-r2-zom" secondAttribute="trailing" id="c4I-hK-z9c"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="0Sh-QU-yS3" secondAttribute="bottom" constant="359" id="e2z-P2-oDn"/>
                             <constraint firstItem="2fi-mo-0CV" firstAttribute="top" secondItem="qbj-dw-s9b" secondAttribute="bottom" constant="354" id="hoN-qb-04I"/>
                             <constraint firstItem="qbj-dw-s9b" firstAttribute="leading" secondItem="0Sh-QU-yS3" secondAttribute="trailing" constant="8" symbolic="YES" id="jYr-Fs-FBS"/>
                             <constraint firstItem="0Sh-QU-yS3" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="jma-oI-grp"/>
+                            <constraint firstItem="UqP-TK-Onm" firstAttribute="top" secondItem="qbj-dw-s9b" secondAttribute="bottom" constant="23" id="nPk-M1-Yoh"/>
+                            <constraint firstItem="UqP-TK-Onm" firstAttribute="leading" secondItem="kIm-Lg-AyS" secondAttribute="leading" id="pwg-Vy-rGy"/>
+                            <constraint firstItem="iuU-gz-RIm" firstAttribute="top" secondItem="0Sh-QU-yS3" secondAttribute="bottom" constant="32" id="riL-7Z-4c8"/>
                             <constraint firstAttribute="centerX" secondItem="kIm-Lg-AyS" secondAttribute="centerX" id="z6Y-6N-znK"/>
                             <constraint firstItem="kIm-Lg-AyS" firstAttribute="top" secondItem="jyV-Pf-zRb" secondAttribute="bottom" constant="38" id="z6u-Fr-Iij"/>
                         </constraints>
@@ -91,6 +96,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-125" y="211"/>
         </scene>
     </scenes>
     <resources>
