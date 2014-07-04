@@ -13,6 +13,8 @@
 @property (weak, nonatomic) IBOutlet UITextField *nameField;
 @property (weak, nonatomic) IBOutlet UITextField *numberField;
 @property (weak, nonatomic) IBOutlet UILabel *sliderLabel;
+@property (weak, nonatomic) IBOutlet UISwitch *leftSwitch;
+@property (weak, nonatomic) IBOutlet UISwitch *rightSwitch;
 
 @end
 
@@ -40,10 +42,21 @@
     [self.nameField resignFirstResponder];
     [self.numberField resignFirstResponder];
 }
+
 - (IBAction)sliderChanged:(UISlider *)sender
 {
     int slideValue = lround(sender.value);
     self.sliderLabel.text = [NSString stringWithFormat:@"%d", slideValue];
+}
+- (IBAction)switchChanged:(UISwitch *)sender
+{
+    BOOL setting = sender.isOn;
+    [self.leftSwitch setOn:setting animated:YES];
+    [self.rightSwitch setOn:setting animated:YES];
+}
+
+- (IBAction)toggleControls:(UISegmentedControl *)sender
+{
 }
 
 @end
