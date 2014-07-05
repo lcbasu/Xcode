@@ -7,8 +7,13 @@
 //
 
 #import "BIDSwitchViewController.h"
+#import "BIDBlueViewController.h"
+#import "BIDYellowViewController.h"
 
 @interface BIDSwitchViewController ()
+
+@property (strong, nonatomic) BIDYellowViewController *yellowViewController;
+@property (strong, nonatomic) BIDBlueViewController *blueViewController;
 
 @end
 
@@ -45,5 +50,10 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)switchViews:(id)sender
+{
+    
+}
 
 @end

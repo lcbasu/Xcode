@@ -126,13 +126,13 @@
 		1FAA9AC919681083009BC2E0 /* View Switcher */ = {
 			isa = PBXGroup;
 			children = (
-				1FAA9AF6196811B2009BC2E0 /* BIDSwitchViewController.h */,
 				1FAA9AF919681222009BC2E0 /* BIDBlueViewController.h */,
 				1FAA9AFA19681222009BC2E0 /* BIDBlueViewController.m */,
 				1FAA9AFC19681231009BC2E0 /* BIDYellowViewController.h */,
 				1FAA9AFD19681231009BC2E0 /* BIDYellowViewController.m */,
-				1FAA9AFF19681275009BC2E0 /* Main.storyboard */,
+				1FAA9AF6196811B2009BC2E0 /* BIDSwitchViewController.h */,
 				1FAA9AF7196811B2009BC2E0 /* BIDSwitchViewController.m */,
+				1FAA9AFF19681275009BC2E0 /* Main.storyboard */,
 				1FAA9AD219681083009BC2E0 /* BIDAppDelegate.h */,
 				1FAA9AD319681083009BC2E0 /* BIDAppDelegate.m */,
 				1FAA9AD819681083009BC2E0 /* Images.xcassets */,
