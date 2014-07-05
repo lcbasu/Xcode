@@ -48,6 +48,13 @@
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
+                    <connections>
+                        <outlet property="actionButton1" destination="csz-hE-qmf" id="z4y-uV-V69"/>
+                        <outlet property="actionButton2" destination="r87-Xw-Zwg" id="TA4-VR-eaa"/>
+                        <outlet property="actionButton3" destination="09j-Mc-V9x" id="hnM-xr-DCv"/>
+                        <outlet property="actionButton4" destination="fOz-Dv-dqh" id="doX-j1-Wqr"/>
+                        <outlet property="contentView" destination="jni-Vb-5aO" id="X0F-de-Q8j"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="x5A-6p-PRh" sceneMemberID="firstResponder"/>
             </objects>
