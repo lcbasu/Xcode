@@ -44,14 +44,30 @@
                                 <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" misplaced="YES" text="Left" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8YO-JY-9b0">
+                                <rect key="frame" x="20" y="273" width="30" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Right" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Qe-kw-Or8">
+                                <rect key="frame" x="259" y="273" width="41" height="21"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                         <constraints>
                             <constraint firstItem="Fgp-6M-bZK" firstAttribute="leading" secondItem="sxh-2d-Hm9" secondAttribute="leading" id="549-rg-vTQ"/>
+                            <constraint firstItem="4Qe-kw-Or8" firstAttribute="trailing" secondItem="gA4-AF-b6H" secondAttribute="trailing" id="7tQ-CP-jg2"/>
                             <constraint firstItem="sxh-2d-Hm9" firstAttribute="leading" secondItem="kh9-bI-dsS" secondAttribute="leading" constant="20" symbolic="YES" id="Ls5-ze-a3K"/>
+                            <constraint firstItem="4Qe-kw-Or8" firstAttribute="baseline" secondItem="8YO-JY-9b0" secondAttribute="baseline" id="Lse-Mx-Kpn"/>
                             <constraint firstItem="sxh-2d-Hm9" firstAttribute="top" secondItem="kh9-bI-dsS" secondAttribute="top" constant="20" symbolic="YES" id="W2v-nL-fjN"/>
                             <constraint firstItem="ApH-NG-gNw" firstAttribute="trailing" secondItem="gA4-AF-b6H" secondAttribute="trailing" id="gWf-sg-mc4"/>
                             <constraint firstItem="sxh-2d-Hm9" firstAttribute="baseline" secondItem="gA4-AF-b6H" secondAttribute="baseline" id="gqm-fl-cFb"/>
+                            <constraint firstAttribute="centerY" secondItem="8YO-JY-9b0" secondAttribute="centerY" id="min-L4-HEt"/>
                             <constraint firstItem="Fgp-6M-bZK" firstAttribute="baseline" secondItem="ApH-NG-gNw" secondAttribute="baseline" id="psH-k3-g9J"/>
                             <constraint firstAttribute="bottom" secondItem="Fgp-6M-bZK" secondAttribute="bottom" constant="20" symbolic="YES" id="vgJ-ds-dbz"/>
                             <constraint firstAttribute="trailing" secondItem="gA4-AF-b6H" secondAttribute="trailing" constant="20" symbolic="YES" id="vj8-w1-VrI"/>
