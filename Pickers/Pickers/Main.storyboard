@@ -4,10 +4,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--View Controller - Date-->
+        <!--Date Picker View Controller - Date-->
         <scene sceneID="5K4-zn-TSe">
             <objects>
-                <viewController id="vUh-R7-1b9" sceneMemberID="viewController">
+                <viewController id="vUh-R7-1b9" customClass="BIDDatePickerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="5eA-yH-PyL"/>
                         <viewControllerLayoutGuide type="bottom" id="ahF-2o-fkW"/>
@@ -23,10 +23,10 @@
             </objects>
             <point key="canvasLocation" x="-377" y="-957"/>
         </scene>
-        <!--View Controller - Dependent-->
+        <!--Dependent Component Picker View Controller - Dependent-->
         <scene sceneID="ZpQ-ke-MsI">
             <objects>
-                <viewController id="CxA-WN-t7d" sceneMemberID="viewController">
+                <viewController id="CxA-WN-t7d" customClass="BIDDependentComponentPickerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lCq-CE-beF"/>
                         <viewControllerLayoutGuide type="bottom" id="CD6-sm-Dyq"/>
@@ -42,10 +42,10 @@
             </objects>
             <point key="canvasLocation" x="387" y="-158"/>
         </scene>
-        <!--View Controller - Double-->
+        <!--Double Component Picker View Controller - Double-->
         <scene sceneID="kVy-cd-YXj">
             <objects>
-                <viewController id="rG0-xw-EZW" sceneMemberID="viewController">
+                <viewController id="rG0-xw-EZW" customClass="BIDDoubleComponentPickerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="lax-6j-deP"/>
                         <viewControllerLayoutGuide type="bottom" id="HCz-9c-2mk"/>
@@ -83,10 +83,10 @@
             </objects>
             <point key="canvasLocation" x="-779" y="-158"/>
         </scene>
-        <!--View Controller - Single-->
+        <!--Single Component Picker View Controller - Single-->
         <scene sceneID="f97-Rn-fcQ">
             <objects>
-                <viewController id="86B-E8-2ER" sceneMemberID="viewController">
+                <viewController id="86B-E8-2ER" customClass="BIDSingleComponentPickerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="rEe-Qr-xgQ"/>
                         <viewControllerLayoutGuide type="bottom" id="kgN-jA-QTF"/>
@@ -102,10 +102,10 @@
             </objects>
             <point key="canvasLocation" x="-349" y="626"/>
         </scene>
-        <!--View Controller - Custom-->
+        <!--Custom Picker View Controller - Custom-->
         <scene sceneID="e35-6Z-xy8">
             <objects>
-                <viewController id="vCU-Ea-WJ4" sceneMemberID="viewController">
+                <viewController id="vCU-Ea-WJ4" customClass="BIDCustomPickerViewController" sceneMemberID="viewController">
                     <layoutGuides>
                         <viewControllerLayoutGuide type="top" id="2Yg-QH-LB8"/>
                         <viewControllerLayoutGuide type="bottom" id="fHl-Dz-g6N"/>
