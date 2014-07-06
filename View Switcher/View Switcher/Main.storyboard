@@ -40,6 +40,76 @@
             </objects>
             <point key="canvasLocation" x="83" y="8"/>
         </scene>
+        <!--Blue View Controller-->
+        <scene sceneID="DCv-v5-SeN">
+            <objects>
+                <viewController storyboardIdentifier="Blue" id="mhe-nJ-uJW" customClass="BIDBlueViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2cF-dZ-5CI"/>
+                        <viewControllerLayoutGuide type="bottom" id="GdS-le-sQy"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="vrH-4y-Q4L">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p4Z-P2-HVo">
+                                <rect key="frame" x="128" y="269" width="64" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Press Me">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="blueButtonPressed" destination="mhe-nJ-uJW" eventType="touchUpInside" id="WxO-WZ-Lz8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.28627452254295349" green="0.58823531866073608" blue="0.91372555494308472" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="p4Z-P2-HVo" secondAttribute="centerX" id="DC3-c1-2bh"/>
+                            <constraint firstAttribute="centerY" secondItem="p4Z-P2-HVo" secondAttribute="centerY" id="LGw-bo-h5G"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5hx-KS-9h3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="443" y="8"/>
+        </scene>
+        <!--Yellow View Controller-->
+        <scene sceneID="Zbu-xR-tsW">
+            <objects>
+                <viewController storyboardIdentifier="Yellow" id="dBL-dm-L2X" customClass="BIDYellowViewController" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="b1B-gQ-RCg"/>
+                        <viewControllerLayoutGuide type="bottom" id="XeZ-m2-k9s"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="sLO-hj-Lw4">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="qLQ-Uy-kX4">
+                                <rect key="frame" x="128" y="269" width="64" height="30"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" title="Press Me">
+                                    <color key="titleColor" red="1" green="1" blue="1" alpha="1" colorSpace="calibratedRGB"/>
+                                    <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
+                                </state>
+                                <connections>
+                                    <action selector="yellowButtonPressed" destination="dBL-dm-L2X" eventType="touchUpInside" id="1dw-KP-VJe"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="0.91372555494308472" green="0.89019614458084106" blue="0.32941177487373352" alpha="1" colorSpace="deviceRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="centerX" secondItem="qLQ-Uy-kX4" secondAttribute="centerX" id="3Xj-xI-roq"/>
+                            <constraint firstAttribute="centerY" secondItem="qLQ-Uy-kX4" secondAttribute="centerY" id="XfC-Hs-zNe"/>
+                        </constraints>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="TTs-1Q-BeB" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="808" y="8"/>
+        </scene>
     </scenes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
