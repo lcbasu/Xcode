@@ -4,7 +4,7 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="3733"/>
     </dependencies>
     <scenes>
-        <!--View Controller - Item 1-->
+        <!--View Controller - Date-->
         <scene sceneID="5K4-zn-TSe">
             <objects>
                 <viewController id="vUh-R7-1b9" sceneMemberID="viewController">
@@ -17,11 +17,49 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 1" id="avZ-Bc-lX1"/>
+                    <tabBarItem key="tabBarItem" title="Date" image="clockicon" id="avZ-Bc-lX1"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="8LO-4q-fDY" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="239" y="-285"/>
+            <point key="canvasLocation" x="-377" y="-957"/>
+        </scene>
+        <!--View Controller - Dependent-->
+        <scene sceneID="ZpQ-ke-MsI">
+            <objects>
+                <viewController id="CxA-WN-t7d" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lCq-CE-beF"/>
+                        <viewControllerLayoutGuide type="bottom" id="CD6-sm-Dyq"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="H1H-Sf-r2I">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Dependent" image="dependenticon" id="Sd0-4p-9gD"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="i8O-B5-4ZM" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="387" y="-158"/>
+        </scene>
+        <!--View Controller - Double-->
+        <scene sceneID="kVy-cd-YXj">
+            <objects>
+                <viewController id="rG0-xw-EZW" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="lax-6j-deP"/>
+                        <viewControllerLayoutGuide type="bottom" id="HCz-9c-2mk"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="ELT-IW-Yyb">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Double" image="doubleicon" id="i7C-tH-Xld"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="SDi-YF-Ilx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="387" y="-957"/>
         </scene>
         <!--Tab Bar Controller-->
         <scene sceneID="q3e-KK-aG3">
@@ -36,13 +74,16 @@
                     <connections>
                         <segue destination="vUh-R7-1b9" kind="relationship" relationship="viewControllers" id="VZe-K2-Qfc"/>
                         <segue destination="86B-E8-2ER" kind="relationship" relationship="viewControllers" id="op7-Hu-Ukg"/>
+                        <segue destination="rG0-xw-EZW" kind="relationship" relationship="viewControllers" id="PLX-BZ-eVi"/>
+                        <segue destination="CxA-WN-t7d" kind="relationship" relationship="viewControllers" id="dog-fv-9Yp"/>
+                        <segue destination="vCU-Ea-WJ4" kind="relationship" relationship="viewControllers" id="Vmy-7q-WNA"/>
                     </connections>
                 </tabBarController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="uLV-6f-PVu" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-295" y="42"/>
+            <point key="canvasLocation" x="-779" y="-158"/>
         </scene>
-        <!--View Controller - Item 2-->
+        <!--View Controller - Single-->
         <scene sceneID="f97-Rn-fcQ">
             <objects>
                 <viewController id="86B-E8-2ER" sceneMemberID="viewController">
@@ -55,13 +96,39 @@
                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
-                    <tabBarItem key="tabBarItem" title="Item 2" id="Ma6-fU-9my"/>
+                    <tabBarItem key="tabBarItem" title="Single" image="singleicon" id="Ma6-fU-9my"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="2Ut-Mt-NFT" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="239" y="368"/>
+            <point key="canvasLocation" x="-349" y="626"/>
+        </scene>
+        <!--View Controller - Custom-->
+        <scene sceneID="e35-6Z-xy8">
+            <objects>
+                <viewController id="vCU-Ea-WJ4" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="2Yg-QH-LB8"/>
+                        <viewControllerLayoutGuide type="bottom" id="fHl-Dz-g6N"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8o8-nU-sEQ">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Custom" image="toolicon" id="dKb-5F-Sq0"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="wJb-2Q-4M3" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="387" y="626"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="clockicon" width="24" height="24"/>
+        <image name="dependenticon" width="25" height="24"/>
+        <image name="doubleicon" width="25" height="24"/>
+        <image name="singleicon" width="25" height="24"/>
+        <image name="toolicon" width="24" height="24"/>
+    </resources>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>
