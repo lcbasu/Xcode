@@ -8,6 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface BIDCustomPickerViewController : UIViewController
+@interface BIDCustomPickerViewController : UIViewController <UIPickerViewDelegate, UIPickerViewDataSource>
 
 @end

@@ -10,6 +10,8 @@
 
 @interface BIDCustomPickerViewController ()
 
+@property (strong, nonatomic) NSArray *images;
+
 @end
 
 @implementation BIDCustomPickerViewController
