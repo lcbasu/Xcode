@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F6E9ABB196A65A90064FD9B /* statedictionary.plist in Resources */ = {isa = PBXBuildFile; fileRef = 1F6E9ABA196A65A90064FD9B /* statedictionary.plist */; };
 		1FE5095F19695C26009A111A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FE5095E19695C26009A111A /* Foundation.framework */; };
 		1FE5096119695C26009A111A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FE5096019695C26009A111A /* CoreGraphics.framework */; };
 		1FE5096319695C26009A111A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FE5096219695C26009A111A /* UIKit.framework */; };
@@ -41,6 +42,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		1F6E9ABA196A65A90064FD9B /* statedictionary.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = statedictionary.plist; sourceTree = "<group>"; };
 		1FE5095B19695C26009A111A /* Pickers.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Pickers.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE5095E19695C26009A111A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1FE5096019695C26009A111A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
@@ -146,6 +148,7 @@
 				1FE5096F19695C26009A111A /* BIDAppDelegate.h */,
 				1FE5097019695C26009A111A /* BIDAppDelegate.m */,
 				1FE5097519695C26009A111A /* Images.xcassets */,
+				1F6E9ABA196A65A90064FD9B /* statedictionary.plist */,
 				1FE5097219695C26009A111A /* Pickers.xcdatamodeld */,
 				1FE5096719695C26009A111A /* Supporting Files */,
 			);
@@ -259,6 +262,7 @@
 			files = (
 				1FE509A319695DE2009A111A /* Main.storyboard in Resources */,
 				1FE5096B19695C26009A111A /* InfoPlist.strings in Resources */,
+				1F6E9ABB196A65A90064FD9B /* statedictionary.plist in Resources */,
 				1FE5097619695C26009A111A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -482,6 +486,7 @@
 				1FE5098F19695C26009A111A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1FE5099019695C26009A111A /* Build configuration list for PBXNativeTarget "PickersTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +495,7 @@
 				1FE5099219695C26009A111A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
