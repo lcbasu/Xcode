@@ -10,6 +10,8 @@
 
 @interface BIDDoubleComponentPickerViewController ()
 
+@property (weak, nonatomic) IBOutlet UIPickerView *doublePicker;
+
 @end
 
 @implementation BIDDoubleComponentPickerViewController
@@ -45,5 +47,9 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)buttonPressed:(UIButton *)sender
+{
+}
 
 @end
