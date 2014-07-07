@@ -10,6 +10,8 @@
 
 @interface BIDSingleComponentPickerViewController ()
 
+@property (weak, nonatomic) IBOutlet UIPickerView *singlePicker;
+
 @end
 
 @implementation BIDSingleComponentPickerViewController
@@ -45,5 +47,9 @@
     // Pass the selected object to the new view controller.
 }
 */
+
+- (IBAction)buttonPressed:(UIButton *)sender
+{
+}
 
 @end
