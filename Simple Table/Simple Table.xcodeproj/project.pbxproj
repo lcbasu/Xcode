@@ -10,8 +10,6 @@
 		1FE511D3196A77F10086239D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FE511D2196A77F10086239D /* Foundation.framework */; };
 		1FE511D5196A77F10086239D /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FE511D4196A77F10086239D /* CoreGraphics.framework */; };
 		1FE511D7196A77F10086239D /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FE511D6196A77F10086239D /* UIKit.framework */; };
-		1FE511DD196A77F10086239D /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 1FE511DB196A77F10086239D /* InfoPlist.strings */; };
-		1FE511DF196A77F10086239D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE511DE196A77F10086239D /* main.m */; };
 		1FE511E3196A77F10086239D /* BIDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE511E2196A77F10086239D /* BIDAppDelegate.m */; };
 		1FE511E6196A77F10086239D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FE511E4196A77F10086239D /* Main.storyboard */; };
 		1FE511E9196A77F10086239D /* BIDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE511E8196A77F10086239D /* BIDViewController.m */; };
@@ -38,10 +36,6 @@
 		1FE511D2196A77F10086239D /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
 		1FE511D4196A77F10086239D /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
 		1FE511D6196A77F10086239D /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
-		1FE511DA196A77F10086239D /* Simple Table-Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = "Simple Table-Info.plist"; sourceTree = "<group>"; };
-		1FE511DC196A77F10086239D /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
-		1FE511DE196A77F10086239D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		1FE511E0196A77F10086239D /* Simple Table-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "Simple Table-Prefix.pch"; sourceTree = "<group>"; };
 		1FE511E1196A77F10086239D /* BIDAppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BIDAppDelegate.h; sourceTree = "<group>"; };
 		1FE511E2196A77F10086239D /* BIDAppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BIDAppDelegate.m; sourceTree = "<group>"; };
 		1FE511E5196A77F10086239D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -118,20 +112,8 @@
 				1FE511E7196A77F10086239D /* BIDViewController.h */,
 				1FE511E8196A77F10086239D /* BIDViewController.m */,
 				1FE511EA196A77F10086239D /* Images.xcassets */,
-				1FE511D9196A77F10086239D /* Supporting Files */,
 			);
 			path = "Simple Table";
-			sourceTree = "<group>";
-		};
-		1FE511D9196A77F10086239D /* Supporting Files */ = {
-			isa = PBXGroup;
-			children = (
-				1FE511DA196A77F10086239D /* Simple Table-Info.plist */,
-				1FE511DB196A77F10086239D /* InfoPlist.strings */,
-				1FE511DE196A77F10086239D /* main.m */,
-				1FE511E0196A77F10086239D /* Simple Table-Prefix.pch */,
-			);
-			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
 		1FE511F7196A77F10086239D /* Simple TableTests */ = {
@@ -230,7 +212,6 @@
 			buildActionMask = 2147483647;
 			files = (
 				1FE511EB196A77F10086239D /* Images.xcassets in Resources */,
-				1FE511DD196A77F10086239D /* InfoPlist.strings in Resources */,
 				1FE511E6196A77F10086239D /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -252,7 +233,6 @@
 			files = (
 				1FE511E3196A77F10086239D /* BIDAppDelegate.m in Sources */,
 				1FE511E9196A77F10086239D /* BIDViewController.m in Sources */,
-				1FE511DF196A77F10086239D /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,14 +255,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		1FE511DB196A77F10086239D /* InfoPlist.strings */ = {
-			isa = PBXVariantGroup;
-			children = (
-				1FE511DC196A77F10086239D /* en */,
-			);
-			name = InfoPlist.strings;
-			sourceTree = "<group>";
-		};
 		1FE511E4196A77F10086239D /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -457,6 +429,7 @@
 				1FE51203196A77F10086239D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1FE51204196A77F10086239D /* Build configuration list for PBXNativeTarget "Simple TableTests" */ = {
 			isa = XCConfigurationList;
@@ -465,6 +438,7 @@
 				1FE51206196A77F10086239D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

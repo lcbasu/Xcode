@@ -47,6 +47,13 @@
                 initWithStyle:UITableViewCellStyleDefault
                 reuseIdentifier:SimpleTableIdentifier];
     }
+    
+    UIImage *normalImage = [UIImage imageNamed:@"star"];
+    cell.imageView.image = normalImage;
+    
+    UIImage *highlightedImage = [UIImage imageNamed:@"staryellow"];
+    cell.imageView.image = highlightedImage;
+    
     cell.textLabel.text = self.dwarves[indexPath.row];
     return cell;
 }
