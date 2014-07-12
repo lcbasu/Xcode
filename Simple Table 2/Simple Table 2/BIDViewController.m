@@ -48,7 +48,7 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:
                              SimpleTableIdentifier];
     if (cell == nil) {
-        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
+        cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleSubtitle
                                       reuseIdentifier:SimpleTableIdentifier];
     }
     
@@ -56,6 +56,13 @@
     cell.imageView.image = image;
     
     cell.textLabel.text = self.dwarves[indexPath.row];
+    
+    if (indexPath.row < 7) {
+        cell.detailTextLabel.text = @"Mr. Disney";
+    } else {
+        cell.detailTextLabel.text = @"Mr. Tolkien";
+    }
+    
     return cell;
 }
 
