@@ -51,6 +51,10 @@
         cell = [[UITableViewCell alloc] initWithStyle:UITableViewCellStyleDefault
                                       reuseIdentifier:SimpleTableIdentifier];
     }
+    
+    UIImage *image = [UIImage imageNamed:@"star"];
+    cell.imageView.image = image;
+    
     cell.textLabel.text = self.dwarves[indexPath.row];
     return cell;
 }
