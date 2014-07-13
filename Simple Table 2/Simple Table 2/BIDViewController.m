@@ -23,8 +23,7 @@
                      @"Doc", @"Grumpy", @"Dopey",
                      @"Thorin", @"Dorin", @"Nori", @"Ori",
                      @"Balin", @"Dwalin", @"Fili", @"Kili",
-                     @"Oin", @"Gloin", @"Bifur", @"Bofur",
-                     @"Bombur"];
+                     @"Oin", @"Gloin"];
     UITableView *tableView = (id)[self.view viewWithTag:1];
     UIEdgeInsets contentInset = tableView.contentInset;
     contentInset.top = 20;
