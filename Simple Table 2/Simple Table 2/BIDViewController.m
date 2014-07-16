@@ -70,6 +70,27 @@
     return indexPath.row;
 }
 
+- (NSIndexPath *)tableView:(UITableView *)tableView willSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    if (indexPath.row == 0) {
+        return nil;
+    } else {
+        return indexPath;
+    }
+}
 
-
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    NSString *rowValue = self.dwarves[indexPath.row];
+    NSString *message = [[NSString alloc] initWithFormat:
+                         @"You selected %@", rowValue];
+    UIAlertView *alert = [[UIAlertView alloc]
+                          initWithTitle:@"Row Selected!"
+                          message:message
+                          delegate:nil
+                          cancelButtonTitle:@"Yes I Did"
+                          otherButtonTitles:nil];
+    [alert show];
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+}
 @end
