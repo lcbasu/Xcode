@@ -55,6 +55,7 @@
     cell.imageView.image = image;
     
     cell.textLabel.text = self.dwarves[indexPath.row];
+    cell.textLabel.font = [UIFont boldSystemFontOfSize:50];
     
     if (indexPath.row < 7) {
         cell.detailTextLabel.text = @"Mr. Disney";
