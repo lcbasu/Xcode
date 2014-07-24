@@ -22,8 +22,8 @@
     
     array = [[NSMutableArray alloc] init];
     [array addObject:@"Lokesh"];
-    [array addObject:@"Chandra"];
-    [array addObject:@"Basu"];
+    [array addObject:@"Wardan"];
+    [array addObject:@"Anupam"];
 }
 
 - (void)didReceiveMemoryWarning
