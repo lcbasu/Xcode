@@ -31,6 +31,7 @@
 		1F0C89C9199A6947000DC64E /* TestSRM.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = TestSRM.h; path = SRMs/TestSRM.h; sourceTree = SOURCE_ROOT; };
 		1F0C89CB199A6A6A000DC64E /* TestSRM2.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TestSRM2.h; sourceTree = "<group>"; };
 		1FEF5367199BB5540077083B /* srm601_div2_250.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = srm601_div2_250.h; sourceTree = "<group>"; };
+		1FEF70BC199CFEC1006DA456 /* srm602_div2_250.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = srm602_div2_250.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -76,6 +77,7 @@
 				1F0C89C9199A6947000DC64E /* TestSRM.h */,
 				1F0C89CB199A6A6A000DC64E /* TestSRM2.h */,
 				1FEF5367199BB5540077083B /* srm601_div2_250.h */,
+				1FEF70BC199CFEC1006DA456 /* srm602_div2_250.h */,
 			);
 			name = SRMs;
 			sourceTree = "<group>";
