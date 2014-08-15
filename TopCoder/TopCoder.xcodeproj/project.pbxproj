@@ -25,6 +25,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1F033B74199E5C5700AC9B6B /* srm603_div2_250.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = srm603_div2_250.h; sourceTree = "<group>"; };
 		1F0C89BD199A68EF000DC64E /* TopCoder */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = TopCoder; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F0C89C0199A68EF000DC64E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1F0C89C2199A68EF000DC64E /* TopCoder.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = TopCoder.1; sourceTree = "<group>"; };
@@ -78,6 +79,7 @@
 				1F0C89CB199A6A6A000DC64E /* TestSRM2.h */,
 				1FEF5367199BB5540077083B /* srm601_div2_250.h */,
 				1FEF70BC199CFEC1006DA456 /* srm602_div2_250.h */,
+				1F033B74199E5C5700AC9B6B /* srm603_div2_250.h */,
 			);
 			name = SRMs;
 			sourceTree = "<group>";
