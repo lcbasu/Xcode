@@ -1,13 +1,13 @@
 //
-//  shapes.h
+//  translate.h
 //  OpenGL
 //
 //  Created by Lokesh Basu on 16/08/14.
 //  Copyright (c) 2014 Samsung. All rights reserved.
 //
 
-#ifndef OpenGL_shapes_h
-#define OpenGL_shapes_h
+#ifndef OpenGL_translate_h
+#define OpenGL_translate_h
 
 #include <GLUT/glut.h>
 #include <OpenGL/gl.h>
@@ -94,7 +94,7 @@ void drawScene()
     
 }
 
-void shapes()
+void test()
 {
     // initialize glut
     

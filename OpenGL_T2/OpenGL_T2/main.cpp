@@ -1,13 +1,10 @@
 //
-//  shapes.h
-//  OpenGL
+//  main.cpp
+//  OpenGL_T2
 //
 //  Created by Lokesh Basu on 16/08/14.
 //  Copyright (c) 2014 Samsung. All rights reserved.
 //
-
-#ifndef OpenGL_shapes_h
-#define OpenGL_shapes_h
 
 #include <GLUT/glut.h>
 #include <OpenGL/gl.h>
@@ -94,10 +91,11 @@ void drawScene()
     
 }
 
-void shapes()
+
+int main(int argc, char **argv)
 {
     // initialize glut
-    
+    glutInit(&argc, argv);    
     glutInitDisplayMode(GLUT_DOUBLE | GLUT_RGB | GLUT_DEPTH);
     glutInitWindowSize(400, 400); // set the window size
     
@@ -111,6 +109,6 @@ void shapes()
     glutReshapeFunc(handleResize);
     
     glutMainLoop(); // start the main loop. glutMainLoop doesn't return.
+    return 0;
 }
 
-#endif
