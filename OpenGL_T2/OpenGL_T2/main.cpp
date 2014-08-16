@@ -44,6 +44,9 @@ void handleResize(int w, int h)
                    , 200);                  // the far z clipping co-ordinate
 }
 
+float _angle = 30.0f;
+float _cameraAngle = 10.0f;
+
 // drwas the 3D scene
 void drawScene()
 {
@@ -52,38 +55,51 @@ void drawScene()
     
     glMatrixMode(GL_MODELVIEW); // switch to the drawing perspectve
     glLoadIdentity();
+    glRotatef(-_cameraAngle, 0.0f, 1.0f, 0.0f);
+    glTranslatef(0.0f, 0.0f, -5.0f);
     
+    
+    glPushMatrix();
+    glTranslatef(0.0f, -1.0f, 0.0f);
+    glRotatef(_angle, 0.0f, 0.0f, 1.0f);
     glBegin(GL_QUADS); // begin quadrilateral co-ordinates
-    
     // trapezoid
-    glVertex3f(-0.7f, -1.5f, -5.0f);
-    glVertex3f(0.7f, -1.5f, -5.0f);
-    glVertex3f(0.4f, -0.5f, -5.0f);
-    glVertex3f(-0.4f, -0.5f, -5.0f);
+    glVertex3f(-0.7f, -0.5f, 0.0f);
+    glVertex3f(0.7f, -0.5f, 0.0f);
+    glVertex3f(0.4f, 0.5f, 0.0f);
+    glVertex3f(-0.4f, 0.5f, 0.0f);
     
     glEnd(); // end quadrilateral co-ordinates
+    glPopMatrix();
     
-    
+    glPushMatrix();
+    glTranslatef(1.0f, 1.0f, 0.0f);
+    glRotatef(_angle, 0.0f, 1.0f, 0.0f);
+    glScalef(0.7f, 0.7f, 0.7f);
     glBegin(GL_TRIANGLES); // begin triangle co-ordinates
-    
     // pentagon
-    glVertex3f(0.5f, 0.5f, -5.0f);
-    glVertex3f(1.5f, 0.5f, -5.0f);
-    glVertex3f(0.5f, 1.0f, -5.0f);
+    glVertex3f(-0.5f, -0.5f, 0.0f);
+    glVertex3f(0.5f, -0.5f, 0.0f);
+    glVertex3f(-0.5f, 0.0f, 0.0f);
     
-    glVertex3f(0.5f, 1.0f, -5.0f);
-    glVertex3f(1.5f, 0.5f, -5.0f);
-    glVertex3f(1.5f, 1.0f, -5.0f);
+    glVertex3f(-0.5f, 0.0f, 0.0f);
+    glVertex3f(0.5f, -0.5f, 0.0f);
+    glVertex3f(0.5f, 0.0f, 0.0f);
     
-    glVertex3f(0.5f, 1.0f, -5.0f);
-    glVertex3f(1.5f, 1.0f, -5.0f);
-    glVertex3f(1.0f, 1.5f, -5.0f);
+    glVertex3f(-0.5f, 0.0f, 0.0f);
+    glVertex3f(0.5f, 0.0f, 0.0f);
+    glVertex3f(0.0f, 0.5f, 0.0f);
     
+    glEnd();
+    glPopMatrix();
+    
+    glTranslatef(-1.0f, 1.0f, 0.0f);
+    glRotatef(_angle, 1.0f, 2.0f, 3.0f);
+    glBegin(GL_TRIANGLES);
     // triangle
-    
-    glVertex3f(-0.5f, 0.5f, -5.0f);
-    glVertex3f(-1.0f, 1.5f, -5.0f);
-    glVertex3f(-1.5f, 0.5f, -5.0f);
+    glVertex3f(0.5f, -0.5f, 0.0f);
+    glVertex3f(0.0f, 0.5f, 0.0f);
+    glVertex3f(-0.5f, -0.5f, 0.0f);
     
     glEnd(); // end trianle co-ordinates
     
@@ -91,6 +107,16 @@ void drawScene()
     
 }
 
+void update(int value)
+{
+    _angle += 2.0f;
+    if (_angle > 360) {
+        _angle -= 360;
+    }
+    
+    glutPostRedisplay();
+    glutTimerFunc(25, update, 0);
+}
 
 int main(int argc, char **argv)
 {
@@ -108,6 +134,7 @@ int main(int argc, char **argv)
     glutKeyboardFunc(handleKeyPress);
     glutReshapeFunc(handleResize);
     
+    glutTimerFunc(25, update, 0);
     glutMainLoop(); // start the main loop. glutMainLoop doesn't return.
     return 0;
 }
