@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1F077C92199F4083000F34F6 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F077C91199F4083000F34F6 /* main.cpp */; };
 		1F077C94199F4083000F34F6 /* OpenGL_T3.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1F077C93199F4083000F34F6 /* OpenGL_T3.1 */; };
+		1F077C9C199F41A9000F34F6 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F077C9A199F41A9000F34F6 /* GLUT.framework */; };
+		1F077C9D199F41A9000F34F6 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F077C9B199F41A9000F34F6 /* OpenGL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +30,8 @@
 		1F077C8E199F4083000F34F6 /* OpenGL_T3 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OpenGL_T3; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F077C91199F4083000F34F6 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1F077C93199F4083000F34F6 /* OpenGL_T3.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = OpenGL_T3.1; sourceTree = "<group>"; };
+		1F077C9A199F41A9000F34F6 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/GLUT.framework; sourceTree = DEVELOPER_DIR; };
+		1F077C9B199F41A9000F34F6 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = DEVELOPER_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F077C9C199F41A9000F34F6 /* GLUT.framework in Frameworks */,
+				1F077C9D199F41A9000F34F6 /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +50,8 @@
 		1F077C85199F4083000F34F6 = {
 			isa = PBXGroup;
 			children = (
+				1F077C9A199F41A9000F34F6 /* GLUT.framework */,
+				1F077C9B199F41A9000F34F6 /* OpenGL.framework */,
 				1F077C90199F4083000F34F6 /* OpenGL_T3 */,
 				1F077C8F199F4083000F34F6 /* Products */,
 			);
