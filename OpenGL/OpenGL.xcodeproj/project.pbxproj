@@ -8,25 +8,27 @@
 
 /* Begin PBXBuildFile section */
 		1FE0C529199F14DF00F454E3 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FE0C528199F14DF00F454E3 /* main.cpp */; };
-		1FE0C52B199F14DF00F454E3 /* OpenGL.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1FE0C52A199F14DF00F454E3 /* OpenGL.1 */; };
+		1FE0C52B199F14DF00F454E3 /* OpenGL.1 in Copy Files */ = {isa = PBXBuildFile; fileRef = 1FE0C52A199F14DF00F454E3 /* OpenGL.1 */; };
 		1FE0C533199F152D00F454E3 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FE0C531199F152D00F454E3 /* GLUT.framework */; };
 		1FE0C534199F152D00F454E3 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FE0C532199F152D00F454E3 /* OpenGL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
-		1FE0C523199F14DF00F454E3 /* CopyFiles */ = {
+		1FE0C523199F14DF00F454E3 /* Copy Files */ = {
 			isa = PBXCopyFilesBuildPhase;
 			buildActionMask = 2147483647;
 			dstPath = /usr/share/man/man1/;
 			dstSubfolderSpec = 0;
 			files = (
-				1FE0C52B199F14DF00F454E3 /* OpenGL.1 in CopyFiles */,
+				1FE0C52B199F14DF00F454E3 /* OpenGL.1 in Copy Files */,
 			);
+			name = "Copy Files";
 			runOnlyForDeploymentPostprocessing = 1;
 		};
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1F077C69199F31DC000F34F6 /* shapes.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; name = shapes.h; path = OpenGL/shapes.h; sourceTree = "<group>"; };
 		1FE0C525199F14DF00F454E3 /* OpenGL */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OpenGL; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE0C528199F14DF00F454E3 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1FE0C52A199F14DF00F454E3 /* OpenGL.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = OpenGL.1; sourceTree = "<group>"; };
@@ -47,12 +49,21 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		1F077C68199F319C000F34F6 /* Headers */ = {
+			isa = PBXGroup;
+			children = (
+				1F077C69199F31DC000F34F6 /* shapes.h */,
+			);
+			name = Headers;
+			sourceTree = "<group>";
+		};
 		1FE0C51C199F14DF00F454E3 = {
 			isa = PBXGroup;
 			children = (
 				1FE0C531199F152D00F454E3 /* GLUT.framework */,
 				1FE0C532199F152D00F454E3 /* OpenGL.framework */,
 				1FE0C527199F14DF00F454E3 /* OpenGL */,
+				1F077C68199F319C000F34F6 /* Headers */,
 				1FE0C526199F14DF00F454E3 /* Products */,
 			);
 			sourceTree = "<group>";
@@ -83,7 +94,7 @@
 			buildPhases = (
 				1FE0C521199F14DF00F454E3 /* Sources */,
 				1FE0C522199F14DF00F454E3 /* Frameworks */,
-				1FE0C523199F14DF00F454E3 /* CopyFiles */,
+				1FE0C523199F14DF00F454E3 /* Copy Files */,
 			);
 			buildRules = (
 			);
@@ -205,14 +216,18 @@
 		1FE0C52F199F14DF00F454E3 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.8;
 			};
 			name = Debug;
 		};
 		1FE0C530199F14DF00F454E3 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.8;
 			};
 			name = Release;
 		};
@@ -235,6 +250,7 @@
 				1FE0C530199F14DF00F454E3 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
