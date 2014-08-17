@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1FE3E3A719A0A5B100DF3ABB /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FE3E3A619A0A5B100DF3ABB /* main.cpp */; };
 		1FE3E3A919A0A5B100DF3ABB /* OpenGL_T5.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1FE3E3A819A0A5B100DF3ABB /* OpenGL_T5.1 */; };
+		1FE3E3B119A0A60800DF3ABB /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FE3E3AF19A0A60800DF3ABB /* GLUT.framework */; };
+		1FE3E3B219A0A60800DF3ABB /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FE3E3B019A0A60800DF3ABB /* OpenGL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +30,9 @@
 		1FE3E3A319A0A5B100DF3ABB /* OpenGL_T5 */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OpenGL_T5; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE3E3A619A0A5B100DF3ABB /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1FE3E3A819A0A5B100DF3ABB /* OpenGL_T5.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = OpenGL_T5.1; sourceTree = "<group>"; };
+		1FE3E3AF19A0A60800DF3ABB /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/GLUT.framework; sourceTree = DEVELOPER_DIR; };
+		1FE3E3B019A0A60800DF3ABB /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = DEVELOPER_DIR; };
+		1FE3E3B319A0A79800DF3ABB /* imageloader.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = imageloader.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +40,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FE3E3B119A0A60800DF3ABB /* GLUT.framework in Frameworks */,
+				1FE3E3B219A0A60800DF3ABB /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +51,8 @@
 		1FE3E39A19A0A5B100DF3ABB = {
 			isa = PBXGroup;
 			children = (
+				1FE3E3AF19A0A60800DF3ABB /* GLUT.framework */,
+				1FE3E3B019A0A60800DF3ABB /* OpenGL.framework */,
 				1FE3E3A519A0A5B100DF3ABB /* OpenGL_T5 */,
 				1FE3E3A419A0A5B100DF3ABB /* Products */,
 			);
@@ -62,6 +71,7 @@
 			children = (
 				1FE3E3A619A0A5B100DF3ABB /* main.cpp */,
 				1FE3E3A819A0A5B100DF3ABB /* OpenGL_T5.1 */,
+				1FE3E3B319A0A79800DF3ABB /* imageloader.h */,
 			);
 			path = OpenGL_T5;
 			sourceTree = "<group>";
@@ -197,14 +207,18 @@
 		1FE3E3AD19A0A5B100DF3ABB /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.8;
 			};
 			name = Debug;
 		};
 		1FE3E3AE19A0A5B100DF3ABB /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx10.8;
 			};
 			name = Release;
 		};
