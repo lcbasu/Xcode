@@ -22,14 +22,14 @@ void init(void)
 
 void display(void)
 {
-    GLdouble eqn[4] = {0.0, 1.0, 0.0, 0.0};
+    GLdouble eqn1[4] = {0.0, 1.0, 0.0, 0.0};
     GLdouble eqn2[4] = {1.0, 0.0, 0.0, 0.0};
     glClear(GL_COLOR_BUFFER_BIT);
-    glColor3f (1.0, 1.0, 1.0);
+    glColor3f (1.0, 0.0, 0.0);
     glPushMatrix();
     glTranslatef (0.0, 0.0, -5.0);
     //clip lower half -- y < 0
-    glClipPlane (GL_CLIP_PLANE0, eqn);
+    glClipPlane (GL_CLIP_PLANE0, eqn1);
     glEnable (GL_CLIP_PLANE0);
     //clip left half -- x < 0
     glClipPlane (GL_CLIP_PLANE1, eqn2);
