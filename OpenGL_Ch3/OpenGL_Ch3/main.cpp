@@ -26,7 +26,8 @@ void display(void)
     glLoadIdentity ();
     /* clear the matrix */
     /* viewing transformation  */
-    gluLookAt (0.0, 0.0, 5.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
+    glTranslatef(0.0, 0.0, -5.0);
+    //gluLookAt (0.0, 0.0, 5.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
     glScalef (1.0, 2.0, 1.0);
     glutWireCube (1.0);
     glFlush ();
