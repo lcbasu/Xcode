@@ -28,6 +28,7 @@ void display(void)
     /* viewing transformation  */
     glTranslatef(0.0, 0.0, -5.0);
     //gluLookAt (0.0, 0.0, 5.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
+    glRotatef(45.0, 1.0, 0.0, 0.0);
     glScalef (1.0, 2.0, 1.0);
     glutWireCube (1.0);
     glFlush ();
