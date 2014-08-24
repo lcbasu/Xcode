@@ -18,13 +18,19 @@ using namespace std;
 void init()
 {
     glClearColor(1.0f, 0.0f, 0.0f, 0.0f);
+    glPolygonMode(GL_FRONT_AND_BACK, GL_LINE);
 }
 
 void display()
 {
     glClear(GL_COLOR_BUFFER_BIT);
-    glBegin(GL_LINE_LOOP);
-    glutSolidTorus(0.1f, 0.5f, 10.0f, 200.0f);
+    
+    glBegin(GL_POLYGON);
+    
+    glVertex3f(-0.2f, -0.2f, 0.0f);
+    glVertex3f(-0.2f, 0.2f, 0.0f);
+    glVertex3f(0.2f, -0.2f, 0.0f);
+    glVertex3f(0.2f, 0.2f, 0.0f);
     glEnd();
     glFlush();
 }
