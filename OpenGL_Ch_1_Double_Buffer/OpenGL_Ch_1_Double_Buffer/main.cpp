@@ -28,7 +28,9 @@ void dispaly()
     glPushMatrix();
     glRotatef(_angle, 0.0f, 0.0f, 1.0f);
     glColor3f(0.0f, 0.0f, 1.0f);
-    glRectf(-0.2f, -0.2f, 0.2f, 0.2f);
+    GLfloat a[] = {-0.2f, -0.2f};
+    GLfloat b[] = {0.2f, 0.2f};
+    glRectfv(a, b);
     glPopMatrix();
     glutSwapBuffers();
 }
