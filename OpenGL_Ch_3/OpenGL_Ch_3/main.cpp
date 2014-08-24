@@ -26,7 +26,7 @@ void display()
     glColor3f(0.0f, 1.0f, 0.0f);
     glLoadIdentity();
     gluLookAt(0.0f, 0.0f, 5.0f, 0.0f, 0.0f, 0.0f, 0.0f, 1.0f, 0.0f);
-    glScalef(1.0f, 1.0f, 1.0f);
+    glScalef(1.0f, 2.0f, 1.0f);
     glutWireCube(2.0f);
     glFlush();
 }
@@ -35,7 +35,8 @@ void reshape(int w, int h)
 {
     glViewport(0, 0, (GLsizei)w, (GLsizei)h);
     glMatrixMode(GL_PROJECTION);
-    glLoadIdentity();glFrustum(-1.0, 1.0, -1.0, 1.0, 1.5, 20.0);
+    glLoadIdentity();
+    glFrustum(-1.0, 1.0, -1.0, 1.0, 1.5, 20.0);
     glMatrixMode(GL_MODELVIEW);
 }
 
