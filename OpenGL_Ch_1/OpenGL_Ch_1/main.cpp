@@ -12,6 +12,15 @@
 #include <stdlib.h>
 #include <iostream>
 
+void init()
+{
+    glClearColor(1.0f, 0.0f, 0.0f, 0.0f);
+    
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+    glOrtho(0.0f, 1.0f, 0.0f, 1.0f, -1.0f, 1.0f);
+}
+
 void dispaly()
 {
     glClear(GL_COLOR_BUFFER_BIT);
@@ -25,15 +34,6 @@ void dispaly()
     glEnd();
     
     glFlush();
-}
-
-void init()
-{
-    glClearColor(1.0f, 0.0f, 0.0f, 0.0f);
-    
-    glMatrixMode(GL_PROJECTION);
-    glLoadIdentity();
-    glOrtho(0.0f, 1.0f, 0.0f, 1.0f, -1.0f, 1.0f);
 }
 
 int main(int argc, char *argv[])
