@@ -29,16 +29,16 @@ void display()
     glPushMatrix();
     glColor3f (1.0, 1.0, 0.0);
     glRotatef (_angleSun, 0.0, 1.0, 0.0);
-    glutWireSphere(1.0, 200, 16);
+    glutSolidSphere(1.0, 200, 16);
     glRotatef (_angleYear, 0.0, 1.0, 0.0);
     glTranslatef (2.0, 0.0, 0.0);
     glColor3f (0.0, 0.0, 1.0);
     glRotatef (_angleDay, 0.0, 1.0, 0.0);
-    glutWireSphere(0.3, 100, 8);         //earth
+    glutSolidSphere(0.3, 100, 8);         //earth
     glColor3f (1.0, 1.0, 1.0);
     glRotatef (_angleMoon, 2.0, 0.0, 0.0);
     glTranslatef (0.5, 0.0, 0.0);
-    glutWireSphere(0.1, 50, 8);    //moon
+    glutSolidSphere(0.1, 50, 8);    //moon
     glPopMatrix();
     
     glutSwapBuffers();
