@@ -14,7 +14,7 @@
 
 using namespace std;
 
-GLuint texture; //the array for our texture
+GLuint testTexture; //the array for our texture
 
 GLfloat angle = 0.0;
 
@@ -35,15 +35,19 @@ GLuint LoadTexture(const char * filename, int width, int height)
     glGenTextures( 1, &texture);
     glBindTexture( GL_TEXTURE_2D, texture);
     glTexEnvf( GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE);
+    
     glTexParameterf( GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
     glTexParameterf( GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
     
     glTexParameterf( GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
     glTexParameterf( GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
     
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0,
-                 GL_RGB, GL_UNSIGNED_BYTE, data);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
+    
     free( data );
+    
+    glBindTexture( GL_TEXTURE_2D, 0 );
+    
     return texture;
 }
 
@@ -52,24 +56,21 @@ void FreeTexture( GLuint texture )
     glDeleteTextures( 1, &texture );
 }
 
-void square (void) {
-    glBindTexture( GL_TEXTURE_2D, texture );
-    glRotatef( angle, 1.0f, 1.0f, 1.0f );
-    glBegin (GL_QUADS);
-    glTexCoord2d(0.0,0.0); glVertex2d(-1.0,-1.0);
-    glTexCoord2d(1.0,0.0); glVertex2d(+1.0,-1.0);
-    glTexCoord2d(1.0,1.0); glVertex2d(+1.0,+1.0);
-    glTexCoord2d(0.0,1.0); glVertex2d(-1.0,+1.0);
-    glEnd();
-}
-
-void display (void) {
+void display (void)
+{
+    
     glClearColor (0.0,0.0,0.0,1.0);
     glClear (GL_COLOR_BUFFER_BIT);
     glLoadIdentity();
     glEnable( GL_TEXTURE_2D );
     gluLookAt (0.0, 0.0, 5.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
-    square();
+    GLUquadricObj *qObj = gluNewQuadric();
+    gluQuadricNormals(qObj, GLU_SMOOTH);
+    gluQuadricTexture(qObj, GL_TRUE);
+    glEnable(GL_TEXTURE_2D);
+    glBindTexture(GL_TEXTURE_2D, testTexture);
+    gluSphere(qObj, 1.0f, 24, 24);
+    
     glutSwapBuffers();
     angle ++;
 }
@@ -92,11 +93,11 @@ int main (int argc, char **argv) {
     glutIdleFunc (display);
     glutReshapeFunc (reshape);
     
-    texture = LoadTexture("/Users/LokeshBasu/Documents/Xcode/OpenGL_Final_Solar_System/OpenGL_Final_Solar_System/texture.bmp", 256, 256);
+    testTexture = LoadTexture("/Users/LokeshBasu/Documents/Xcode/OpenGL_Final_Solar_System/OpenGL_Final_Solar_System/texture.bmp", 256, 256);
     
     glutMainLoop ();
     
-    FreeTexture( texture );
+    FreeTexture(testTexture);
     
     return 0;
 }
