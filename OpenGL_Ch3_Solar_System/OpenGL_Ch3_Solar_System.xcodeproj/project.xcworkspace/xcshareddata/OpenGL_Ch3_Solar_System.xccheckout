@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>3B1A5542-77B8-45CB-ABA7-AE6709AC2FBA</string>
+	<string>D67EA694-9A83-497E-9807-A7B0CE524D6C</string>
 	<key>IDESourceControlProjectName</key>
 	<string>OpenGL_Ch3_Solar_System</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>D81BA77D-D765-4AF9-B64D-C8AC6E8537AA</key>
+		<key>57DAE9EA-1149-499A-8144-F1D26B744289</key>
 		<string>https://github.com/lokeshguddu/Xcode.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>OpenGL_Ch3_Solar_System/OpenGL_Ch3_Solar_System.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>D81BA77D-D765-4AF9-B64D-C8AC6E8537AA</key>
+		<key>57DAE9EA-1149-499A-8144-F1D26B744289</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>D81BA77D-D765-4AF9-B64D-C8AC6E8537AA</string>
+	<string>57DAE9EA-1149-499A-8144-F1D26B744289</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>D81BA77D-D765-4AF9-B64D-C8AC6E8537AA</string>
+			<string>57DAE9EA-1149-499A-8144-F1D26B744289</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Xcode</string>
 		</dict>

@@ -27,6 +27,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1FCAB1AD19B1783800622FBF /* sun.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = sun.bmp; sourceTree = "<group>"; };
 		1FE6292019A24B8800FBFB8E /* OpenGL_Ch3_Solar_System */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OpenGL_Ch3_Solar_System; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE6292319A24B8800FBFB8E /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1FE6292519A24B8800FBFB8E /* OpenGL_Ch3_Solar_System.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = OpenGL_Ch3_Solar_System.1; sourceTree = "<group>"; };
@@ -69,6 +70,7 @@
 			isa = PBXGroup;
 			children = (
 				1FE6292319A24B8800FBFB8E /* main.cpp */,
+				1FCAB1AD19B1783800622FBF /* sun.bmp */,
 				1FE6292519A24B8800FBFB8E /* OpenGL_Ch3_Solar_System.1 */,
 			);
 			path = OpenGL_Ch3_Solar_System;
@@ -239,6 +241,7 @@
 				1FE6292B19A24B8800FBFB8E /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
