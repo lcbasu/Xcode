@@ -152,9 +152,9 @@ struct Light
 void display (void)
 {
     
-    glClearColor (0.0,0.0,0.0,1.0);
-    glClear (GL_COLOR_BUFFER_BIT);
-    
+    glClearColor (1.0,0.0,0.0,1.0);
+    glClear (GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    glEnable(GL_DEPTH_TEST);
 
     
     
@@ -170,18 +170,18 @@ void display (void)
     
     glMatrixMode( GL_MODELVIEW );
     glLoadIdentity();
-    glTranslatef( 0.0f, 0.0f, -3.0f );
+    //glTranslatef( 0.0f, 0.0f, -3.0f );
     
     glPushMatrix();
     
-    gluLookAt (0.0, 5.0, 5.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
+    gluLookAt (0.0, 0.0, 5.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
     
-    //glEnable( GL_TEXTURE_2D );
+    glEnable( GL_TEXTURE_2D );
     GLUquadricObj *qObj = gluNewQuadric();
     gluQuadricNormals(qObj, GLU_SMOOTH);
     gluQuadricTexture(qObj, GL_TRUE);
-    glDisable(GL_TEXTURE_2D);
-    //glBindTexture(GL_TEXTURE_2D, testTexture);
+    glEnable(GL_TEXTURE_2D);
+    glBindTexture(GL_TEXTURE_2D, testTexture);
     
     glRotatef(_angleSun, 0.0, 1.0, 0.0);
     
@@ -190,35 +190,21 @@ void display (void)
     
     
     //Sunlight
-    GLenum m_LightID = GL_LIGHT0;
-    GLfloat m_Ambient[4] = {0.0, 0.0, 0.0, 1.0};
-    GLfloat m_Diffuse[4] = {1.0, 1.0, 1.0, 1.0};
-    GLfloat m_Specular[4] = {1.0, 1.0, 1.0, 1.0};
+    GLfloat mat_specular[] = { 1.0, 1.0, 1.0, 1.0 };
+    GLfloat mat_shininess[] = { 50.0 };
+    GLfloat light_position[] = { 1.0, 5.0, 0.0, 0.0 };
     
-    GLfloat m_Position[4] = {0.0, 0.0, 0.0, 0.0};
-    GLfloat m_SpotDirection[3] = {0.0, 0.0, 1.0};
+    glShadeModel (GL_SMOOTH);
+    glMaterialfv(GL_FRONT, GL_SPECULAR, mat_specular);
+    glMaterialfv(GL_FRONT, GL_SHININESS, mat_shininess);
+    glLightfv(GL_LIGHT0, GL_POSITION, light_position);
+    glEnable(GL_LIGHTING);
+    glEnable(GL_LIGHT0);
     
-    float  m_SpotExponent = 0.0;
-    float  m_SpotCutoff = 180.0f;
-    float  m_ConstantAttenuation = 1.0;
-    float  m_LinearAttenuation = 0.0;
-    float  m_QuadraticAttenuation = 0.0;
-    
-    glEnable( m_LightID );
-    glLightfv( m_LightID, GL_AMBIENT, m_Ambient) ;
-    glLightfv( m_LightID, GL_DIFFUSE, m_Diffuse);
-    glLightfv( m_LightID, GL_SPECULAR, m_Specular);
-    glLightfv( m_LightID, GL_POSITION, m_Position );
-    glLightfv( m_LightID, GL_SPOT_DIRECTION, m_SpotDirection );
-    glLightf( m_LightID, GL_SPOT_EXPONENT, m_SpotExponent );
-    glLightf( m_LightID, GL_SPOT_CUTOFF, m_SpotCutoff );
-    glLightf( m_LightID, GL_CONSTANT_ATTENUATION, m_ConstantAttenuation );
-    glLightf( m_LightID, GL_LINEAR_ATTENUATION, m_LinearAttenuation );
-    glLightf( m_LightID, GL_QUADRATIC_ATTENUATION, m_QuadraticAttenuation );
-    
+    //Draw Sun
     gluSphere(qObj, 1.0f, 24, 24);
     
-    glEnable( GL_LIGHTING );
+    
     
     //Earth
     glPushMatrix();
@@ -231,11 +217,17 @@ void display (void)
     glEnable(GL_TEXTURE_2D);
     glBindTexture(GL_TEXTURE_2D, testTexture);
     
-    glRotatef(_angleEarthRev, 0.0, 0.0, 1.0);
+    glRotatef(_angleEarthRev, 0.0, 1.0, 0.0);
     glTranslatef(3.0, 0.0, 0.0);
     glRotatef(_angleEarthRot, 0.0, 1.0, 0.0);
+    
+    
+    
 
     //g_EarthMaterial.Apply();
+
+    
+    //Draw Earth
     gluSphere(qObj2, 0.5f, 24, 24);
     
     
@@ -250,11 +242,14 @@ void display (void)
     glEnable(GL_TEXTURE_2D);
     glBindTexture(GL_TEXTURE_2D, testTexture);
     
-    glRotatef(_angleMoonRev, 0.0, 0.0, 1.0);
+    glRotatef(_angleMoonRev, 0.0, 1.0, 0.0);
     glTranslatef(1.0, 0.0, 0.0);
-    glRotatef(_angleMoonRot, 0.0, 0.0, 1.0);
+    glRotatef(_angleMoonRot, 0.0, 1.0, 0.0);
     
     //g_MoonMaterial.Apply();
+
+    
+    //Draw Moom
     gluSphere(qObj3, 0.25f, 24, 24);
     
     glPopMatrix();
@@ -301,8 +296,7 @@ void reshape (int w, int h) {
     glViewport (0, 0, (GLsizei)w, (GLsizei)h);
     glMatrixMode (GL_PROJECTION);
     glLoadIdentity ();
-    gluPerspective (60, (GLfloat)w / (GLfloat)h, 1.0, 100.0)
-    ;
+    gluPerspective (60, (GLfloat)w / (GLfloat)h, 1.0, 100.0);
     glMatrixMode (GL_MODELVIEW);
 }
 
@@ -313,7 +307,8 @@ void FreeTexture( GLuint texture )
 
 int main (int argc, char **argv) {
     glutInit (&argc, argv);
-    glutInitDisplayMode (GLUT_DOUBLE);
+    glutInitDisplayMode (GLUT_DEPTH | GLUT_DOUBLE);
+    
     glutInitWindowSize (500, 500);
     glutInitWindowPosition (100, 100);
     glutCreateWindow ("Texture");
@@ -321,7 +316,7 @@ int main (int argc, char **argv) {
     glutIdleFunc (display);
     glutReshapeFunc (reshape);
     
-    testTexture = LoadTexture("/Users/LokeshBasu/Documents/Xcode/OpenGL_Final_Solar_System/OpenGL_Final_Solar_System/texture.bmp", 256, 256);
+    testTexture = LoadTexture("/Users/LokeshBasu/Documents/Xcode/OpenGL_Final_Solar_System/OpenGL_Final_Solar_System/texture.bmp", 128, 128);
     
     
     glutTimerFunc(25, update, 0);
