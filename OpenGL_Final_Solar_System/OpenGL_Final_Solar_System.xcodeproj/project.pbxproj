@@ -11,6 +11,7 @@
 		1F93A2A619AF66FC00654F00 /* OpenGL_Final_Solar_System.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1F93A2A519AF66FC00654F00 /* OpenGL_Final_Solar_System.1 */; };
 		1F93A2AE19AF671300654F00 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F93A2AC19AF671300654F00 /* GLUT.framework */; };
 		1F93A2AF19AF671300654F00 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F93A2AD19AF671300654F00 /* OpenGL.framework */; };
+		1FAE096119B229F70057F1D6 /* arcball.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FAE095B19B229F70057F1D6 /* arcball.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -34,9 +35,9 @@
 		1F93A2AD19AF671300654F00 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.8.sdk/System/Library/Frameworks/OpenGL.framework; sourceTree = DEVELOPER_DIR; };
 		1F93A2B019AF6DA700654F00 /* test.JPG */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = test.JPG; sourceTree = "<group>"; };
 		1F93A2B119AF6FA800654F00 /* texture.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = texture.bmp; sourceTree = "<group>"; };
-		1FDD451219B0B9B000C078C8 /* earth.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = earth.bmp; sourceTree = "<group>"; };
-		1FDD451319B0B9B000C078C8 /* moon.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = moon.bmp; sourceTree = "<group>"; };
-		1FDD451419B0B9B000C078C8 /* sun.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = sun.bmp; sourceTree = "<group>"; };
+		1FAE095B19B229F70057F1D6 /* arcball.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = arcball.cpp; sourceTree = "<group>"; };
+		1FAE095C19B229F70057F1D6 /* arcball.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = arcball.h; sourceTree = "<group>"; };
+		1FAE096619B22F790057F1D6 /* girl.bmp */ = {isa = PBXFileReference; lastKnownFileType = image.bmp; path = girl.bmp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -73,15 +74,23 @@
 		1F93A2A219AF66FC00654F00 /* OpenGL_Final_Solar_System */ = {
 			isa = PBXGroup;
 			children = (
+				1FAE095A19B229F70057F1D6 /* arcball */,
 				1F93A2A319AF66FC00654F00 /* main.cpp */,
-				1FDD451219B0B9B000C078C8 /* earth.bmp */,
-				1FDD451319B0B9B000C078C8 /* moon.bmp */,
-				1FDD451419B0B9B000C078C8 /* sun.bmp */,
+				1FAE096619B22F790057F1D6 /* girl.bmp */,
 				1F93A2B119AF6FA800654F00 /* texture.bmp */,
 				1F93A2B019AF6DA700654F00 /* test.JPG */,
 				1F93A2A519AF66FC00654F00 /* OpenGL_Final_Solar_System.1 */,
 			);
 			path = OpenGL_Final_Solar_System;
+			sourceTree = "<group>";
+		};
+		1FAE095A19B229F70057F1D6 /* arcball */ = {
+			isa = PBXGroup;
+			children = (
+				1FAE095B19B229F70057F1D6 /* arcball.cpp */,
+				1FAE095C19B229F70057F1D6 /* arcball.h */,
+			);
+			path = arcball;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -136,6 +145,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				1F93A2A419AF66FC00654F00 /* main.cpp in Sources */,
+				1FAE096119B229F70057F1D6 /* arcball.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

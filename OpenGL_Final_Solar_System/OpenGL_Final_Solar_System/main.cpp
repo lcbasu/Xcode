@@ -11,11 +11,16 @@
 #include <OpenGL/glu.h>
 #include <stdlib.h>
 #include <iostream>
+#include "arcball/arcball.h"
 
 using namespace std;
 
-GLuint testTexture; //the array for our texture
+//Textures
+GLuint sunTexture;
+GLuint earthTexture;
+GLuint moonTexture;
 
+//Angles
 GLfloat _angleSun = 0.0, _angleEarthRot = 0.0, _angleEarthRev = 0.0, _angleMoonRot = 0.0, _angleMoonRev = 0.0;
 
 
@@ -25,13 +30,79 @@ GLfloat no_mat[] = {0, 0, 0, 0};
 GLfloat light_pos[4] = {0.0, 0.0, 0.0, 1.0};
 GLfloat mat_specular[] = { 1.0, 1.0, 1.0, 1.0 };
 GLfloat mat_shininess[] = { 50.0 };
-//GLfloat light_position[] = { 0.0, 0.2, 0.2, 1.0 };
 GLfloat white_light[] = { 1.0, 1.0, 1.0, 1.0 };
-GLfloat lmodel_ambient[] = { 0.1, 0.1, 0.1, 1.0 };
+GLfloat lmodel_ambient[] = { 0.5, 0.5, 0.5, 1.0 };
 
 
+//Arcball
+static float aspect_ratio = 1.0f;
+static int width, height;
+const vec eye( 0.0f, 0.0f, -20.0f );
+const vec centre( 0.0f, 0.0f, 0.0f );
+const vec up( 0.0f, 1.0f, 0.0f );
+const float SPHERE_RADIUS = 5.0f;
 
+inline vec rotate_x( vec v, float sin_ang, float cos_ang )
+{
+	return vec(
+               v.x,
+               (v.y * cos_ang) + (v.z * sin_ang),
+               (v.z * cos_ang) - (v.y * sin_ang)
+               );
+}
 
+inline vec rotate_y( vec v, float sin_ang, float cos_ang )
+{
+	return vec(
+               (v.x * cos_ang) + (v.z * sin_ang),
+               v.y,
+               (v.z * cos_ang) - (v.x * sin_ang)
+               );
+}
+
+static void click_scene(int x, int y)
+{
+	int invert_y = (height - y) - 1;
+	arcball_start(x,invert_y);
+}
+
+static void drag_scene(int x, int y)
+{
+	int invert_y = (height - y) - 1;
+	arcball_move(x,invert_y);
+}
+
+static void mouse_button(int button, int state, int x, int y)
+{
+	if ( state == GLUT_DOWN )
+        click_scene(x,y);
+}
+
+static void mouse_motion(int x, int y)
+{
+	drag_scene(x,y);
+}
+
+static void resize(int w, int h)
+{
+	width = w;
+	height = h;
+    aspect_ratio = (float) width / (float) height;
+    
+    glViewport(0, 0, width, height);
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+    gluPerspective( 15.0f, aspect_ratio, 1.0f, 50.0f );
+    gluLookAt(
+              eye.x, eye.y, eye.z,
+              centre.x, centre.y, centre.z,
+              up.x, up.y, up.z );
+	// set up the arcball using the current projection matrix
+	arcball_setzoom( SPHERE_RADIUS, eye, up );
+    
+    glMatrixMode(GL_MODELVIEW);
+    glLoadIdentity() ;
+}
 
 //function to load the RAW file
 GLuint LoadTexture(const char * filename, int width, int height)
@@ -65,9 +136,16 @@ GLuint LoadTexture(const char * filename, int width, int height)
     return texture;
 }
 
+void init()
+{
+    sunTexture = LoadTexture("/Users/LokeshBasu/Documents/Xcode/OpenGL_Final_Solar_System/OpenGL_Final_Solar_System/texture.bmp", 128, 128);
+    earthTexture = LoadTexture("/Users/LokeshBasu/Documents/Xcode/OpenGL_Final_Solar_System/OpenGL_Final_Solar_System/girl.bmp", 128, 128);
+    moonTexture = LoadTexture("/Users/LokeshBasu/Documents/Xcode/OpenGL_Final_Solar_System/OpenGL_Final_Solar_System/texture.bmp", 128, 128);
+}
+
 void display (void)
 {
-    glClearColor (1.0,0.0,0.0,1.0);
+    glClearColor (0.0,0.0,0.0,1.0);
 
     glClear (GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glEnable(GL_DEPTH_TEST);
@@ -75,10 +153,10 @@ void display (void)
     glMatrixMode( GL_MODELVIEW );
     glLoadIdentity();
     
+    arcball_rotate();
+    
     //Sun
     glPushMatrix();
-    
-    gluLookAt (0.0, 0.0, 5.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
     
     //Sun Texture
     glEnable( GL_TEXTURE_2D );
@@ -86,7 +164,7 @@ void display (void)
     gluQuadricNormals(qObj, GLU_SMOOTH);
     gluQuadricTexture(qObj, GL_TRUE);
     glEnable(GL_TEXTURE_2D);
-    glBindTexture(GL_TEXTURE_2D, testTexture);
+    glBindTexture(GL_TEXTURE_2D, sunTexture);
     
     //Sun rotation
     glRotatef(_angleSun, 0.0, 1.0, 0.0);
@@ -113,8 +191,9 @@ void display (void)
     //Emission
     GLfloat emission[4] = {1.0, 1.0, 0.0, 1.0};
     glMaterialfv(GL_FRONT_AND_BACK, GL_EMISSION, emission);
+    
     //Draw Sun
-    gluSphere(qObj, 1.0f, 24, 24);
+    gluSphere(qObj, 1.0f, 24, 240);
     
     //Reset the emission back to default
     GLfloat r_emission[4] = {0.0, 0.0, 0.0, 1.0};
@@ -132,7 +211,7 @@ void display (void)
     gluQuadricNormals(qObj2, GLU_SMOOTH);
     gluQuadricTexture(qObj2, GL_TRUE);
     glEnable(GL_TEXTURE_2D);
-    glBindTexture(GL_TEXTURE_2D, testTexture);
+    glBindTexture(GL_TEXTURE_2D, earthTexture);
     
     //Earth revolution
     glRotatef(_angleEarthRev, 0.0, 1.0, 0.0);
@@ -142,7 +221,7 @@ void display (void)
     glRotatef(_angleEarthRot, 0.0, 1.0, 0.0);
     
     //Draw Earth
-    gluSphere(qObj2, 0.5f, 24, 24);
+    gluSphere(qObj2, 0.6f, 24, 24);
     
     //Moon
     glPushMatrix();
@@ -156,7 +235,7 @@ void display (void)
     gluQuadricNormals(qObj3, GLU_SMOOTH);
     gluQuadricTexture(qObj3, GL_TRUE);
     glEnable(GL_TEXTURE_2D);
-    glBindTexture(GL_TEXTURE_2D, testTexture);
+    glBindTexture(GL_TEXTURE_2D, moonTexture);
     
     //Moon revolution
     glRotatef(_angleMoonRev, 0.0, 1.0, 0.0);
@@ -166,7 +245,7 @@ void display (void)
     glRotatef(_angleMoonRot, 0.0, 1.0, 0.0);
     
     //Draw Moom
-    gluSphere(qObj3, 0.25f, 24, 24);
+    gluSphere(qObj3, 0.3f, 24, 24);
     glPopMatrix();
     glPopMatrix();
     glPopMatrix();
@@ -203,16 +282,6 @@ void update(int value)
     glutTimerFunc(25, update, 0);
 }
 
-
-void reshape (int w, int h)
-{
-    glViewport(0, 0, (GLsizei)w, (GLsizei)h);
-    glMatrixMode(GL_PROJECTION);
-    glLoadIdentity ();
-    gluPerspective(60, (GLfloat)w / (GLfloat)h, 1.0, 100.0);
-    glMatrixMode(GL_MODELVIEW);
-}
-
 void FreeTexture(GLuint texture)
 {
     glDeleteTextures( 1, &texture );
@@ -228,15 +297,20 @@ int main (int argc, char **argv)
     glutCreateWindow ("Texture");
     glutDisplayFunc (display);
     glutIdleFunc (display);
-    glutReshapeFunc (reshape);
+    glutReshapeFunc (resize);
     
-    testTexture = LoadTexture("/Users/LokeshBasu/Documents/Xcode/OpenGL_Final_Solar_System/OpenGL_Final_Solar_System/texture.bmp", 128, 128);
-    
+    init();
     
     glutTimerFunc(25, update, 0);
+    
+    glutMouseFunc(mouse_button);
+    glutMotionFunc(mouse_motion);
+    
     glutMainLoop ();
     
-    FreeTexture(testTexture);
+    FreeTexture(sunTexture);
+    FreeTexture(earthTexture);
+    FreeTexture(moonTexture);
     
     return 0;
 }
