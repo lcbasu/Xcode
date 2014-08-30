@@ -18,8 +18,22 @@ GLuint testTexture; //the array for our texture
 
 GLfloat _angleSun = 0.0, _angleEarthRot = 0.0, _angleEarthRev = 0.0, _angleMoonRot = 0.0, _angleMoonRev = 0.0;
 
-//function to load the RAW file
 
+//Emission
+GLfloat mat_emission[] = {1.0, 1.0, 0.0, 1.0};
+GLfloat no_mat[] = {0, 0, 0, 0};
+GLfloat light_pos[4] = {0.0, 0.0, 0.0, 1.0};
+GLfloat mat_specular[] = { 1.0, 1.0, 1.0, 1.0 };
+GLfloat mat_shininess[] = { 50.0 };
+//GLfloat light_position[] = { 0.0, 0.2, 0.2, 1.0 };
+GLfloat white_light[] = { 1.0, 1.0, 1.0, 1.0 };
+GLfloat lmodel_ambient[] = { 0.1, 0.1, 0.1, 1.0 };
+
+
+
+
+
+//function to load the RAW file
 GLuint LoadTexture(const char * filename, int width, int height)
 {
     GLuint texture;
@@ -53,8 +67,8 @@ GLuint LoadTexture(const char * filename, int width, int height)
 
 void display (void)
 {
-    
     glClearColor (1.0,0.0,0.0,1.0);
+
     glClear (GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glEnable(GL_DEPTH_TEST);
     
@@ -63,7 +77,10 @@ void display (void)
     
     //Sun
     glPushMatrix();
+    
     gluLookAt (0.0, 0.0, 5.0, 0.0, 0.0, 0.0, 0.0, 1.0, 0.0);
+    
+    //Sun Texture
     glEnable( GL_TEXTURE_2D );
     GLUquadricObj *qObj = gluNewQuadric();
     gluQuadricNormals(qObj, GLU_SMOOTH);
@@ -71,6 +88,7 @@ void display (void)
     glEnable(GL_TEXTURE_2D);
     glBindTexture(GL_TEXTURE_2D, testTexture);
     
+    //Sun rotation
     glRotatef(_angleSun, 0.0, 1.0, 0.0);
     
     //Sunlight
@@ -92,12 +110,23 @@ void display (void)
     glEnable(GL_LIGHT0);
     glEnable(GL_DEPTH_TEST);
     
+    //Emission
+    GLfloat emission[4] = {1.0, 1.0, 0.0, 1.0};
+    glMaterialfv(GL_FRONT_AND_BACK, GL_EMISSION, emission);
     //Draw Sun
     gluSphere(qObj, 1.0f, 24, 24);
     
+    //Reset the emission back to default
+    GLfloat r_emission[4] = {0.0, 0.0, 0.0, 1.0};
+    glMaterialfv(GL_FRONT_AND_BACK, GL_EMISSION, r_emission);
+    
     //Earth
     glPushMatrix();
+    
+    //Reverse the rotation of the sun from the earth axis
     glRotatef(-_angleSun, 0.0, 1.0, 0.0);
+    
+    //Earth texture
     glEnable( GL_TEXTURE_2D );
     GLUquadricObj *qObj2 = gluNewQuadric();
     gluQuadricNormals(qObj2, GLU_SMOOTH);
@@ -105,8 +134,11 @@ void display (void)
     glEnable(GL_TEXTURE_2D);
     glBindTexture(GL_TEXTURE_2D, testTexture);
     
+    //Earth revolution
     glRotatef(_angleEarthRev, 0.0, 1.0, 0.0);
     glTranslatef(3.0, 0.0, 0.0);
+    
+    //Earth rotation
     glRotatef(_angleEarthRot, 0.0, 1.0, 0.0);
     
     //Draw Earth
@@ -114,7 +146,11 @@ void display (void)
     
     //Moon
     glPushMatrix();
+    
+    //Reverse the rotation of the earth from the earth axis
     glRotatef(-_angleEarthRot, 0.0, 1.0, 0.0);
+    
+    //Moon texture
     glEnable( GL_TEXTURE_2D );
     GLUquadricObj *qObj3 = gluNewQuadric();
     gluQuadricNormals(qObj3, GLU_SMOOTH);
@@ -122,8 +158,11 @@ void display (void)
     glEnable(GL_TEXTURE_2D);
     glBindTexture(GL_TEXTURE_2D, testTexture);
     
+    //Moon revolution
     glRotatef(_angleMoonRev, 0.0, 1.0, 0.0);
     glTranslatef(1.0, 0.0, 0.0);
+    
+    //Moon rotation
     glRotatef(_angleMoonRot, 0.0, 1.0, 0.0);
     
     //Draw Moom
@@ -141,7 +180,7 @@ void update(int value)
     _angleEarthRot += 1.0f;
     _angleEarthRev += 0.8f;
     _angleMoonRot += 0.6f;
-    _angleMoonRev += 0.4f;
+    _angleMoonRev += 6.0f;
     if (_angleSun > 360) {
         _angleSun -= 360;
     }
@@ -184,8 +223,8 @@ int main (int argc, char **argv)
     glutInit (&argc, argv);
     glutInitDisplayMode (GLUT_SINGLE | GLUT_RGB | GLUT_DEPTH);
     
-    glutInitWindowSize (500, 500);
-    glutInitWindowPosition (100, 100);
+    glutInitWindowSize (900, 600);
+    glutInitWindowPosition (200, 100);
     glutCreateWindow ("Texture");
     glutDisplayFunc (display);
     glutIdleFunc (display);
