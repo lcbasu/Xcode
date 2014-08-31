@@ -1,0 +1,121 @@
+TCompilerIdC
+v6
+r1
+cCheck dependencies
+cCompileC CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/i386/CMakeCCompilerId.o /Users/LokeshBasu/Documents/Xcode/OpenGL_Tutorial/CMakeFiles/3.0.1/CompilerIdC/CMakeCCompilerId.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
+cLd /Users/LokeshBasu/Documents/Xcode/OpenGL_Tutorial/CMakeFiles/3.0.1/CompilerIdC/CompilerIdC normal i386
+cPhaseScriptExecution Run\ Script /Users/LokeshBasu/Documents/Xcode/OpenGL_Tutorial/CMakeFiles/3.0.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk
+c00000000530295C100000000000000AA
+t1392678337
+s170
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/SDKSettings.plist
+c0000000053480BF8000000000000044C
+t1397230584
+s1100
+
+N/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/System/Library/CoreServices/SystemVersion.plist
+c0000000053480BF800000000000001DE
+t1397230584
+s478
+
+N/Users/LokeshBasu/Documents/Xcode/OpenGL_Tutorial/CMakeFiles/3.0.1/CompilerIdC/CMakeCCompilerId.c
+c000000005402E6AB000000000000344F
+t1409476267
+s13391
+
+N/Users/LokeshBasu/Documents/Xcode/OpenGL_Tutorial/CMakeFiles/3.0.1/CompilerIdC/CompilerIdC
+t2
+s0
+
+N/Users/LokeshBasu/Documents/Xcode/OpenGL_Tutorial/CMakeFiles/3.0.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/i386/CMakeCCompilerId.o
+t1409476268
+s3440
+
+N/Users/LokeshBasu/Documents/Xcode/OpenGL_Tutorial/CMakeFiles/3.0.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/i386/CompilerIdC.LinkFileList
+c000000005402E6AC00000000000000A0
+t1409476268
+s160
+
+N/Users/LokeshBasu/Documents/Xcode/OpenGL_Tutorial/CMakeFiles/3.0.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+c000000005402E6AC000000000000002A
+t1409476268
+s42
+
+CCheck dependencies
+r0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection18"Check dependencies18"Check dependencies9dd4372c1eb3b941^a5a1622c1eb3b941^---0#1#1#--18"Check dependencies36"1EDA9CA0-DF0B-41ED-AA52-DA0CB85D4144-
+
+CCompileC CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/i386/CMakeCCompilerId.o /Users/LokeshBasu/Documents/Xcode/OpenGL_Tutorial/CMakeFiles/3.0.1/CompilerIdC/CMakeCCompilerId.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler
+s431169068.388200
+e431169068.646466
+r1
+xCompileC
+xCompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/i386/CMakeCCompilerId.o
+x/Users/LokeshBasu/Documents/Xcode/OpenGL_Tutorial/CMakeFiles/3.0.1/CompilerIdC/CMakeCCompilerId.c
+xnormal
+xi386
+xc
+xcom.apple.compilers.llvm.clang.1_0.compiler
+d/Users/LokeshBasu/Documents/Xcode/OpenGL_Tutorial/CMakeFiles/3.0.1/CompilerIdC/CMakeCCompilerId.c
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection105"Compile /Users/LokeshBasu/Documents/Xcode/OpenGL_Tutorial/CMakeFiles/3.0.1/CompilerIdC/CMakeCCompilerId.c166"CompileC CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/i386/CMakeCCompilerId.o CMakeCCompilerId.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler09a9632c1eb3b941^d87fa52c1eb3b941^---0#0#1#-19%DVTDocumentLocation2@104"file:///Users/LokeshBasu/Documents/Xcode/OpenGL_Tutorial/CMakeFiles/3.0.1/CompilerIdC/CMakeCCompilerId.c0000000000000000^2535"CompileC CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/i386/CMakeCCompilerId.o CMakeCCompilerId.c normal i386 c com.apple.compilers.llvm.clang.1_0.compiler    cd /Users/LokeshBasu/Documents/Xcode/OpenGL_Tutorial/CMakeFiles/3.0.1/CompilerIdC    export LANG=en_US.US-ASCII    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -x c -arch i386 -fmessage-length=0 -fdiagnostics-show-note-include-stack -fmacro-backtrace-limit=0 -Wno-trigraphs -fpascal-strings -Os -Wno-missing-field-initializers -Wno-missing-prototypes -Wno-return-type -Wno-missing-braces -Wparentheses -Wswitch -Wno-unused-function -Wno-unused-label -Wno-unused-parameter -Wno-unused-variable -Wunused-value -Wno-empty-body -Wno-uninitialized -Wno-unknown-pragmas -Wno-shadow -Wno-four-char-constants -Wno-conversion -Wno-constant-conversion -Wno-int-conversion -Wno-bool-conversion -Wno-enum-conversion -Wno-shorten-64-to-32 -Wpointer-sign -Wno-newline-eof -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -fasm-blocks -fstrict-aliasing -Wdeprecated-declarations -mmacosx-version-min=10.9 -g -fvisibility=hidden -Wno-sign-conversion -I/Users/LokeshBasu/Documents/Xcode/OpenGL_Tutorial/CMakeFiles/3.0.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/CompilerIdC.hmap -I/Users/LokeshBasu/Documents/Xcode/OpenGL_Tutorial/CMakeFiles/3.0.1/CompilerIdC/include -I/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include -I/Users/LokeshBasu/Documents/Xcode/OpenGL_Tutorial/CMakeFiles/3.0.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/DerivedSources/i386 -I/Users/LokeshBasu/Documents/Xcode/OpenGL_Tutorial/CMakeFiles/3.0.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/DerivedSources -F/Users/LokeshBasu/Documents/Xcode/OpenGL_Tutorial/CMakeFiles/3.0.1/CompilerIdC -MMD -MT dependencies -MF /Users/LokeshBasu/Documents/Xcode/OpenGL_Tutorial/CMakeFiles/3.0.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/i386/CMakeCCompilerId.d --serialize-diagnostics /Users/LokeshBasu/Documents/Xcode/OpenGL_Tutorial/CMakeFiles/3.0.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/i386/CMakeCCompilerId.dia -c /Users/LokeshBasu/Documents/Xcode/OpenGL_Tutorial/CMakeFiles/3.0.1/CompilerIdC/CMakeCCompilerId.c -o /Users/LokeshBasu/Documents/Xcode/OpenGL_Tutorial/CMakeFiles/3.0.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/i386/CMakeCCompilerId.o36"74EC8A08-FEF3-4E26-8995-64F38494CC61-
+bC130A3A8-FD24-40E4-9A35-4F189651B26D
+
+CLd /Users/LokeshBasu/Documents/Xcode/OpenGL_Tutorial/CMakeFiles/3.0.1/CompilerIdC/CompilerIdC normal i386
+s431169068.647027
+e431169068.726530
+r1
+xLd
+x/Users/LokeshBasu/Documents/Xcode/OpenGL_Tutorial/CMakeFiles/3.0.1/CompilerIdC/CompilerIdC
+xnormal
+xi386
+d/Users/LokeshBasu/Documents/Xcode/OpenGL_Tutorial/CMakeFiles/3.0.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/i386/CompilerIdC.LinkFileList
+d/Users/LokeshBasu/Documents/Xcode/OpenGL_Tutorial/CMakeFiles/3.0.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/i386/CMakeCCompilerId.o
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/libSystem.dylib
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.eprintf.a
+d/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/5.1/lib/darwin/libclang_rt.osx.a
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcache.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcommonCrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcompiler_rt.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcopyfile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libcorecrypto.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdispatch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libdyld.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libkeymgr.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/liblaunch.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libmacho.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libquarantine.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libremovefile.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_asl.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_blocks.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_c.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_configuration.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_dnssd.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_info.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_kernel.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_m.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_malloc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_network.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_notify.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_platform.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_pthread.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libsystem_sandbox.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunc.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libunwind.dylib
+d/Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk/usr/lib/system/libxpc.dylib
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection95"Link /Users/LokeshBasu/Documents/Xcode/OpenGL_Tutorial/CMakeFiles/3.0.1/CompilerIdC/CompilerIdC26"Ld CompilerIdC normal i386deb0a52c1eb3b941^76feb92c1eb3b941^---0#0#1#--1037"Ld CompilerIdC normal i386    cd /Users/LokeshBasu/Documents/Xcode/OpenGL_Tutorial/CMakeFiles/3.0.1/CompilerIdC    export MACOSX_DEPLOYMENT_TARGET=10.9    /Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/clang -arch i386 -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.9.sdk -L/Users/LokeshBasu/Documents/Xcode/OpenGL_Tutorial/CMakeFiles/3.0.1/CompilerIdC -F/Users/LokeshBasu/Documents/Xcode/OpenGL_Tutorial/CMakeFiles/3.0.1/CompilerIdC -filelist /Users/LokeshBasu/Documents/Xcode/OpenGL_Tutorial/CMakeFiles/3.0.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/i386/CompilerIdC.LinkFileList -mmacosx-version-min=10.9 -Xlinker -dependency_info -Xlinker /Users/LokeshBasu/Documents/Xcode/OpenGL_Tutorial/CMakeFiles/3.0.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Objects-normal/i386/CompilerIdC_dependency_info.dat -o /Users/LokeshBasu/Documents/Xcode/OpenGL_Tutorial/CMakeFiles/3.0.1/CompilerIdC/CompilerIdC36"BD66870E-A905-4285-AE07-4047C4899067-
+bC130A3A8-FD24-40E4-9A35-4F189651B26D
+
+CPhaseScriptExecution Run\ Script /Users/LokeshBasu/Documents/Xcode/OpenGL_Tutorial/CMakeFiles/3.0.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+s431169068.727581
+e431169068.741431
+r1
+xPhaseScriptExecution
+xRun Script
+x/Users/LokeshBasu/Documents/Xcode/OpenGL_Tutorial/CMakeFiles/3.0.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh
+oGCC_VERSION=com.apple.compilers.llvm.clang.1_0
+lSLF06#21%IDEActivityLogSection1@2#32"com.apple.dt.IDE.BuildLogSection36"Run custom shell script 'Run Script'109"PhaseScriptExecution Run\ Script CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh9885ba2c1eb3b941^20d0bd2c1eb3b941^-47"GCC_VERSION=com.apple.compilers.llvm.clang.1_01(21%IDEActivityLogMessage2@47"GCC_VERSION=com.apple.compilers.llvm.clang.1_0-431169068#0#47#-0#-----0#0#1#--367"PhaseScriptExecution Run\ Script CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh    cd /Users/LokeshBasu/Documents/Xcode/OpenGL_Tutorial/CMakeFiles/3.0.1/CompilerIdC    /bin/sh -c /Users/LokeshBasu/Documents/Xcode/OpenGL_Tutorial/CMakeFiles/3.0.1/CompilerIdC/CompilerIdC.build/Debug/CompilerIdC.build/Script-2C8FEB8E15DC1A1A00E56A5D.sh36"D5225711-5D4D-404C-9793-8A1B381F5D29-
+bC130A3A8-FD24-40E4-9A35-4F189651B26D
+
