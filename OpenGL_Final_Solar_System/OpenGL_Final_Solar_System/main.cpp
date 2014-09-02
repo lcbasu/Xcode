@@ -292,8 +292,8 @@ int main (int argc, char **argv)
     glutInit (&argc, argv);
     glutInitDisplayMode (GLUT_SINGLE | GLUT_RGB | GLUT_DEPTH);
     
-    glutInitWindowSize (900, 600);
-    glutInitWindowPosition (200, 100);
+    glutInitWindowSize (1100, 600);
+    glutInitWindowPosition (100, 100);
     glutCreateWindow ("Texture");
     glutDisplayFunc (display);
     glutIdleFunc (display);
