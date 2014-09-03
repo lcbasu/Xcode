@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1FB0450F19B76C37005975ED /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FB0450E19B76C37005975ED /* main.cpp */; };
 		1FB0451119B76C37005975ED /* OpenGL_ES.1 in CopyFiles */ = {isa = PBXBuildFile; fileRef = 1FB0451019B76C37005975ED /* OpenGL_ES.1 */; };
+		1FB0451919B76CD8005975ED /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FB0451719B76CD8005975ED /* GLUT.framework */; };
+		1FB0451A19B76CD8005975ED /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1FB0451819B76CD8005975ED /* OpenGL.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -28,6 +30,8 @@
 		1FB0450B19B76C37005975ED /* OpenGL_ES */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OpenGL_ES; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FB0450E19B76C37005975ED /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1FB0451019B76C37005975ED /* OpenGL_ES.1 */ = {isa = PBXFileReference; lastKnownFileType = text.man; path = OpenGL_ES.1; sourceTree = "<group>"; };
+		1FB0451719B76CD8005975ED /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
+		1FB0451819B76CD8005975ED /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -35,6 +39,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1FB0451919B76CD8005975ED /* GLUT.framework in Frameworks */,
+				1FB0451A19B76CD8005975ED /* OpenGL.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -44,6 +50,8 @@
 		1FB0450219B76C37005975ED = {
 			isa = PBXGroup;
 			children = (
+				1FB0451719B76CD8005975ED /* GLUT.framework */,
+				1FB0451819B76CD8005975ED /* OpenGL.framework */,
 				1FB0450D19B76C37005975ED /* OpenGL_ES */,
 				1FB0450C19B76C37005975ED /* Products */,
 			);
