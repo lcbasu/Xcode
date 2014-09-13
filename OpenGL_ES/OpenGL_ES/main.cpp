@@ -22,13 +22,15 @@ GLuint LoadShader(GLenum type, string shaderSrc)
 {
     GLuint shader;
     GLint compiled;
-    // Create the shader object
+    
     shader = glCreateShader(type);
-    if(shader == 0)
-        return 0;
-    // Load the shader source glShaderSource(shader, 1, &shaderSrc, NULL);
-    // Compile the shader
+    
+    glShaderSource(shader, 1, &shaderSrc, shaderSrc.size());
+    
+    //glShaderSource(shader, 1, &shaderSrc, NULL);
+    
     glCompileShader(shader);
+    
     return shader;
 }
 
