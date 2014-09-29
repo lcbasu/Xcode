@@ -5,19 +5,19 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>E817D1A2-773F-432F-99B2-168B1714F7D5</string>
+	<string>A4B066EB-6A2F-41F2-B667-600C7E670D51</string>
 	<key>IDESourceControlProjectName</key>
 	<string>TapMe</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>42E36F50-4A34-4ED4-81E5-444FE0926F0F</key>
+		<key>6B30A80B-23CE-4E3E-B48A-1673F698A9D3</key>
 		<string>https://github.com/lokeshguddu/Xcode.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
 	<string>TapMe/TapMe.xcodeproj/project.xcworkspace</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>42E36F50-4A34-4ED4-81E5-444FE0926F0F</key>
+		<key>6B30A80B-23CE-4E3E-B48A-1673F698A9D3</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
@@ -25,14 +25,14 @@
 	<key>IDESourceControlProjectVersion</key>
 	<integer>110</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>42E36F50-4A34-4ED4-81E5-444FE0926F0F</string>
+	<string>6B30A80B-23CE-4E3E-B48A-1673F698A9D3</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>42E36F50-4A34-4ED4-81E5-444FE0926F0F</string>
+			<string>6B30A80B-23CE-4E3E-B48A-1673F698A9D3</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Xcode</string>
 		</dict>
