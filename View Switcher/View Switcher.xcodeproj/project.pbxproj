@@ -26,6 +26,7 @@
 		1FAA9AFB19681222009BC2E0 /* BIDBlueViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA9AFA19681222009BC2E0 /* BIDBlueViewController.m */; };
 		1FAA9AFE19681231009BC2E0 /* BIDYellowViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FAA9AFD19681231009BC2E0 /* BIDYellowViewController.m */; };
 		1FAA9B0019681275009BC2E0 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1FAA9AFF19681275009BC2E0 /* Main.storyboard */; };
+		1FD80CDE19DCC5C700B52DA3 /* BIDGreenViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FD80CDD19DCC5C700B52DA3 /* BIDGreenViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -64,6 +65,8 @@
 		1FAA9AFC19681231009BC2E0 /* BIDYellowViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDYellowViewController.h; sourceTree = "<group>"; };
 		1FAA9AFD19681231009BC2E0 /* BIDYellowViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDYellowViewController.m; sourceTree = "<group>"; };
 		1FAA9AFF19681275009BC2E0 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
+		1FD80CDC19DCC5C700B52DA3 /* BIDGreenViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BIDGreenViewController.h; sourceTree = "<group>"; };
+		1FD80CDD19DCC5C700B52DA3 /* BIDGreenViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BIDGreenViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +136,8 @@
 				1FAA9AF6196811B2009BC2E0 /* BIDSwitchViewController.h */,
 				1FAA9AF7196811B2009BC2E0 /* BIDSwitchViewController.m */,
 				1FAA9AFF19681275009BC2E0 /* Main.storyboard */,
+				1FD80CDC19DCC5C700B52DA3 /* BIDGreenViewController.h */,
+				1FD80CDD19DCC5C700B52DA3 /* BIDGreenViewController.m */,
 				1FAA9AD219681083009BC2E0 /* BIDAppDelegate.h */,
 				1FAA9AD319681083009BC2E0 /* BIDAppDelegate.m */,
 				1FAA9AD819681083009BC2E0 /* Images.xcassets */,
@@ -272,6 +277,7 @@
 				1FAA9AD719681083009BC2E0 /* View_Switcher.xcdatamodeld in Sources */,
 				1FAA9AD419681083009BC2E0 /* BIDAppDelegate.m in Sources */,
 				1FAA9AFB19681222009BC2E0 /* BIDBlueViewController.m in Sources */,
+				1FD80CDE19DCC5C700B52DA3 /* BIDGreenViewController.m in Sources */,
 				1FAA9AFE19681231009BC2E0 /* BIDYellowViewController.m in Sources */,
 				1FAA9AD019681083009BC2E0 /* main.m in Sources */,
 			);
@@ -470,6 +476,7 @@
 				1FAA9AF219681083009BC2E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1FAA9AF319681083009BC2E0 /* Build configuration list for PBXNativeTarget "View SwitcherTests" */ = {
 			isa = XCConfigurationList;
@@ -478,6 +485,7 @@
 				1FAA9AF519681083009BC2E0 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
