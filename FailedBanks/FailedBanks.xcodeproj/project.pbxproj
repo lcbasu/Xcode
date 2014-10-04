@@ -24,8 +24,6 @@
 		1F415DBD190CCE96002E15B6 /* FailedBanksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F415DBC190CCE96002E15B6 /* FailedBanksTests.m */; };
 		1F415DC7190CCF1C002E15B6 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F415DC6190CCF1C002E15B6 /* libsqlite3.dylib */; };
 		1F415DC9190CCF48002E15B6 /* banklist.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1F415DC8190CCF48002E15B6 /* banklist.csv */; };
-		1F415DCC190CCF91002E15B6 /* FailedBankInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F415DCB190CCF91002E15B6 /* FailedBankInfo.m */; };
-		1F415DCF190CD00C002E15B6 /* FailedBankDatabase.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F415DCE190CD00C002E15B6 /* FailedBankDatabase.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -62,10 +60,6 @@
 		1F415DBC190CCE96002E15B6 /* FailedBanksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FailedBanksTests.m; sourceTree = "<group>"; };
 		1F415DC6190CCF1C002E15B6 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		1F415DC8190CCF48002E15B6 /* banklist.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = banklist.csv; path = ../../../sqlite3/banklist.csv; sourceTree = "<group>"; };
-		1F415DCA190CCF91002E15B6 /* FailedBankInfo.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FailedBankInfo.h; sourceTree = "<group>"; };
-		1F415DCB190CCF91002E15B6 /* FailedBankInfo.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FailedBankInfo.m; sourceTree = "<group>"; };
-		1F415DCD190CD00C002E15B6 /* FailedBankDatabase.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FailedBankDatabase.h; sourceTree = "<group>"; };
-		1F415DCE190CD00C002E15B6 /* FailedBankDatabase.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FailedBankDatabase.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -128,10 +122,6 @@
 			isa = PBXGroup;
 			children = (
 				1F415DC8190CCF48002E15B6 /* banklist.csv */,
-				1F415DCA190CCF91002E15B6 /* FailedBankInfo.h */,
-				1F415DCB190CCF91002E15B6 /* FailedBankInfo.m */,
-				1F415DCD190CD00C002E15B6 /* FailedBankDatabase.h */,
-				1F415DCE190CD00C002E15B6 /* FailedBankDatabase.m */,
 				1F415D9D190CCE96002E15B6 /* AppDelegate.h */,
 				1F415D9E190CCE96002E15B6 /* AppDelegate.m */,
 				1F415DA0190CCE96002E15B6 /* Main.storyboard */,
@@ -274,8 +264,6 @@
 			files = (
 				1F415D9F190CCE96002E15B6 /* AppDelegate.m in Sources */,
 				1F415DA5190CCE96002E15B6 /* MasterViewController.m in Sources */,
-				1F415DCC190CCF91002E15B6 /* FailedBankInfo.m in Sources */,
-				1F415DCF190CD00C002E15B6 /* FailedBankDatabase.m in Sources */,
 				1F415D9B190CCE96002E15B6 /* main.m in Sources */,
 				1F415DA8190CCE96002E15B6 /* DetailViewController.m in Sources */,
 			);
@@ -482,6 +470,7 @@
 				1F415DC2190CCE96002E15B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1F415DC3190CCE96002E15B6 /* Build configuration list for PBXNativeTarget "FailedBanksTests" */ = {
 			isa = XCConfigurationList;
@@ -490,6 +479,7 @@
 				1F415DC5190CCE96002E15B6 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
