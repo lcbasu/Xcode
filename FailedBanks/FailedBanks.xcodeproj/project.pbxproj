@@ -24,6 +24,7 @@
 		1F415DBD190CCE96002E15B6 /* FailedBanksTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F415DBC190CCE96002E15B6 /* FailedBanksTests.m */; };
 		1F415DC7190CCF1C002E15B6 /* libsqlite3.dylib in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F415DC6190CCF1C002E15B6 /* libsqlite3.dylib */; };
 		1F415DC9190CCF48002E15B6 /* banklist.csv in Resources */ = {isa = PBXBuildFile; fileRef = 1F415DC8190CCF48002E15B6 /* banklist.csv */; };
+		1FCCA07B19E0D5D70084B30A /* InfoViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FCCA07A19E0D5D70084B30A /* InfoViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -60,6 +61,8 @@
 		1F415DBC190CCE96002E15B6 /* FailedBanksTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FailedBanksTests.m; sourceTree = "<group>"; };
 		1F415DC6190CCF1C002E15B6 /* libsqlite3.dylib */ = {isa = PBXFileReference; lastKnownFileType = "compiled.mach-o.dylib"; name = libsqlite3.dylib; path = usr/lib/libsqlite3.dylib; sourceTree = SDKROOT; };
 		1F415DC8190CCF48002E15B6 /* banklist.csv */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = banklist.csv; path = ../../../sqlite3/banklist.csv; sourceTree = "<group>"; };
+		1FCCA07919E0D5D70084B30A /* InfoViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = InfoViewController.h; path = FailedBanks/InfoViewController.h; sourceTree = "<group>"; };
+		1FCCA07A19E0D5D70084B30A /* InfoViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = InfoViewController.m; path = FailedBanks/InfoViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,6 +93,8 @@
 		1F415D82190CCE96002E15B6 = {
 			isa = PBXGroup;
 			children = (
+				1FCCA07919E0D5D70084B30A /* InfoViewController.h */,
+				1FCCA07A19E0D5D70084B30A /* InfoViewController.m */,
 				1F415D94190CCE96002E15B6 /* FailedBanks */,
 				1F415DB6190CCE96002E15B6 /* FailedBanksTests */,
 				1F415D8D190CCE96002E15B6 /* Frameworks */,
@@ -265,6 +270,7 @@
 				1F415D9F190CCE96002E15B6 /* AppDelegate.m in Sources */,
 				1F415DA5190CCE96002E15B6 /* MasterViewController.m in Sources */,
 				1F415D9B190CCE96002E15B6 /* main.m in Sources */,
+				1FCCA07B19E0D5D70084B30A /* InfoViewController.m in Sources */,
 				1F415DA8190CCE96002E15B6 /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
