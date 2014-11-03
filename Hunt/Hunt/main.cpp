@@ -8,25 +8,33 @@
 
 #include <iostream>
 #include <vector>
+#include <algorithm>
 
 using namespace std;
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+int main()
+{
+    int N, T;
     
-    int a = 8;
+    cin >> N >> T;
     
-    int b = 9;
+    vector<int> width;
+    for (int k = 0; k < N; k++)
+    {
+        int tmp;
+        cin >> tmp;
+        width.push_back(tmp);
+    }
     
-    a = b;
-    
-    vector<int> v;
-    
-    v.push_back(a);
-    v.push_back(b);
-    
-    cout << a << endl;
+    for (int l = 0; l < T; l++)
+    {
+        int i, j;
+        cin >> i >> j;
+        vector<int> path;
+        path.assign(width.begin()+i, width.begin()+j+1);
+        sort(path.begin(), path.end());
+        cout << path[0] << endl;
+    }
     
     return 0;
 }
