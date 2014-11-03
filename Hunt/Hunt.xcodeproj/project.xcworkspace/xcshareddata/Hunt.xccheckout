@@ -5,16 +5,16 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>8C2936AB-379A-4F63-8301-22FEC74EFAF1</string>
+	<string>BA256552-9C8F-47E9-AF41-E88845CE5D0C</string>
 	<key>IDESourceControlProjectName</key>
-	<string>iOSDiner</string>
+	<string>Hunt</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
 		<key>05ED2937023785CF7DB9BF943A144C10621C98F1</key>
 		<string>https://github.com/lokeshguddu/Xcode.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>iOSDiner/iOSDiner.xcodeproj/project.xcworkspace</string>
+	<string>Hunt/Hunt.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>05ED2937023785CF7DB9BF943A144C10621C98F1</key>
