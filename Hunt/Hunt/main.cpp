@@ -6,35 +6,47 @@
 //  Copyright (c) 2014 Lokesh Basu. All rights reserved.
 //
 
-#include <iostream>
+#include <map>
+#include <set>
+#include <list>
+#include <cmath>
+#include <ctime>
+#include <deque>
+#include <queue>
+#include <stack>
+#include <bitset>
+#include <cstdio>
+#include <limits>
 #include <vector>
+#include <cstdlib>
+#include <numeric>
+#include <sstream>
+#include <iostream>
 #include <algorithm>
 
 using namespace std;
 
 int main()
 {
-    int N, T;
+    int L, R;
     
-    cin >> N >> T;
+    cin >> L >> R;
     
-    vector<int> width;
-    for (int k = 0; k < N; k++)
+    int max = 0;
+    
+    for (int A = L; A <= R; A++)
     {
-        int tmp;
-        cin >> tmp;
-        width.push_back(tmp);
+        for (int B = A; B <= R; B++)
+        {
+            int val = A ^ B;
+            if (val > max)
+            {
+                max = val;
+            }
+        }
     }
     
-    for (int l = 0; l < T; l++)
-    {
-        int i, j;
-        cin >> i >> j;
-        vector<int> path;
-        path.assign(width.begin()+i, width.begin()+j+1);
-        sort(path.begin(), path.end());
-        cout << path[0] << endl;
-    }
+    cout << max;
     
     return 0;
 }
