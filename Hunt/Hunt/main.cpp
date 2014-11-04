@@ -1,11 +1,3 @@
-//
-//  main.cpp
-//  Hunt
-//
-//  Created by Lokesh Basu on 03/11/14.
-//  Copyright (c) 2014 Lokesh Basu. All rights reserved.
-//
-
 #include <map>
 #include <set>
 #include <list>
@@ -32,18 +24,12 @@ int main()
     cin >> T;
     while(T--)
     {
-        string str;
-        cin >> str;
-        int i = 0;
-        int j = str.size()-1;
-        int operation = 0;
-        while(i < j)
-        {
-            operation += abs(str[i] - str[j]);
-            i++;
-            j--;
-        }
-        cout << operation << endl;
+        long long int K;
+        cin >> K;
+        long long int a = K/2;
+        long long int b = K-a;
+        
+        cout << a*b << endl;
     }
     return 0;
 }
