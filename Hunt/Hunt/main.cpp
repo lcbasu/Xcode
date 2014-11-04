@@ -28,25 +28,22 @@ using namespace std;
 
 int main()
 {
-    int L, R;
-    
-    cin >> L >> R;
-    
-    int max = 0;
-    
-    for (int A = L; A <= R; A++)
+    int T;
+    cin >> T;
+    while(T--)
     {
-        for (int B = A; B <= R; B++)
+        string str;
+        cin >> str;
+        int i = 0;
+        int j = str.size()-1;
+        int operation = 0;
+        while(i < j)
         {
-            int val = A ^ B;
-            if (val > max)
-            {
-                max = val;
-            }
+            operation += abs(str[i] - str[j]);
+            i++;
+            j--;
         }
+        cout << operation << endl;
     }
-    
-    cout << max;
-    
     return 0;
 }
