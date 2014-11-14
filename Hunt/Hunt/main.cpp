@@ -1,44 +1,66 @@
+#include <map>
+#include <set>
+#include <list>
 #include <cmath>
+#include <ctime>
+#include <deque>
+#include <queue>
+#include <stack>
+#include <bitset>
 #include <cstdio>
+#include <limits>
 #include <vector>
+#include <cstdlib>
+#include <numeric>
+#include <sstream>
 #include <iostream>
 #include <algorithm>
-#include <string>
+
 using namespace std;
 
-
-int main() {
+int main()
+{
+    int N;
+    cin >> N;
+    int *arr = new int[N];
+    int *outArr = new int[N];
+    int *count = new int[100];
     
-    string s;
-    cin>>s;
-    
-    int arr[26];
-    
-    for (int i = 0; i < 26; i++)
+    for(int i = 0; i < 100; i++)
     {
-        arr[i] = 0;
+        count[i] = 0;
     }
     
-    for (int i = 0; i < s.size(); i++)
+    for(int i = 0; i < N; i++)
     {
-        int index = (int)s[i] - 97;
-        arr[index] = arr[index] + 1;
+        int tmp;
+        cin >> tmp;
+        arr[i] = tmp;
+        count[tmp] = count[tmp] + 1;
     }
     
-    int oddCount = 0;
-    
-    for (int i = 0; i < 26; i++)
+    for(int i = 1; i < 100; i++)
     {
-        if (arr[i]%2 != 0)
-        {
-            oddCount++;
-        }
+        count[i] = count[i-1] + count[i];
     }
     
+    for(int i = N-1; i >= 0; i--)
+    {
+        int finalIndex = count[arr[i]];
+        outArr[finalIndex] = arr[i];
+        count[arr[i]] = count[arr[i]] -1;
+    }
     
-    if(oddCount > 1)
-        cout<<"NO";
-    else
-        cout<<"YES";
+    for(int i = 0; i < N; i++)
+    {
+        cout << outArr[i] << " ";
+    }
+    
+    cout << endl;
+    
+    
+    
+    
+    
     return 0;
 }
