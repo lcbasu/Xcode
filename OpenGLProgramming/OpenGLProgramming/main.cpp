@@ -6,10 +6,30 @@
 //  Copyright (c) 2014 InHouse. All rights reserved.
 //
 
+#include <GLUT/glut.h>
+#include <OpenGL/gl.h>
+#include <OpenGL/glu.h>
+#include <stdlib.h>
 #include <iostream>
 
-int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+using namespace std;
+
+int initResources()
+{
+    return 1;
+}
+
+void onDisplay()
+{
+    
+}
+
+void freeResources()
+{
+    
+}
+
+int main(int argc, const char **argv)
+{
     return 0;
 }
