@@ -29,7 +29,21 @@ void freeResources()
     
 }
 
-int main(int argc, const char **argv)
+int main (int argc, char **argv)
 {
+    glutInit (&argc, argv);
+    
+    glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE | GLUT_DEPTH | GLUT_3_2_CORE_PROFILE);
+    
+    glutInitWindowSize(600, 600);
+    
+    glutCreateWindow("Tutorial 01");
+    
+    if (initResources()) {
+        glutDisplayFunc(onDisplay);
+        glutMainLoop();
+    }
+    
+    
     return 0;
 }
