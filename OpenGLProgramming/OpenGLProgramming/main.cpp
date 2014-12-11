@@ -15,6 +15,7 @@
 using namespace std;
 
 GLint attributeCoord2d;
+GLuint program;
 
 int initResources()
 {
@@ -24,11 +25,6 @@ int initResources()
     GLuint vertexShaderHandle = glCreateShader(GL_VERTEX_SHADER);
     
     const char *vertexShaderSource =
-#ifdef GL_ES_VERSION_2_0
-    "#version 100\n"  // OpenGL ES 2.0
-#else
-    "#version 120\n"  // OpenGL 2.1
-#endif
     "attribute vec2 coord2d;                  "
     "void main(void)"
     "{"
@@ -48,7 +44,6 @@ int initResources()
     
     GLuint fragmentShaderHandle = glCreateShader(GL_FRAGMENT_SHADER);
     const char *fragmentShaderSource =
-    "#version 120           \n"
     "void main(void)"
     "{"
     "  gl_FragColor = vec3(0.0, 1.0, 0.0); "
@@ -63,8 +58,6 @@ int initResources()
         cout << "Error in fragment shader\n";
         return 0;
     }
-    
-    GLuint program;
     
     program = glCreateProgram();
     
@@ -94,11 +87,39 @@ int initResources()
 
 void onDisplay()
 {
+    /* Clear the background as white */
+    glClearColor(1.0, 1.0, 1.0, 1.0);
+    glClear(GL_COLOR_BUFFER_BIT);
+    
+    glUseProgram(program);
+    glEnableVertexAttribArray(attributeCoord2d);
+    
+    GLfloat triangleVertices[] = {
+        0.0,  0.8,
+        -0.8, -0.8,
+        0.8, -0.8,
+    };
+    
+    /* Describe our vertices array to OpenGL (it can't guess its format automatically) */
+    glVertexAttribPointer(
+                          attributeCoord2d,     // attribute
+                          2,                    // number of elements per vertex, here (x,y)
+                          GL_FLOAT,             // the type of each element
+                          GL_FALSE,             // take our values as-is
+                          0,                    // no extra data between each position
+                          triangleVertices      // pointer to the C array
+                          );
+    /* Push each element in buffer_vertices to the vertex shader */
+    glDrawArrays(GL_TRIANGLES, 0, 3);
+    glDisableVertexAttribArray(attributeCoord2d);
+    
+    /* Display the result */
+    glutSwapBuffers();
 }
 
 void freeResources()
 {
-    
+    glDeleteProgram(program);
 }
 
 int main (int argc, char **argv)
@@ -116,6 +137,7 @@ int main (int argc, char **argv)
         glutMainLoop();
     }
     
+    freeResources();
     
     return 0;
 }
