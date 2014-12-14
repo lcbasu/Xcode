@@ -19,69 +19,6 @@ GLuint program;
 
 int initResources()
 {
-    GLint compileStatus = GL_FALSE;
-    GLint linkStatus = GL_FALSE;
-    
-    GLuint vertexShaderHandle = glCreateShader(GL_VERTEX_SHADER);
-    
-    const char *vertexShaderSource =
-    "attribute vec2 coord2d;                  "
-    "void main(void)"
-    "{"
-    "  gl_Position = vec4(coord2d, 0.0, 1.0); "
-    "}";
-    
-    glShaderSource(vertexShaderHandle, 1, &vertexShaderSource, NULL);
-    glCompileShader(vertexShaderHandle);
-    glGetShaderiv(vertexShaderHandle, GL_COMPILE_STATUS, &compileStatus);
-    
-    if (!compileStatus)
-    {
-        cout << "Error in vertex shader\n";
-        return 0;
-    }
-    
-    
-    GLuint fragmentShaderHandle = glCreateShader(GL_FRAGMENT_SHADER);
-    const char *fragmentShaderSource =
-    "void main(void)"
-    "{"
-    "  gl_FragColor = vec3(0.0, 1.0, 0.0); "
-    "}";
-    
-    glShaderSource(fragmentShaderHandle, 1, &fragmentShaderSource, NULL);
-    glCompileShader(fragmentShaderHandle);
-    glGetShaderiv(fragmentShaderHandle, GL_COMPILE_STATUS, &compileStatus);
-    
-    if (!compileStatus)
-    {
-        cout << "Error in fragment shader\n";
-        return 0;
-    }
-    
-    program = glCreateProgram();
-    
-    glAttachShader(program, vertexShaderHandle);
-    glAttachShader(program, fragmentShaderHandle);
-    
-    glLinkProgram(program);
-    glGetProgramiv(program, GL_LINK_STATUS, &linkStatus);
-    
-    if (!linkStatus) {
-        cout << "Error in glLinkProgram:";
-        return 0;
-    }
-    
-    const char* attributeName = "coord2d";
-    
-    attributeCoord2d = glGetAttribLocation(program, attributeName);
-    
-    if (attributeCoord2d == -1)
-    {
-        cout << "Could not bind attribute: " << attributeName << endl;
-        return 0;
-    }
-    
     return 1;
 }
 
