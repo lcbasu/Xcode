@@ -14,7 +14,7 @@
 		<string>https://github.com/lokeshguddu/Xcode.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>OpenGL_Final_Solar_System/OpenGL_Final_Solar_System.xcodeproj/project.xcworkspace</string>
+	<string>OpenGL_Final_Solar_System/OpenGL_Final_Solar_System.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>05ED2937023785CF7DB9BF943A144C10621C98F1</key>
