@@ -14,11 +14,24 @@
 
 using namespace std;
 
+char fs[] = "varying vec3 f_color;"
+"void main(void) {"
+    "gl_FragColor = vec4(f_color.x, f_color.y, f_color.z, 1.0);"
+"}";
+char vs[] = "attribute vec2 coord2d;"
+"attribute vec3 v_color;"
+"varying vec3 f_color;"
+"void main(void) {"
+    "gl_Position = vec4(coord2d, 0.0, 1.0);"
+    "f_color = v_color;"
+"}";
+
 void onDisplay()
 {
     /* Clear the background as white */
     glClearColor(1.0, 1.0, 1.0, 1.0);
     glClear(GL_COLOR_BUFFER_BIT);
+    
     
 }
 
