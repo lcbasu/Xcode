@@ -14,8 +14,8 @@
 
 using namespace std;
 
-GLuint program;
-GLint attribute_coord2d;
+GLuint program_;
+GLint a_Position_;
 
 int initResources()
 {
@@ -40,7 +40,44 @@ int initResources()
         return 0;
     }
     
-    return 0;
+    GLuint fragmentShaderHandle = glCreateShader(GL_VERTEX_SHADER);
+    
+    const char *fragmentShaderSource =
+    "void main(void) {        "
+    "  gl_FragColor[0] = 0.0; "
+    "  gl_FragColor[1] = 0.0; "
+    "  gl_FragColor[2] = 1.0; "
+    "}";
+    
+    glShaderSource(fragmentShaderHandle, 1, &fragmentShaderSource, NULL);
+    
+    glCompileShader(fragmentShaderHandle);
+    
+    glGetShaderiv(fragmentShaderHandle, GL_COMPILE_STATUS, &compileStatus);
+    
+    if (!compileStatus) {
+        cout << "Error in fragment shader" << endl;
+        return 0;
+    }
+    
+    program_ = glCreateProgram();
+    glAttachShader(program_, vertexShaderHandle);
+    glAttachShader(program_, fragmentShaderHandle);
+    glLinkProgram(program_);
+    glGetProgramiv(program_, GL_LINK_STATUS, &linkStatus);
+    if (!linkStatus) {
+        cout << "glLinkProgram:" << endl;
+        return 0;
+    }
+    
+    const char* a_Position = "coord2d";
+    a_Position_ = glGetAttribLocation(program_, a_Position);
+    if (a_Position_ == -1) {
+        cout << "Could not bind attribute " << a_Position << endl;
+        return 0;
+    }
+    
+    return 1;
 }
 
 void onDisplay()
@@ -48,7 +85,7 @@ void onDisplay()
     /* Clear the background as white */
     glClearColor(1.0, 1.0, 1.0, 1.0);
     glClear(GL_COLOR_BUFFER_BIT);
-    
+
     
 }
 
