@@ -22,39 +22,39 @@ int initResources()
     GLint compileStatus = GL_FALSE, linkStatus = GL_FALSE;
     
     GLuint vertexShaderHandle = glCreateShader(GL_VERTEX_SHADER);
-    
     const char *vertexShaderSource =
+#ifdef GL_ES_VERSION_2_0
+    "#version 100\n"  // OpenGL ES 2.0
+#else
+    "#version 120\n"  // OpenGL 2.1
+#endif
     "attribute vec2 coord2d;                  "
     "void main(void) {                        "
     "  gl_Position = vec4(coord2d, 0.0, 1.0); "
     "}";
-    
     glShaderSource(vertexShaderHandle, 1, &vertexShaderSource, NULL);
-    
     glCompileShader(vertexShaderHandle);
-    
     glGetShaderiv(vertexShaderHandle, GL_COMPILE_STATUS, &compileStatus);
-    
     if (!compileStatus) {
         cout << "Error in vertex shader" << endl;
         return 0;
     }
     
-    GLuint fragmentShaderHandle = glCreateShader(GL_VERTEX_SHADER);
-    
+    GLuint fragmentShaderHandle = glCreateShader(GL_FRAGMENT_SHADER);
     const char *fragmentShaderSource =
+#ifdef GL_ES_VERSION_2_0
+    "#version 100\n"  // OpenGL ES 2.0
+#else
+    "#version 120\n"  // OpenGL 2.1
+#endif
     "void main(void) {        "
     "  gl_FragColor[0] = 0.0; "
     "  gl_FragColor[1] = 0.0; "
     "  gl_FragColor[2] = 1.0; "
     "}";
-    
     glShaderSource(fragmentShaderHandle, 1, &fragmentShaderSource, NULL);
-    
     glCompileShader(fragmentShaderHandle);
-    
     glGetShaderiv(fragmentShaderHandle, GL_COMPILE_STATUS, &compileStatus);
-    
     if (!compileStatus) {
         cout << "Error in fragment shader" << endl;
         return 0;
@@ -66,7 +66,7 @@ int initResources()
     glLinkProgram(program_);
     glGetProgramiv(program_, GL_LINK_STATUS, &linkStatus);
     if (!linkStatus) {
-        cout << "glLinkProgram:" << endl;
+        fprintf(stderr, "glLinkProgram:");
         return 0;
     }
     
@@ -82,33 +82,31 @@ int initResources()
 
 void onDisplay()
 {
-    /* Clear the background as white */
     glClearColor(1.0, 1.0, 1.0, 1.0);
     glClear(GL_COLOR_BUFFER_BIT);
     
     glUseProgram(program_);
     glEnableVertexAttribArray(a_Position_);
-    
     GLfloat triangleVertices[] = {
         0.0,  0.8,
         -0.8, -0.8,
         0.8, -0.8,
     };
-    
+    /* Describe our vertices array to OpenGL (it can't guess its format automatically) */
     glVertexAttribPointer(
-                          a_Position_,      // attribute
-                          2,                // number of elements per vertex, here (x,y)
-                          GL_FLOAT,         // the type of each element
-                          GL_FALSE,         // take our values as-is
-                          0,                // no extra data between each position
-                          triangleVertices // pointer to the C array
+                          a_Position_, // attribute
+                          2,                 // number of elements per vertex, here (x,y)
+                          GL_FLOAT,          // the type of each element
+                          GL_FALSE,          // take our values as-is
+                          0,                 // no extra data between each position
+                          triangleVertices  // pointer to the C array
                           );
+    
     /* Push each element in buffer_vertices to the vertex shader */
     glDrawArrays(GL_TRIANGLES, 0, 3);
     
     glDisableVertexAttribArray(a_Position_);
     glutSwapBuffers();
-    
 }
 
 void freeResources()
@@ -116,22 +114,19 @@ void freeResources()
     glDeleteProgram(program_);
 }
 
-int main (int argc, char **argv)
-{
-    glutInit (&argc, argv);
-    
-    glutInitDisplayMode(GLUT_RGBA | GLUT_DOUBLE | GLUT_DEPTH | GLUT_3_2_CORE_PROFILE);
-    
-    glutInitWindowSize(600, 600);
-    
+
+int main(int argc, char* argv[]) {
+    glutInit(&argc, argv);
+    glutInitDisplayMode(GLUT_RGBA|GLUT_DOUBLE|GLUT_DEPTH);
+    glutInitWindowSize(640, 480);
     glutCreateWindow("Tutorial 01");
+    
     
     if (initResources()) {
         glutDisplayFunc(onDisplay);
         glutMainLoop();
     }
-
-    freeResources();
     
+    freeResources();
     return 0;
 }
