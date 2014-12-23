@@ -111,6 +111,11 @@ void onDisplay()
     
 }
 
+void freeResources()
+{
+    glDeleteProgram(program_);
+}
+
 int main (int argc, char **argv)
 {
     glutInit (&argc, argv);
