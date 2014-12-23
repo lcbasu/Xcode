@@ -125,6 +125,13 @@ int main (int argc, char **argv)
     glutInitWindowSize(600, 600);
     
     glutCreateWindow("Tutorial 01");
+    
+    if (initResources()) {
+        glutDisplayFunc(onDisplay);
+        glutMainLoop();
+    }
 
+    freeResources();
+    
     return 0;
 }
