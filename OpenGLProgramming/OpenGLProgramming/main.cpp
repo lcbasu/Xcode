@@ -14,17 +14,34 @@
 
 using namespace std;
 
-char fs[] = "varying vec3 f_color;"
-"void main(void) {"
-    "gl_FragColor = vec4(f_color.x, f_color.y, f_color.z, 1.0);"
-"}";
-char vs[] = "attribute vec2 coord2d;"
-"attribute vec3 v_color;"
-"varying vec3 f_color;"
-"void main(void) {"
-    "gl_Position = vec4(coord2d, 0.0, 1.0);"
-    "f_color = v_color;"
-"}";
+GLuint program;
+GLint attribute_coord2d;
+
+int initResources()
+{
+    GLint compileStatus = GL_FALSE, linkStatus = GL_FALSE;
+    
+    GLuint vertexShaderHandle = glCreateShader(GL_VERTEX_SHADER);
+    
+    const char *vertexShaderSource =
+    "attribute vec2 coord2d;                  "
+    "void main(void) {                        "
+    "  gl_Position = vec4(coord2d, 0.0, 1.0); "
+    "}";
+    
+    glShaderSource(vertexShaderHandle, 1, &vertexShaderSource, NULL);
+    
+    glCompileShader(vertexShaderHandle);
+    
+    glGetShaderiv(vertexShaderHandle, GL_COMPILE_STATUS, &compileStatus);
+    
+    if (!compileStatus) {
+        cout << "Error in vertex shader" << endl;
+        return 0;
+    }
+    
+    return 0;
+}
 
 void onDisplay()
 {
