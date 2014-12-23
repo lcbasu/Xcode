@@ -85,7 +85,29 @@ void onDisplay()
     /* Clear the background as white */
     glClearColor(1.0, 1.0, 1.0, 1.0);
     glClear(GL_COLOR_BUFFER_BIT);
-
+    
+    glUseProgram(program_);
+    glEnableVertexAttribArray(a_Position_);
+    
+    GLfloat triangleVertices[] = {
+        0.0,  0.8,
+        -0.8, -0.8,
+        0.8, -0.8,
+    };
+    
+    glVertexAttribPointer(
+                          a_Position_,      // attribute
+                          2,                // number of elements per vertex, here (x,y)
+                          GL_FLOAT,         // the type of each element
+                          GL_FALSE,         // take our values as-is
+                          0,                // no extra data between each position
+                          triangleVertices // pointer to the C array
+                          );
+    /* Push each element in buffer_vertices to the vertex shader */
+    glDrawArrays(GL_TRIANGLES, 0, 3);
+    
+    glDisableVertexAttribArray(a_Position_);
+    glutSwapBuffers();
     
 }
 
