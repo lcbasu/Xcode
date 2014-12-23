@@ -23,18 +23,15 @@ int initResources()
     
     GLuint vertexShaderHandle = glCreateShader(GL_VERTEX_SHADER);
     const char *vertexShaderSource =
-#ifdef GL_ES_VERSION_2_0
-    "#version 100\n"  // OpenGL ES 2.0
-#else
-    "#version 120\n"  // OpenGL 2.1
-#endif
     "attribute vec2 coord2d;                  "
     "void main(void) {                        "
     "  gl_Position = vec4(coord2d, 0.0, 1.0); "
     "}";
+    
     glShaderSource(vertexShaderHandle, 1, &vertexShaderSource, NULL);
     glCompileShader(vertexShaderHandle);
     glGetShaderiv(vertexShaderHandle, GL_COMPILE_STATUS, &compileStatus);
+    
     if (!compileStatus) {
         cout << "Error in vertex shader" << endl;
         return 0;
@@ -42,19 +39,16 @@ int initResources()
     
     GLuint fragmentShaderHandle = glCreateShader(GL_FRAGMENT_SHADER);
     const char *fragmentShaderSource =
-#ifdef GL_ES_VERSION_2_0
-    "#version 100\n"  // OpenGL ES 2.0
-#else
-    "#version 120\n"  // OpenGL 2.1
-#endif
     "void main(void) {        "
     "  gl_FragColor[0] = 0.0; "
     "  gl_FragColor[1] = 0.0; "
     "  gl_FragColor[2] = 1.0; "
     "}";
+    
     glShaderSource(fragmentShaderHandle, 1, &fragmentShaderSource, NULL);
     glCompileShader(fragmentShaderHandle);
     glGetShaderiv(fragmentShaderHandle, GL_COMPILE_STATUS, &compileStatus);
+    
     if (!compileStatus) {
         cout << "Error in fragment shader" << endl;
         return 0;
