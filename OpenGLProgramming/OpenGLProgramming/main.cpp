@@ -17,6 +17,34 @@ using namespace std;
 GLuint program_;
 GLint a_Position_;
 
+char* fileRead(const char* fileName)
+{
+    FILE* in = fopen(fileName, "rb");
+    if (in == NULL) return NULL;
+    
+    int resSize = BUFSIZ;
+    char* res = (char*)malloc(resSize);
+    int nbReadTotal = 0;
+    
+    while (!feof(in) && !ferror(in))
+    {
+        if (nbReadTotal + BUFSIZ > resSize)
+        {
+            if (resSize > 10*1024*1024)
+                break;
+            resSize = resSize * 2;
+            res = (char*)realloc(res, resSize);
+        }
+        char* pRes = res + nbReadTotal;
+        nbReadTotal += fread(pRes, 1, BUFSIZ, in);
+    }
+    
+    fclose(in);
+    res = (char*)realloc(res, nbReadTotal + 1);
+    res[nbReadTotal] = '\0';
+    return res;
+}
+
 int initResources()
 {
     GLint compileStatus = GL_FALSE, linkStatus = GL_FALSE;
@@ -113,7 +141,7 @@ int main(int argc, char* argv[]) {
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_RGBA|GLUT_DOUBLE|GLUT_DEPTH);
     glutInitWindowSize(640, 480);
-    glutCreateWindow("Tutorial 01");
+    glutCreateWindow("Tutorial 02");
     
     
     if (initResources()) {
