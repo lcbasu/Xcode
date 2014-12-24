@@ -45,6 +45,32 @@ char* fileRead(const char* fileName)
     return res;
 }
 
+/**
+ * Display compilation errors from the OpenGL shader compiler
+ */
+void printLog(GLuint object)
+{
+    GLint logLength = 0;
+    if (glIsShader(object))
+        glGetShaderiv(object, GL_INFO_LOG_LENGTH, &logLength);
+    else if (glIsProgram(object))
+        glGetProgramiv(object, GL_INFO_LOG_LENGTH, &logLength);
+    else {
+        fprintf(stderr, "printlog: Not a shader or a program\n");
+        return;
+    }
+    
+    char* log = (char*)malloc(logLength);
+    
+    if (glIsShader(object))
+        glGetShaderInfoLog(object, logLength, NULL, log);
+    else if (glIsProgram(object))
+        glGetProgramInfoLog(object, logLength, NULL, log);
+    
+    fprintf(stderr, "%s", log);
+    free(log);
+}
+
 int initResources()
 {
     GLint compileStatus = GL_FALSE, linkStatus = GL_FALSE;
