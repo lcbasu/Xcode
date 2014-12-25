@@ -71,6 +71,61 @@ void printLog(GLuint object)
     free(log);
 }
 
+/**
+ * Compile the shader from file 'fileName', with error handling
+ */
+GLuint create_shader(const char* fileName, GLenum type)
+{
+    const GLchar* source = fileRead(fileName);
+    if (source == NULL) {
+        fprintf(stderr, "Error opening %s: ", fileName); perror("");
+        return 0;
+    }
+    GLuint res = glCreateShader(type);
+    const GLchar* sources[] = {
+        // Define GLSL version
+#ifdef GL_ES_VERSION_2_0
+        "#version 100\n"
+#else
+        "#version 120\n"
+#endif
+        ,
+        // GLES2 precision specifiers
+#ifdef GL_ES_VERSION_2_0
+        // Define default float precision for fragment shaders:
+        (type == GL_FRAGMENT_SHADER) ?
+        "#ifdef GL_FRAGMENT_PRECISION_HIGH\n"
+        "precision highp float;           \n"
+        "#else                            \n"
+        "precision mediump float;         \n"
+        "#endif                           \n"
+        : ""
+        // Note: OpenGL ES automatically defines this:
+        // #define GL_ES
+#else
+        // Ignore GLES 2 precision specifiers:
+        "#define lowp   \n"
+        "#define mediump\n"
+        "#define highp  \n"
+#endif
+        ,
+        source };
+    glShaderSource(res, 3, sources, NULL);
+    free((void*)source);
+    
+    glCompileShader(res);
+    GLint compile_ok = GL_FALSE;
+    glGetShaderiv(res, GL_COMPILE_STATUS, &compile_ok);
+    if (compile_ok == GL_FALSE) {
+        fprintf(stderr, "%s:", fileName);
+        printLog(res);
+        glDeleteShader(res);
+        return 0;
+    }
+    
+    return res;
+}
+
 int initResources()
 {
     GLint compileStatus = GL_FALSE, linkStatus = GL_FALSE;
