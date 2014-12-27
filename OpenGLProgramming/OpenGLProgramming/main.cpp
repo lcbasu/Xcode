@@ -74,7 +74,7 @@ void printLog(GLuint object)
 /**
  * Compile the shader from file 'fileName', with error handling
  */
-GLuint create_shader(const char* fileName, GLenum type)
+GLuint createShader(const char* fileName, GLenum type)
 {
     const GLchar* source = fileRead(fileName);
     if (source == NULL) {
@@ -125,6 +125,38 @@ GLuint create_shader(const char* fileName, GLenum type)
     
     return res;
 }
+
+GLuint createProgram(const char *vertexfile, const char *fragmentfile) {
+    GLuint program = glCreateProgram();
+    GLuint shader;
+    
+    if(vertexfile) {
+        shader = createShader(vertexfile, GL_VERTEX_SHADER);
+        if(!shader)
+            return 0;
+        glAttachShader(program, shader);
+    }
+    
+    if(fragmentfile) {
+        shader = createShader(fragmentfile, GL_FRAGMENT_SHADER);
+        if(!shader)
+            return 0;
+        glAttachShader(program, shader);
+    }
+    
+    glLinkProgram(program);
+    GLint link_ok = GL_FALSE;
+    glGetProgramiv(program, GL_LINK_STATUS, &link_ok);
+    if (!link_ok) {
+        fprintf(stderr, "glLinkProgram:");
+        printLog(program);
+        glDeleteProgram(program);
+        return 0;
+    }
+    
+    return program;
+}
+
 
 int initResources()
 {
