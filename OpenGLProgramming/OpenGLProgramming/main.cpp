@@ -161,25 +161,15 @@ GLuint createProgram(const char *vertexfile, const char *fragmentfile) {
 
 int initResources()
 {
-    GLfloat triangleVertices[] = {
-        0.0,  0.8,
-        -0.8, -0.8,
-        0.8, -0.8,
-    };
-    
-    GLfloat triangleColors[] = {
-        1.0, 1.0, 0.0,
-        0.0, 0.0, 1.0,
-        1.0, 0.0, 0.0,
+    GLfloat triangleAttributes[] = {
+        0.0,  0.8,   1.0, 1.0, 0.0,
+        -0.8, -0.8,   0.0, 0.0, 1.0,
+        0.8, -0.8,   1.0, 0.0, 0.0,
     };
     
     glGenBuffers(1, &vboTriangle);
     glBindBuffer(GL_ARRAY_BUFFER, vboTriangle);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(triangleVertices), triangleVertices, GL_STATIC_DRAW);
-    
-    glGenBuffers(1, &vboTriangleColors);
-    glBindBuffer(GL_ARRAY_BUFFER, vboTriangleColors);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(triangleColors), triangleColors, GL_STATIC_DRAW);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(triangleAttributes), triangleAttributes, GL_STATIC_DRAW);
     
     GLint linkStatus = GL_FALSE;
     
@@ -222,28 +212,29 @@ void onDisplay()
     
     glUseProgram(program_);
     
-    glEnableVertexAttribArray(a_Color_);
-    glBindBuffer(GL_ARRAY_BUFFER, vboTriangleColors);
-    glVertexAttribPointer(
-                          a_Color_,          // attribute
-                          3,                 // number of elements per vertex, here (r,g,b)
-                          GL_FLOAT,          // the type of each element
-                          GL_FALSE,          // take our values as-is
-                          0,                 // no extra data between each position
-                          0                  // offset of first element
-                          );
-    
     glEnableVertexAttribArray(a_Position_);
+    glEnableVertexAttribArray(a_Color_);
+    
     glBindBuffer(GL_ARRAY_BUFFER, vboTriangle);
     /* Describe our vertices array to OpenGL (it can't guess its format automatically) */
     glVertexAttribPointer(
-                          a_Position_, // attribute
-                          2,                 // number of elements per vertex, here (x,y)
-                          GL_FLOAT,          // the type of each element
-                          GL_FALSE,          // take our values as-is
-                          0,                 // no extra data between each position
-                          0                  // offset of first element
+                          a_Position_,          // attribute
+                          2,                    // number of elements per vertex, here (x,y)
+                          GL_FLOAT,             // the type of each element
+                          GL_FALSE,             // take our values as-is
+                          5 * sizeof(GLfloat),  // next coord2d appears every 5 floats
+                          0                     // offset of first element
                           );
+    
+    glVertexAttribPointer(
+                          a_Color_,                         // attribute
+                          3,                                // number of elements per vertex, here (r,g,b)
+                          GL_FLOAT,                         // the type of each element
+                          GL_FALSE,                         // take our values as-is
+                          5 * sizeof(GLfloat),              // next color appears every 5 floats
+                          (GLvoid*) (2 * sizeof(GLfloat))   // offset of first element
+                          );
+    
     
     /* Push each element in buffer_vertices to the vertex shader */
     glDrawArrays(GL_TRIANGLES, 0, 3);
