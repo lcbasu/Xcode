@@ -16,6 +16,7 @@ using namespace std;
 
 GLuint program_;
 GLint a_Position_;
+GLuint vboTriangle;
 
 char* fileRead(const char* fileName)
 {
@@ -160,55 +161,37 @@ GLuint createProgram(const char *vertexfile, const char *fragmentfile) {
 
 int initResources()
 {
-    GLint compileStatus = GL_FALSE, linkStatus = GL_FALSE;
+    GLfloat triangleVertices[] = {
+        0.0,  0.8,
+        -0.8, -0.8,
+        0.8, -0.8,
+    };
     
-    GLuint vertexShaderHandle = glCreateShader(GL_VERTEX_SHADER);
-    const char *vertexShaderSource =
-    "attribute vec2 coord2d;                  "
-    "void main(void) {                        "
-    "  gl_Position = vec4(coord2d, 0.0, 1.0); "
-    "}";
+    glGenBuffers(1, &vboTriangle);
+    glBindBuffer(GL_ARRAY_BUFFER, vboTriangle);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(triangleVertices), triangleVertices, GL_STATIC_DRAW);
     
-    glShaderSource(vertexShaderHandle, 1, &vertexShaderSource, NULL);
-    glCompileShader(vertexShaderHandle);
-    glGetShaderiv(vertexShaderHandle, GL_COMPILE_STATUS, &compileStatus);
+    GLint linkStatus = GL_FALSE;
     
-    if (!compileStatus) {
-        cout << "Error in vertex shader" << endl;
-        return 0;
-    }
-    
-    GLuint fragmentShaderHandle = glCreateShader(GL_FRAGMENT_SHADER);
-    const char *fragmentShaderSource =
-    "void main(void) {        "
-    "  gl_FragColor[0] = 0.0; "
-    "  gl_FragColor[1] = 0.0; "
-    "  gl_FragColor[2] = 1.0; "
-    "}";
-    
-    glShaderSource(fragmentShaderHandle, 1, &fragmentShaderSource, NULL);
-    glCompileShader(fragmentShaderHandle);
-    glGetShaderiv(fragmentShaderHandle, GL_COMPILE_STATUS, &compileStatus);
-    
-    if (!compileStatus) {
-        cout << "Error in fragment shader" << endl;
-        return 0;
-    }
+    GLuint vertexShader, fragmentShader;
+    if ((vertexShader = createShader("/Users/LokeshBasu/Documents/Xcode/OpenGLProgramming/OpenGLProgramming/triangle.v.glsl", GL_VERTEX_SHADER))   == 0) return 0;
+    if ((fragmentShader = createShader("/Users/LokeshBasu/Documents/Xcode/OpenGLProgramming/OpenGLProgramming/triangle.f.glsl", GL_FRAGMENT_SHADER)) == 0) return 0;
     
     program_ = glCreateProgram();
-    glAttachShader(program_, vertexShaderHandle);
-    glAttachShader(program_, fragmentShaderHandle);
+    glAttachShader(program_, vertexShader);
+    glAttachShader(program_, fragmentShader);
     glLinkProgram(program_);
     glGetProgramiv(program_, GL_LINK_STATUS, &linkStatus);
     if (!linkStatus) {
         fprintf(stderr, "glLinkProgram:");
+        printLog(program_);
         return 0;
     }
     
-    const char* a_Position = "coord2d";
-    a_Position_ = glGetAttribLocation(program_, a_Position);
+    const char* attributeName = "coord2d";
+    a_Position_ = glGetAttribLocation(program_, attributeName);
     if (a_Position_ == -1) {
-        cout << "Could not bind attribute " << a_Position << endl;
+        fprintf(stderr, "Could not bind attribute %s\n", attributeName);
         return 0;
     }
     
@@ -222,11 +205,7 @@ void onDisplay()
     
     glUseProgram(program_);
     glEnableVertexAttribArray(a_Position_);
-    GLfloat triangleVertices[] = {
-        0.0,  0.8,
-        -0.8, -0.8,
-        0.8, -0.8,
-    };
+    
     /* Describe our vertices array to OpenGL (it can't guess its format automatically) */
     glVertexAttribPointer(
                           a_Position_, // attribute
@@ -234,7 +213,7 @@ void onDisplay()
                           GL_FLOAT,          // the type of each element
                           GL_FALSE,          // take our values as-is
                           0,                 // no extra data between each position
-                          triangleVertices  // pointer to the C array
+                          0                  // offset of first element
                           );
     
     /* Push each element in buffer_vertices to the vertex shader */

@@ -29,6 +29,8 @@
 		1F3ABC201A374E380053C3C0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1F3ABC271A374E4E0053C3C0 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 		1F3ABC291A374E7C0053C3C0 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
+		1F845FE31A4E6C3E00CCB202 /* triangle.f.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = triangle.f.glsl; path = OpenGLProgramming/triangle.f.glsl; sourceTree = "<group>"; };
+		1F845FE41A4E6C3E00CCB202 /* triangle.v.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = triangle.v.glsl; path = OpenGLProgramming/triangle.v.glsl; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -47,6 +49,8 @@
 		1F3ABC141A374E380053C3C0 = {
 			isa = PBXGroup;
 			children = (
+				1F845FE31A4E6C3E00CCB202 /* triangle.f.glsl */,
+				1F845FE41A4E6C3E00CCB202 /* triangle.v.glsl */,
 				1F3ABC291A374E7C0053C3C0 /* OpenGL.framework */,
 				1F3ABC271A374E4E0053C3C0 /* GLUT.framework */,
 				1F3ABC1F1A374E380053C3C0 /* OpenGLProgramming */,
