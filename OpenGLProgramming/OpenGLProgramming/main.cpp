@@ -117,9 +117,9 @@ GLuint createShader(const char* fileName, GLenum type)
     free((void*)source);
     
     glCompileShader(res);
-    GLint compile_ok = GL_FALSE;
-    glGetShaderiv(res, GL_COMPILE_STATUS, &compile_ok);
-    if (compile_ok == GL_FALSE) {
+    GLint compileStatus = GL_FALSE;
+    glGetShaderiv(res, GL_COMPILE_STATUS, &compileStatus);
+    if (compileStatus == GL_FALSE) {
         fprintf(stderr, "%s:", fileName);
         printLog(res);
         glDeleteShader(res);
@@ -148,9 +148,9 @@ GLuint createProgram(const char *vertexfile, const char *fragmentfile) {
     }
     
     glLinkProgram(program);
-    GLint link_ok = GL_FALSE;
-    glGetProgramiv(program, GL_LINK_STATUS, &link_ok);
-    if (!link_ok) {
+    GLint linkStatus = GL_FALSE;
+    glGetProgramiv(program, GL_LINK_STATUS, &linkStatus);
+    if (!linkStatus) {
         fprintf(stderr, "glLinkProgram:");
         printLog(program);
         glDeleteProgram(program);
