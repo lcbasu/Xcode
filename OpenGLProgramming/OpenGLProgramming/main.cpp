@@ -20,11 +20,15 @@
 
 using namespace std;
 
+int screenWidth=1100, screenHeight=600;
+
 GLuint program_;
 GLint a_Position_, a_Color_;
 GLuint vboTriangle, vboTriangleColors;
+GLuint vboCubeVertices, vboCubeColors;
+GLuint iboCubeElements;
 GLint uniformFade;
-GLint uniformMTransform;
+GLint uniformMVP;
 
 char* fileRead(const char* fileName)
 {
@@ -169,21 +173,67 @@ GLuint createProgram(const char *vertexfile, const char *fragmentfile) {
 
 int initResources()
 {
-    GLfloat triangleAttributes[] = {
-        0.0,  0.8, 0.0,   1.0, 1.0, 0.0,
-        -0.8, -0.8, 0.0,   0.0, 0.0, 1.0,
-        0.8, -0.8, 0.0,   1.0, 0.0, 0.0,
+    GLfloat cubeVertices[] = {
+        // front
+        -1.0, -1.0,  1.0,
+        1.0, -1.0,  1.0,
+        1.0,  1.0,  1.0,
+        -1.0,  1.0,  1.0,
+        // back
+        -1.0, -1.0, -1.0,
+        1.0, -1.0, -1.0,
+        1.0,  1.0, -1.0,
+        -1.0,  1.0, -1.0,
     };
+    glGenBuffers(1, &vboCubeVertices);
+    glBindBuffer(GL_ARRAY_BUFFER, vboCubeVertices);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(cubeVertices), cubeVertices, GL_STATIC_DRAW);
     
-    glGenBuffers(1, &vboTriangle);
-    glBindBuffer(GL_ARRAY_BUFFER, vboTriangle);
-    glBufferData(GL_ARRAY_BUFFER, sizeof(triangleAttributes), triangleAttributes, GL_STATIC_DRAW);
+    GLfloat cubeColors[] = {
+        // front colors
+        1.0, 0.0, 0.0,
+        0.0, 1.0, 0.0,
+        0.0, 0.0, 1.0,
+        1.0, 1.0, 1.0,
+        // back colors
+        1.0, 0.0, 0.0,
+        0.0, 1.0, 0.0,
+        0.0, 0.0, 1.0,
+        1.0, 1.0, 1.0,
+    };
+    glGenBuffers(1, &vboCubeColors);
+    glBindBuffer(GL_ARRAY_BUFFER, vboCubeColors);
+    glBufferData(GL_ARRAY_BUFFER, sizeof(cubeColors), cubeColors, GL_STATIC_DRAW);
+    
+    GLushort cubeElements[] = {
+        // front
+        0, 1, 2,
+        2, 3, 0,
+        // top
+        1, 5, 6,
+        6, 2, 1,
+        // back
+        7, 6, 5,
+        5, 4, 7,
+        // bottom
+        4, 0, 3,
+        3, 7, 4,
+        // left
+        4, 5, 1,
+        1, 0, 4,
+        // right
+        3, 2, 6,
+        6, 7, 3,
+    };
+    glGenBuffers(1, &iboCubeElements);
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, iboCubeElements);
+    glBufferData(GL_ELEMENT_ARRAY_BUFFER, sizeof(cubeElements), cubeElements, GL_STATIC_DRAW);
     
     GLint linkStatus = GL_FALSE;
     
     GLuint vertexShader, fragmentShader;
-    if ((vertexShader = createShader("/Users/LokeshBasu/Documents/Xcode/OpenGLProgramming/OpenGLProgramming/triangle.v.glsl", GL_VERTEX_SHADER))   == 0) return 0;
-    if ((fragmentShader = createShader("/Users/LokeshBasu/Documents/Xcode/OpenGLProgramming/OpenGLProgramming/triangle.f.glsl", GL_FRAGMENT_SHADER)) == 0) return 0;
+    if ((vertexShader = createShader("/Users/LokeshBasu/Documents/Xcode/OpenGLProgramming/OpenGLProgramming/cube.v.glsl", GL_VERTEX_SHADER))   == 0) return 0;
+    if ((fragmentShader = createShader("/Users/LokeshBasu/Documents/Xcode/OpenGLProgramming/OpenGLProgramming/cube.f.glsl", GL_FRAGMENT_SHADER)) == 0) return 0;
     
     program_ = glCreateProgram();
     glAttachShader(program_, vertexShader);
@@ -211,9 +261,9 @@ int initResources()
     }
     
     const char* uniformName;
-    uniformName = "m_transform";
-    uniformMTransform = glGetUniformLocation(program_, uniformName);
-    if (uniformMTransform == -1) {
+    uniformName = "mvp";
+    uniformMVP = glGetUniformLocation(program_, uniformName);
+    if (uniformMVP == -1) {
         fprintf(stderr, "Could not bind uniform_fade %s\n", uniformName);
         return 0;
     }
@@ -225,40 +275,36 @@ int initResources()
 void onDisplay()
 {
     glClearColor(1.0, 1.0, 1.0, 1.0);
-    glClear(GL_COLOR_BUFFER_BIT);
+    glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
     
     glUseProgram(program_);
-    
-    glUniform1f(uniformFade, 0.1);
-    
     glEnableVertexAttribArray(a_Position_);
+    // Describe our vertices array to OpenGL (it can't guess its format automatically)
+    glBindBuffer(GL_ARRAY_BUFFER, vboCubeVertices);
+    glVertexAttribPointer(
+                          a_Position_, // attribute
+                          3,                 // number of elements per vertex, here (x,y,z)
+                          GL_FLOAT,          // the type of each element
+                          GL_FALSE,          // take our values as-is
+                          0,                 // no extra data between each position
+                          0                  // offset of first element
+                          );
+    
     glEnableVertexAttribArray(a_Color_);
-    
-    glBindBuffer(GL_ARRAY_BUFFER, vboTriangle);
-    /* Describe our vertices array to OpenGL (it can't guess its format automatically) */
+    glBindBuffer(GL_ARRAY_BUFFER, vboCubeColors);
     glVertexAttribPointer(
-                          a_Position_,          // attribute
-                          3,                    // number of elements per vertex, here (x,y,z)
-                          GL_FLOAT,             // the type of each element
-                          GL_FALSE,             // take our values as-is
-                          6 * sizeof(GLfloat),  // next coord2d appears every 5 floats
-                          0                     // offset of first element
+                          a_Color_, // attribute
+                          3,                 // number of elements per vertex, here (R,G,B)
+                          GL_FLOAT,          // the type of each element
+                          GL_FALSE,          // take our values as-is
+                          0,                 // no extra data between each position
+                          0                  // offset of first element
                           );
-    
-    glVertexAttribPointer(
-                          a_Color_,                         // attribute
-                          3,                                // number of elements per vertex, here (r,g,b)
-                          GL_FLOAT,                         // the type of each element
-                          GL_FALSE,                         // take our values as-is
-                          6 * sizeof(GLfloat),              // next color appears every 5 floats
-                          (GLvoid*) (3 * sizeof(GLfloat))   // offset of first element
-                          );
-    
-    
-    
     
     /* Push each element in buffer_vertices to the vertex shader */
-    glDrawArrays(GL_TRIANGLES, 0, 3);
+    glBindBuffer(GL_ELEMENT_ARRAY_BUFFER, iboCubeElements);
+    int size;  glGetBufferParameteriv(GL_ELEMENT_ARRAY_BUFFER, GL_BUFFER_SIZE, &size);
+    glDrawElements(GL_TRIANGLES, size/sizeof(GLushort), GL_UNSIGNED_SHORT, 0);
     
     glDisableVertexAttribArray(a_Position_);
     glDisableVertexAttribArray(a_Color_);
@@ -267,19 +313,27 @@ void onDisplay()
 
 void onIdle()
 {
-    float move = sinf(glutGet(GLUT_ELAPSED_TIME) / 1000.0 * (2*3.14) / 5); // -1<->+1 every 5 seconds
     float angle = glutGet(GLUT_ELAPSED_TIME) / 1000.0 * 45;  // 45° per second
-    glm::vec3 axisZ(0, 0, 1);
-    glm::mat4 mTransform = glm::translate(glm::mat4(1.0f), glm::vec3(move, 0.0, 0.0))* glm::rotate(glm::mat4(1.0f), glm::radians(angle), axisZ);
+    glm::vec3 axisY(0, 1, 0);
+    glm::mat4 anim = glm::rotate(glm::mat4(1.0f), glm::radians(angle), axisY);
+    
+    glm::mat4 model = glm::translate(glm::mat4(1.0f), glm::vec3(0.0, 0.0, -4.0));
+    glm::mat4 view = glm::lookAt(glm::vec3(0.0, 2.0, 0.0), glm::vec3(0.0, 0.0, -4.0), glm::vec3(0.0, 1.0, 0.0));
+    glm::mat4 projection = glm::perspective(45.0f, 1.0f*screenWidth/screenHeight, 0.1f, 10.0f);
+    
+    glm::mat4 mvp = projection * view * model * anim;
     
     glUseProgram(program_);
-    glUniformMatrix4fv(uniformMTransform, 1, GL_FALSE, glm::value_ptr(mTransform));
+    glUniformMatrix4fv(uniformMVP, 1, GL_FALSE, glm::value_ptr(mvp));
     glutPostRedisplay();
 }
 
 void freeResources()
 {
     glDeleteProgram(program_);
+    glDeleteBuffers(1, &vboCubeVertices);
+    glDeleteBuffers(1, &vboCubeColors);
+    glDeleteBuffers(1, &iboCubeElements);
 }
 
 
@@ -294,6 +348,7 @@ int main(int argc, char* argv[]) {
         glutDisplayFunc(onDisplay);
         glutIdleFunc(onIdle);
         glEnable(GL_BLEND);
+        glEnable(GL_DEPTH_TEST);
         glBlendFunc(GL_SRC_ALPHA, GL_ONE_MINUS_SRC_ALPHA);
         glutMainLoop();
     }
