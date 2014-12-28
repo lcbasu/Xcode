@@ -164,9 +164,9 @@ GLuint createProgram(const char *vertexfile, const char *fragmentfile) {
 int initResources()
 {
     GLfloat triangleAttributes[] = {
-        0.0,  0.8,   1.0, 1.0, 0.0,
-        -0.8, -0.8,   0.0, 0.0, 1.0,
-        0.8, -0.8,   1.0, 0.0, 0.0,
+        0.0,  0.8, 0.0,   1.0, 1.0, 0.0,
+        -0.8, -0.8, 0.0,   0.0, 0.0, 1.0,
+        0.8, -0.8, 0.0,   1.0, 0.0, 0.0,
     };
     
     glGenBuffers(1, &vboTriangle);
@@ -190,7 +190,7 @@ int initResources()
         return 0;
     }
     
-    const char* attributeName = "coord2d";
+    const char* attributeName = "coord3d";
     a_Position_ = glGetAttribLocation(program_, attributeName);
     if (a_Position_ == -1) {
         fprintf(stderr, "Could not bind attribute %s\n", attributeName);
@@ -231,10 +231,10 @@ void onDisplay()
     /* Describe our vertices array to OpenGL (it can't guess its format automatically) */
     glVertexAttribPointer(
                           a_Position_,          // attribute
-                          2,                    // number of elements per vertex, here (x,y)
+                          3,                    // number of elements per vertex, here (x,y,z)
                           GL_FLOAT,             // the type of each element
                           GL_FALSE,             // take our values as-is
-                          5 * sizeof(GLfloat),  // next coord2d appears every 5 floats
+                          6 * sizeof(GLfloat),  // next coord2d appears every 5 floats
                           0                     // offset of first element
                           );
     
@@ -243,8 +243,8 @@ void onDisplay()
                           3,                                // number of elements per vertex, here (r,g,b)
                           GL_FLOAT,                         // the type of each element
                           GL_FALSE,                         // take our values as-is
-                          5 * sizeof(GLfloat),              // next color appears every 5 floats
-                          (GLvoid*) (2 * sizeof(GLfloat))   // offset of first element
+                          6 * sizeof(GLfloat),              // next color appears every 5 floats
+                          (GLvoid*) (3 * sizeof(GLfloat))   // offset of first element
                           );
     
     
