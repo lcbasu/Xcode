@@ -13,12 +13,18 @@
 #include <iostream>
 #include <math.h>
 
+#include "glm.hpp"
+#include "matrix_transform.hpp"
+#include "quaternion.hpp"
+#include "type_ptr.hpp"
+
 using namespace std;
 
 GLuint program_;
 GLint a_Position_, a_Color_;
 GLuint vboTriangle, vboTriangleColors;
 GLint uniformFade;
+GLint uniformMTransform;
 
 char* fileRead(const char* fileName)
 {
@@ -205,12 +211,13 @@ int initResources()
     }
     
     const char* uniformName;
-    uniformName = "fade";
-    uniformFade = glGetUniformLocation(program_, uniformName);
-    if (uniformFade == -1) {
-        fprintf(stderr, "Could not bind uniform %s\n", uniformName);
+    uniformName = "m_transform";
+    uniformMTransform = glGetUniformLocation(program_, uniformName);
+    if (uniformMTransform == -1) {
+        fprintf(stderr, "Could not bind uniform_fade %s\n", uniformName);
         return 0;
     }
+    
     
     return 1;
 }
@@ -260,9 +267,13 @@ void onDisplay()
 
 void onIdle()
 {
-    float curFade = sinf(glutGet(GLUT_ELAPSED_TIME) / 1000.0 * (2*M_PI) / 5) / 2 + 0.5; // 0->1->0 every 5 seconds
+    float move = sinf(glutGet(GLUT_ELAPSED_TIME) / 1000.0 * (2*3.14) / 5); // -1<->+1 every 5 seconds
+    float angle = glutGet(GLUT_ELAPSED_TIME) / 1000.0 * 45;  // 45° per second
+    glm::vec3 axisZ(0, 0, 1);
+    glm::mat4 mTransform = glm::translate(glm::mat4(1.0f), glm::vec3(move, 0.0, 0.0))* glm::rotate(glm::mat4(1.0f), glm::radians(angle), axisZ);
+    
     glUseProgram(program_);
-    glUniform1f(uniformFade, curFade);
+    glUniformMatrix4fv(uniformMTransform, 1, GL_FALSE, glm::value_ptr(mTransform));
     glutPostRedisplay();
 }
 
@@ -275,7 +286,7 @@ void freeResources()
 int main(int argc, char* argv[]) {
     glutInit(&argc, argv);
     glutInitDisplayMode(GLUT_RGBA|GLUT_DOUBLE|GLUT_DEPTH);
-    glutInitWindowSize(640, 480);
+    glutInitWindowSize(1100, 600);
     glutCreateWindow("Tutorial 02");
     
     
