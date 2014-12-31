@@ -313,7 +313,7 @@ void onDisplay()
 
 void onIdle()
 {
-    float angle = glutGet(GLUT_ELAPSED_TIME) / 1000.0 * 45;  // 45° per second
+    float angle = glutGet(GLUT_ELAPSED_TIME) / 1000.0 * 20;  // 45° per second
     glm::vec3 axisY(0, 1, 0);
     glm::mat4 anim = glm::rotate(glm::mat4(1.0f), glm::radians(angle), axisY);
     
