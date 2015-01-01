@@ -288,6 +288,8 @@
 		1FA68E5C1A4FF397006F72CD /* vector_relational.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_relational.hpp; sourceTree = "<group>"; };
 		1FA68FC71A4FF670006F72CD /* cube.f.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cube.f.glsl; sourceTree = "<group>"; };
 		1FA68FC81A4FF670006F72CD /* cube.v.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cube.v.glsl; sourceTree = "<group>"; };
+		1FD719D41A54F029003BBA09 /* cube.f.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = cube.f.glsl; path = OpenGLProgramming/cube.f.glsl; sourceTree = "<group>"; };
+		1FD719D51A54F029003BBA09 /* cube.v.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = cube.v.glsl; path = OpenGLProgramming/cube.v.glsl; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -306,6 +308,8 @@
 		1F3ABC141A374E380053C3C0 = {
 			isa = PBXGroup;
 			children = (
+				1FD719D41A54F029003BBA09 /* cube.f.glsl */,
+				1FD719D51A54F029003BBA09 /* cube.v.glsl */,
 				1FA68FC71A4FF670006F72CD /* cube.f.glsl */,
 				1FA68FC81A4FF670006F72CD /* cube.v.glsl */,
 				1FA68D5B1A4FF397006F72CD /* glm */,
