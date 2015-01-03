@@ -189,6 +189,12 @@ int initResources()
     glBindBuffer(GL_ARRAY_BUFFER, vboCubeVertices);
     glBufferData(GL_ARRAY_BUFFER, sizeof(cubeVertices), cubeVertices, GL_STATIC_DRAW);
     
+    
+    GLfloat cubeNormals[] = {
+        //
+    };
+    
+    
     GLfloat cubeColors[] = {
         // front colors
         1.0, 0.0, 0.0,
