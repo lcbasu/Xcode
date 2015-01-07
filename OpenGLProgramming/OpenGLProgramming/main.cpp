@@ -170,6 +170,14 @@ GLuint createProgram(const char *vertexfile, const char *fragmentfile) {
     return program;
 }
 
+GLint getAttrib(GLuint program, const char *name)
+{
+    GLint attribute = glGetAttribLocation(program, name);
+    if(attribute == -1)
+        fprintf(stderr, "Could not bind attribute %s\n", name);
+    return attribute;
+}
+
 
 int initResources()
 {
