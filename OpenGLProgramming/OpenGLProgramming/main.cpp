@@ -178,6 +178,13 @@ GLint getAttrib(GLuint program, const char *name)
     return attribute;
 }
 
+GLint getUniform(GLuint program, const char *name)
+{
+    GLint uniform = glGetUniformLocation(program, name);
+    if(uniform == -1)
+        fprintf(stderr, "Could not bind uniform %s\n", name);
+    return uniform;
+}
 
 int initResources()
 {
