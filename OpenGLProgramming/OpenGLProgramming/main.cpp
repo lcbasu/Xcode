@@ -170,12 +170,6 @@ GLuint createProgram(const char *vertexfile, const char *fragmentfile) {
     return program;
 }
 
-GLuint createGsProgram(const char *vertexfile, const char *geometryfile, const char *fragmentfile, GLint input, GLint output, GLint vertices)
-{
-    fprintf(stderr, "Missing support for geometry shaders.\n");
-    return 0;
-}
-
 GLint getAttrib(GLuint program, const char *name)
 {
     GLint attribute = glGetAttribLocation(program, name);
