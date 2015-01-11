@@ -144,7 +144,7 @@ GLuint createProgram(const char *vertexfile, const char *fragmentfile) {
     GLuint shader;
     
     if(vertexfile) {
-        shader = createShader(vertexfile, GL_VERTEX_SHADER);
+        shader = createShaderx(vertexfile, GL_VERTEX_SHADER);
         if(!shader)
             return 0;
         glAttachShader(program, shader);
