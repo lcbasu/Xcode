@@ -23,12 +23,15 @@ using namespace std;
 int screenWidth=1100, screenHeight=600;
 
 GLuint program_;
+GLuint textureID;
+GLint attributeCoord3d, attributeTexcoord;
 GLint a_Position_, a_Color_;
 GLuint vboTriangle, vboTriangleColors;
 GLuint vboCubeVertices, vboCubeColors;
 GLuint iboCubeElements;
 GLint uniformFade;
 GLint uniformMVP;
+GLint uniformMytexture;
 
 char* fileRead(const char* fileName)
 {
@@ -144,7 +147,7 @@ GLuint createProgram(const char *vertexfile, const char *fragmentfile) {
     GLuint shader;
     
     if(vertexfile) {
-        shader = createShaderx(vertexfile, GL_VERTEX_SHADER);
+        shader = createShader(vertexfile, GL_VERTEX_SHADER);
         if(!shader)
             return 0;
         glAttachShader(program, shader);
