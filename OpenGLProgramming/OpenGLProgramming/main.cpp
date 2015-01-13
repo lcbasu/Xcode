@@ -271,6 +271,13 @@ int initResources()
         return 0;
     }
     
+    attributeName = "texcoord";
+    attributeTexcoord = glGetAttribLocation(program_, attributeName);
+    if (attributeTexcoord == -1) {
+        fprintf(stderr, "Could not bind attribute %s\n", attributeName);
+        return 0;
+    }
+    
     attributeName = "v_color";
     a_Color_ = glGetAttribLocation(program_, attributeName);
     if (a_Color_ == -1) {
