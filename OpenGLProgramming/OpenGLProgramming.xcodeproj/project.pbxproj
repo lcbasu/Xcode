@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		1F2939AF1A6BF41500BB2B18 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F2939AE1A6BF41500BB2B18 /* SDL2.framework */; };
 		1F3ABC211A374E380053C3C0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F3ABC201A374E380053C3C0 /* main.cpp */; };
 		1F3ABC281A374E4E0053C3C0 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F3ABC271A374E4E0053C3C0 /* GLUT.framework */; };
 		1F3ABC2A1A374E7C0053C3C0 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F3ABC291A374E7C0053C3C0 /* OpenGL.framework */; };
@@ -26,6 +27,7 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		1F2939AE1A6BF41500BB2B18 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
 		1F3ABC1D1A374E380053C3C0 /* OpenGLProgramming */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OpenGLProgramming; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F3ABC201A374E380053C3C0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1F3ABC271A374E4E0053C3C0 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
@@ -297,6 +299,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F2939AF1A6BF41500BB2B18 /* SDL2.framework in Frameworks */,
 				1F3ABC2A1A374E7C0053C3C0 /* OpenGL.framework in Frameworks */,
 				1F3ABC281A374E4E0053C3C0 /* GLUT.framework in Frameworks */,
 			);
@@ -308,6 +311,7 @@
 		1F3ABC141A374E380053C3C0 = {
 			isa = PBXGroup;
 			children = (
+				1F2939AE1A6BF41500BB2B18 /* SDL2.framework */,
 				1FD719D41A54F029003BBA09 /* cube.f.glsl */,
 				1FD719D51A54F029003BBA09 /* cube.v.glsl */,
 				1FA68FC71A4FF670006F72CD /* cube.f.glsl */,
@@ -769,6 +773,10 @@
 		1F3ABC251A374E380053C3C0 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OTHER_CFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -779,6 +787,10 @@
 		1F3ABC261A374E380053C3C0 /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(LOCAL_LIBRARY_DIR)/Frameworks",
+				);
 				MACOSX_DEPLOYMENT_TARGET = 10.8;
 				OTHER_CFLAGS = "";
 				PRODUCT_NAME = "$(TARGET_NAME)";
