@@ -21,6 +21,34 @@
 #include "type_ptr.hpp"
 
 
+void init()
+{
+    glClearColor(0, 1, 0, 1);
+}
+
 int main(int argc, char* argv[]) {
+    SDL_Init(SDL_INIT_EVERYTHING);
+    SDL_Window *screen = SDL_CreateWindow("Tutorial 1",
+                                          SDL_WINDOWPOS_UNDEFINED,
+                                          SDL_WINDOWPOS_UNDEFINED,
+                                          640, 480,
+                                          SDL_WINDOW_FULLSCREEN | SDL_WINDOW_OPENGL);
+    bool running = true;
+    Uint32 start;
+    SDL_Event event;
+    while (running) {
+        start = SDL_GetTicks();
+        while (SDL_PollEvent(&event)) {
+            switch (event.type) {
+                case SDL_QUIT:
+                    running = false;
+                    break;
+            }
+        }
+        if (1000/3 > (SDL_GetTicks() - start)) {
+            SDL_Delay(1000/3 - (SDL_GetTicks() - start));
+        }
+    }
+    SDL_QUIT;
     return 0;
 }
