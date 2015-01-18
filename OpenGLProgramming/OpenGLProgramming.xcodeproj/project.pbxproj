@@ -7,7 +7,6 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1F2939AF1A6BF41500BB2B18 /* SDL2.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F2939AE1A6BF41500BB2B18 /* SDL2.framework */; };
 		1F3ABC211A374E380053C3C0 /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F3ABC201A374E380053C3C0 /* main.cpp */; };
 		1F3ABC281A374E4E0053C3C0 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F3ABC271A374E4E0053C3C0 /* GLUT.framework */; };
 		1F3ABC2A1A374E7C0053C3C0 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F3ABC291A374E7C0053C3C0 /* OpenGL.framework */; };
@@ -32,8 +31,6 @@
 		1F3ABC201A374E380053C3C0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1F3ABC271A374E4E0053C3C0 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 		1F3ABC291A374E7C0053C3C0 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
-		1F845FE31A4E6C3E00CCB202 /* triangle.f.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = triangle.f.glsl; path = OpenGLProgramming/triangle.f.glsl; sourceTree = "<group>"; };
-		1F845FE41A4E6C3E00CCB202 /* triangle.v.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = triangle.v.glsl; path = OpenGLProgramming/triangle.v.glsl; sourceTree = "<group>"; };
 		1FA68D5C1A4FF397006F72CD /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
 		1FA68D5D1A4FF397006F72CD /* common.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = common.hpp; sourceTree = "<group>"; };
 		1FA68D5F1A4FF397006F72CD /* _features.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = _features.hpp; sourceTree = "<group>"; };
@@ -288,10 +285,6 @@
 		1FA68E5A1A4FF397006F72CD /* vec3.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vec3.hpp; sourceTree = "<group>"; };
 		1FA68E5B1A4FF397006F72CD /* vec4.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vec4.hpp; sourceTree = "<group>"; };
 		1FA68E5C1A4FF397006F72CD /* vector_relational.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = vector_relational.hpp; sourceTree = "<group>"; };
-		1FA68FC71A4FF670006F72CD /* cube.f.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cube.f.glsl; sourceTree = "<group>"; };
-		1FA68FC81A4FF670006F72CD /* cube.v.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cube.v.glsl; sourceTree = "<group>"; };
-		1FD719D41A54F029003BBA09 /* cube.f.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = cube.f.glsl; path = OpenGLProgramming/cube.f.glsl; sourceTree = "<group>"; };
-		1FD719D51A54F029003BBA09 /* cube.v.glsl */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; name = cube.v.glsl; path = OpenGLProgramming/cube.v.glsl; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -299,7 +292,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				1F2939AF1A6BF41500BB2B18 /* SDL2.framework in Frameworks */,
 				1F3ABC2A1A374E7C0053C3C0 /* OpenGL.framework in Frameworks */,
 				1F3ABC281A374E4E0053C3C0 /* GLUT.framework in Frameworks */,
 			);
@@ -312,13 +304,7 @@
 			isa = PBXGroup;
 			children = (
 				1F2939AE1A6BF41500BB2B18 /* SDL2.framework */,
-				1FD719D41A54F029003BBA09 /* cube.f.glsl */,
-				1FD719D51A54F029003BBA09 /* cube.v.glsl */,
-				1FA68FC71A4FF670006F72CD /* cube.f.glsl */,
-				1FA68FC81A4FF670006F72CD /* cube.v.glsl */,
 				1FA68D5B1A4FF397006F72CD /* glm */,
-				1F845FE31A4E6C3E00CCB202 /* triangle.f.glsl */,
-				1F845FE41A4E6C3E00CCB202 /* triangle.v.glsl */,
 				1F3ABC291A374E7C0053C3C0 /* OpenGL.framework */,
 				1F3ABC271A374E4E0053C3C0 /* GLUT.framework */,
 				1F3ABC1F1A374E380053C3C0 /* OpenGLProgramming */,

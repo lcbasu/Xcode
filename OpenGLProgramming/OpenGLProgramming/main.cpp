@@ -6,8 +6,6 @@
 //  Copyright (c) 2014 InHouse. All rights reserved.
 //
 
-#include <SDL2/SDL.h>
-
 #include <GLUT/glut.h>
 #include <OpenGL/gl.h>
 #include <OpenGL/glu.h>
@@ -23,32 +21,35 @@
 
 void init()
 {
-    glClearColor(0, 1, 0, 1);
+    glClearColor(1.0, 0.0, 0.0, 1.0);
+    glMatrixMode(GL_PROJECTION);
+    glLoadIdentity();
+    gluPerspective(45, 640/480, 1, 50);
+    glMatrixMode(GL_MODELVIEW);
+}
+
+void display()
+{
+    glClear(GL_COLOR_BUFFER_BIT);
+    glBegin(GL_TRIANGLES);
+    glVertex3f(0, 1, -5);
+    glVertex3f(0.5, 0, -5);
+    glVertex3f(-0.5, 0, -5);
+    glEnd();
+    glFlush();
 }
 
 int main(int argc, char* argv[]) {
-    SDL_Init(SDL_INIT_EVERYTHING);
-    SDL_Window *screen = SDL_CreateWindow("Tutorial 1",
-                                          SDL_WINDOWPOS_UNDEFINED,
-                                          SDL_WINDOWPOS_UNDEFINED,
-                                          640, 480,
-                                          SDL_WINDOW_FULLSCREEN | SDL_WINDOW_OPENGL);
-    bool running = true;
-    Uint32 start;
-    SDL_Event event;
-    while (running) {
-        start = SDL_GetTicks();
-        while (SDL_PollEvent(&event)) {
-            switch (event.type) {
-                case SDL_QUIT:
-                    running = false;
-                    break;
-            }
-        }
-        if (1000/3 > (SDL_GetTicks() - start)) {
-            SDL_Delay(1000/3 - (SDL_GetTicks() - start));
-        }
-    }
-    SDL_QUIT;
+    
+    glutInit (&argc, argv);
+    glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
+    glutInitWindowSize (640, 480);
+    glutInitWindowPosition (100, 100);
+    glutCreateWindow ("Tutorial 1");
+    init();
+    glutDisplayFunc (display);
+    
+    glutMainLoop ();
+    
     return 0;
 }

@@ -10,29 +10,29 @@
 	<string>OpenGL_Ch_1</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
 	<dict>
-		<key>FCCED4A3-DFCF-447A-BF06-99F9B0375EDE</key>
+		<key>05ED2937023785CF7DB9BF943A144C10621C98F1</key>
 		<string>https://github.com/lokeshguddu/Xcode.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>OpenGL_Ch_1/OpenGL_Ch_1.xcodeproj/project.xcworkspace</string>
+	<string>OpenGL_Ch_1/OpenGL_Ch_1.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
-		<key>FCCED4A3-DFCF-447A-BF06-99F9B0375EDE</key>
+		<key>05ED2937023785CF7DB9BF943A144C10621C98F1</key>
 		<string>../../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/lokeshguddu/Xcode.git</string>
 	<key>IDESourceControlProjectVersion</key>
-	<integer>110</integer>
+	<integer>111</integer>
 	<key>IDESourceControlProjectWCCIdentifier</key>
-	<string>FCCED4A3-DFCF-447A-BF06-99F9B0375EDE</string>
+	<string>05ED2937023785CF7DB9BF943A144C10621C98F1</string>
 	<key>IDESourceControlProjectWCConfigurations</key>
 	<array>
 		<dict>
 			<key>IDESourceControlRepositoryExtensionIdentifierKey</key>
 			<string>public.vcs.git</string>
 			<key>IDESourceControlWCCIdentifierKey</key>
-			<string>FCCED4A3-DFCF-447A-BF06-99F9B0375EDE</string>
+			<string>05ED2937023785CF7DB9BF943A144C10621C98F1</string>
 			<key>IDESourceControlWCCName</key>
 			<string>Xcode</string>
 		</dict>
