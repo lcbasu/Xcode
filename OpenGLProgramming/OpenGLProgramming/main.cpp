@@ -21,7 +21,7 @@
 
 void init()
 {
-    glClearColor(1.0, 0.0, 0.0, 1.0);
+    glClearColor(0.0, 0.0, 0.0, 1.0);
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
     gluPerspective(45, 640/480, 1, 50);
@@ -32,6 +32,7 @@ void display()
 {
     glClear(GL_COLOR_BUFFER_BIT);
     glBegin(GL_TRIANGLES);
+    glColor3f(1.0, 0.0, 0.0);
     glVertex3f(0, 1, -5);
     glVertex3f(0.5, 0, -5);
     glVertex3f(-0.5, 0, -5);
