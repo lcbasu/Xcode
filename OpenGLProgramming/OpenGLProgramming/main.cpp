@@ -19,6 +19,7 @@
 #include "type_ptr.hpp"
 
 float _angle = 0;
+float _scaleValue = 0.1;
 
 void init()
 {
@@ -35,7 +36,8 @@ void display()
     glClear(GL_COLOR_BUFFER_BIT);
     glLoadIdentity();
     glTranslatef(0, 0, -1);
-    glRotatef(_angle, 0, 1, 0);
+    glRotatef(_angle, 0, 0, 1);
+    glScalef(_scaleValue, _scaleValue, _scaleValue);
     glBegin(GL_TRIANGLES);
     glColor3f(1.0, 0.0, 0.0);
     glVertex3f(0, 1, -5);
@@ -50,6 +52,10 @@ void display()
 void update(int value)
 {
     _angle += 0.5;
+    _scaleValue += 0.1;
+    if (_scaleValue > 2) {
+        _scaleValue = 0.1;
+    }
     glutPostRedisplay();
     glutTimerFunc(25, update, 0);
 }
