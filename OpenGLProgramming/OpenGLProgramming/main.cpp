@@ -75,7 +75,7 @@ void init()
     glLoadIdentity();
     gluPerspective(45, 640/480, 1, 50);
     glMatrixMode(GL_MODELVIEW);
-    glShadeModel(GL_SMOOTH);
+    glEnable(GL_DEPTH_TEST);
 }
 
 void display()
