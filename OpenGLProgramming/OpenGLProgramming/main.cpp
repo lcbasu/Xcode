@@ -80,19 +80,12 @@ void init()
 
 void display()
 {
-    glClear(GL_COLOR_BUFFER_BIT);
+    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glLoadIdentity();
-    glTranslatef(0, 0, -1);
-    glRotatef(_angle, 0, 0, 1);
-    glScalef(_scaleValue, _scaleValue, _scaleValue);
-    glBegin(GL_TRIANGLES);
-    glColor3f(1.0, 0.0, 0.0);
-    glVertex3f(0, 1, -5);
-    glColor3f(0.0, 1.0, 0.0);
-    glVertex3f(0.5, 0, -5);
-    glColor3f(0.0, 0.0, 1.0);
-    glVertex3f(-0.5, 0, -5);
-    glEnd();
+    glTranslatef(0, 0, -5);
+    glRotatef(_angle, 1, 1, 1);
+//    glScalef(_scaleValue, _scaleValue, _scaleValue);
+    drawCube(1);
     glFlush();
 }
 
@@ -102,6 +95,9 @@ void update(int value)
     _scaleValue += 0.1;
     if (_scaleValue > 2) {
         _scaleValue = 0.1;
+    }
+    if (_angle > 360) {
+        _angle -= 360;
     }
     glutPostRedisplay();
     glutTimerFunc(25, update, 0);
