@@ -21,6 +21,53 @@
 float _angle = 0;
 float _scaleValue = 0.1;
 
+void drawCube(float size)
+{
+    glBegin(GL_QUADS);
+    //front face
+    glColor3f(1, 0, 0);
+    glVertex3f(size/2, size/2, size/2);
+    glVertex3f(-size/2, size/2, size/2);
+    glVertex3f(-size/2, -size/2, size/2);
+    glVertex3f(size/2, -size/2, size/2);
+    
+    //left face
+    glColor3f(0, 1, 0);
+    glVertex3f(-size/2, size/2, size/2);
+    glVertex3f(-size/2, size/2, -size/2);
+    glVertex3f(-size/2, -size/2, -size/2);
+    glVertex3f(-size/2, -size/2, size/2);
+    
+    //back face
+    glColor3f(0, 0, 1);
+    glVertex3f(size/2, size/2, -size/2);
+    glVertex3f(-size/2, size/2, -size/2);
+    glVertex3f(-size/2, -size/2, -size/2);
+    glVertex3f(size/2, -size/2, -size/2);
+    
+    //right face
+    glColor3f(1, 1, 0);
+    glVertex3f(size/2, size/2, -size/2);
+    glVertex3f(size/2, size/2, size/2);
+    glVertex3f(size/2, -size/2, size/2);
+    glVertex3f(size/2, -size/2, -size/2);
+
+    //top face
+    glColor3f(1, 0, 1);
+    glVertex3f(size/2, size/2, size/2);
+    glVertex3f(-size/2, size/2, size/2);
+    glVertex3f(-size/2, size/2, -size/2);
+    glVertex3f(size/2, size/2, -size/2);
+    
+    //bottom face
+    glColor3f(0, 1, 1);
+    glVertex3f(size/2, -size/2, size/2);
+    glVertex3f(-size/2, -size/2, size/2);
+    glVertex3f(-size/2, -size/2, -size/2);
+    glVertex3f(size/2, -size/2, size/2);
+    glEnd();
+}
+
 void init()
 {
     glClearColor(0.0, 0.0, 0.0, 1.0);
