@@ -64,7 +64,7 @@ void drawCube(float size)
     glVertex3f(size/2, -size/2, size/2);
     glVertex3f(-size/2, -size/2, size/2);
     glVertex3f(-size/2, -size/2, -size/2);
-    glVertex3f(size/2, -size/2, size/2);
+    glVertex3f(size/2, -size/2, -size/2);
     glEnd();
 }
 
@@ -106,7 +106,7 @@ void update(int value)
 int main(int argc, char* argv[]) {
     
     glutInit (&argc, argv);
-    glutInitDisplayMode(GLUT_SINGLE | GLUT_RGB);
+    glutInitDisplayMode (GLUT_SINGLE | GLUT_RGB | GLUT_DEPTH);
     glutInitWindowSize (640, 480);
     glutInitWindowPosition (100, 100);
     glutCreateWindow ("Tutorial 1");
