@@ -21,6 +21,11 @@
 float _angle = 0;
 float _scaleValue = 0.1;
 
+float pos[] = {-2, 2.0, -3, 1};
+float dif[] = {1, 1, 1, 1};
+float amb[] = {0.1, 0.1, 0.1, 1};
+float spe[] = {1, 1, 1, 1};
+
 void drawCube(float size)
 {
     glBegin(GL_QUADS);
@@ -83,12 +88,18 @@ void init()
     glMatrixMode(GL_MODELVIEW);
     glEnable(GL_DEPTH_TEST);
     glEnable(GL_LIGHTING);
+    glEnable(GL_LIGHT0);
+
+    glLightfv(GL_LIGHT0, GL_DIFFUSE, dif);
+    glLightfv(GL_LIGHT0, GL_AMBIENT, amb);
+    glLightfv(GL_LIGHT0, GL_SPECULAR, spe);
 }
 
 void display()
 {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glLoadIdentity();
+    glLightfv(GL_LIGHT0, GL_POSITION, pos);
     glTranslatef(0, 0, -5);
     glRotatef(_angle, 1, 1, 1);
 //    glScalef(_scaleValue, _scaleValue, _scaleValue);
