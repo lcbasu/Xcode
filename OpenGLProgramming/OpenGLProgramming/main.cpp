@@ -25,6 +25,7 @@ void drawCube(float size)
 {
     glBegin(GL_QUADS);
     //front face
+    glNormal3f(0, 0, 1);
     glColor3f(1, 0, 0);
     glVertex3f(size/2, size/2, size/2);
     glVertex3f(-size/2, size/2, size/2);
@@ -32,6 +33,7 @@ void drawCube(float size)
     glVertex3f(size/2, -size/2, size/2);
     
     //left face
+    glNormal3f(-1, 0, 0);
     glColor3f(0, 1, 0);
     glVertex3f(-size/2, size/2, size/2);
     glVertex3f(-size/2, size/2, -size/2);
@@ -39,6 +41,7 @@ void drawCube(float size)
     glVertex3f(-size/2, -size/2, size/2);
     
     //back face
+    glNormal3f(0, 0, -1);
     glColor3f(0, 0, 1);
     glVertex3f(size/2, size/2, -size/2);
     glVertex3f(-size/2, size/2, -size/2);
@@ -46,6 +49,7 @@ void drawCube(float size)
     glVertex3f(size/2, -size/2, -size/2);
     
     //right face
+    glNormal3f(1, 0, 0);
     glColor3f(1, 1, 0);
     glVertex3f(size/2, size/2, -size/2);
     glVertex3f(size/2, size/2, size/2);
@@ -53,6 +57,7 @@ void drawCube(float size)
     glVertex3f(size/2, -size/2, -size/2);
 
     //top face
+    glNormal3f(0, 1, 0);
     glColor3f(1, 0, 1);
     glVertex3f(size/2, size/2, size/2);
     glVertex3f(-size/2, size/2, size/2);
@@ -60,6 +65,7 @@ void drawCube(float size)
     glVertex3f(size/2, size/2, -size/2);
     
     //bottom face
+    glNormal3f(0, -1, 0);
     glColor3f(0, 1, 1);
     glVertex3f(size/2, -size/2, size/2);
     glVertex3f(-size/2, -size/2, size/2);
