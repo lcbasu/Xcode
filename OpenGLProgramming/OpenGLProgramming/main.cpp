@@ -76,6 +76,7 @@ void init()
     gluPerspective(45, 640/480, 1, 50);
     glMatrixMode(GL_MODELVIEW);
     glEnable(GL_DEPTH_TEST);
+    glEnable(GL_LIGHTING);
 }
 
 void display()
