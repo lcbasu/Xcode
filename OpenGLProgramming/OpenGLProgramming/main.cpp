@@ -28,10 +28,14 @@ float spe[] = {1, 1, 1, 1};
 
 void drawCube(float size)
 {
+    //material diffuse and ambient color
+    float difamb[] = {1, 0.5, 0.3, 1};
     glBegin(GL_QUADS);
+    //applying material to front and back side
+    glMaterialfv(GL_FRONT_AND_BACK, GL_DIFFUSE, difamb);
+    glMaterialfv(GL_FRONT_AND_BACK, GL_AMBIENT, difamb);
     //front face
     glNormal3f(0, 0, 1);
-    glColor3f(1, 0, 0);
     glVertex3f(size/2, size/2, size/2);
     glVertex3f(-size/2, size/2, size/2);
     glVertex3f(-size/2, -size/2, size/2);
@@ -39,7 +43,6 @@ void drawCube(float size)
     
     //left face
     glNormal3f(-1, 0, 0);
-    glColor3f(0, 1, 0);
     glVertex3f(-size/2, size/2, size/2);
     glVertex3f(-size/2, size/2, -size/2);
     glVertex3f(-size/2, -size/2, -size/2);
@@ -47,7 +50,6 @@ void drawCube(float size)
     
     //back face
     glNormal3f(0, 0, -1);
-    glColor3f(0, 0, 1);
     glVertex3f(size/2, size/2, -size/2);
     glVertex3f(-size/2, size/2, -size/2);
     glVertex3f(-size/2, -size/2, -size/2);
@@ -55,7 +57,6 @@ void drawCube(float size)
     
     //right face
     glNormal3f(1, 0, 0);
-    glColor3f(1, 1, 0);
     glVertex3f(size/2, size/2, -size/2);
     glVertex3f(size/2, size/2, size/2);
     glVertex3f(size/2, -size/2, size/2);
@@ -63,7 +64,6 @@ void drawCube(float size)
 
     //top face
     glNormal3f(0, 1, 0);
-    glColor3f(1, 0, 1);
     glVertex3f(size/2, size/2, size/2);
     glVertex3f(-size/2, size/2, size/2);
     glVertex3f(-size/2, size/2, -size/2);
@@ -71,7 +71,6 @@ void drawCube(float size)
     
     //bottom face
     glNormal3f(0, -1, 0);
-    glColor3f(0, 1, 1);
     glVertex3f(size/2, -size/2, size/2);
     glVertex3f(-size/2, -size/2, size/2);
     glVertex3f(-size/2, -size/2, -size/2);
@@ -89,7 +88,6 @@ void init()
     glEnable(GL_DEPTH_TEST);
     glEnable(GL_LIGHTING);
     glEnable(GL_LIGHT0);
-    glEnable(GL_COLOR_MATERIAL);
 
     glLightfv(GL_LIGHT0, GL_DIFFUSE, dif);
     glLightfv(GL_LIGHT0, GL_AMBIENT, amb);
