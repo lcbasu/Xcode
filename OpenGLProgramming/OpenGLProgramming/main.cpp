@@ -89,6 +89,7 @@ void init()
     glEnable(GL_DEPTH_TEST);
     glEnable(GL_LIGHTING);
     glEnable(GL_LIGHT0);
+    glEnable(GL_COLOR_MATERIAL);
 
     glLightfv(GL_LIGHT0, GL_DIFFUSE, dif);
     glLightfv(GL_LIGHT0, GL_AMBIENT, amb);
