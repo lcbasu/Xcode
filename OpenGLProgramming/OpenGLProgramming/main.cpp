@@ -21,64 +21,64 @@
 float _angle = 0;
 float _scaleValue = 0.1;
 
-float pos[] = {-2, 2.0, -3, 1};
-float dif[] = {1, 1, 1, 1};
-float amb[] = {0.1, 0.1, 0.1, 1};
-float spe[] = {1, 1, 1, 1};
+//float pos[] = {-2, 2.0, -3, 1};
+//float dif[] = {1, 1, 1, 1};
+//float amb[] = {0.1, 0.1, 0.1, 1};
+//float spe[] = {1, 1, 1, 1};
 
 GLuint brickTexture;
 
-void drawCube(float size)
-{
-    //material diffuse and ambient color
-    float difamb[] = {1, 0.5, 0.3, 1};
-    glBegin(GL_QUADS);
-    //applying material to front and back side
-    glMaterialfv(GL_FRONT_AND_BACK, GL_DIFFUSE, difamb);
-    glMaterialfv(GL_FRONT_AND_BACK, GL_AMBIENT, difamb);
-    //front face
-    glNormal3f(0, 0, 1);
-    glVertex3f(size/2, size/2, size/2);
-    glVertex3f(-size/2, size/2, size/2);
-    glVertex3f(-size/2, -size/2, size/2);
-    glVertex3f(size/2, -size/2, size/2);
-    
-    //left face
-    glNormal3f(-1, 0, 0);
-    glVertex3f(-size/2, size/2, size/2);
-    glVertex3f(-size/2, size/2, -size/2);
-    glVertex3f(-size/2, -size/2, -size/2);
-    glVertex3f(-size/2, -size/2, size/2);
-    
-    //back face
-    glNormal3f(0, 0, -1);
-    glVertex3f(size/2, size/2, -size/2);
-    glVertex3f(-size/2, size/2, -size/2);
-    glVertex3f(-size/2, -size/2, -size/2);
-    glVertex3f(size/2, -size/2, -size/2);
-    
-    //right face
-    glNormal3f(1, 0, 0);
-    glVertex3f(size/2, size/2, -size/2);
-    glVertex3f(size/2, size/2, size/2);
-    glVertex3f(size/2, -size/2, size/2);
-    glVertex3f(size/2, -size/2, -size/2);
-
-    //top face
-    glNormal3f(0, 1, 0);
-    glVertex3f(size/2, size/2, size/2);
-    glVertex3f(-size/2, size/2, size/2);
-    glVertex3f(-size/2, size/2, -size/2);
-    glVertex3f(size/2, size/2, -size/2);
-    
-    //bottom face
-    glNormal3f(0, -1, 0);
-    glVertex3f(size/2, -size/2, size/2);
-    glVertex3f(-size/2, -size/2, size/2);
-    glVertex3f(-size/2, -size/2, -size/2);
-    glVertex3f(size/2, -size/2, -size/2);
-    glEnd();
-}
+//void drawCube(float size)
+//{
+//    //material diffuse and ambient color
+//    float difamb[] = {1, 0.5, 0.3, 1};
+//    glBegin(GL_QUADS);
+//    //applying material to front and back side
+//    glMaterialfv(GL_FRONT_AND_BACK, GL_DIFFUSE, difamb);
+//    glMaterialfv(GL_FRONT_AND_BACK, GL_AMBIENT, difamb);
+//    //front face
+//    glNormal3f(0, 0, 1);
+//    glVertex3f(size/2, size/2, size/2);
+//    glVertex3f(-size/2, size/2, size/2);
+//    glVertex3f(-size/2, -size/2, size/2);
+//    glVertex3f(size/2, -size/2, size/2);
+//    
+//    //left face
+//    glNormal3f(-1, 0, 0);
+//    glVertex3f(-size/2, size/2, size/2);
+//    glVertex3f(-size/2, size/2, -size/2);
+//    glVertex3f(-size/2, -size/2, -size/2);
+//    glVertex3f(-size/2, -size/2, size/2);
+//    
+//    //back face
+//    glNormal3f(0, 0, -1);
+//    glVertex3f(size/2, size/2, -size/2);
+//    glVertex3f(-size/2, size/2, -size/2);
+//    glVertex3f(-size/2, -size/2, -size/2);
+//    glVertex3f(size/2, -size/2, -size/2);
+//    
+//    //right face
+//    glNormal3f(1, 0, 0);
+//    glVertex3f(size/2, size/2, -size/2);
+//    glVertex3f(size/2, size/2, size/2);
+//    glVertex3f(size/2, -size/2, size/2);
+//    glVertex3f(size/2, -size/2, -size/2);
+//
+//    //top face
+//    glNormal3f(0, 1, 0);
+//    glVertex3f(size/2, size/2, size/2);
+//    glVertex3f(-size/2, size/2, size/2);
+//    glVertex3f(-size/2, size/2, -size/2);
+//    glVertex3f(size/2, size/2, -size/2);
+//    
+//    //bottom face
+//    glNormal3f(0, -1, 0);
+//    glVertex3f(size/2, -size/2, size/2);
+//    glVertex3f(-size/2, -size/2, size/2);
+//    glVertex3f(-size/2, -size/2, -size/2);
+//    glVertex3f(size/2, -size/2, -size/2);
+//    glEnd();
+//}
 
 //function to load the RAW file
 GLuint LoadTexture(const char * filename, int width, int height)
@@ -103,18 +103,13 @@ GLuint LoadTexture(const char * filename, int width, int height)
     glTexParameterf( GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
     glTexParameterf( GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
     
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_SHORT_5_6_5, data);
     
     free( data );
     
     glBindTexture( GL_TEXTURE_2D, 0 );
     
     return texture;
-}
-
-void assignTexID()
-{
-    brickTexture = LoadTexture("/Users/LokeshBasu/Documents/Xcode/OpenGLProgramming/OpenGLProgramming/brickwork-texture_opengl.bmp", 512, 512);
 }
 
 void init()
@@ -125,23 +120,39 @@ void init()
     gluPerspective(45, 640/480, 1, 50);
     glMatrixMode(GL_MODELVIEW);
     glEnable(GL_DEPTH_TEST);
-    glEnable(GL_LIGHTING);
-    glEnable(GL_LIGHT0);
-
-    glLightfv(GL_LIGHT0, GL_DIFFUSE, dif);
-    glLightfv(GL_LIGHT0, GL_AMBIENT, amb);
-    glLightfv(GL_LIGHT0, GL_SPECULAR, spe);
+    glEnable(GL_TEXTURE_2D);
+    const char * filename = "/Users/LokeshBasu/Documents/Xcode/OpenGLProgramming/OpenGLProgramming/brickwork-texture_opengl.bmp";
+    brickTexture = LoadTexture(filename, 512, 512);
+//    glEnable(GL_LIGHTING);
+//    glEnable(GL_LIGHT0);
+//
+//    glLightfv(GL_LIGHT0, GL_DIFFUSE, dif);
+//    glLightfv(GL_LIGHT0, GL_AMBIENT, amb);
+//    glLightfv(GL_LIGHT0, GL_SPECULAR, spe);
 }
 
 void display()
 {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glLoadIdentity();
-    glLightfv(GL_LIGHT0, GL_POSITION, pos);
+//    glLightfv(GL_LIGHT0, GL_POSITION, pos);
     glTranslatef(0, 0, -5);
     glRotatef(_angle, 1, 1, 1);
 //    glScalef(_scaleValue, _scaleValue, _scaleValue);
-    drawCube(1);
+//    drawCube(1);
+    
+    
+    glBindTexture(GL_TEXTURE_2D, brickTexture);
+    glBegin(GL_QUADS);
+    glVertex3f(-1, 1, 0);
+    glTexCoord2f(0, 0);
+    glVertex3f(-1, -1, 0);
+    glTexCoord2f(0, 1);
+    glVertex3f(1, -1, 0);
+    glTexCoord2f(1, 1);
+    glVertex3f(1, 1, 0);
+    glTexCoord2f(1, 0);
+    glEnd();
     glFlush();
 }
 
