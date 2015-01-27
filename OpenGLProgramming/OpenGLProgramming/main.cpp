@@ -147,11 +147,11 @@ void display()
     glVertex3f(-1, 1, 0);
     glTexCoord2f(0, 0);
     glVertex3f(-1, -1, 0);
-    glTexCoord2f(0, 1);
+    glTexCoord2f(0, 3);
     glVertex3f(1, -1, 0);
-    glTexCoord2f(1, 1);
+    glTexCoord2f(3, 3);
     glVertex3f(1, 1, 0);
-    glTexCoord2f(1, 0);
+    glTexCoord2f(3, 0);
     glEnd();
     glFlush();
 }
