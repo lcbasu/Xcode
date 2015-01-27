@@ -26,6 +26,8 @@ float dif[] = {1, 1, 1, 1};
 float amb[] = {0.1, 0.1, 0.1, 1};
 float spe[] = {1, 1, 1, 1};
 
+GLuint brickTexture;
+
 void drawCube(float size)
 {
     //material diffuse and ambient color
@@ -76,6 +78,43 @@ void drawCube(float size)
     glVertex3f(-size/2, -size/2, -size/2);
     glVertex3f(size/2, -size/2, -size/2);
     glEnd();
+}
+
+//function to load the RAW file
+GLuint LoadTexture(const char * filename, int width, int height)
+{
+    GLuint texture;
+    unsigned char * data;
+    FILE * file;
+    
+    file = fopen( filename, "r");
+    if ( file == NULL ) return 0;
+    data = (unsigned char *)malloc( width * height * 3 );
+    fread( data, width * height * 3, 1, file );
+    fclose( file );
+    
+    glGenTextures( 1, &texture);
+    glBindTexture( GL_TEXTURE_2D, texture);
+    glTexEnvf( GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE);
+    
+    glTexParameterf( GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
+    glTexParameterf( GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
+    
+    glTexParameterf( GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
+    glTexParameterf( GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
+    
+    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_BYTE, data);
+    
+    free( data );
+    
+    glBindTexture( GL_TEXTURE_2D, 0 );
+    
+    return texture;
+}
+
+void assignTexID()
+{
+    brickTexture = LoadTexture("/Users/LokeshBasu/Documents/Xcode/OpenGLProgramming/OpenGLProgramming/brickwork-texture_opengl.bmp", 512, 512);
 }
 
 void init()
