@@ -34,9 +34,21 @@ GLuint brickTexture;
 
 struct coordinate {
     float x, y, z;
-    coordinate(float a, float b, float c) x(a), y(b), z(c) {};
+    coordinate(float a, float b, float c) : x(a), y(b), z(c) {};
 };
 
+struct face {
+    int faceNum;
+    bool four;  //whether it is a quad or triangle
+    int faces[4];   //3 for triangle, 4 for quads
+    face(int faceN, int f1, int f2, int f3, int f4) : faceNum(faceN) {
+        faces[0] = f1;
+        faces[1] = f2;
+        faces[2] = f3;
+        faces[3] = f4;
+        four = true;
+    }
+};
 
 
 
