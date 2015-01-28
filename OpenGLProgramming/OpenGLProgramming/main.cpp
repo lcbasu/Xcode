@@ -11,6 +11,11 @@
 #include <OpenGL/glu.h>
 #include <stdlib.h>
 #include <iostream>
+#include <vector>
+#include <string>
+#include <algorithm>
+#include <fstream>
+#include <cstdio>
 #include <math.h>
 
 #include "glm.hpp"
@@ -20,13 +25,21 @@
 
 float _angle = 0;
 float _scaleValue = 0.1;
+GLuint brickTexture;
 
 //float pos[] = {-2, 2.0, -3, 1};
 //float dif[] = {1, 1, 1, 1};
 //float amb[] = {0.1, 0.1, 0.1, 1};
 //float spe[] = {1, 1, 1, 1};
 
-GLuint brickTexture;
+struct coordinate {
+    float x, y, z;
+    coordinate(float a, float b, float c) x(a), y(b), z(c) {};
+};
+
+
+
+
 
 //void drawCube(float size)
 //{
@@ -79,6 +92,11 @@ GLuint brickTexture;
 //    glVertex3f(size/2, -size/2, -size/2);
 //    glEnd();
 //}
+
+int loadObject(const char* fileName)
+{
+    return 0;
+}
 
 //function to load the RAW file
 GLuint LoadTexture(const char * filename, int width, int height)
