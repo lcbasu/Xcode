@@ -109,6 +109,42 @@ struct face {
 
 int loadObject(const char* fileName)
 {
+    vector<string *> objectCoords;
+    vector<coordinate *> vertex;
+    vector<face *> faces;
+    vector<coordinate *> normal;
+    
+    ifstream in(fileName);
+    
+    if (!in.is_open()) {
+        cout << "File not open!" << endl;
+        return -1;
+    }
+    
+    char buf[256];
+    while (!in.eof()) {
+        in.getline(buf, 256);
+        objectCoords.push_back(new string(buf));
+    }
+    
+    for (int i = 0; i < objectCoords.size(); i++) {
+        if (*objectCoords[i][0] == '#') {
+            continue;
+        } else if (*objectCoords[i][0] == 'v' && *objectCoords[i][1] == ' ') {
+            float tmpX, tmpY, tmpZ;
+            sscanf(objectCoords[i]->c_str(), "v %f %f %f", &tmpX, &tmpY, &tmpZ);
+            vertex.push_back(new coordinate(tmpX, tmpY, tmpZ));
+        } else if (*objectCoords[i][0] == 'v' && *objectCoords[i][1] == 'n') {
+            float tmpX, tmpY, tmpZ;
+            sscanf(objectCoords[i]->c_str(), "vn %f %f %f", &tmpX, &tmpY, &tmpZ);
+            normal.push_back(new coordinate(tmpX, tmpY, tmpZ));
+        }
+    }
+    
+    for (int i = 0; i < objectCoords.size(); i++) {
+        delete objectCoords[i];
+    }
+    
     return 0;
 }
 
