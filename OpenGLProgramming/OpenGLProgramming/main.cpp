@@ -23,6 +23,8 @@
 #include "quaternion.hpp"
 #include "type_ptr.hpp"
 
+using namespace std;
+
 float _angle = 0;
 float _scaleValue = 0.1;
 GLuint brickTexture;
