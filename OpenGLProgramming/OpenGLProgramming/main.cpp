@@ -155,6 +155,17 @@ int loadObject(const char* fileName)
         delete objectCoords[i];
     }
 
+    for (int i = 0; i < faces.size(); i++) {
+        delete faces[i];
+    }
+
+    for (int i = 0; i < normal.size(); i++) {
+        delete normal[i];
+    }
+    
+    for (int i = 0; i < vertex.size(); i++) {
+        delete vertex[i];
+    }
     return 0;
 }
 
