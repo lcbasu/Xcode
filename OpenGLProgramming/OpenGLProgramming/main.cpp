@@ -138,13 +138,23 @@ int loadObject(const char* fileName)
             float tmpX, tmpY, tmpZ;
             sscanf(objectCoords[i]->c_str(), "vn %f %f %f", &tmpX, &tmpY, &tmpZ);
             normal.push_back(new coordinate(tmpX, tmpY, tmpZ));
+        } else if (*objectCoords[i][0] == 'f') {
+            int a, b, c, d, e;
+            //if a quad else a traingle
+            if (count(objectCoords[i]->begin(), objectCoords[i]->end(), ' ') == 4) {
+                sscanf(objectCoords[i]->c_str(), "f %d//%d %d//%d %d//%d %d//%d", &a, &b, &c, &b, &d, &b, &e, &b);
+                faces.push_back(new face(b, a, c, d, e));
+            } else {
+                sscanf(objectCoords[i]->c_str(), "f %d//%d %d//%d %d//%d", &a, &b, &c, &b, &d, &b);
+                faces.push_back(new face(b, a, c, d));
+            }
         }
     }
     
     for (int i = 0; i < objectCoords.size(); i++) {
         delete objectCoords[i];
     }
-    
+
     return 0;
 }
 
