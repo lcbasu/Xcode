@@ -17,7 +17,6 @@
 #include <fstream>
 #include <cstdio>
 #include <math.h>
-
 #include "glm.hpp"
 #include "matrix_transform.hpp"
 #include "quaternion.hpp"
@@ -25,14 +24,12 @@
 
 using namespace std;
 
-float _angle = 0;
-float _scaleValue = 0.1;
-GLuint brickTexture;
 
 struct coordinate {
     float x, y, z;
     coordinate(float a, float b, float c) : x(a), y(b), z(c) {};
 };
+
 
 struct face {
     int faceNum;
@@ -46,6 +43,7 @@ struct face {
         four = true;
     }
 };
+
 
 int loadObject(const char* fileName)
 {
@@ -109,6 +107,7 @@ int loadObject(const char* fileName)
     return 0;
 }
 
+
 //function to load the RAW file
 GLuint LoadTexture(const char * filename, int width, int height)
 {
@@ -141,6 +140,7 @@ GLuint LoadTexture(const char * filename, int width, int height)
     return texture;
 }
 
+
 void init()
 {
     glClearColor(0.0, 0.0, 0.0, 1.0);
@@ -151,12 +151,15 @@ void init()
     glEnable(GL_DEPTH_TEST);
 }
 
+
 void display()
 {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
 }
 
-int main(int argc, char* argv[]) {
+
+int main(int argc, char* argv[])
+{
     
     glutInit (&argc, argv);
     glutInitDisplayMode (GLUT_SINGLE | GLUT_RGB | GLUT_DEPTH);
