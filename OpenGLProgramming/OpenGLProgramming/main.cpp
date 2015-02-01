@@ -89,6 +89,13 @@ int loadObject(const char* fileName)
         }
     }
     
+    //to draw
+    int num;
+    num = glGenLists(1);
+    
+    
+    
+    //avoids memory leak
     for (int i = 0; i < objectCoords.size(); i++) {
         delete objectCoords[i];
     }
