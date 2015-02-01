@@ -93,6 +93,26 @@ int loadObject(const char* fileName)
     int num;
     num = glGenLists(1);
     
+    glNewList(num, GL_COMPILE);
+    
+    for (int i = 0; i < faces.size(); i++) {
+        if (faces[i]->four) {
+            //draw quad
+            glBegin(GL_QUADS);
+            glNormal3f(normal[faces[i]->faceNum - 1]->x, normal[faces[i]->faceNum - 1]->y, normal[faces[i]->faceNum - 1]->z);
+            glVertex3f(vertex[faces[i]->faces[0] - 1]->x, vertex[faces[i]->faces[0] - 1]->y, vertex[faces[i]->faces[0] - 1]->z);
+            glVertex3f(vertex[faces[i]->faces[1] - 1]->x, vertex[faces[i]->faces[1] - 1]->y, vertex[faces[i]->faces[1] - 1]->z);
+            glVertex3f(vertex[faces[i]->faces[2] - 1]->x, vertex[faces[i]->faces[2] - 1]->y, vertex[faces[i]->faces[2] - 1]->z);
+            glVertex3f(vertex[faces[i]->faces[3] - 1]->x, vertex[faces[i]->faces[3] - 1]->y, vertex[faces[i]->faces[3] - 1]->z);
+            glEnd();
+            
+        } else {
+            //draw triangle
+        }
+    }
+    
+    glEndList();
+    
     
     
     //avoids memory leak
