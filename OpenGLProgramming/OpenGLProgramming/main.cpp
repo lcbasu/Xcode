@@ -108,6 +108,12 @@ int loadObject(const char* fileName)
             
         } else {
             //draw triangle
+            glBegin(GL_TRIANGLES);
+            glNormal3f(normal[faces[i]->faceNum - 1]->x, normal[faces[i]->faceNum - 1]->y, normal[faces[i]->faceNum - 1]->z);
+            glVertex3f(vertex[faces[i]->faces[0] - 1]->x, vertex[faces[i]->faces[0] - 1]->y, vertex[faces[i]->faces[0] - 1]->z);
+            glVertex3f(vertex[faces[i]->faces[1] - 1]->x, vertex[faces[i]->faces[1] - 1]->y, vertex[faces[i]->faces[1] - 1]->z);
+            glVertex3f(vertex[faces[i]->faces[2] - 1]->x, vertex[faces[i]->faces[2] - 1]->y, vertex[faces[i]->faces[2] - 1]->z);
+            glEnd();
         }
     }
     
