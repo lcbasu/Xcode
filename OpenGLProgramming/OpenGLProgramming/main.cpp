@@ -119,8 +119,6 @@ int loadObject(const char* fileName)
     
     glEndList();
     
-    
-    
     //avoids memory leak
     for (int i = 0; i < objectCoords.size(); i++) {
         delete objectCoords[i];
@@ -137,7 +135,7 @@ int loadObject(const char* fileName)
     for (int i = 0; i < vertex.size(); i++) {
         delete vertex[i];
     }
-    return 0;
+    return num;
 }
 
 
