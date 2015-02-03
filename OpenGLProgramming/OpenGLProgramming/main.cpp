@@ -67,17 +67,17 @@ int loadObject(const char* fileName)
     }
     
     for (int i = 0; i < objectCoords.size(); i++) {
-        if (*objectCoords[i][0] == '#') {
+        if ((*objectCoords[i])[0] == '#') {
             continue;
-        } else if (*objectCoords[i][0] == 'v' && *objectCoords[i][1] == ' ') {
+        } else if ((*objectCoords[i])[0] == 'v' && (*objectCoords[i])[1] == ' ') {
             float tmpX, tmpY, tmpZ;
             sscanf(objectCoords[i]->c_str(), "v %f %f %f", &tmpX, &tmpY, &tmpZ);
             vertex.push_back(new coordinate(tmpX, tmpY, tmpZ));
-        } else if (*objectCoords[i][0] == 'v' && *objectCoords[i][1] == 'n') {
+        } else if ((*objectCoords[i])[0] == 'v' && (*objectCoords[i])[1] == 'n') {
             float tmpX, tmpY, tmpZ;
             sscanf(objectCoords[i]->c_str(), "vn %f %f %f", &tmpX, &tmpY, &tmpZ);
             normal.push_back(new coordinate(tmpX, tmpY, tmpZ));
-        } else if (*objectCoords[i][0] == 'f') {
+        } else if ((*objectCoords[i])[0] == 'f') {
             int a, b, c, d, e;
             //if a quad else a traingle
             if (count(objectCoords[i]->begin(), objectCoords[i]->end(), ' ') == 4) {
