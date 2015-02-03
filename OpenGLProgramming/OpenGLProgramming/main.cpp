@@ -24,6 +24,7 @@
 
 using namespace std;
 
+GLfloat _angle = 0.0;
 
 struct coordinate {
     float x, y, z;
@@ -171,6 +172,7 @@ GLuint LoadTexture(const char * filename, int width, int height)
     return texture;
 }
 
+int cubeDisplayList;
 
 void init()
 {
@@ -180,14 +182,29 @@ void init()
     gluPerspective(45, 640/480, 1, 50);
     glMatrixMode(GL_MODELVIEW);
     glEnable(GL_DEPTH_TEST);
+    cubeDisplayList = loadObject("/Users/LokeshBasu/Documents/Xcode/OpenGLProgramming/OpenGLProgramming/cube.obj");
 }
 
 
 void display()
 {
     glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
+    glLoadIdentity();
+    glTranslatef(0, 0, -5);
+    glRotatef(_angle, 1, 1, 1);
+    glCallList(cubeDisplayList);
+    
 }
 
+void update(int value)
+{
+    _angle += 0.1f;
+    if (_angle > 360) {
+        _angle -= 360;
+    }
+    glutPostRedisplay();
+    glutTimerFunc(25, update, 0);
+}
 
 int main(int argc, char* argv[])
 {
@@ -198,6 +215,7 @@ int main(int argc, char* argv[])
     glutInitWindowPosition (100, 100);
     glutCreateWindow ("Tutorial 1");
     init();
+    glutTimerFunc(25, update, 0);
     glutDisplayFunc (display);
     glutIdleFunc(display);
     glutMainLoop ();
