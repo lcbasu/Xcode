@@ -85,7 +85,7 @@ int loadObject(const char* fileName)
                 faces.push_back(new face(b, a, c, d, e));
             } else {
                 sscanf(objectCoords[i]->c_str(), "f %d//%d %d//%d %d//%d", &a, &b, &c, &b, &d, &b);
-                faces.push_back(new face(b, a, c, d));
+                faces.push_back(new face(b, a, c, d, e));
             }
         }
     }
