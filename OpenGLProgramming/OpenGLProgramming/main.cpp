@@ -43,6 +43,12 @@ struct face {
         faces[3] = f4;
         four = true;
     }
+    face(int faceN, int f1, int f2, int f3) : faceNum(faceN) {
+        faces[0] = f1;
+        faces[1] = f2;
+        faces[2] = f3;
+        four = false;
+    }
 };
 
 
@@ -85,7 +91,7 @@ int loadObject(const char* fileName)
                 faces.push_back(new face(b, a, c, d, e));
             } else {
                 sscanf(objectCoords[i]->c_str(), "f %d//%d %d//%d %d//%d", &a, &b, &c, &b, &d, &b);
-                faces.push_back(new face(b, a, c, d, e));
+                faces.push_back(new face(b, a, c, d));
             }
         }
     }
