@@ -36,6 +36,7 @@ struct face {
     int faceNum;
     bool four;  //whether it is a quad or triangle
     int faces[4];   //3 for triangle, 4 for quads
+    //quads constuctor
     face(int faceN, int f1, int f2, int f3, int f4) : faceNum(faceN) {
         faces[0] = f1;
         faces[1] = f2;
@@ -43,6 +44,7 @@ struct face {
         faces[3] = f4;
         four = true;
     }
+    //traingle constuctor
     face(int faceN, int f1, int f2, int f3) : faceNum(faceN) {
         faces[0] = f1;
         faces[1] = f2;
