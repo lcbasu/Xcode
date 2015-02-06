@@ -17,6 +17,7 @@
 #include <fstream>
 #include <cstdio>
 #include <math.h>
+
 #include "glm.hpp"
 #include "matrix_transform.hpp"
 #include "quaternion.hpp"
@@ -144,6 +145,8 @@ int loadObject(const char* fileName)
     for (int i = 0; i < vertex.size(); i++) {
         delete vertex[i];
     }
+    
+    //returns display list id
     return num;
 }
 
