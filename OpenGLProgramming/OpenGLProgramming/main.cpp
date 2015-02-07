@@ -61,7 +61,6 @@ int loadObject(const char* fileName)
     vector<coordinate *> vertex;
     vector<face *> faces;
     vector<coordinate *> normal;
-    
     ifstream in(fileName);
     
     if (!in.is_open()) {
@@ -148,39 +147,6 @@ int loadObject(const char* fileName)
     
     //returns display list id
     return num;
-}
-
-
-//function to load the RAW file
-GLuint LoadTexture(const char * filename, int width, int height)
-{
-    GLuint texture;
-    unsigned char * data;
-    FILE * file;
-    
-    file = fopen( filename, "r");
-    if ( file == NULL ) return 0;
-    data = (unsigned char *)malloc( width * height * 3 );
-    fread( data, width * height * 3, 1, file );
-    fclose( file );
-    
-    glGenTextures( 1, &texture);
-    glBindTexture( GL_TEXTURE_2D, texture);
-    glTexEnvf( GL_TEXTURE_ENV, GL_TEXTURE_ENV_MODE, GL_MODULATE);
-    
-    glTexParameterf( GL_TEXTURE_2D, GL_TEXTURE_MIN_FILTER, GL_LINEAR);
-    glTexParameterf( GL_TEXTURE_2D, GL_TEXTURE_MAG_FILTER, GL_LINEAR);
-    
-    glTexParameterf( GL_TEXTURE_2D, GL_TEXTURE_WRAP_S, GL_REPEAT);
-    glTexParameterf( GL_TEXTURE_2D, GL_TEXTURE_WRAP_T, GL_REPEAT);
-    
-    glTexImage2D(GL_TEXTURE_2D, 0, GL_RGB, width, height, 0, GL_RGB, GL_UNSIGNED_SHORT_5_6_5, data);
-    
-    free( data );
-    
-    glBindTexture( GL_TEXTURE_2D, 0 );
-    
-    return texture;
 }
 
 int cubeDisplayList;
