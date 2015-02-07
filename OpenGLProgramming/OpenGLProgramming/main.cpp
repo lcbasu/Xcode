@@ -190,7 +190,7 @@ void init()
     glClearColor(0.0, 0.0, 0.0, 1.0);
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
-    gluPerspective(45, 640/480, 1, 50);
+    gluPerspective(45, 640/480, 1, 500);
     glMatrixMode(GL_MODELVIEW);
     glEnable(GL_DEPTH_TEST);
     cubeDisplayList = loadObject("/Users/LokeshBasu/Documents/Xcode/OpenGLProgramming/OpenGLProgramming/cube.obj");
