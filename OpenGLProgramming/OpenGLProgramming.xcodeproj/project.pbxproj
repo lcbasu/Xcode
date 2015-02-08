@@ -11,6 +11,7 @@
 		1F3ABC281A374E4E0053C3C0 /* GLUT.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F3ABC271A374E4E0053C3C0 /* GLUT.framework */; };
 		1F3ABC2A1A374E7C0053C3C0 /* OpenGL.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1F3ABC291A374E7C0053C3C0 /* OpenGL.framework */; };
 		1F3BA2661A87147E0063A9F9 /* camera.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F3BA2651A87147E0063A9F9 /* camera.cpp */; };
+		1F3BA2691A8714BA0063A9F9 /* vector3d.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1F3BA2671A8714BA0063A9F9 /* vector3d.cpp */; };
 		1FA68E5E1A4FF397006F72CD /* glm.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 1FA68D781A4FF397006F72CD /* glm.cpp */; };
 /* End PBXBuildFile section */
 
@@ -37,6 +38,8 @@
 		1F3BA2621A8713D90063A9F9 /* fragment_shader.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = fragment_shader.fs; sourceTree = "<group>"; };
 		1F3BA2641A87140C0063A9F9 /* camera.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = camera.h; sourceTree = "<group>"; };
 		1F3BA2651A87147E0063A9F9 /* camera.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = camera.cpp; sourceTree = "<group>"; };
+		1F3BA2671A8714BA0063A9F9 /* vector3d.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = vector3d.cpp; sourceTree = "<group>"; };
+		1F3BA2681A8714BA0063A9F9 /* vector3d.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = vector3d.h; sourceTree = "<group>"; };
 		1FA68D5C1A4FF397006F72CD /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
 		1FA68D5D1A4FF397006F72CD /* common.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = common.hpp; sourceTree = "<group>"; };
 		1FA68D5F1A4FF397006F72CD /* _features.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = _features.hpp; sourceTree = "<group>"; };
@@ -335,6 +338,8 @@
 				1F3BA2621A8713D90063A9F9 /* fragment_shader.fs */,
 				1F3BA2641A87140C0063A9F9 /* camera.h */,
 				1F3BA2651A87147E0063A9F9 /* camera.cpp */,
+				1F3BA2671A8714BA0063A9F9 /* vector3d.cpp */,
+				1F3BA2681A8714BA0063A9F9 /* vector3d.h */,
 			);
 			path = OpenGLProgramming;
 			sourceTree = "<group>";
@@ -683,6 +688,7 @@
 				1FA68E5E1A4FF397006F72CD /* glm.cpp in Sources */,
 				1F3BA2661A87147E0063A9F9 /* camera.cpp in Sources */,
 				1F3ABC211A374E380053C3C0 /* main.cpp in Sources */,
+				1F3BA2691A8714BA0063A9F9 /* vector3d.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
