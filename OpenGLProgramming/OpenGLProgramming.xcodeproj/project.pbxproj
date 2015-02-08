@@ -33,6 +33,7 @@
 		1F3ABC271A374E4E0053C3C0 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
 		1F3ABC291A374E7C0053C3C0 /* OpenGL.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = OpenGL.framework; path = System/Library/Frameworks/OpenGL.framework; sourceTree = SDKROOT; };
 		1F3BA2601A8713920063A9F9 /* vetex_shader.vs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = vetex_shader.vs; sourceTree = "<group>"; };
+		1F3BA2621A8713D90063A9F9 /* fragment_shader.fs */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.glsl; path = fragment_shader.fs; sourceTree = "<group>"; };
 		1FA68D5C1A4FF397006F72CD /* CMakeLists.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = CMakeLists.txt; sourceTree = "<group>"; };
 		1FA68D5D1A4FF397006F72CD /* common.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = common.hpp; sourceTree = "<group>"; };
 		1FA68D5F1A4FF397006F72CD /* _features.hpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.h; path = _features.hpp; sourceTree = "<group>"; };
@@ -328,6 +329,7 @@
 				1F3ABC201A374E380053C3C0 /* main.cpp */,
 				1F295F801A861A7A00561FCB /* cube.obj */,
 				1F3BA2601A8713920063A9F9 /* vetex_shader.vs */,
+				1F3BA2621A8713D90063A9F9 /* fragment_shader.fs */,
 			);
 			path = OpenGLProgramming;
 			sourceTree = "<group>";
