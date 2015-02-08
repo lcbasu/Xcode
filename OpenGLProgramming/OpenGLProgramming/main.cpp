@@ -6,196 +6,142 @@
 //  Copyright (c) 2014 InHouse. All rights reserved.
 //
 
-#include <GLUT/glut.h>
-#include <OpenGL/gl.h>
-#include <OpenGL/glu.h>
-#include <stdlib.h>
 #include <iostream>
+#include <SDL/SDL.h>
+#include "GLee.h"
+#include <GL/gl.h>
+#include <GL/glu.h>
+#include "camera.h"
 #include <vector>
 #include <string>
-#include <algorithm>
 #include <fstream>
-#include <cstdio>
-#include <math.h>
 
-#include "glm.hpp"
-#include "matrix_transform.hpp"
-#include "quaternion.hpp"
-#include "type_ptr.hpp"
+camera cam;
+//data->vertex->fragment
 
-using namespace std;
-
-GLfloat _angle = 0.0;
-
-struct coordinate {
-    float x, y, z;
-    coordinate(float a, float b, float c) : x(a), y(b), z(c) {};
-};
-
-
-struct face {
-    int faceNum;
-    bool four;  //whether it is a quad or triangle
-    int faces[4];   //3 for triangle, 4 for quads
-    //quads constuctor
-    face(int faceN, int f1, int f2, int f3, int f4) : faceNum(faceN) {
-        faces[0] = f1;
-        faces[1] = f2;
-        faces[2] = f3;
-        faces[3] = f4;
-        four = true;
-    }
-    //traingle constuctor
-    face(int faceN, int f1, int f2, int f3) : faceNum(faceN) {
-        faces[0] = f1;
-        faces[1] = f2;
-        faces[2] = f3;
-        four = false;
-    }
-};
-
-
-int loadObject(const char* fileName)
+void loadFile(const char* fn,std::string& str)
 {
-    vector<string *> objectCoords;
-    vector<coordinate *> vertex;
-    vector<face *> faces;
-    vector<coordinate *> normal;
-    ifstream in(fileName);
-    
-    if (!in.is_open()) {
-        cout << "File not open!" << endl;
-        return -1;
+    std::ifstream in(fn);
+    if(!in.is_open())
+    {
+        std::cout << "The file " << fn << " cannot be opened\n";
+        return;
     }
-    
-    char buf[256];
-    while (!in.eof()) {
-        in.getline(buf, 256);
-        objectCoords.push_back(new string(buf));
+    char tmp[300];
+    while(!in.eof())
+    {
+        in.getline(tmp,300);
+        str+=tmp;
+        str+='\n';
     }
-    
-    for (int i = 0; i < objectCoords.size(); i++) {
-        if ((*objectCoords[i])[0] == '#') {
-            continue;
-        } else if ((*objectCoords[i])[0] == 'v' && (*objectCoords[i])[1] == ' ') {
-            float tmpX, tmpY, tmpZ;
-            sscanf(objectCoords[i]->c_str(), "v %f %f %f", &tmpX, &tmpY, &tmpZ);
-            vertex.push_back(new coordinate(tmpX, tmpY, tmpZ));
-        } else if ((*objectCoords[i])[0] == 'v' && (*objectCoords[i])[1] == 'n') {
-            float tmpX, tmpY, tmpZ;
-            sscanf(objectCoords[i]->c_str(), "vn %f %f %f", &tmpX, &tmpY, &tmpZ);
-            normal.push_back(new coordinate(tmpX, tmpY, tmpZ));
-        } else if ((*objectCoords[i])[0] == 'f') {
-            int a, b, c, d, e;
-            //if a quad else a traingle
-            if (count(objectCoords[i]->begin(), objectCoords[i]->end(), ' ') == 4) {
-                sscanf(objectCoords[i]->c_str(), "f %d//%d %d//%d %d//%d %d//%d", &a, &b, &c, &b, &d, &b, &e, &b);
-                faces.push_back(new face(b, a, c, d, e));
-            } else {
-                sscanf(objectCoords[i]->c_str(), "f %d//%d %d//%d %d//%d", &a, &b, &c, &b, &d, &b);
-                faces.push_back(new face(b, a, c, d));
-            }
-        }
-    }
-    
-    //to draw
-    int num;
-    num = glGenLists(1);
-    
-    glNewList(num, GL_COMPILE);
-    
-    for (int i = 0; i < faces.size(); i++) {
-        if (faces[i]->four) {
-            //draw quad
-            glBegin(GL_QUADS);
-            glNormal3f(normal[faces[i]->faceNum - 1]->x, normal[faces[i]->faceNum - 1]->y, normal[faces[i]->faceNum - 1]->z);
-            glVertex3f(vertex[faces[i]->faces[0] - 1]->x, vertex[faces[i]->faces[0] - 1]->y, vertex[faces[i]->faces[0] - 1]->z);
-            glVertex3f(vertex[faces[i]->faces[1] - 1]->x, vertex[faces[i]->faces[1] - 1]->y, vertex[faces[i]->faces[1] - 1]->z);
-            glVertex3f(vertex[faces[i]->faces[2] - 1]->x, vertex[faces[i]->faces[2] - 1]->y, vertex[faces[i]->faces[2] - 1]->z);
-            glVertex3f(vertex[faces[i]->faces[3] - 1]->x, vertex[faces[i]->faces[3] - 1]->y, vertex[faces[i]->faces[3] - 1]->z);
-            glEnd();
-            
-        } else {
-            //draw triangle
-            glBegin(GL_TRIANGLES);
-            glNormal3f(normal[faces[i]->faceNum - 1]->x, normal[faces[i]->faceNum - 1]->y, normal[faces[i]->faceNum - 1]->z);
-            glVertex3f(vertex[faces[i]->faces[0] - 1]->x, vertex[faces[i]->faces[0] - 1]->y, vertex[faces[i]->faces[0] - 1]->z);
-            glVertex3f(vertex[faces[i]->faces[1] - 1]->x, vertex[faces[i]->faces[1] - 1]->y, vertex[faces[i]->faces[1] - 1]->z);
-            glVertex3f(vertex[faces[i]->faces[2] - 1]->x, vertex[faces[i]->faces[2] - 1]->y, vertex[faces[i]->faces[2] - 1]->z);
-            glEnd();
-        }
-    }
-    
-    glEndList();
-    
-    //avoids memory leak
-    for (int i = 0; i < objectCoords.size(); i++) {
-        delete objectCoords[i];
-    }
-
-    for (int i = 0; i < faces.size(); i++) {
-        delete faces[i];
-    }
-
-    for (int i = 0; i < normal.size(); i++) {
-        delete normal[i];
-    }
-    
-    for (int i = 0; i < vertex.size(); i++) {
-        delete vertex[i];
-    }
-    
-    //returns display list id
-    return num;
 }
 
-int cubeDisplayList;
+unsigned int loadShader(std::string& source,unsigned int mode)
+{
+    unsigned int id;
+    id=glCreateShader(mode);
+    
+    const char* csource=source.c_str();
+    
+    glShaderSource(id,1,&csource,NULL);
+    glCompileShader(id);
+    char error[1000];
+    glGetShaderInfoLog(id,1000,NULL,error);
+    std::cout << "Compile status: \n" << error << std::endl;
+    return id;
+}
+
+unsigned int vs,fs,program;
+
+void initShader(const char* vname,const char* fname)
+{
+    std::string source;
+    loadFile(vname,source);
+    vs=loadShader(source,GL_VERTEX_SHADER);
+    source="";
+    loadFile(fname,source);
+    fs=loadShader(source,GL_FRAGMENT_SHADER);
+    
+    program=glCreateProgram();
+    glAttachShader(program,vs);
+    glAttachShader(program,fs);
+    
+    glLinkProgram(program);
+    glUseProgram(program);
+}
+
+void clean()
+{
+    glDetachShader(program,vs);
+    glDetachShader(program,fs);
+    glDeleteShader(vs);
+    glDeleteShader(fs);
+    glDeleteProgram(program);
+}
 
 void init()
 {
-    glClearColor(0.0, 0.0, 0.0, 1.0);
+    glClearColor(0,0,0,1);
     glMatrixMode(GL_PROJECTION);
     glLoadIdentity();
-    gluPerspective(45, 640/480, 1, 500);
+    gluPerspective(50,640.0/480.0,1,1000);
     glMatrixMode(GL_MODELVIEW);
     glEnable(GL_DEPTH_TEST);
-    cubeDisplayList = loadObject("/Users/LokeshBasu/Documents/Xcode/OpenGLProgramming/OpenGLProgramming/cube.obj");
+    initShader("vertex.vs","fragment.frag");
 }
-
 
 void display()
 {
-    glClear(GL_COLOR_BUFFER_BIT | GL_DEPTH_BUFFER_BIT);
     glLoadIdentity();
-    glTranslatef(0, 0, -5);
-    glRotatef(_angle, 1, 1, 1);
-    glCallList(cubeDisplayList);
+    glClear(GL_COLOR_BUFFER_BIT|GL_DEPTH_BUFFER_BIT);
+    cam.Control();
+    cam.UpdateCamera();
     
+    glBegin(GL_TRIANGLES);
+    glVertex3f(0,1,-4);
+    glVertex3f(-1,-1,-4);
+    glVertex3f(1,-1,-4);
+    glEnd();
 }
 
-void update(int value)
+int main()
 {
-    _angle += 0.1f;
-    if (_angle > 360) {
-        _angle -= 360;
-    }
-    glutPostRedisplay();
-    glutTimerFunc(25, update, 0);
-}
-
-int main(int argc, char* argv[])
-{
-    
-    glutInit (&argc, argv);
-    glutInitDisplayMode (GLUT_SINGLE | GLUT_RGB | GLUT_DEPTH);
-    glutInitWindowSize (640, 480);
-    glutInitWindowPosition (100, 100);
-    glutCreateWindow ("Tutorial 1");
+    SDL_Init(SDL_INIT_EVERYTHING);
+    SDL_SetVideoMode(640,480,32,SDL_OPENGL);
+    Uint32 start;
+    SDL_Event event;
+    bool running=true;
     init();
-    glutTimerFunc(25, update, 0);
-    glutDisplayFunc (display);
-    glutIdleFunc(display);
-    glutMainLoop ();
-    
-    return 0;
+    bool b=false;
+    while(running)
+    {
+        start=SDL_GetTicks();
+        while(SDL_PollEvent(&event))
+        {
+            switch(event.type)
+            {
+                case SDL_QUIT:
+                    running=false;
+                    break;
+                case SDL_KEYDOWN:
+                    switch(event.key.keysym.sym)
+                {
+                    case SDLK_ESCAPE:
+                        running=false;
+                        break;
+                }
+                    break;
+                case SDL_MOUSEBUTTONDOWN:
+                    cam.mouseIn(true);
+                    break;
+                    
+            }
+        }
+        display();
+        SDL_GL_SwapBuffers();
+        if(1000.0/30>SDL_GetTicks()-start)
+            SDL_Delay(1000.0/30-(SDL_GetTicks()-start));
+    }
+    clean();
+    SDL_Quit();
 }
