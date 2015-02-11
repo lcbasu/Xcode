@@ -29,7 +29,6 @@
 
 /* Begin PBXFileReference section */
 		1F2939AE1A6BF41500BB2B18 /* SDL2.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SDL2.framework; path = ../../../../../Library/Frameworks/SDL2.framework; sourceTree = "<group>"; };
-		1F295F801A861A7A00561FCB /* cube.obj */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = cube.obj; sourceTree = "<group>"; };
 		1F3ABC1D1A374E380053C3C0 /* OpenGLProgramming */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = OpenGLProgramming; sourceTree = BUILT_PRODUCTS_DIR; };
 		1F3ABC201A374E380053C3C0 /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 		1F3ABC271A374E4E0053C3C0 /* GLUT.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = GLUT.framework; path = System/Library/Frameworks/GLUT.framework; sourceTree = SDKROOT; };
@@ -333,7 +332,6 @@
 			isa = PBXGroup;
 			children = (
 				1F3ABC201A374E380053C3C0 /* main.cpp */,
-				1F295F801A861A7A00561FCB /* cube.obj */,
 				1F3BA2601A8713920063A9F9 /* vetex_shader.vs */,
 				1F3BA2621A8713D90063A9F9 /* fragment_shader.fs */,
 				1F3BA2641A87140C0063A9F9 /* camera.h */,
